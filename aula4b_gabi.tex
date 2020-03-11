@@ -1,0 +1,212 @@
+\section{Reflex\ao/transmiss\ao\ de ondas planas}
+
+Consideremos uma interface plana $\Sigma$ com a origem de um eixo de
+coordenadas cartesianas em um ponto arbitr\'ario de $\Sigma$. A escolha
+dos eixos pode ser tamb\'em arbitr\'aria. Se $n_i$ for o vetor normal a
+$\Sigma$, a equa\cao\ da interface pode ser escrita como $n_i x_i = 0$.
+A interface divide o espa\co\ em dois semi-espa\co s 1 e 2 que assumimos
+serem de welded contact. No semi-espa\co\ 1 consideramos uma onda plana
+propagando em dire\cao\ a interface que chamamos de onda incidente. A
+orienta\cao\ do vetor normal \'e tal que aponta para o semi-espa\co\
+onde a onda inicidente se propaga. A fim de satisfazer as condi\coes\ de
+contorno vistas anteriormente para $\Sigma$ introduzimos dois tipos de
+onda: a onda refletida que se propaga no semi-espa\co\ 1 e a onda
+transmitida que se propaga no semi-espa\co\ 2.
+
+\subsection{Meio Ac\'ustico}
+
+Consideremos dois semi-espa\co s de fluidos separados por uma interface
+plana $\Sigma$. Denotamos a velocidade de fase e a densidade no
+semi-espa\co\ 1 por $c_1$ e $\rho_1$ e no semi-espa\co\ 2 por $c_2$ e
+$\rho_2$. Usamos o \ih ndice $r$ nos par\^ametros que correspondem \`a
+onda refletida e o \ih ndice $t$ nos que correspondem \`a onda
+transmitida. Ent\~ao temos
+\begin{eqnarray}
+p(x_m,t) &=& PF(t - p_k x_k),\\
+p^r(x_m,t) &=& P^r F^r(t - p_k^r x_k - \varphi^r),\\
+p^t(x_m,t) &=& P^t F^t(t - p_k^t x_k - \varphi^t),\\
+v_i(x_m,t) &=& \rho_1^{-1}Pp_i F(t - p_k x_k),\\
+v_i^r(x_m,t) &=& \rho_1^{-1}P^r p_i^r F^r(t - p_k^r x_k - \varphi^r),\\
+v_i^t(x_m,t) &=& \rho_2^{-1}P^t p_i^t F^t(t - p_k^t x_k - \varphi^t),
+\end{eqnarray}
+Aqui $\varphi^r$ e $\varphi^t$ representam os poss\ih veis atrasos no
+tempo da onda refletida e transmitida com rela\cao\ \`a onda incidente.
+As duas condi\coes\ de contorno podem ser escritas como
+\begin{eqnarray}
+PF(t - p_k x_k) + P^r F^r(t - p_k^r x_k - \varphi^r) = P^t F^t(t - p_k^t x_k - \varphi^t),\\
+\rho_1^{-1}Pp_i F(t - p_k x_k) + \rho_1^{-1}P^r p_i^r F^r(t - p_k^r x_k - \varphi^r) = \rho_2^{-1}P^t p_i^t F^t(t - p_k^t x_k - \varphi^t).
+\end{eqnarray}
+
+\subsubsection{Transforma\cao\ do vetor de vagarosidade atrav\'es da interface}
+
+Pelo fato do nosso modelo ser invariante com respeito \`a transla\cao\
+paralela da interface $\Sigma$, as condi\coes\ acima precisam ser as
+mesmas em qualquer ponto de $\Sigma$ em qualquer momento, ou seja, n\ao\
+podem depender de $x_k$ e $t$. Ent\ao\ em qualquer ponto de $\Sigma$ e
+qualquer $t$ temos
+\begin{eqnarray}
+F(t - p_k x_k) = F^r(t - p_k^r x_k - \varphi^r) = F^t(t - p_k^t x_k - \varphi^t),\\
+p_k x_k = p_k^r x_k + \varphi^r = p_k^t x_k + \varphi^t.
+\end{eqnarray}
+Se considerarmos dois pontos $x_{1i}$ e $x_{2i}$ de $\Sigma$ obtemos das
+rela\coes\ \`acima
+\begin{eqnarray}
+p_k(x_{1k} - x_{2k}) = p_k^r(x_{1k} - x_{2k}) = p_k^t(x_{1k} - x_{2k})
+\end{eqnarray}
+
+Conclu\ih mos ent\ao\ que as componentes tangenciais do vetor de
+vagarosidade das ondas incidente, refletida e transmitida s\ao\ iguais.
+Ent\ao\
+\begin{eqnarray}
+p_k x_k = p_k^r x_k = p_k^t x_k \; \Rightarrow \; \varphi^r = \varphi^t = 0.
+\end{eqnarray}
+Usamos agora esta rela\cao\ para escrever $p_k^r$ e $p_k^t$ em fun\cao\
+de $p_k$. Para tal, observamos que o vetor de vagarosidade pode ent\ao\
+ser escrito como
+\begin{eqnarray}
+p_k = a_k + (p_m n_m)n_k, \; p_k^r = a_k^r + (p_m^r n_m)n_k, \; p_k^t = a_k^t + (p_m^t n_m)n_k,\\
+\end{eqnarray}
+onde
+\begin{eqnarray}
+a_k = a_k^r = a_k^t,
+\end{eqnarray}
+e $a_k,a_k^r,a_k^t$ s\ao\ componentes tangenciais vetoriais dos vetores
+de vagarosidade $p_k,p_k^r,p_k^t$. Podemos ainda reescrever a
+express\ao\ acima como
+\begin{eqnarray}
+p_k - (p_m n_m)n_k = p_k^r - (p_m^r n_m)n_k = p_k^t - (p_m^t n_m)n_k.
+\end{eqnarray}
+Para determinar $p_k^r$ e $p_k^t$ usamos a equa\cao\ eikonal
+\begin{eqnarray}
+p_i p_i = c^{-2},
+\end{eqnarray}
+que precisa ser satisfeita para ambos os lados da interface para as 3
+ondas. Temos ent\ao\
+\begin{eqnarray}
+p_i p_i &=& a_i a_i + (p_m n_m)^2 = c_1^{-2},\\
+p_i^r p_i^r &=& a_i a_i + (p_m^r n_m)^2 = c_1^{-2},\\
+p_i^t p_i^t &=& a_i a_i + (p_m^t n_m)^2 = c_2^{-2}.
+\end{eqnarray}
+Da \'ultima equa\cao\ obtemos
+\begin{eqnarray}
+p_m^t n_m = -(c_2^{-2} - a_i a_i)^{1/2} = - [c_2^{-2} - c_1^{-2} + (p_m n_m)^2]^{1/2}.
+\end{eqnarray}
+Observemos que o sinal negativo se deve ao fato de que $n_i$ aponta
+contra $p_i$ e $p_i^t$. Usamos agora a igualdade dos componentes
+tangenciais do vetor de vagarosidade juntamente com a equa\cao\ acima e
+obtemos
+\begin{eqnarray}
+p_k^t &=& p_k - {(p_m n_m)n_k + [c_2^{-2} - c_1^{-2} + (p_m n_m)^2]^{1/2}}n_k,\\
+p_m^r n_m &=& +(c_1^{-2} - a_i a_i)^{1/2} = [(p_m n_m)^2]^{1/2} = - p_m n_m,\\
+p_k^r &=& p_k -2(p_m n_m)n_k.
+\end{eqnarray}
+
+Podemos notar que a onda transmitida possui vetor de vagarosidade com
+valores reais somente se
+\begin{eqnarray}
+c_2^{-2} - c_1^{-2} + (p_m n_m)^2 \geq 0.
+\end{eqnarray}
+
+Usamos agora o \ih ndice $g$ para os par\^ametros das ondas geradas
+(refletida ou transmitida). Chamamos $\theta$ (\^angulo de incid\^encia)
+o \^angulo agudo entre a normal $n_i$ e o vetor de vagarosidade $p_i$ da
+onda incidente, e $\theta_g$ (\^angulo de reflex\ao/transmiss\ao) o
+\^angulo agudo entre $n_i$ e $p_i^g$ das ondas geradas. Note que
+$\theta_r = \theta$. Temos ent\ao\
+\begin{eqnarray}
+c_1 ^{-2}(1 - \cos^2 i) = c_g^{-2}(1 - \cos^2 \theta_g),
+\end{eqnarray}
+e como $\theta$ e $\theta_g$ s\ao\ \^angulos agudos temos
+\begin{eqnarray}
+\frac{\sin \theta}{c_1} = \frac{\sin \theta_g}{c_g}.
+\end{eqnarray}
+Esta igualdade \'e conhecida como Lei de Snell.
+
+Usamos esses \^angulos para reescrever a condi\cao\ para que $p_k^t$
+possua velores reais,
+\begin{eqnarray}
+c_2^{-2} - c_1^{-2} + c_1^{-2}\cos^2 \theta = c_2^{-2}\cos^2 \theta_t \geq 0\\
+\end{eqnarray}
+ou
+\begin{eqnarray}
+\frac{c_2}{c_1}\sin \theta = \sin \theta_t \leq 1.\;\; \mbox{(Lei de Snell)}
+\end{eqnarray}
+Esta desigualdade garante a exist\^encia de valores reais de $p_k^t$ e
+do \^angulo real de transmiss\ao\ $\theta_t$. Para $\sin \theta_t = 1$,
+que pode ser verdadeira somente se $c_1 \leq c_2$, temos
+\begin{eqnarray}
+\sin \theta^{*} = \frac{c_1}{c_2},
+\end{eqnarray}
+onde o \^angulo de incid\^encia $\theta^{*}$ \'e chamado de \^angulo
+cr\ih tico. Os \^angulos de transmiss\ao\ correspondentes s\ao\
+$\theta_t = 1/2\pi$, isto \'e, as ondas trasmitidas se propagam
+paralelamente \`a $\Sigma$. Se $\theta < \theta^{*}$ temos o que
+chamamos de incid\^encia subcr\ih tica e se $\theta > \theta^{*}$ temos
+incid\^encia supercr\ih tica. Para
+\begin{eqnarray}
+c_2^{-2} - c_1^{-2} + c_1^{-2}\cos^2 \theta = c_2^{-2}\cos^2 \theta_t < 0,\\
+\sin \theta > \frac{c_1}{c_2},
+\end{eqnarray}
+$p_k^t$ e $\theta_t$ assumem valores complexos, que ocorre no caso de
+incid\^encia sobrecr\ih tica.
+
+Podemos ent\ao\ escrever
+$p_k^t$ como
+\begin{eqnarray}
+p_k^t = p_k^{tR} + ip_k^{tI},\; 
+\end{eqnarray}
+onde
+\begin{eqnarray}
+p_k^{tR} &=& p_k - (p_m n_m)n_k,\\
+p_k^{tI} &=& \pm - [c_1^{-2} - c_2^{-2} - (p_m n_m)^2]^{1/2}n_k.
+\end{eqnarray}
+
+J\'a vimos que este vetor pertence a uma onda inomog\^enea. O sinal na
+frente da raiz quadrada precisa ser escolhido de forma que a amplitude
+da onda plana inomog\^enea transmitida decres\ca\ com o aumento da
+dist\^ancia \`a interface. Por simplicidade escolhemos o sinal da onda
+plana ac\'ustica inomog\^enea harm\^onica no tempo de press\ao. A onda
+plana ac\'ustica inomog\^enea transmitida de press\ao\ tem a forma
+\begin{eqnarray}
+p^t(x_{m},t) = P^t\mbox{exp}(-wp_{m}^{tI}x_{m})\mbox{exp}[-iw(t-p_{m}^{tR}x_{m})].
+\end{eqnarray} 
+Esta express\ao\ descreve uma onda inomog\^enea aceit\'avel fisicamente
+se
+\begin{eqnarray}
+p_{m}^{tI}x_{m} > 0
+\end{eqnarray}
+no semiespa\co\ 2, isto \'e, se
+\begin{eqnarray}
+\pm [c_1^{-2} - c_2^{-2} - (p_m n_m)^2]^{1/2}n_k x_k > 0. 
+\end{eqnarray}
+Como no semiespa\co\ 2,
+\begin{eqnarray}
+n_k x_k < 0,
+\end{eqnarray}
+$p_{m}^{tI}x_{m}$ \'e positivo se escolhemos o sinal negativo na frente
+da raiz quadrada. Das express\oes\ para $p_{m}^{tR}$ vemos que o vetor
+$p_{m}^{tR}$ \'e paralelo a $\Sigma$. Para a velocidade de fase desta
+onda temos
+\begin{eqnarray}
+c_R^{-2} = p_i^{tR}p_i^{tR} = c_2^{-2} + p_i^{tI}p_i^{tI} = c_2^{-2} + c_1^{-2} - c_2^{-2} - c_1^{-2}\cos^2 \theta = \frac{\sin^2 \theta}{c_1^2}.
+\end{eqnarray}
+Portanto
+\begin{eqnarray}
+c_R = \frac{c_1}{\sin \theta}.
+\end{eqnarray}
+
+A velocidade de fase $c_R$ de uma onda inomog\^enea transmitida
+corresponde \`a aparente velocidade da frente de fase da onda incidente
+que se move ao longo de $\Sigma$. Esta velocidade diminiu com o
+cresciemento de $\theta$, se $\theta = \theta^{*}$, $c_R = c_2$ e se
+$\theta = 1/2\pi$ ent\ao\ $c_R = c_1$.
+
+O vetor $p_i^{tI}$ \'e perpendicular \`a $\Sigma$, ou seja, a dire\cao\
+de maior descrescimento da amplitude \'e na dire\cao\ oposta a $n_i$.
+Para onda incidentes sobrecr\ih ticas, o decaimento aumenta com o
+crescimento do \^angulo de incid\^encia. Para $i=i_{*}$, $p_i^{tI} = 0$,
+isto \'e, n\ao\ h\'a decaimento e estamos trabalhando com ondas
+transmitidas homog\^eneas propagando ao longo de $\Sigma$ com velocidade
+de fase $c_R = c_2$. Para $i = 1/2\pi$, $p_i^{tI} = -(c_1^{-2} -
+c_2^{-2})^{1/2}n_k$.
+

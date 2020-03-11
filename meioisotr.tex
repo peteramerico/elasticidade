@@ -1,0 +1,331 @@
+\subsection{Meio Isotr\'opico} \label{meioisotr}
+
+Consideremos dois semi-espa\c{c}os isotr\'opicos homog\^eneos de
+um espa\c{c}o separados por uma interface plana $\Sigma$.
+Consideremos um sistema de coordenadas arbitr\'ario, cuja origem
+est\'a contida no plano $\Sigma$. A densidade e as velocidades das
+ondas $P$ e $S$ s\~ao denotadas por $\rho_1$, $\alpha_1$ e
+$\beta_1$ no semi-espa\c{c}o $1$ e por $\rho_2$, $\alpha_2$ e
+$\beta_2$ no semi-espa\c{c}o $2$. Duas condi\c{c}\~oes de contorno
+vetoriais (seis escalares) s\~ao necess\'arias: continuidade do
+vetor de deslocamento e continuidade da tra\c{c}\~ao (vetor de
+tens\~ao) atrav\'es da interface $\Sigma$. Para satisfazer estas
+condi\c{c}\~oes, consideramos duas ondas refletidas ($P$ e $S$) e
+duas ondas transmitidas ($P$ e $S$) geradas pelas incid\^encia da
+onda plana $P$ ou $S$ em $\Sigma$. Chamamos as ondas geradas, que
+s\~ao do mesmo tipo que a onda incidente, de {\it ondas
+n\~ao-convertidas}, e as outras ondas de {\it ondas convertidas}
+ou {\it ondas monot\'{\i}picas}. O deslocamento da onda incidente
+$P$ \'e
+\begin{equation}
+u_i(x_m,t)=AN_iF(t-p_kx_k) \;,
+\end{equation}
+e o deslocamento da onda incidente $S$ \'e
+\begin{equation}
+u_i(x_m,t)=(Bg_i^{(1)}+Cg_i^{(2)})F(t-p_kx_k) \;.
+\end{equation}
+Os vetores $g_i^{(1)}$, $g_i^{(2)}$ e $N_i$ s\~ao tr\^es vetores
+unit\'arios mutuamente perpendiculares, $N_i$ \'e perpendicular a
+frente de fase, $g_i^{(1)}$ e $g_i^{(2)}$ est\~ao no plano da
+frente de fase. $A$ caracteriza o tamanho do vetor deslocamento da
+onda incidente $P$. $B$ e $C$ caracterizam os tamanhos das
+proje\c{c}\~oes do vetor deslocamento da onda incidente $S$ nos
+vetores $g_i^{(1)}$ e $g_i^{(2)}$. Par\^ametros relacionados com a
+onda refletida est\~ao denotados pelo \'{\i}ndice superior $r$,
+j\'a os relacionados com a onda transmitida est\~ao denotados pelo
+\'{\i}ndice superior $t$. Portanto, as quantidades $A$, $B$, $C$,
+$F$ e $p_k$ s\~ao supostamente conhecidas, e as quantidades $A^r$,
+$B^r$, $C^r$, $A^t$, $B^t$, $C^t$, $F^r$, $F^t$, $p_k^r$ e $p_k^t$
+devem ser determinadas.
+
+A express\~ao para a tra\c{c}\~ao pode ser escrita como
+\begin{equation}
+T_i=\tau_{ij}n_j=\lambda n_i u_{k,k}+\mu n_j(u_{i,j}+u_{j,i}) \;.
+\end{equation}
+Para o caso da onda incidente $P$ obtemos
+\begin{equation}
+T_i=-A(\lambda_1 n_i N_kp_k+2\mu_1 n_j p_j N_i)\dot{F}(t-p_kx_k)
+\;,
+\end{equation}
+e para o caso da onda incidente $S$ obtemos
+\begin{equation}
+T_i=-[B(g_i^{(1)}p_j+g_j^{(1)}p_i)+C(g_i^{(2)}p_j+g_j^{(2)}p_i)]\mu_1n_j\dot{F}(t-p_kx_k)
+\;.
+\end{equation}
+Podemos agora escrever as seis condi\c{c}\~oes de contorno como
+\begin{equation}
+A^tN_i^tF_p^t+B^tg_i^{(1)t}F_s^t+C^tg_i^{(2)t}F_s^t-A^rN_i^rF_p^r-B^rg_i^{(1)r}F_s^r-C^rg_i^{(2)r}F_s^r=D_i
+\;, \label{sixcont1}
+\end{equation}
+\begin{equation}
+A^tX_i^t\dot{F}_p^t+B^tY_i^t\dot{F}_s^t+C^tZ_i^t\dot{F}_s^t-A^rX_i^r\dot{F}_p^r-B^rY_i^r\dot{F}_s^r-C^rZ_i^r\dot{F}_s^r=E_i
+\;. \label{sixcont2}
+\end{equation}
+A equa\c{c}\~ao (\ref{sixcont1}) resulta da continuidade do
+deslocamento e equa\c{c}\~ao (\ref{sixcont2}) da continuidade da
+tra\c{c}\~ao. A seguinte nota\c{c}\~ao foi usada
+\begin{equation}
+\begin{array}{rcl}
+X_i & = & \lambda n_iN_kp_k+2\mu n_jp_jN_i \;, \\
+Y_i & = & \mu n_j(g_i^{(1)}p_j+g_j^{(1)}p_i) \;, \\
+Z_i & = & \mu n_j(g_i^{(2)}p_j+g_j^{(2)}p_i) \;.
+\end{array}
+\label{XYZ}
+\end{equation}
+Os termos $D_i$ e $E_i$ s\~ao dados por
+\begin{equation}
+D_i=AN_iF_p \;, \;\; E_i=AX_i\dot{F}_p \;,
+\end{equation}
+no caso da onda incidente $P$ e por
+\begin{equation}
+D_i=BF_sg_i^{(1)}+CF_sg_i^{(2)} \;, \;\;
+E_i=BY_i\dot{F}_s+CZ_i\dot{F}_s \;,
+\end{equation}
+no caso da onda incidente $S$.
+
+\subsubsection{Transforma\c{c}\~ao do vetor vagarosidade atrav\'es da interface}
+
+Pelo mesmo argumento que o usado no caso ac\'ustico, podemos
+encontrar que os sinais anal\'{\i}ticos e suas derivadas
+correspondendo a ondas geradas s\~ao os mesmos que os sinais
+anal\'{\i}ticos e suas derivadas correspondendo a onda incidente
+em qualquer ponto da interface $\Sigma$. Como no caso ac\'ustico,
+podemos encontrar a equa\c{c}\~ao para determinar o vetor
+vagarosidade $\tilde{p}_i$ para qualquer onda gerada
+\begin{equation}
+\tilde{p}_i = p_i
+-\{(p_mn_m)\pm[\tilde{V}^{-2}-V^{-2}+(p_mn_m)^2]^{1/2}\}n_i \;,
+\label{onda_re/tr}
+\end{equation}
+onde $"+"$ corresponde \`a onda transmitida e $"$$-"$  \`a onda
+refletida. Os s\'{\i}mbolos $V$ e $\tilde{V}$ denotam a velocidade
+$\alpha$ ou $\beta$ da onda incidente e da onda gerada,
+respectivamente. A equa\c{c}\~ao (\ref{onda_re/tr}) vale para
+qualquer onda refletida ou transmitida. No caso da reflex\~ao de
+uma onda n\~ao-convertida, quando $\tilde{V}=V$, obtemos
+\begin{equation}
+\tilde{p}_k = p_k -2(p_mn_m)n_k \;. \label{onda_re/tr2}
+\end{equation}
+
+A \'unica condi\c{c}\~ao que deve ser satisfeita pelos vetores
+$g_i^{(1)r}$ e $g_i^{(2)r}$ na onda $S$ refletida e $g_i^{(1)t}$ e
+$g_i^{(2)t}$ na onda $S$ transmitida, \'e a condi\c{c}\~ao de eles
+serem mutuamente perpendiculares em suas respectivas ondas, assim
+como os vetores $g_i^{(1)}$, $g_i^{(2)}$ e $p_i$ s\~ao mutuamente
+perpendiculares na onda incidente $S$. Podemos introduzir os
+\^angulos de incid\^encia, transmiss\~ao e reflex\~ao para derivar
+a lei de Snell para o caso do meio isotr\'opico. A f\'ormula
+(\ref{onda_re/tr2}) nos fornece que
+\begin{equation}
+\frac{\sin{i_p^r}}{\alpha_1}=\frac{\sin{i_s^r}}{\beta_1}=\frac{\sin{i_p^t}}{\alpha_2}=\frac{\sin{i_s^t}}{\beta_2}=\frac{\sin{i}}{V}
+\;. \label{Snell}
+\end{equation}
+Se $\alpha_1<\beta_2$ e $\alpha_1<\alpha_2$, para uma onda
+incidente $P$, dois \^angulos cr\'{\i}ticos existem,
+\begin{equation}
+\sin{i_1^*}=\alpha_1/\alpha_2 \;, \;\;
+\sin{i_2^*}=\alpha_1/\beta_2\;.
+\end{equation}
+Para uma onda incidente $S$ sempre podem existir tr\^es \^angulos
+cr\'{\i}ticos se $\beta_1<\alpha_1$, $\beta_1<\beta_2$,
+$\beta_1<\alpha_2$. Incid\^encia super-cr\'{\i}tica est\'a
+conectada com a gera\c{c}\~ao de n\~ao-homogeneidade transmitida e
+tamb\'em com ondas refletidas. Seu comportamento \'e similar ao
+comportamento das ondas ac\'usticas n\~ao-homog\^eneas.
+
+
+\subsubsection{Coeficientes de reflex\~ao e transmiss\~ao}
+
+Devido a igualdade do sinal anal\'{\i}tico das ondas incidente e
+gerada ao longo de $\Sigma$, as condi\c{c}\~oes de contorno se
+reduzem ao seguinte sistema de seis equa\c{c}\~oes lineares
+n\~ao-homog\^eneas pelas seis vari\'aveis, $A^r$, $B^r$, $C^r$,
+$A^t$, $B^t$, e $C^t$,
+\begin{equation}
+A^tN_i^t+B^tg_i^{(1)t}+C^tg_i^{(2)t}-A^rN_i^r-B^rg_i^{(1)r}-C^rg_i^{(2)r}=\tilde{D}_i
+\;, \label{sixcont3}
+\end{equation}
+\begin{equation}
+A^tX_i^t+B^tY_i^t+C^tZ_i^t-A^rX_i^r-B^rY_i^r-C^rZ_i^r=\tilde{E}_i
+\;, \label{sixcont4}
+\end{equation}
+onde
+\begin{equation}
+\tilde{D}_i=AN_i \;, \;\; \tilde{E}_i=AX_i \;, \label{D e E tios
+P}
+\end{equation}
+no caso da onda incidente $P$ em $\Sigma$, e por
+\begin{equation}
+\tilde{D}_i=Bg_i^{(1)}+Cg_i^{(2)} \;, \;\; \tilde{E}_i=BY_i+CZ_i
+\;, \label{D e E tios S}
+\end{equation}
+no caso da onda incidente $S$ em $\Sigma$.
+
+Podemos introduzir os {\it coeficientes de deslocamento de
+reflex\~ao/transmiss\~ao} $R_{mn}^r$, $R_{mn}^t$ ($m$, $n$ = 1,2,3
+), onde o \'{\i}ndice $m$ especifica o tipo de onda incidente e o
+\'{\i}ndice $n$ o tipo de onda gerada da seguinte maneira:
+
+\begin{tabular}{l}
+$m$,$n=1$: componente $S1$ da onda $S$;\\
+$m$,$n=2$: componente $S2$ da onda $S$;\\
+$m$,$n=3$: onda $P$.
+\end{tabular}
+
+Por componentes $S1$ e $S2$ da onda $S$ entendemos componentes da
+onda $S$ nos vetores $g_i^{(1)}$ e $g_i^{(2)}$, respectivamente.
+Usando esta nota\c{c}\~ao, o coeficiente de reflex\~ao
+$R_{31}^r=B^r/A$ corresponde a onda incidente $P$ e componente
+$S1$ da onda $S$. Ao todo, n\'os temos 9 coeficientes de
+reflex\~ao e outros 9 de transmiss\~ao. Antes de olharmos para a
+express\~ao anal\'{\i}tica dos coeficientes, \'e razo\'avel
+resolver o sistema de 6 equa\c{c}\~oes em (\ref{sixcont3}) e
+(\ref{sixcont4}) para os coeficientes de reflex\~ao e
+transmiss\~ao numericamente.
+
+No entanto, este sistema pode ser simplificado se escolhermos o
+sistema de coordenadas de um modo especial, assim como a
+orienta\c{c}\~ao dos vetores $g_i^{(1)}$ e $g_i^{(2)}$. Vamos
+escolher os eixos coordenados $x_1$ e $x_2$ no plano $\Sigma$,
+$x_1$ no plano de incid\^encia e o vetor $g_i^{(2)}$ perpendicular
+ao plano de incid\^encia para todas ondas incidentes e geradas.
+Ent\~ao, temos o vetor deslocamento da onda $P$ e a componente
+$S1$ da onda $S$ situados no plano de incid\^encia, isto \'e, no
+plano $(x_1,x_3)$. A componente $S2$ da onda $S$ \'e perpendicular
+ao plano de incid\^encia, ou seja, est\'a dentro da interface
+$\Sigma$ e \'e paralela ao eixo $x_2$. Na literatura, as
+componentes $S1$ e $S2$ da onda $S$ tamb\'em s\~ao chamadas de
+$SV$ e $SH$, respectivamente. Com isto, temos
+\begin{equation}
+\vec{N}\equiv(N_1,0,N_3) \;, \;\; \vec{n}\equiv(0,0,1) \;, \;\;
+\vec{g}^{(1)}\equiv(g_1^{(1)},0,g_3^{(1)}) \;, \;\;
+\vec{g}^{(2)}\equiv(0,1,0) \;. \label{Nng1g2}
+\end{equation}
+Se inserirmos estas especifica\c{c}\~oes nas equa\c{c}\~oes de
+continuidade, estas por sua vez dividem-se em dois sistemas. O
+primeiro cont\'em as ondas geradas $P$ e $S$ com componente $S1$,
+dado por
+\begin{equation}
+\begin{array}{rcl}
+A^tN_1^t+B^tg_1^{(1)t}-A^rN_1^r-B^rg_1^{(1)r} & = & \tilde{D}_1 \;, \\
+A^tN_3^t+B^tg_3^{(1)t}-A^rN_3^r-B^rg_3^{(1)r} & = & \tilde{D}_3 \;, \\
+A^tX_1^t+B^tY_1^t-A^rX_1^r-B^rY_1^r & = & \tilde{E}_1 \;, \\
+A^tX_3^t+B^tY_3^t-A^rX_3^r-B^rY_3^r & = & \tilde{E}_3 \;.
+\end{array}
+\label{sist1}
+\end{equation}
+O segundo sistema cont\'em as ondas geradas $S$ com componente
+$S2$:
+\begin{equation}
+\begin{array}{rcl}
+C^t-C^r & = & \tilde{D}_2 \;, \\
+C^tZ_2^t-C^rZ_2^r & = & \tilde{E}_2 \;.
+\end{array}
+\label{sist2}
+\end{equation}
+Substituindo as equa\c{c}\~oes (\ref{Nng1g2}) nas express\~oes em
+(\ref{XYZ}), passamos a ter os vetores $X_i$, $Y_i$ e $Z_i$ dados
+da seguinte forma
+\begin{equation}
+\begin{array}{lll}
+X_1=2\mu p_3N_1\;, & X_2=0\;, & X_3=\lambda(p_1N_1+p_3N_3)+2\mu p_3N_3\;, \\
+Y_1=\mu(g_1^{(1)}p_3+g_3^{(1)}p_1)\;, & Y_2=0\;, & Y_3=2\mu
+g_3^{(1)} p_3\;, \\
+Z_1=0\;, & Z_2=\mu p_3\;, & Z_3=0\;.
+\end{array}
+\label{sist3}
+\end{equation}
+Para uma onda incidente $P$, temos a partir das equa\c{c}\~oes em
+(\ref{D e E tios P}),
+\begin{equation}
+\tilde{D}_2=\tilde{E}_2=0 \;.
+\end{equation}
+Resultado similar pode ser obtido para uma onda incidente $S$ com
+componente $S1$. Neste caso, o lado direito do sistema de
+equa\c{c}\~oes (\ref{sist2}) \'e zero e sua solu\c{c}\~ao tamb\'em
+\'e zero. Isto quer dizer que as ondas incidentes $P$ ou $S$ com
+componente $S1$ n\~ao geram uma onda $S$ com componente $S2$. Em
+outras palavras, uma onda com polariza\c{c}\~ao no plano de
+incid\^encia n\~ao gera ondas polarizadas perpendicularmente ao
+plano de incid\^encia.
+
+No caso de incid\^encia de uma onda $S$ com componente $S2$, temos
+a partir das equa\c{c}\~oes em (\ref{D e E tios S}),
+\begin{equation}
+\tilde{D}_1=\tilde{D}_3=\tilde{E}_1=\tilde{E}_3=0 \;.
+\end{equation}
+Neste caso, o primeiro sistema de equa\c{c}\~oes tem solu\c{c}\~ao
+nula, o que quer dizer que a onda polarizada perpendicularmente ao
+plano de incid\^encia gera apenas onda cisalhante polarizada no
+mesmo sentido. Podemos ent\~ao investigar independentemente os
+processos reflex\~ao/transmiss\~ao de ondas polarizadas no plano
+de incid\^encia $(P,S1)$ e ondas polarizadas perpendicularmente ao
+plano de incid\^encia $(S2)$.
+
+Pela introdu\c{c}\~ao anterior do sistema especial de coordenadas
+e pelo escolha especial dos vetores de polariza\c{c}\~ao
+correspondendo a ondas incidentes e geradas, reduzimos o n\'umero
+de coeficientes de reflex\~ao e transmiss\~ao, cada um de 9 para 5
+($R_{33}$, $R_{31}$, $R_{13}$, $R_{11}$ e $R_{22}$). Estes
+coeficientes podem ser simplesmente obtidos na forma
+anal\'{\i}tica resolvendo o sistema de equa\c{c}\~oes separados.
+
+
+\subsubsection{Coeficientes de reflex\~ao de superf\'{\i}cie livre}
+
+Para a onda incidente $S$ com componente $S2$, o coeficiente de
+reflex\~ao \'e igual a $1$ desde que toda a energia incidente \'e
+transferida em apenas uma onda refletida com a mesma
+polariza\c{c}\~ao que a onda incidente. N\~ao h\'a {\it
+incid\^encia cr\'{\i}tica} neste caso.
+
+A onda $P$ incidente em uma superf\'{\i}cie livre tamb\'em n\~ao
+tem incid\^encia cr\'{\i}tica desde que a velocidade da onda
+incidente \'e maior ou igual que qualquer velocidade das ondas
+geradas. {\it Incid\^encia cr\'{\i}tica} pode ocorrer no caso da
+incid\^encia de uma onda $S$ com componente $S1$.
+
+A condi\c{c}\~ao para o \^angulo cr\'{\i}tico $\theta^*$ \'e
+\begin{equation}
+\sin{\theta^*}=\beta_1/\alpha_1 \;.
+\end{equation}
+Para um s\'olido de Poisson, ($\alpha_1/\beta_1=\sqrt{3}$), a
+f\'ormula acima fornece $\theta^* \sim 35^0$. Como o material da
+Terra perto da superf\'{\i}cie da Terra normalmente n\~ao
+desvia-se muito de um s\'olido de Poisson, $\theta^* \sim 35^0$
+pode ser tomado como o \^angulo cr\'{\i}tico da onda $S$
+polarizada no plano de incid\^encia e incidente na superf\'{\i}cie
+da Terra.
+
+Quando as medidas s\~ao realizadas na superf\'{\i}cie da Terra,
+n\'os n\~ao registramos apenas uma onda incidente, mas tamb\'em as
+ondas geradas por sua incid\^encia. Notemos que o mesmo fen\^omeno
+pode ser observado em interfaces inseridas num meio. No caso da
+incid\^encia de uma onda $S$ com componente $S2$, n\'os
+registramos duas ondas de mesma amplitude, incid\^encia e
+reflex\~ao (coeficiente de reflex\~ao \'e igual a $1$), ambos
+polarizados no mesmo sentido. O efeito da superf\'{\i}cie livre
+\'e ent\~ao que observamos amplitudes duplicadas da onda incidente
+$S$ com componente $S2$. No caso da incid\^encia da onda $P$ ou
+$S$ com componente $S1$, registramos onda incidente e ondas
+refletidas convertidas e n\~ao-convertidas
+
+Para obter o deslocamento total registrado na superf\'{\i}cie da
+Terra, a amplitude e o vetor deslocamento da onda incidente devem
+ser multiplicados pelos chamados {\it coeficientes de
+convers\~ao}, os quais incorporam os efeitos das ondas geradas e
+fornecem componente precisa do vetor deslocamento. Para uma onda
+$S$ com componente $S2$, existe apenas um coeficiente de
+convers\~ao e seu valor \'e $2$. Para uma onda $P$ incidente com
+componente $S1$, existem coeficientes para as componentes
+horizontal e vertical. Para $\theta<\theta^*$, os coeficientes de
+convers\~ao assumem valores reais e a forma da onda registrada \'e
+a mesma forma da onda incidente. Para $\theta>\theta^*$, por\'em,
+os coeficientes tornam-se complexos e a forma da onda registrada
+muda. Assim, neste caso \'e dif\'{\i}cil reconstruir a forma da
+onda incidente das observa\c{c}\~oes. Por esta raz\~ao, os estudos
+locais da onda de cisalhamento s\~ao normalmente limitados numa
+regi\~ao chamada {\it janela da onda de cisalhamento}, ou seja, a
+regi\~ao especificada por \^angulos de incid\^encia
+$\theta<\theta^*$, no caso de s\'olidos de Poisson para \^angulos
+$i<35^{0}$.

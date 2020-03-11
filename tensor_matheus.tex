@@ -1,0 +1,270 @@
+\subsection{Autovalores e autovetores de um tensor sim\'etrico de
+ordem dois}
+
+Assim como podemos usar um vetor $u_i$ para definir um plano
+normal a este, ou seja, $u_i x_i = \pm 1$, podemos usar um tensor
+sim\'etrico $T_{ij}$ de ordem dois para definir a quadr\'atica
+(superf\'{\i}cie de segunda ordem com seu centro na origem do
+sistema de coordenadas)
+\begin{equation}
+   T_{ij}x_i x_j = \pm 1 \;.
+   \label{T_quadratica}
+\end{equation}
+Vamos mostrar que a equa\c{c}\~ao (\ref{T_quadratica}) \'e
+invariante com respeito \`a mudan\c{c}a de coordenadas
+$x_i^{'}=\alpha_{ij}x_j$. Ent\~ao,
+\begin{equation}
+   T_{ij}^{'} x_i^{'} x_j^{'} = \alpha_{im}\alpha_{jn}\alpha_{ik}\alpha_{jl} T_{mn} x_k x_l = \delta_{mk} \delta_{nl} T_{mn} x_k x_l = T_{mn} x_m x_n = T_{ij} x_i x_j \;.
+   \label{T_q_invariante}
+\end{equation}
+
+Para uma escolha especial de coordenadas $x_i^{'}$, a
+equa\c{c}\~ao das quadr\'aticas pode ser escrita como
+\begin{equation}
+   T_{11}^{'} x_1^{'2}+T_{22}^{'} x_2^{'2}+T_{33}^{'} x_3^{'2}= \pm 1 \;.
+   \label{T_q_especial}
+\end{equation}
+Aqui, as coordenadas $x_i^{'}$ coincidiram com os { \it eixos
+principais} das quadr\'aticas. Isto implica que a normal \`a
+quadr\'atica, no ponto onde o eixo $x_i^{'}$ intercepta a
+quadr\'atica, deve ser paralelo ao eixo $x_i^{'}$. Vamos denotar
+os eixos principais pelos vetores unit\'arios $g_i^{(j)}$, isto
+\'e, $\vec{g}^{(1)}={\vec{i}_1}^{\;'}$,
+$\vec{g}^{(2)}=\vec{i}_2^{\;'}$, $\vec{g}^{(3)}=\vec{i}_3^{\;'}$ e
+vamos tentar determin\'a-los. Como a normal da quadr\'atica \'e
+paralela a $g_i^{(k)}$ nas dire\c{c}\~oes dos eixos principais,
+temos que $g_i^{(k)}$ \'e paralelo ao gradiente da quadr\'atica em
+$x_j(g_m^{(k)})$, ou seja,
+\begin{equation}
+   g_i^{(k)} \sim 2T_{ij} x_j (g_m^{(k)}) \;,
+   \label{auto_1}
+\end{equation}
+onde $x_j(g_m^{(k)})$ denota as coordenadas do ponto de
+interse\c{c}\~ao entre a quadr\'atica com o eixo $x_k^{'}$.
+Denotando por $a$ o comprimento deste eixo principal, obtemos que
+$x_j(g_m^{(k)}) = a g_j^{(k)}$, ou ainda,
+\begin{equation}
+   (T_{ij}-\lambda^{(k)} \delta_{ij}) g_j^{(k)}=0 \;.
+   \label{auto_2}
+\end{equation}
+Esta equa\c{c}\~ao pode ser usada para determinar $g_j^{(k)}$ e
+assim encontrar o eixo principal $x_k^{'}$. Isto representa um
+problema de autovalor, onde $\lambda^{(k)}$ s\~ao os autovalores e
+$g_i^{(k)}$ s\~ao os autovetores correspondentes. Este sistema
+tensorial envolve um sistema de tr\^es equa\c{c}\~oes lineares
+para $g_j^{(k)}$. A condi\c{c}\~ao para termos solu\c{c}\~ao nos
+leva a
+\begin{equation}
+   \det(T_{ij}-\lambda^{(k)} \delta_{ij})=0 \;,
+   \label{auto_3}
+\end{equation}
+conhecida como {\it equa\c{c}\~ao caracter\'{\i}stica}. Em nosso
+caso, esta equa\c{c}\~ao \'e c\'ubica com tr\^es ra\'{\i}zes
+$\lambda^{(k)}$, e a cada existe um autovetor $g_i^{(k)}$
+correspondente.
+
+Um tensor $T_{ij}$ sim\'etrico e real satisfaz a rela\c{c}\~ao
+\begin{equation}
+   T_{ij}=T_{ji}=T_{ji}^{*} \;,
+   \label{T_sim}
+\end{equation}
+onde o s\'{\i}mbolo $*$ denota o complexo conjugado. Vamos mostrar
+que o tensor $T_{ij}$ possui tr\^es autovalores reais.
+Multiplicando a equa\c{c}\~ao de autovalores
+\begin{equation}
+   T_{ij} g_j^{(k)} = \lambda^{(k)} g_i^{(k)} \;
+   \label{auto_4}
+\end{equation}
+por $g_j^{(k)*}$ e a equa\c{c}\~ao complexa conjugada
+\begin{equation}
+   T_{ij}^{*} g_j^{(k)*} = \lambda^{(k)*} g_i^{(k)*} \;
+   \label{auto_5}
+\end{equation}
+por $g_j^{(k)}$, obtemos
+\begin{equation}
+   T_{ij} g_j^{(k)} g_i^{(k)*}= \lambda^{(k)} g_i^{(k)}
+   g_i^{(k)*} \;, \;\;\; T_{ij}^{*} g_j^{(k)*} g_i^{(k)}= \lambda^{(k)*} g_i^{(k)*}
+   g_i^{(k)}\;.
+   \label{auto_6}
+\end{equation}
+Como $T_{ij}$ \'e real e sim\'etrico, os lados esquerdos destas
+rela\c{c}\~oes s\~ao iguais. Logo,
+\begin{equation}
+   (\lambda^{(k)}-\lambda^{(k)*}) g_i^{(k)} g_i^{(k)*}= 0 \;.
+   \label{auto_7}
+\end{equation}
+Mas como $g_i^{(k)} g_i^{(k)*} \neq 0$, esta equa\c{c}\~ao implica
+que $\lambda^{(k)}=\lambda^{(k)*}$, e sendo assim $\lambda^{(k)}$
+\'e real.
+
+Agora vamos mostrar que a equa\c{c}\~ao (\ref{auto_4}) deve ser
+satisfeita por um autovetor real. Considerando novamente o
+complexo conjugado desta equa\c{c}\~ao e usando que $T_{ij}$ e
+$\lambda$ s\~ao reais, podemos escrever
+\begin{equation}
+   T_{ij} g_j^{(k)*} = \lambda^{(k)} g_i^{(k)*} \;.
+   \label{auto_4_conjugado}
+\end{equation}
+Somando as equa\c{c}\~oes (\ref{auto_4}) e
+(\ref{auto_4_conjugado}) obtemos
+\begin{equation}
+   T_{ij} (g_j^{(k)}+g_j^{(k)*}) = \lambda^{(k)} (g_j^{(k)}+g_i^{(k)*})
+   \;,
+   \label{auto_4_conjugado2}
+\end{equation}
+o que conclui nossa desmonstra\c{c}\~ao, j\'a que
+$g_j^{(k)}+g_j^{(k)*}$ \'e um vetor real.
+
+Dizemos que o tensor $T_{ij}$ \'e definido positivo se $T_{ij}x_i
+x_j >0$ para qualquer $x_i$. Uma importante propriedade deste tipo
+de tensor \'e que seus autovalores s\~ao positivos. Para vermos
+isso, vamos multiplicar a equa\c{c}\~ao (\ref{auto_4}) por
+$g_i^{(k)}$. Logo,
+\begin{equation}
+   T_{ij} g_i^{(k)}g_j^{(k)} = \lambda^{(k)} g_i^{(k)}g_i^{(k)} \;.
+   \label{auto_4_lambda}
+\end{equation}
+Como o lado esquerdo \'e positivo ($T_{ij}$ \'e definido positivo)
+e $g_i^{(k)}g_i^{(k)}>0$, pois este \'e o quadrado da dist\^ancia
+entre $g_i^{(k)}$ e a origem, conclu\'{\i}mos que $\lambda^{(k)}$
+deve ser positivo.
+
+Para finalizar, vamos mostrar que autovetores associados a
+diferentes autovalores, s\~ao mutuamente ortogonais. Tratando dois
+autovalores distintos $\lambda{(k)}$ e $\lambda{(l)}$, temos
+\begin{equation}
+   T_{ij} g_j^{(k)}- \lambda^{(k)} g_j^{(k)}=0 \;, \;\;\; T_{ij} g_j^{(l)}- \lambda^{(l)}
+   g_j^{(l)}=0 \;.
+   \label{auto_4_orto}
+\end{equation}
+Multiplicando a primeira equa\c{c}\~ao por $g_i^{(l)}$ e a segunda
+por $g_i^{(k)}$ e em seguida subtraindo estas, obtemos
+\begin{equation}
+   (\lambda^{(k)}-\lambda^{(l)})g_i^{(k)}g_i^{(l)}=0 \;.
+   \label{auto_4_orto1}
+\end{equation}
+Como $\lambda^{(k)} \neq \lambda^{(l)}$, ent\~ao $g_i^{(k)}$ e
+$g_i^{(l)}$ s\~ao ortogonais. Se todos os tr\^es autovalores s\~ao
+diferentes, ent\~ao eles determinam tr\^es autovetores mutuamente
+ortogonais.
+
+Neste caso, a superf\'{\i}cie correspondente ao tensor positivo
+definido \'e elipsoidal com seus tr\^es eixos principais tendo
+comprimentos diferentes. No caso de apenas dois autovalores serem
+iguais, dizemos que trata-se do caso degenerado e n\~ao podemos
+determinar de maneira \'unica os autovetores associados a esses
+autovalores repetidos. A superf\'{\i}cie correspondente \'e um
+elipsoidal rotacional. E para o caso dos tr\^es autovalores serem
+iguais, quaisquer tr\^es vetores mutuamente ortogonais servem como
+autovetores e sua superf\'{\i}cie correspondente \'e uma esfera.
+
+Todas estas considera\c{c}\~oes podem ser extendidas a um tensor
+$T_{ij}$ complexo. A rela\c{c}\~ao $g_i^{(1)}g_i^{(2)}=0$ deve
+ent\~ao ser interpretada na forma
+\begin{equation}
+   \mathrm{\it Re}(g_i^{(1)}g_i^{(2)})=0\;, \;\;\; \mathrm{\it Im}(g_i^{(1)}g_i^{(2)})=0 \;.
+   \label{auto_imag_real}
+\end{equation}
+
+Vamos agora encontrar os elementos $T_{ij}^{'}$ do tensor $T_{ij}$
+no sistema de coordenadas cujos eixos s\~ao paralelos aos eixos
+principais do tensor. Neste sistema de coordenadas $x_i^{'}$, os
+autovetores $g_i^{(k)}$ podem ser escritos como
+\begin{equation}
+   g_i^{(1)}\equiv(1,0,0)\;, \;\; g_i^{(2)}\equiv(0,1,0)\;, \;\; g_i^{(3)}\equiv(0,0,1) \;.
+   \label{auto_vet_x}
+\end{equation}
+Usando estes na equa\c{c}\~ao de autovalores
+\begin{equation}
+   T_{ij}^{'} g_j^{(k)} = \lambda^{(k)} g_i^{(k)} \;,
+   \label{auto_esp_x}
+\end{equation}
+obtemos
+\begin{equation} T_{ij}^{'} = \left(
+\begin{array}{ccc}
+   \lambda^{(1)} & 0 & 0 \\
+   0 & \lambda^{(2)} & 0 \\
+   0 & 0 & \lambda^{(3)}
+   \label{auto_tens_diag}
+\end{array} \right) \;.
+\end{equation}
+E assim, a equa\c{c}\~ao da superf\'{\i}cie do tensor
+(equa\c{c}\~ao (\ref{T_q_especial})) toma a forma
+\begin{equation}
+\lambda^{(1)} x_1^{'2}+\lambda^{(2)} x_2^{'2}+\lambda^{(3)} x_3^{'2}= \pm 1 \;.
+\label{T_q_especial_x}
+\end{equation}
+Podemos ver que $(\lambda^{(i)})^{-1/2}$ representa metade do
+comprimento do {\it i}-\'esimo eixo principal do tensor $T_{ij}$.
+
+   Vimos anteriormente que a equa\c{c}\~ao $T_{ij}x_i x_j = \pm 1$
+\'e invariante com respeito \`a transforma\c{c}\~ao de coordenadas
+e assim a superf\'i{\i}cie do tensor \'e invariante. Isto nos diz
+que a orienta\c{c}\~ao do eixo principal e os autovalores tamb\'em
+s\~ao invariantes. Por outro lado, isto implica que a
+equa\c{c}\~ao caracter\'{\i}stica \'e tamb\'em invariante, ou
+seja,
+\begin{equation} \left|
+\begin{array}{ccc}
+   T_{11}-\lambda & T_{13} & T_{13} \\
+   T_{12} & T_{22}-\lambda & T_{23} \\
+   T_{13} & T_{23} & T_{33}-\lambda
+\end{array} \right|=\left|
+\begin{array}{ccc}
+   \lambda^{(1)}-\lambda & 0 & 0 \\
+   0 & \lambda^{(2)}-\lambda & 0 \\
+   0 & 0 & \lambda^{(3)}-\lambda
+\end{array} \right|=0\;.
+   \label{auto_caract_inv}
+\end{equation}
+Ent\~ao, temos duas equa\c{c}\~oes caractar\'{\i}sticas, que nos
+fornecem dois polin\^omios em $\lambda$. Pela igualdade destes
+temos que seus coeficientes devem ser iguais. Assim, obtemos as
+invariantes do tensor $T_{ij}$,
+\begin{equation} \left\{
+\begin{array}{l}
+T_{ii}=\lambda^{(1)}+\lambda^{(2)}+\lambda^{(3)}\;, \\
+\frac{1}{2}\varepsilon_{ijk}\varepsilon_{imn}T_{jm}T_{kn}=\lambda^{(1)}\lambda^{(2)}+\lambda^{(2)}\lambda^{(3)}+\lambda^{(1)}\lambda^{(3)}\;, \\
+\frac{1}{6}\varepsilon_{ijk}\varepsilon_{lmn}T_{il}T_{jm}T_{kn}=\lambda^{(1)}\lambda^{(2)}\lambda^{(3)}\;.
+\end{array} \right.
+\end{equation}
+
+
+\subsection{Diferencia\c{c}\~ao do Tensor}
+
+Vamos ver a diferencia\c{c}\~ao dos tensores com respeito \`as
+coordenadas temporal e espaciais. Pela pr\'opria defini\c{c}\~ao
+de tensor, considerando um tensor de ordem $k$ temos que
+\begin{equation}
+T^{'}_{m_1,m_2,...,m_k}=\alpha_{m_1 j_1}\alpha_{m_2
+j_2}...\alpha_{m_k j_k}T_{j_1,j_2,...,j_k} \;.
+\label{tensor_mudanca}
+\end{equation}
+Tendo em mente que os cossenos $\alpha_{ij}$ n\~ao dependem do
+tempo, podemos escrever a derivada temporal na forma
+\begin{equation}
+\frac{\partial}{\partial t}(T^{'}_{m_1,m_2,...,m_k})=\alpha_{m_1
+j_1}\alpha_{m_2 j_2}...\alpha_{m_k j_k} \frac{\partial}{\partial
+t}(T_{j_1,j_2,...,j_k}) \;.
+\end{equation}
+Ent\~ao, a derivada no tempo do tensor continua sendo um tensor, e
+al\'em disso, de mesma ordem.
+
+Tomemos o mesmo tensor e fa\c{c}amos a diferencia\c{c}\~ao com
+respeito \`as coordenadas espaciais. Neste caso, os cossenos
+$\alpha_{ij}$ tamb\'em n\~ao dependem da posi\c{c}\~ao. Da
+rela\c{c}\~ao $x_i^{'}=\alpha_{ij}(x_j-x_{oj})$ obtemos as
+derivadas parciais $\partial x_i^{'} / \partial x_j = \alpha_{ij}$
+e $\partial x_j / \partial x_i^{'} = \alpha_{ji}$. Ent\~ao,
+derivando (\ref{tensor_mudanca}) com respeito a uma coordenada
+$x_l^{'}$, obtemos
+\begin{equation}
+\frac{\partial}{\partial
+x_l^{'}}(T^{'}_{m_1,...,m_k})=\alpha_{li}\frac{\partial}{\partial
+x_i}(\alpha_{m_1 j_1}...\alpha_{m_k
+j_k}T_{j_1,...,j_k})=\alpha_{li}\alpha_{m_1 j_1}...\alpha_{m_k
+j_k} \frac{\partial}{\partial x_i}(T_{j_1,...,j_k}) \;.
+\end{equation}
+De onde vemos que a diferencia\c{c}\~ao, com respeito a uma
+coordenada espacial de um tensor, aumenta a ordem do tensor
+resultante em uma unidade.

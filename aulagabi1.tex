@@ -1,0 +1,293 @@
+
+\section{Resolu\cao\ usando s\'eries de Fourier }
+
+Resolvemos a equa\cao\ da onda
+\begin{eqnarray}
+\uxx - \frac{1}{c^{2}}\utt =0
+\end{eqnarray}
+aplicando o m\'etodo de separa\cao\ de vari\'aveis e em seguida
+usando desenvolvimento em s\'eries de Fourier.
+
+\subsection {S\'eries de Fourier}
+
+Seja $f(x)$ uma fun\cao\ peri\'odica de per\ih odo $2\pi$, integr\'avel e absolutamente integr\'avel. Considere uma expans\ao\ de $f(x)$ como abaixo:
+\begin{eqnarray}
+f(x) = \frac{a_{0}}{2} + \sum_{n=1}^{\infty} (a_{n}\cos (nx) +
+b_{n}\sin (nx)).
+\end{eqnarray}
+
+Suponha que a s\'erie convirja uniformemente no intervalo $-\pi
+\leq x \leq \pi$. Multiplicando a equa\cao\ por $\cos (mx)$, com $m$
+inteiro positivo, obtemos:
+\[
+f(x)\cos (mx) = \frac{a_{0}}{2}\cos (mx) + \sum_{n=1}^{\infty}(a_{n}\cos (nx)\cos (mx) + b_{n}\sin (nx)\cos (mx)).
+\]
+
+Como a s\'erie continua sendo uniformemente convergente, podemos
+integrar termo a termo:
+\begin{eqnarray*}
+\int_{-\pi}^{\pi} f(x)\cos (mx)dx &=& \int_{-\pi}^{\pi} \frac{a_{0}}{2}cos (mx)dx +
+\sum_{n=1}^{\infty}\int_{-\pi}^{\pi} a_{n}\cos (nx)\cos (mx)dx \\
+&+& \sum_{n=1}^{\infty}\int_{-\pi}^{\pi} b_{n}\sin (nx)\cos
+(mx)dx.
+\end{eqnarray*}
+
+Para resolver a equa\cao\ acima usamos as propriedades de ortogonalidade
+de senos e cossenos. Observe que as somas na equa\cao\ acima come\c cam
+em $n=1$, portanto os valores de $m=n=0$ n\ao\ nos interessam:
+\begin{enumerate}
+\item $\int_{-\pi}^{\pi} \sin (nx)\cos (mx)dx = 0$ \\
+{\bf Demonstra\cao:}
+\begin{enumerate}
+\item $m \neq n$:
+\begin{eqnarray*}
+\int_{-\pi}^{\pi} \sin (nx)\cos (mx)dx &=&
+    \int_{-\pi}^{\pi} \frac{1}{2} \sin (n+m)xdx
++ \int_{-\pi}^{\pi} \frac{1}{2}\sin (n-m)xdx \\
+&=& \left[-\frac{1}{2}\frac{\cos(n+m)x}{n+m} 
+    - \frac{1}{2}\frac{\cos(n-m)x}{n-m}\right]_{-\pi}^{\pi} = 0.
+\end{eqnarray*}
+\item $m = n$: 
+\begin{eqnarray*}
+\int_{-\pi}^{\pi} \sin (nx)\cos (nx)dx = \int_{-\pi}^{\pi} \frac{1}{2} \sin (2n)xdx 
+= \left[-\frac{1}{2}\frac{\cos (2n)x}{2n}\right]_{-\pi}^{\pi} = 0.
+\end{eqnarray*}
+\end{enumerate}
+\item $ \int_{-\pi}^{\pi} \cos (nx)\cos (mx)dx =
+\left\{
+\begin{array}{ll}  
+ 0, & m \neq n \\ 
+ \pi, & m = n
+\end{array}
+\right.$ \\
+{\bf Demonstra\cao:}
+\begin{enumerate}
+\item $m \neq n$:
+\begin{eqnarray*} 
+\int_{-\pi}^{\pi} \cos (nx)\cos (mx)dx &=& \int_{-\pi}^{\pi} \frac{1}{2}\cos (n+m)xdx
++ \int_{-\pi}^{\pi} \frac{1}{2}\cos (n-m)xdx \\
+&=& \left[\frac{1}{2}\frac{\sin (n+m)x}{n+m} + \frac{1}{2}\frac{\sin (n-m)x}{n-m}\right]_{-\pi}^{\pi} = 0. 
+\end{eqnarray*}
+\item $m = n$: 
+\begin{eqnarray*}
+\int_{-\pi}^{\pi} \cos (nx)\cos (mx)dx &=& \int_{-\pi}^{\pi} \frac{1}{2}\cos (n+m)xdx
++ \int_{-\pi}^{\pi} \frac{1}{2}\cos (n-m)xdx \\
+&=& \left[\frac{1}{2}\frac{\sin (n+m)}{n+m}x + \int_{-\pi}^{\pi} \frac{1}{2}dx\right]_{-\pi}^{\pi} = 0 + \pi = \pi.
+\end{eqnarray*}
+\end{enumerate}
+\item $ \int_{-\pi}^{\pi} \sin (nx)\sin (mx)dx = 
+\left\{
+\begin{array}{ll}
+0, &   m \neq n \\
+\pi, &  m = n
+\end{array}
+\right.$  \\
+{\bf Demonstra\cao:} An\'aloga \`a anterior.
+\end{enumerate}
+
+Assim todos os termos da soma do lado direito da equa\cao\ se
+anulam exceto para o caso $n=m$. Ent\ao\ temos:
+\[\int_{-\pi}^{\pi} f(x)\cos (mx)dx = a_{m}\pi,\]
+e conseguimos assim determinar os coeficientes $a_{m}$.
+
+Para determinar os $b_{m}$ basta multiplicar (2) por $\sin (mx)$ e
+repetir os c\'alculos. Ao final temos:
+\[
+\int_{-\pi}^{\pi} f(x)\sin (mx)dx = b_{m}\pi.
+\]
+Para obter $a_{0}$ integramos (2):
+\[
+\int_{-\pi}^{\pi} f(x)dx =
+\int_{-\pi}^{\pi} \frac{a_{0}}{2}dx +
+   \sum_{n=1}^{\infty}\int_{-\pi}^{\pi} a_{n}\cos (nx)dx +
+   \sum_{n=1}^{\infty}\int_{-\pi}^{\pi} b_{n}\sin (nx)dx =
+\left[ \frac{a_{0}}{2}x\right]_{-\pi}^{\pi} = a_{0}\pi.
+ \]
+Portanto temos:
+\begin{eqnarray*}
+a_{n} &=& \frac{1}{\pi}\int_{-\pi}^{\pi} f(x)\cos (nx)dx \\
+b_{n} &=& \frac{1}{\pi}\int_{-\pi}^{\pi} f(x)\sin (nx)dx \\
+a_{0} &=& \frac{1}{\pi}\int_{-\pi}^{\pi} f(x)dx.
+\end{eqnarray*}
+Mas, se ao inv\'es de representar a fun\cao\ no intervalo $(-\pi,\pi)$
+desejarmos representar uma $f(x)$ de per\ih odo $2l$ no intervalo $(-l,l)$,
+fazemos:
+\begin{eqnarray*}
+a_{n} &=& \frac{1}{l}\int_{-l}^{l} f(x)\cos \frac{n\pi x}{l}dx, \\
+b_{n} &=& \frac{1}{l}\int_{-l}^{l} f(x)\sin \frac{n\pi x}{l}dx, \\
+a_{0} &=& \frac{1}{l}\int_{-l}^{l} f(x)dx. 
+\end{eqnarray*}
+No caso especial em que $f(x)$ \'e uma fun\cao\ par ou \ih mpar temos:
+\begin{enumerate}
+\item $f(x)$ \'e uma fun\cao\ par:
+\begin{eqnarray*}
+b_{n} &=& 0, \\
+a_{n} &=& \frac{2}{l}\int_{0}^{l} f(x)\cos \frac{n\pi x}{l}dx.
+\end{eqnarray*}
+\item $f(x)$ \'e uma fun\cao\ \ih mpar:
+\begin{eqnarray*}
+a_{n} &=& 0, \\
+b_{n} &=& \frac{2}{l}\int_{0}^{l} f(x)\sin \frac{n\pi x}{l}dx.
+\end{eqnarray*}
+\end{enumerate}
+
+\subsection {Resolu\cao\ da equa\cao\ da onda ac\'ustica}
+
+Resolvemos abaixo a equa\cao\ da onda de uma corda finita (deduzida na
+Se\cao\ \ref{dedonda}) com condi\coes\ iniciais e de contorno 
+como segue
+\begin{eqnarray*}
+\uxx - \frac{1}{c^{2}}\utt = 0,  \hspace{1cm} 0 < x < l, \; t > 0 \\
+\left\{
+\begin{array}{ll}
+u(x,0) = f(x), & 0\leq x\leq l, \; t\leq 0 \\
+\frac{\partial u(x,0)}{\partial t} = g(x) & \\
+u(0,t) = 0 & \\
+u(l,t) = 0. &
+\end{array}
+\right.
+\end{eqnarray*}
+
+Procuramos solu\coes\ da forma
+\[u(x,t) = X(x)T(t),\]
+onde $X$ \'e fun\cao\ somente de $x$ e $T$ \'e fun\cao\ somente de
+$t$. Assim $X$ deve satisfazer:
+\[X(0) = 0\]
+\[X(l) = 0.\]
+Depois tentamos escolher $T$ de maneira a satisfazer as
+condi\coes\ iniciais.
+
+Substituindo $u(x,t)$ na EDP temos:
+\begin{eqnarray}
+\utt & = & \frac{d^{2}T}{dt^{2}}X(x)\nonumber \\ 
+\uxx & = & \frac{d^{2}X}{dx^{2}}T(x)\nonumber \\ 
+\frac{1}{X}\frac{d^{2}X}{dx^{2}} & = &
+   \frac{1}{c^{2}T}\frac{d^{2}T}{dt^{2}} \; .
+\end{eqnarray}
+Para que esta igualdade seja satisfeita para qualquer $x$ e $t$, ambos
+os lados de (3) devem ser constantes, portanto:
+\[
+\frac{1}{X}\frac{d^{2}X}{dx^{2}} = \lambda =
+\frac{1}{c^{2}T}\frac{d^{2}T}{dt^{2}},
+\]
+onde $\lambda$ \'e chamada de constante de separa\cao.
+
+Reescrevendo para $X$ temos:
+\[
+\frac{d^{2}X}{dx^{2}} = \lambda X,
+\]
+que nos fornece uma simples EDO. Esta EDO
+possui solu\coes\ do tipo
+\[
+X(x) = e^{px},
+\]
+onde $p = \pm\sqrt{\lambda}$.
+
+Veja que n\ao\ estamos interessados na 
+solu\cao\ trivial que \'e aquela que satizfaz somente o caso $f(x) = g(x) = 0$. Analisemos
+ent\ao\ as seguinte situa\coes:
+\begin{enumerate}
+\item $\lambda > 0$ 
+\[X(x) = C_{1}e^{\sqrt{\lambda}x} + C_{2}e^{-\sqrt{\lambda}x},\]
+aplicando as condi\coes\ de contorno temos:
+\begin{eqnarray*}
+X(0) = C_{1} + C_{2} = 0 \\
+X(l) = C_{1}e^{\sqrt{\lambda}l} + C_{2}e^{-\sqrt{\lambda}l} = 0 \\
+\Rightarrow\ C_{1} = C_{2} = 0
+\end{eqnarray*}
+\item $\lambda = 0$ 
+\[X(x) = C_{1}x + C_{2},\]
+aplicando as condi\coes\ de contorno temos:
+\begin{eqnarray*}
+X(0) = C_{2} = 0 \\
+X(l) = C_{1}l + C_{2} = 0 \\
+\Rightarrow C_{1} = C_{2} = 0
+\end{eqnarray*}
+\item $\lambda < 0$ 
+\[X(x) = C_{1}\cos (\sigma x) + C_{2}\sin (\sigma x),\] onde 
+\[\lambda = -\sigma^{2}.\]
+Aplicando as condi\coes\ de contorno: \\
+\begin{eqnarray*}
+X(0) = C_{1} = 0 \\ 
+X(l) = C_{1}\cos (\sigma l) + C_{2}\sin (\sigma l) = 0 \\
+\Rightarrow C_{1} = 0, C_{2}\sin (\sigma l) = 0
+\end{eqnarray*}
+como n\ao\ queremos a solu\cao\ trivial (que \'e obtida no caso em que $C_{2} = 0$), queremos 
+\[C_{2} \neq 0, \Rightarrow \sin (\sigma l) = 0 \]
+\[\Rightarrow (\sigma l) = n\pi, n = \pm1, \pm2, .... \Rightarrow \lambda =
+\frac{-n^{2}\pi^{2}}{l^{2}}\] (autovalores) 
+\[\Rightarrow X_{n}(x) = C_{n}\sin (\frac{n\pi x}{l})\] (autofun\coes).
+\end{enumerate}
+N\ao\ \'e necess\'ario considerar os valores de $\sigma < 0$ pois
+estes levam a autofun\coes\ com somente o sinal trocado.
+
+Agora precisamos de um $T_{n}(t)$ que corresponda a cada
+$X_{n}(x)$ satisfazendo
+\[\frac{1}{X_{n}}\frac{d^{2}X_{n}}{dx^{2}} = \lambda = \frac{1}{c^{2}T_{n}}\frac{d^{2}T_{n}}{dx^{2}},\]
+portanto,
+\[T_{n}(t) = K_{n}\cos (\frac{n\pi ct}{l}) + Q_{n}\sin (\frac{n\pi ct}{l}).\]
+
+Encontramos ent\ao\ um n\'umero infinito de fun\coes\ candidatas \`a
+solu\cao\ 
+\[u_{n}(x,t) = A_{n}\cos (\frac{n\pi ct}{l})\sin (\frac{n\pi x}{l}) +
+B_{n}\sin (\frac{n\pi ct}{l})\sin (\frac{n\pi x}{l}),\]
+onde cada uma dessas fun\coes\ satisfaz as condi\coes\ de
+fronteira. 
+
+Utilizando o princ\ih pio da superposi\cao, pela EDP e as
+condi\coes\ de contorno serem homog\^ eneas lineares, sabendo que
+a combina\cao\ linear de uma solu\cao\ $u_{n}$ com uma solu\cao\
+$u_{m}$ tamb\'em \'e solu\cao\, e que por indu\cao\ vemos que uma
+combina\cao\ linear de um n\'umero finito de solu\coes\ tamb\'em
+\'e solu\cao, podemos supor que uma s\'erie do tipo
+\[y(x,t) = \sum_{n=1}^{\infty}(A_{n}\cos \frac{n\pi ct}{l})\sin (\frac{n\pi
+cx}{l}) + \sum_{n=1}^{\infty}(B_{n}\sin \frac{n\pi ct}{l})\sin (\frac{n\pi
+cx}{l}),\]
+tamb\'em \'e solu\cao\ desde que a s\'erie convirja.
+
+Agora devemos escolher dentre estas, ajustando
+corretamente $A_{n}$ e $B_{n}$, de maneira que se satisfa\c ca as
+condi\coes\ iniciais. Vemos que $f(x)$ e $g(x)$ devem ser dos tipos:
+\begin{eqnarray*}
+u(x,0) = f(x) = \sum_{n=1}^{\infty}A_{n}\sin \frac{n\pi x}{l} \\
+\frac{\partial u}{\partial t}(x,0) = g(x) = \sum_{n=1}^{\infty}B_{n}\frac{n\pi c}{l}\sin \frac{n\pi x}{l} 
+\end{eqnarray*}
+
+Vemos que a equa\cao\ acima satisfaz as condi\coes\ de contorno e que
+satisfar\'a \`a EDP se for 2 vezes diferenci\'avel e se $A_{n}$
+e $B_{n}$ forem ajustados. Note que $y(x,t)$ \'e uma s\'erie de senos de
+Fourier em $x$. Logo $f(x)$ e $g(x)$ agora s\ao\ fun\coes\ do
+tipo:
+\begin{eqnarray*}
+u(x,0) = g(x) = \sum_{n=1}^{\infty}B_{n}\frac{n\pi c}{l}\sin (\frac{n\pi x}{l}) \\
+\frac{\partial u}{\partial t} = f(x) = \sum_{n=1}^{\infty}A_{n}\sin (\frac{n\pi x}{l}).
+\end{eqnarray*}
+
+Para que $f(x)$ e $g(x)$ possam ser desenvolvidas em s\'erie de senos de Fourier essas fun\coes\ devem ser:
+\begin{enumerate}
+\item fun\coes\ \ih mpares
+\item fun\coes\ peri\'odicas de per\ih odo $2l$
+\item fun\coes\ integr\'aveis e absolutamente integr\'aveis
+\end{enumerate}
+Ent\ao\,para $f(x)$ por exemplo, constru\ih mos uma $f^{'}(x)$ tal que
+\begin{enumerate}
+\item $f^{'}(x) = f(x)$, $0 \leq x \leq l$
+\item $f^{'}(x) = f^{'}(x + 2l)$
+\item $f^{'}(-x) = -f^{'}(x)$
+\end{enumerate}
+
+Em seguida expandimos $f^{'}(x)$ em s\'erie de senos de Fourier no
+intervalo $0 \leq x \leq l$. E para $g(x)$ procedemos
+de maneira semelhante.
+
+Ent\ao\, se $f$ e $g$ puderem ser desenvolvidas em s\'erie de senos de
+Fourier podemos encontrar $A_{n}$ e $B_{n}$ e ent\ao\ teremos uma
+express\ao\ para $y(x,t)$.
+
+%\begin{thebibliography}{99}
+%\bibitem{Butkov} Butkov, E., 1988, {\em F\ih sica Matem\'atica},
+%Guanabara Koogan, Rio de Janeiro, RJ.
+%\bibitem{Djairo} Figueiredo, D. G., 1977, {\em An\'alise de Fourier
+%e equa\coes\ diferenciais parciais}, Projeto Euclides - IMPA, RJ.
+%\end{thebibliography}
+

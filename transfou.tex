@@ -1,0 +1,361 @@
+
+\section{Transformadas de Fourier}
+
+\subsection{Motiva\cao}
+
+Um dos principais objetivos da Transformada de Fourier \'e ``transformar''
+uma equa\cao\ dife\-rencial em uma equa\cao\ alg\'ebrica. Para isso a
+transfomada atua como uma ``caixa'' onde do lado esquerdo entra uma
+fun\cao\ que, ap\'os ser ``transformada'', sai do lado direito como uma
+nova fun\cao\ que, na maioria da vezes, \'e mais f\'acil de ser
+resolvida.
+
+Como exemplo de utiliza\cao\ de um tipo de caixa temos a determina\cao\
+dos coeficientes de uma s\'erie de Fourier, onde damos como entrada
+uma fun\cao\ escrita como s\'erie de Fourier.
+
+Queremos ent\ao\ estudar como tal caixa funciona e que tipo de fun\coes\
+podem entrar nesta caixa.
+
+
+\subsection{Defini\cao\ da Transformada de Fourier} 
+
+Seja $f(t)$ integr\'avel em $[-L,L]$ e peri\'odica de per\ih odo $2L$.
+Ent\ao, sabemos que
+\begin{eqnarray}
+f(t) = \sum_{n=-\infty}^{\infty} c_n e^{i \omega_n t} \; , 
+\hspace{2cm} -L < t < L
+\end{eqnarray}
+\'e uma representa\cao\ de $f(t)$ por s\'erie de Fourier.
+
+O conjunto dos n\'umeros $c_n$ poder ser considerado com uma fun\cao\
+da vari\'avel $n$, $c(n)$, isto \'e, esta fun\cao\ est\'a definida em
+um conjunto discreto de valores da vari\'avel independente $n$,
+``n\'umero de ondas''. Podemos tamb\'em pensar em $c_n$ como uma fun\cao\
+da ``freq\"u\^encia angular''
+\begin{eqnarray}
+\omega_n = \frac{n \pi}{L} \; , \hspace{1.5cm} n \in Z \!\!\! Z \; .
+\end{eqnarray}
+
+Assim, se $L$ for grande, ent\ao\ as freq\"u\^encias est\ao\ muito
+pr\'oximas pois $\Delta \omega = (\pi/L)\Delta n$. Isto implica
+$\Delta \omega$ pequeno, logo haver\'a numa mudan\c ca na escala.
+Assim, se torna natural pensar na possibilidade de um conjunto cont\ih nuo
+quando $L \longrightarrow \infty$ e todas as freq\"u\^encias est\ao\
+presentes.
+
+Da s\'erie de Fourier, sabemos que
+\begin{eqnarray} \label{sf}
+f(t) = \sum_{n=-\infty}^{\infty} c_n e^{(i n \pi t)/L} \; ,
+\hspace{2cm} -L < t < L,
+\end{eqnarray}
+onde
+\begin{eqnarray} \label{csf}
+c_n = \frac{1}{2L} \int_{-L}^{L} f(t) e^{(-i n \pi t)/L} dt \; .
+\end{eqnarray}
+
+Quando fazemos $L \longrightarrow \infty$ n\ao\ fica t\ao\ f\'acil
+o c\'alculo de (\ref{sf}) j\'a que $c_n$ tende para zero em (\ref{csf}).
+Assim usaremos as freq\"u\^encias, isto \'e, $\omega = (n \pi)/L$, ou
+$\Delta \omega = (\pi/L)\Delta n$, que, para $n \in Z \!\!\! Z$, temos
+$\Delta n = 1$ e $\Delta \omega (L/\pi) = 1$. Podemos ent\ao\
+multiplicar cada termo de (\ref{sf}) por $\Delta \omega (L/\pi)$
+obtendo
+\begin{eqnarray}
+f(t) = \sum_{n=-\infty}^{\infty} \left(\frac{L}{\pi} c_n\right)
+\Delta \omega e^{(i n \pi t)/L} \; ,
+\end{eqnarray}
+onde
+\begin{eqnarray}
+\frac{L}{\pi} c_n = \frac{1}{2\pi} \int_{-L}^{L} f(t)
+e^{(-i n \pi t)/L} dt \; .
+\end{eqnarray}
+
+Adotando integralmente a nota\cao\ com $\omega$ e escrevendo
+$\frac{L}{\pi} c_n = c_L(\omega)$, obtemos
+\begin{eqnarray}
+c_L(\omega) = \frac{1}{2\pi} \int_{-L}^{L} f(t) e^{-i \omega t} dt
+\hspace{1cm} \mbox{e} \hspace{1cm} f(t) =
+\sum_{(L\omega)/\pi=-\infty}^{\infty} c_L(\omega) \Delta \omega
+e^{i \omega t} \; .
+\end{eqnarray}
+
+Se fizermos, agora, $L \longrightarrow \infty$, temos
+\begin{eqnarray}
+c(\omega) = \lim_{L \longrightarrow \infty} c_L(\omega) =
+\frac{1}{2\pi} \int_{-\infty}^{\infty}
+f(t) e^{-i \omega t} dt \hspace{1cm} \mbox{e} \hspace{1cm} f(t) =
+\int_{-\infty}^{\infty} c(\omega) e^{i \omega t} d\omega \; .
+\end{eqnarray}
+
+Assim, adotando agora a nota\cao\ $F(\omega) = \sqrt{2\pi} c(-\omega)$,
+obtemos
+\begin{eqnarray} \label{tf}
+F(\omega) = \frac{1}{\sqrt{2\pi}} \int_{-\infty}^{\infty} f(t)
+e^{i \omega t} dt \hspace{1cm} \mbox{e} \; ,  
+\end{eqnarray}
+\begin{eqnarray} \label{tfi}
+f(t) = \frac{1}{\sqrt{2\pi}} \int_{-\infty}^{\infty} F(\omega)
+e^{-i \omega t} d\omega \; ,
+\end{eqnarray}
+onde (\ref{tf}) \'e a chamada transformada de Fourier da fun\cao\
+$f(t)$ e, reciprocamente, (\ref{tfi}) \'e a chamada transformada de
+Fourier inversa de $f(t)$. Estas diferem uma da outra apenas pelo
+sinal da fun\cao\ exponencial.                                   
+
+\subsection{A transformada de Fourier e sua inversa} 
+Na se\cao\ anterior, conjecturamos a validade das f\'ormulas
+(\ref{tf}) e (\ref{tfi}). Na f\'ormula (\ref{tf}) n\ao\ h\'a
+problemas de exist\^encia se $f(t)$ satisfaz determinadas restri\coes,
+isto \'e, se ao escrevermos (\ref{tf}) da forma
+\begin{eqnarray}
+\int_{-\infty}^{\infty} f(t) e^{i \omega t} dt =
+\lim_{M,N \longrightarrow \infty} \int_{-M}^{N} f(t) e^{i \omega t} dt \; ,
+\end{eqnarray}
+esta satisfaz
+\begin{itemize}
+\item[(i)] $f$ ser seccionalmente cont\ih nua em cada intervalo $[-M,N]$, e
+\item[(ii)] $\int_{-\infty}^{\infty} |f(t)| dt < \infty$
+(absolutamente integr\'avel).
+\end{itemize}
+J\'a na f\'ormula (\ref{tfi}) o problema \'e saber se a fun\cao\ original
+$f(t)$ pode ser recuperada por esta, o que \'e intuitivo j\'a que esta
+foi constru\'ida satisfazendo as condi\coes\ de contru\cao\ da transformada
+direta.
+
+Vemos ent\ao\ um exemplo da aplica\cao\ da transformada de Fourier
+e sua inversa. 
+\\
+{\bf Exemplo 1:} Considere a fun\cao\ de probabilidade Gaussiana
+\begin{eqnarray}
+f(t) = N e^{-\alpha t^2} \hspace{1.5cm} (N, \alpha \;\; \mbox{constantes}).
+\end{eqnarray}
+
+Sua transformada de Fourier $F(\omega)$ \'e obtida fazendo
+\begin{eqnarray}
+F(\omega) = \frac{1}{\sqrt{2\pi}}\int_{-\infty}^{\infty} f(t)
+e^{i \omega t} dt = \frac{N}{\sqrt{2\pi}}\int_{-\infty}^{\infty}
+e^{-\alpha t^2} e^{i \omega t} dt.
+\end{eqnarray}
+
+Fazendo $-\alpha t^2 + i \omega t = -(t\sqrt{\alpha} -
+i\omega/2\sqrt{\alpha})^2 - \omega^2/4\alpha$ e chamando
+$u = t\sqrt{\alpha} - i\omega/2\sqrt{\alpha}$, obtemos
+\begin{eqnarray}
+F(\omega) = \frac{N}{\sqrt{2\pi\alpha}} \; e^{-\omega^2/4\alpha}
+\int_{-\infty}^{\infty} e^{-u^2} du = N \sqrt{\frac{1}{2\alpha}}\;
+e^{-\omega^2/4\alpha} \; .
+\end{eqnarray}
+
+\'E interessante observar que $F(\omega)$ \'e tamb\'em uma fun\cao\
+de probabilidade Gaussiana com pico na origem, mon\'otona decrescente
+quando $\omega \longrightarrow \pm \infty$. Contudo, se $f(t)$ \'e
+muito pontiaguda ($\alpha$ grande), ent\ao\ $F(\omega)$ fica achatada
+e vice-versa. Esta \'e uma caracter\ih stica geral da transformada
+de Fourier.
+
+A integral inversa
+\begin{eqnarray}
+\frac{1}{\sqrt{2\pi}}\int_{-\infty}^{\infty} F(\omega)
+e^{-i \omega t} d\omega = \frac{1}{\sqrt{2\pi}} \frac{N}{\sqrt{2\alpha}}
+\int_{-\infty}^{\infty} e^{-\omega^2/4\alpha} e^{-i \omega t} d\omega,
+\end{eqnarray}
+pode ser calculada da mesma forma fazendo
+\begin{eqnarray}
+\alpha' = \frac{1}{4\alpha} \hspace{1cm} \mbox{e} \hspace{1cm} t' = - t, 
+\end{eqnarray}
+ent\ao\
+\begin{eqnarray}
+\frac{1}{\sqrt{2\pi}}\int_{-\infty}^{\infty} F(\omega)
+e^{-\alpha' \omega^2} e^{i t' \omega} d\omega =
+\frac{1}{\sqrt{2\alpha'}} \; e^{-t'^2/4\alpha'} = \sqrt{2 \alpha} \;
+e^{-\alpha t^2} \; ,
+\end{eqnarray}
+de maneira que
+\begin{eqnarray}
+\frac{1}{\sqrt{2\pi}} \int_{-\infty}^{\infty} 
+e^{-i \omega t} d\omega = \frac{N}{\sqrt{2\alpha}} \sqrt{2\alpha} \;
+e^{-\alpha t^2} = N e^{-\alpha t^2} = f(t) \; , 
+\end{eqnarray}
+que valida (\ref{tfi}).
+
+Assim, podemos tamb\'em trabalhar com uma id\'eia de caixa inversa,
+ou seja, uma caixa onde a entrada \'e uma equa\cao\ alg\'ebrica e
+a sa\ih da uma equa\cao\ diferencial.
+
+
+\subsection{Propriedades da transformada de Fourier}
+
+Vejamos algumas propriedades das transformadas de Fourier, onde
+$F(\omega) = \TF{f(t)}$
+\begin{enumerate}
+\item Se $f(t)$ \'e real ent\ao\ $F(-\omega) =
+\overline{F(\omega)}$ (Conjuga\cao)
+
+{\bf Dem.:} 
+\[F(-\omega) = \frac{1}{\sqrt{2\pi}} \int_{-\infty}^{\infty}
+f(t) e^{i(-\omega)t} dt = \frac{1}{\sqrt{2\pi}} \int_{-\infty}^{\infty}
+f(t) e^{-i \omega t} dt = \overline{F(\omega)} \; .\]
+
+\item Se $f(t)$ \'e par e real, $F(\omega)$ \'e real
+
+{\bf Dem.:} 
+\[F(\omega) = \frac{1}{\sqrt{2\pi}} \int_{-\infty}^{\infty}
+f(t) e^{i \omega t} dt = \frac{1}{\sqrt{2\pi}} \left[ 
+\int_{-\infty}^{\infty} f(t) \cos(\omega t) dt +
+i \int_{-\infty}^{\infty} f(t) \sin(\omega t) dt \right] \; ,\]
+mas sabemos que o produto de uma fun\cao\ par ($f$) e uma fun\cao\
+\ih mpar ($\sin$) \'e \ih mpar e a integral de uma fun\cao\ \ih mpar
+\'e par. Logo o segundo termo da \'ultima express\ao\ acima \'e zero.
+Portanto, $F(\omega)$ \'e real.
+
+\item Se $f(t)$ \'e \ih mpar e real, $F(\omega)$ \'e imagin\'ario puro
+
+{\bf Dem.:} Como no caso anterior sabemos que o produto de uma fun\cao\
+\ih mpar ($f$) e uma fun\cao\ par ($\cos$) \'e \ih mpar e a integral
+de uma fun\cao\ \ih mpar \'e par. Logo o primeiro termo da \'ultima
+express\ao\ do item anterior \'e zero. Portanto, $F(\omega)$ \'e
+imagin\'ario puro.
+
+\item $\TF{f(t)e^{at}} = F(\omega-ai)$ (Amortecimento)
+
+{\bf Dem.:} 
+\begin{eqnarray*}
+F(\omega-ai) &=& \frac{1}{\sqrt{2\pi}} \int_{-\infty}^{\infty}
+f(t) e^{i (\omega-ai) t} dt = \frac{1}{\sqrt{2\pi}}
+\int_{-\infty}^{\infty} f(t) e^{i \omega t} e^{at} dt \\
+&=& \frac{1}{\sqrt{2\pi}} \int_{-\infty}^{\infty} [f(t) e^{at}]
+ e^{i \omega t} dt = \TF{f(t) e^{at}}.
+\end{eqnarray*}
+
+\item $\TF{f(t-a)} = e^{i \omega a} F(\omega)$ (Deslocamento)
+
+{\bf Dem.:}
+\begin{eqnarray*}
+e^{i\omega a} F(\omega) = e^{i\omega a} \frac{1}{\sqrt{2\pi}}
+\int_{-\infty}^{\infty} f(y) e^{i \omega y} dy =
+\frac{1}{\sqrt{2\pi}}\int_{-\infty}^{\infty}f(y) e^{i\omega(y+a)}dy \; ,
+\end{eqnarray*}
+onde, ao fazermos  $t = y + a$, temos
+\begin{eqnarray*}
+= \frac{1}{\sqrt{2\pi}} \int_{-\infty}^{\infty} f(t-a) e^{i\omega t}dt
+= \TF{f(t-a)} \; .
+\end{eqnarray*}
+
+
+\item $\TF{f'(t)} = -i \omega F(\omega)$ (Diferencia\cao)
+
+{\bf Dem.:}
+\begin{eqnarray*}
+\TF{f'(t)} = \frac{1}{\sqrt{2\pi}} \int_{-\infty}^{\infty} f'(t)
+e^{i \omega t} dt \; ,
+\end{eqnarray*}
+onde, integrando por partes, temos
+\begin{eqnarray*}
+= \frac{1}{\sqrt{2\pi}} \left[ \left(f(t)
+e^{i\omega t}\right)_{-\infty}^{\infty}  -
+\int_{-\infty}^{\infty} f(t) i \omega e^{i \omega t} dt \right] \; .
+\end{eqnarray*}
+Como $f(t) \longrightarrow 0$ quando $t \longrightarrow \pm \infty$,
+chegamos em
+\begin{eqnarray*}
+= -\frac{i\omega}{\sqrt{2\pi}} \int_{-\infty}^{\infty} f(t)
+e^{i\omega t} dt = - i\omega F(\omega) \; . 
+\end{eqnarray*}
+
+E tamb\'em,
+\begin{eqnarray*}
+\TF{f''(t)} = -\frac{i\omega}{\sqrt{2\pi}} \int_{-\infty}^{\infty} f'(t)
+e^{i\omega t} dt = \frac{(-i\omega)^2}{\sqrt{2\pi}}
+\int_{-\infty}^{\infty} f(t) e^{i\omega t} dt = -\omega^2 F(\omega) \; .
+\end{eqnarray*}
+
+\item {\bf Teorema de Parseval:} 
+\begin{eqnarray*}
+\int_{-\infty}^{\infty} |F(\omega)|^2 d\omega =
+\int_{-\infty}^{\infty}|f(t)|^2 dt
+\end{eqnarray*}
+
+{\bf Dem.: }Seja
+\begin{eqnarray*}
+G(-\omega) = \frac{1}{\sqrt{2\pi}} \int_{-\infty}^{\infty} g(t)
+e^{-i\omega t} dt \; .
+\end{eqnarray*}
+Ent\ao,
+\begin{eqnarray*}
+\int_{-\infty}^{\infty} F(\omega)G(-\omega) d\omega &=&
+\int_{-\infty}^{\infty} F(\omega) \left[\frac{1}{\sqrt{2\pi}}
+\int_{-\infty}^{\infty} g(t) e^{-i\omega t} dt \right] d\omega \\
+&=& \int_{-\infty}^{\infty} g(t) \left[\frac{1}{\sqrt{2\pi}}
+\int_{-\infty}^{\infty} F(\omega) e^{-i\omega t} d\omega \right] dt
+= \int_{-\infty}^{\infty} f(t)g(t) dt \; ,
+\end{eqnarray*}
+que \'e o segundo Teorema de Parseval. Agora se tomarmos $g(t)=
+\overline{f(t)} $ e sabendo que $G(-\omega)=\overline{F(\omega)}$,
+pois
+\begin{eqnarray*}
+G(-\omega) = \frac{1}{\sqrt{2\pi}} \int_{-\infty}^{\infty}
+g(t) e^{i(-\omega)t} dt = \frac{1}{\sqrt{2\pi}} \int_{-\infty}^{\infty}
+\overline{f(t)} e^{-i \omega t} dt = \overline{F(\omega)} \; ,
+\end{eqnarray*}
+temos
+\begin{eqnarray*}
+\int_{-\infty}^{\infty} F(\omega)\overline{F(\omega)} d\omega = 
+\int_{-\infty}^{\infty} f(t)\overline{f(t)} dt \Rightarrow
+\int_{-\infty}^{\infty} |F(\omega)|^2 d\omega =
+\int_{-\infty}^{\infty}|f(t)|^2 dt \; .
+\end{eqnarray*}
+
+\item {\bf Teorema da Convolu\cao:}
+\begin{eqnarray*}
+H(\omega) = F(\omega)G(\omega) \Longleftrightarrow
+h(t) = (f*g) = (g*f) = \frac{1}{\sqrt{2\pi}} \int_{-\infty}^{\infty}
+g(\xi)f(t-\xi) d\xi \; .
+\end{eqnarray*}
+{\bf Dem.:} 
+\begin{eqnarray*}
+(\Rightarrow) \; \; h(t) &=& \frac{1}{\sqrt{2\pi}}
+\int_{-\infty}^{\infty} F(\omega)G(\omega) e^{-i\omega t} d\omega
+= \frac{1}{2\pi}\int_{-\infty}^{\infty} F(\omega)e^{-i\omega t}
+\left[\int_{-\infty}^{\infty} g(\xi) e^{i\omega \xi} d\xi \right]
+d\omega \\
+&=& \frac{1}{2\pi}\int_{-\infty}^{\infty} g(\xi)
+\left[ \int_{-\infty}^{\infty} F(\omega) e^{-i\omega (t-\xi)} d\omega
+\right] d\xi = \frac{1}{2\pi} \int_{-\infty}^{\infty} g(\xi)
+\left[ \sqrt{2\pi} f(t-\xi)\right] d\xi \\
+&=& \frac{1}{\sqrt{2\pi}} \int_{-\infty}^{\infty} g(\xi)f(t-\xi)
+d\xi \; .
+\end{eqnarray*}
+
+\begin{eqnarray*}
+(\Leftarrow) \; \; H(\omega) &=& \frac{1}{\sqrt{2\pi}} \int_{-\infty}^{\infty}
+h(x) e^{i \omega t} dt = \frac{1}{\sqrt{2\pi}} \int_{-\infty}^{\infty}
+\left[\frac{1}{\sqrt{2\pi}} \int_{-\infty}^{\infty} g(\xi) f(x-\xi) d\xi
+\right] e^{i \omega t} dt \\
+&=& \frac{1}{\sqrt{2\pi}} \int_{-\infty}^{\infty} g(\xi) \left[
+\frac{1}{\sqrt{2\pi}} \int_{-\infty}^{\infty} f(x-\xi) e^{i \omega t} dt
+\right] d\xi \; ,
+\end{eqnarray*}
+onde, para $y = t - \xi$ e $dy = dt$, temos
+\begin{eqnarray*}
+&=& \frac{1}{\sqrt{2\pi}} \int_{-\infty}^{\infty} g(\xi) \left[
+\frac{1}{\sqrt{2\pi}} \int_{-\infty}^{\infty} f(y) e^{i \omega y} dy
+\right] e^{i \omega \xi} d\xi = \frac{1}{\sqrt{2\pi}}
+\int_{-\infty}^{\infty} g(\xi) F(\omega) e^{i \omega \xi} d\xi \\
+&=& F(\omega) \frac{1}{\sqrt{2\pi}}\int_{-\infty}^{\infty} g(\xi)
+e^{i \omega \xi} d\xi = F(\omega) G(\omega) \; .
+\end{eqnarray*}
+
+\end{enumerate}
+
+
+%\begin{thebibliography}{99}
+%\bibitem{Butkov} Butkov, E., 1988, {\em F\ih sica Matem\'atica},
+%Guanabara Koogan, Rio de Janeiro, RJ.
+%\bibitem{Capelas} Capelas de Oliveira, E., Tygel, M., 2001, {\em
+%M\'etodos de matem\'atica aplicada para a engenharia}, SBMAC,
+%S\ao\ Carlos, SP.
+%\bibitem{Djairo} Figueiredo, D. G., 1977, {\em An\'alise de Fourier
+%e equa\coes\ diferenciais parciais}, Projeto Euclides - IMPA, RJ.
+%\end{thebibliography}
+

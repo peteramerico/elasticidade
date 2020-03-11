@@ -1,0 +1,91 @@
+\section{Ondas Esf\'ericas}
+\label{esf}
+
+A onda esf\'erica \'e a solu\c{c}\~ao da equa\c{c}\~ao da onda
+ac\'ustica (\ref{eoadc}) que apresenta simetria esf\'erica, ou seja,
+n\~ao apresenta varia\c{c}\~ao com o \^angulo nos planos horizontal e
+vertical. Sendo assim, o campo de onda depende somente da dist\^ancia em
+rela\c{c}\~ao \`a origem. Logo, antes de encontrar uma solu\c{c}\~ao,
+devemos fazer uma mudan\c{c}a de coordenadas de cartesianas para
+esf\'ericas na equa\c{c}\~ao da onda ac\'ustica (\ref{eoadc}).
+
+Mudando as coordenadas $(x,y,z)$ para $(r,\theta,\phi)$, de tal forma
+que
+$$
+x=r\sin{\theta}\cos{\phi}\;, \;\;\;\; y=r\sin{\theta}\sin{\phi}
+\;\;\;\;\mathrm{e}\;\;\;\; z=r\cos{\theta} \;,
+$$
+onde $0 \leq r <\infty $, $-\pi < \phi \leq \pi $,
+$0 \leq \theta \leq \pi $, podemos obter a
+equa\c{c}\~ao da onda ac\'ustica (\ref{eoadc}) em coordenadas esf\'ericas:
+\begin{equation}
+\nabla^2 \Phi = \frac{\partial^2 \Phi}{\partial r^2} +
+\frac{2}r{}\frac{\partial \Phi}{\partial r} +
+\frac{1}{r^2}\frac{\partial^2 \Phi}{\partial \theta^2} +
+\frac{\cot{\theta}}{r^2}\frac{\partial \Phi}{\partial \theta} +
+\frac{1}{r^2 \sin^2{\theta}}\frac{\partial^2 \Phi}{\partial
+\phi^2} = \frac{1}{c^2}\frac{\partial^2 \Phi}{\partial t^2} \;.
+\label{onda_esf}
+\end{equation}
+Como supusemos que $\Phi$ possui simetria esf\'erica, \'e fun\c{c}\~ao
+somente da dist\^ancia $r$ em rela\c{c}\~ao \`a fonte e do tempo $t$.
+Portanto, as suas derivadas parciais em rela\c{c}\~ao aos \^angulos
+s\~ao nulas. Logo, a equa\c{c}\~ao da onda (\ref{onda_esf} toma a forma
+\begin{equation}
+\frac{\partial^2 \Phi}{\partial r^2} + \frac{2}{r}\frac{\partial
+\Phi}{\partial r} = \frac{1}{c^2}\frac{\partial^2 \Phi}{\partial
+t^2} \;.
+\label{onda_esf_menor}
+\end{equation}
+
+
+Para encontrar uma solu\c{c}\~ao para este problema, primeiramente
+observemos que
+\begin{equation}
+%\begin{array}{ccc}
+\frac{\partial^2 \Phi}{\partial r^2} + \frac{2}r{}\frac{\partial
+\Phi}{\partial r} =\frac{1}{r} \left (r \frac{\partial^2
+\Phi}{\partial r^2} + 1\frac{\partial \Phi}{\partial r} +
+\frac{\partial \Phi}{\partial r} \right) = \frac{1}{r}
+\frac{\partial}{\partial r}\left( r\frac{\partial \Phi}{\partial
+r} +\Phi \right)= \frac{1}{r} \left( \frac{\partial^2
+(r\Phi)}{\partial r^2} \right) \;,
+%\end{array}
+\label{onda_esf_dem11}
+\end{equation}
+de onde podemos escrever que
+\begin{equation}
+%\begin{array}{ccc}
+\frac{1}{r} \left( \frac{\partial^2 (r\Phi)}{\partial r^2} \right)
+= \frac{1}{c^2} \frac{\partial^2 \Phi}{\partial t^2}\;,
+%\end{array}
+\label{onda_esf_dem1}
+\end{equation}
+ou ainda,
+\begin{equation}
+%\begin{array}{ccc}
+\left( \frac{\partial^2 (r\Phi)}{\partial r^2} \right) =
+\frac{1}{c^2} \frac{\partial^2 (r\Phi)}{\partial t^2}\;.
+%\end{array}
+\label{onda_esf_dem2}
+\end{equation}
+Ent\~ao, a fun\c{c}\~ao $r\Phi$ deve satisfazer a equa\c{c}\~ao da
+onda unidimensional, conforme visto anteriormente. Logo,
+\begin{equation}
+r\Phi = f(kr-\omega t) \;\;\;\;\Rightarrow \;\;\;\; \Phi =
+\frac{1}{r}f(kr-\omega t) \;. \label{sol_esf}
+\end{equation}
+
+Vamos agora justificar o decaimento da amplitude da solu\c{c}\~ao
+(\ref{sol_esf}). Fluxo \'e a quantidade de energia que passa por
+uma unidade de \'area em uma unidade de tempo, e para este fluxo
+de energia em ondas, o princ\'{\i}pio de conserva\c{c}\~ao de
+energia se aplica. No caso da onda plana o fluxo \'e constante,
+j\'a que o fluxo de energia atravessa sempre a mesma \'area. J\'a
+no caso da onda esf\'erica uniforme de raio $r$, a energia passa a
+ser distribu\'{\i}da sobre a superf\'{\i}cie da esfera, cuja
+\'area aumenta conforme $4\pi r^2$. Mas a energia total
+transportada pela onda esf\'erica deve permanecer constante. Logo,
+o fluxo de energia num ponto da superf\'{\i}cie diminui segundo a
+raz\~ao $1/r^2$. Como o fluxo energ\'etico \'e proporcional ao
+quadrado da amplitude, a amplitude deve ent\~ao variar $1/r$.

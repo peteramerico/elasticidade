@@ -1,0 +1,182 @@
+
+\chapter{Introdu\cao}
+
+\section{O que \'e uma onda?}
+
+Uma onda \'e a perturba\cao\ de um estado n\ao\ perturbado, que pode se
+deslocar no espa\co\ em fun\cao\ do tempo $t$, transportando assim energia
+e a informa\cao\ sobre esta perturba\cao. Falamos de ``propaga\cao\ da
+onda''. Matematicamente, denotamos uma
+onda (em uma dimens\ao\ espacial $x$) por $\Phi = \Phi(x,t)$. Em um instante
+fixo, $t_0$, a onda assume a forma $\Phi(x,t_0) = f(x)$ no espa\co.
+Se a onda se propagar sem mudar esta forma, podemos descrev\^e-la por
+uma transla\cao\ em fun\cao\ do tempo $t$, i.e., 
+\begin{equation}
+\Phi(x,t) = f(x-ct) \; .
+\label{onda}
+\end{equation}
+Aqui, $c$ denota a velocidade de propaga\cao, que podemos verificar
+facilmente. Para a onda descrita pela equa\cao\ (\ref{onda}) se deslocar
+em uma unidade do tempo $t_2-t_1 = 1$~s por uma unidade da dist\^ancia
+$x_2-x_1 = 1$~m, i.e., para propagar com a velocidade de $1$~m/s,
+precisamos que os seus argumentos em $(x_1,t_1)$ e $(x_2,t_2)$ sejam
+iguais, ou seja, $y_1=x_1-ct_1=y_2=x_2-ct_2$. Da\'{\i}, obtemos $x_2-x_1
+- c(t_2-t_1) = 0$ que, com os valores acima, fornece $c=1$~m/s.
+Geralmente, denotaremos velocidades escalares por n\'umeros positivos.
+Desta forma, para permitirmos que a onda (\ref{onda}) se propague
+tamb\'em na dire\cao\ negativa do eixo $x$, denotaremos a forma geral de
+uma onda sem mudan\ca\ da sua forma (costuma se usar a palavra inglesa
+``wavelet'' para descrever a forma da onda) como
+\begin{equation}
+\Phi(x,t) = f(x-ct) + g(x+ct) \; .
+\label{onda2}
+\end{equation}
+
+No caso geral, n\ao\ teremos s\'o um deslocamento da onda com uma
+velocidade e forma constante. Tanto a velocidade $c$ quanto a forma da
+onda podem mudar ao longo da propaga\cao\ da onda. O fen\^omeno da
+mudan\ca\ do wavelet acontece, por exemplo, quando a onda sob
+considera\cao\ de fato se compos de ondas parciais que s\ao\
+influenciadas de maneira diferente pelo meio de propaga\cao. Se a
+influ\^encia difererente se deve ao conte\'udo de freq\"u\^encia
+diferente das ondas parciais, este fen\^omeno recebe o nome de
+``dispers\ao''.
+
+\section{Formas de propaga\cao}
+
+Ondas propagam em meios reais por passar a informa\cao\ (energia) do 
+deslocamento de uma part\icula\ do meio (mol\'ecula, \'atomo) do meio de
+propaga\cao\ para a pr\'oxima. Em meios denominados ``ac\'usticos''
+(gases, liquidos), as part\iculas\ n\ao\ possuem liga\coes\ qu\imicas.
+Portanto, o deslocamento de uma part\icula\ s\'o pode ser transferida para
+outra se esta se encontra no caminho do deslocamento. Desta forma, a
+propaga\cao\ da onda so pode acontecer na dire\cao\ do deslocamento.
+Ondas para as quais a dire\cao\ do deslocamento coincide com a dire\cao\
+da propaga\cao\ s\ao\ chamadas de ``longitudinais''. Concluimos que em
+meios ac\'usticos, somente se propagam ondas longitudinais.
+
+J\'a em meios s\'olidos, as part\iculas\ possuem liga\coes. Assim, um
+deslocamento de uma delas tamb\'em afeta outras part\iculas\ nas
+dire\coes\ perpendiculares ao do deslocamento. Desta forma, uma onda pode ser gerada com a
+dire\cao\ do deslocamento perpendicular \`a dire\cao\ de propaga\cao.
+Ondas com esta propriedade s\ao\ chamadas de ``transversais''.
+Conclu\imos\ que em meios s\'olidos, podem se propagar tanto ondas
+longitudinais como transversais.
+
+A condi\cao\ necess\'aria para que ondas de fato se propaguem \'e a
+exist\^encia de for\cas\ de mola que fa\cam\ as part\iculas\ deslocadas
+voltarem aos seus lugares originais quando a for\ca\ que causou o
+deslocamento passou. Meios s\'olidos com esta propriedade s\ao\ chamados
+de ``el\'asticos'', em contraste com meios ``pl\'asticos'' que sofrem
+somente uma deforma\cao\ quando uma particula \'e deslocada, sem que ela
+volte ao seu lugar depois da for\ca\ passar.
+
+Uma outra denomina\cao\ para as ondas longitudinais \'e ``ondas
+compressionais'', uma vez que elas propagam uma perturba\cao\ em forma
+de uma compress\ao do meio. Na s\ismica\ e sismologia, tamb\'em se usa o
+nome ``ondas P'', abrevia\cao\ de ``ondas prim\'arias'', uma vez que,
+num registro s\ismico\ em uma esta\cao\ distante, s\ao\ elas que d\ao\ o
+primeiro sinal de um terremoto. Correspondentemente, existem os nomes
+alternativos ``ondas cisalhantes'' e ``ondas S'', abrevia\cao\ de
+``ondas secund\'arias'', para ondas transversais, em fun\cao\ da forma
+da perturba\cao\ propagada (cisalhamento) e da ordem de chegada numa
+esta\cao\ s\ismica\ (sism\'ografo) ap\'os um terromoto.
+
+Deve se notar que em um meio homog\^eneo, ondas longitudinais e
+transversais propagam de forma desacoplada, i.e., independentemente uma
+da outra. Esta situa\cao\ muda em um meio n\ao\ homog\^eneo (ou {\it
+inomog\^eneo}), onde a velocidade de propaga\cao\ depende do lugar.
+Mesmo em meios inomog\^eneos, geralmente propagam estes dois tipos de
+ondas, mas elas n\ao\ s\ao\ mais ondas compressionais e cisalhantes
+puras. Em cada inomogeneidade do meio, estes tipos de ondas s\ao\
+acopladas, i.e., uma onda P propagando cria uma onda S e vice versa.
+
+\section{Equa\cao\ da onda}
+
+Fen\^omenos da propaga\cao\ de onda s\ao\ descritos por uma equa\cao\
+diferencial, chamada de equa\cao\ da onda. Existem v\'arias formas da
+equa\cao\ da onda, dependendo do grau da complexidade do meio no qual as
+ondas a serem descritas se propagam. A forma da equa\cao\ da onda mais
+simples \'e a da equa\cao\ da onda ac\'ustica em um meio com densidade
+constante. Em um meio tridimensional, ela tem a forma
+\begin{equation}
+\Delta \Phi = 
+\frac{\partial^2 \Phi}{\partial x^2} +
+\frac{\partial^2 \Phi}{\partial y^2} +
+\frac{\partial^2 \Phi}{\partial z^2}
+= \frac{1}{c^2}
+\frac{\partial^2 \Phi}{\partial t^2} \; ,
+\label{eoadc}
+\end{equation}
+onde $x,y,z$ denotam as coordenadas espaciais, $t$ denota o tempo e $c$
+\'e a velocidade da propaga\cao. A \'ultima \'e um par\^ametro do
+material, i.e., depende do meio no qual a onda se propaga.
+
+Em um meio ac\'ustico com densidade vari\'avel, a equa\cao\ da onda
+assume a forma
+\begin{equation}
+\nabla\cdot \left(\frac{1}{\varrho} \nabla \Phi \right)
+= \frac{1}{k}
+\frac{\partial^2 \Phi}{\partial t^2} \; ,
+\label{eoadv}
+\end{equation}
+onde $\varrho$ representa a densidade do meio de propaga\cao\ e $k$ \'e
+conhecido como m\'odulo bulk ou incompressibilidade. A velocidade de
+propaga\cao\ \'e relacionada a estes dois par\^ametros por
+$c^2=k/\varrho$.
+
+Em um meio el\'astico, a situa\cao\ \'e mais complicada. Como j\'a
+mencionado acima, existem outros tipos de ondas. Este fato \'e refletido
+na equa\cao\ da onda el\'astica. Em primeiro lugar, devemos observar que
+ondas el\'asticas n\ao\ podem ser descritos por um escalar $\Phi$, mas
+necessitam de uma descri\cao\ vetorial, $\vec\Phi$. Em um meio
+homog\^eneo e isotr\'opico, i.e., com as mesmas propriedades em todas as
+dire\coes, a equa\cao\ da onda el\'astica \'e dada por
+\begin{equation}
+(\lambda+\mu) \nabla ( \nabla \cdot \vec\Phi) + \mu (\nabla \cdot \nabla)
+\vec\Phi = \varrho
+\frac{\partial^2 \vec\Phi}{\partial t^2} \; ,
+\label{eoehi}
+\end{equation}
+onde $\lambda$ e $\mu$ s\ao\ os chamados par\^ametros de Lam\'e. O
+segundo par\^ametro de Lam\'e, $\mu$, tamb\'em \'e conhecido como
+m\'odulo do cisalhamento. A combina\cao\ $\lambda+2\mu/3 = k$ relaciona
+os par\^ametros de Lam\'e com o m\'odulo bulk. Em um meio ac\'ustico, o
+m\'odulo do cisalhamento \'e zero. Assim, a equa\cao\ el\'astica reduz
+\'a equa\cao\ ac\'ustica, onde a quantitade escalar \'e a press\ao, que
+se relaciona com o deslocamento da part\icula, quantidade vetorial na
+equa\cao\ (\ref{eoehi}), por $\Phi=-\lambda\nabla\cdot\vec\Phi$.
+
+Em um meio el\'astico, n\ao\ homog\^eneo mas ainda isotr\'opico,
+acrescentam-se termos das derivadas dos par\^ametros de Lam\'e ao
+lado direito da equa\cao\ (\ref{eoehi}), fornecendo
+\begin{equation}
+(\lambda+\mu) \nabla ( \nabla \cdot \vec\Phi) + \mu \nabla \cdot \nabla)
+\vec\Phi
++(\nabla \cdot \vec\Phi) \nabla \lambda 
++\nabla\mu \times (\nabla \times \vec\Phi) 
++2(\nabla\mu \cdot \nabla) \vec\Phi 
+= \varrho
+\frac{\partial^2 \vec\Phi}{\partial t^2} \; .
+\label{eoeii}
+\end{equation}
+
+Finalmente, a equa\cao\ da onda el\'astica mais geral \'e aquela para um
+meio inhomog\^eneo e anisotr\'opico. Ela cont\'em, ao inv\'es dos dois
+par\^ametros de Lam\'e, 21 par\^ametros. Estas s\ao\ representadas como
+componentes independentes do tensor el\'astico $c_{ijkl}$. Com a ajuda
+deste tensor, a equa\cao\ da onda el\'astica para um meio inhomog\^eneo
+e anisotr\'opico pode ser escrita usando componentes como
+\begin{equation}
+\sum\limits_{j=1}^3
+\sum\limits_{k=1}^3
+\sum\limits_{l=1}^3
+\frac{\partial}{\partial x_l}
+\left(c_{ijkl} \frac{\partial \Phi_j}{\partial x_k}\right)
+= \varrho
+\frac{\partial^2 \Phi_i}{\partial t^2} \; ,
+\label{eoeia}
+\end{equation}
+onde $\Phi_i$ e $\Phi_j$ ($i,j=1,2,3$) s\ao\ as componentes nas
+dire\coes\ de $x_i$ e $x_j$ do vetor $\vec\Phi$.
+

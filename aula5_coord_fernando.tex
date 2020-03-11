@@ -1,0 +1,452 @@
+
+\section[Equa\cao\ Ac\'ustica em coordenadas Cartesianas]{Solu\cao\ da
+Equa\cao\ Ac\'ustica em coordenadas Cartesianas}
+
+Consideramos a equa\cao\ de Helmholtz
+\begin{eqnarray} \label{helmholtz}
+\fracpp{P}{x_i} + k^2 P = 0 \; ,
+\end{eqnarray}
+na qual assumimos que o n\'umero de ondas $k$ \'e uma fun\cao\
+de somente uma coordenada espacial $z$, isto \'e, $k=k(z)=\omega/c(z)$.
+Agora aplicamos o m\'etodo de Fourier de separa\cao\ de vari\'aveis
+para vari\'aveis espaciais e assumimos que
+\begin{eqnarray} \label{candidata}
+P(x_i,\omega) = X(x,\omega) Y(y,\omega) Z(z,\omega) \; ,
+\end{eqnarray}
+onde assumimos que $x=x_1$, $y=x_2$ e $z=x_3$. Agora substituindo a
+candidata \refi{candidata} na equa\cao\ de Helmholtz temos
+\begin{eqnarray}
+\fracpp{X}{x}YZ + \fracpp{Y}{y}XZ + \fracpp{Z}{z}XY + k^2(z)XYZ = 0 \; ,
+\end{eqnarray}
+ou, similarmente,
+\begin{eqnarray}
+\frac{1}{X}\fracpp{X}{x} + \frac{1}{Y}\fracpp{Y}{y} +
+\frac{1}{Z}\fracpp{Z}{z} + k^2(z) = 0 \; .
+\end{eqnarray}
+Nesta equa\cao\ observamos que, o primeiro termo do lado esquerdo depende
+somente de $x$, o segundo somente de $y$ e o terceiro e o quarto
+somente de $z$. Assim, introduzimos constantes de separa\cao\
+$-k_x$ e $-k_y$ tal que
+\begin{eqnarray} \label{ohxyz}
+\fracpp{X}{x} + k_x^2 X = 0 \; , \;\;\;\;\; \fracpp{Y}{y} + k_y^2 Y =
+0 \; , \;\;\;\;\; \fracpp{Z}{z} + [k^2(z) - k_x^2 - k_y^2]Z = 0 \; ,
+\end{eqnarray} 
+onde adotamos a seguinte nota\cao\
+\begin{eqnarray}
+k_z^2(z) = k^2(z) - k_x^2 - k_y^2 = \frac{\omega^2}{c^2(z)} - k_x^2 - k_y^2
+\;\;\;\;\; \Longrightarrow \;\;\;\;\; k^2 = k_x^2 + k_y^2 + k_z^2 \; .
+\end{eqnarray}
+Para esta, vemos que $k_x$, $k_y$ e $k_z$ s\ao\ componentes do vetor
+onda $k_i = \omega p_i$, onde $p_i$ \'e o vetor de vagarosidade, vistos
+anteriormente.
+
+Portanto, podemos reescrever a \'ultima equa\cao\ de \refi{ohxyz} de
+forma similar as outras, ou seja,
+\begin{eqnarray}
+\fracpp{Z}{z} + k_z^2(z) Z = 0 \; .
+\end{eqnarray}
+
+As equa\coes\ para $X$ e $Y$ em \refi{ohxyz} s\ao\ equa\coes\ para
+um oscilador harm\^onico, que possui as solu\coes\
+\begin{eqnarray}
+X(x,k_x,\omega) = X_1 e^{ik_x x} + X_2 e^{-ik_x x} \; , \;\;\;\;
+Y(y,k_y,\omega) = Y_1 e^{ik_y y} + Y_2 e^{-ik_y y} \; ,
+\end{eqnarray}
+onde $X_j = X_j(k_x,\omega)$ e $Y_j = Y_j(k_y,\omega)$  para $j=1,2$.
+
+A equa\cao\ diferencial linear ordin\'aria de segunda ordem para $Z$
+tem duas solu\coes\ linearmente independentes
+\begin{eqnarray}
+Z_1 = Z_1(z,k_x,k_y,\omega) \; , \;\;\;\;\;
+Z_2 = Z_2(z,k_x,k_y,\omega) \; .
+\end{eqnarray}
+Para alguma fun\cao\ simples na velocidade de profundidade $c=c(z)$,
+as solu\coes\ $Z_1$ e $Z_2$ podem ser encontradas na forma anal\ih tica.
+Para outras fun\coes\ mais complicadas, um procedimento num\'erico deve ser
+usado.
+
+Se levarmos em conta que $k_x$ e $k_y$ podem ser algum n\'umero real
+no intervalo $(-\infty,\infty)$, podemos escrever uma solu\cao\ particular
+da equa\cao\ de Helmholtz na forma
+\begin{eqnarray}
+P(x_i,\omega) &=& W_1(k_x,k_y,\omega) \; e^{ik_x x + ik_y y} \;
+Z_1(z,k_x,k_y,\omega) \nonumber \\
+& & + W_2(k_x,k_y,\omega) \; e^{ik_x x + ik_y y} \;
+Z_2(z,k_x,k_y,\omega) \; .
+\end{eqnarray}
+Quando levarmos em conta que $\omega$ pode alcan\car\ algum valor
+real no intervalo $(-\infty,\infty)$, a solu\cao\ particular da
+equa\cao\ ac\'ustica para press\ao\ $p(x_m,t)$ pode ser escrita como
+\begin{eqnarray}
+p(x_m,t) &=& W_1(k_x,k_y,\omega) \; e^{-i\omega t + ik_x x + ik_y y} \;
+Z_1(z,k_x,k_y,\omega) \nonumber \\
+& & + W_2(k_x,k_y,\omega) \; e^{-i\omega t + ik_x x + ik_y y} \;
+Z_2(z,k_x,k_y,\omega) \; .
+\end{eqnarray}
+A escolha do expoente $(-i\omega t)$ nesta forma ser\'a entendida
+posteriormente.
+
+Podemos agora escrever a solu\cao\ geral da equa\cao\ ac\'ustica
+homog\^enea com densidade constante como segue
+\begin{eqnarray}
+p(x_m,t) &=& \intii d\omega \intii dk_x \intii dk_y \; W_1 Z_1
+e^{-i\omega t + ik_x x + ik_y y} \nonumber \\
+& & + \intii d\omega \intii dk_x \intii dk_y \; W_2 Z_2
+e^{-i\omega t + ik_x x + ik_y y} \; .
+\end{eqnarray}
+Esta \'e a solu\cao\ geral para o caso de uma distribui\cao\ arbitr\'aria
+da velocidade de profundidade da velocidade $c=c(z)$. Podemos ver que
+a solu\cao\ da equa\cao\ ac\'ustica foi reduzida para a solu\cao\ de
+uma equa\cao\ diferencial linear ordin\'aria de segunda ordem para $z$
+e para uma subseq\"uente integra\cao\ 3D.
+
+No caso da velocidade $c$ constante, a equa\cao\ diferencial ordin\'aria
+para $z$ reduz para a equa\cao\ do oscilador harm\^onico, onde as
+duas solu\coes\ linearmente independentes s\ao\
+\begin{eqnarray}
+Z_1 = e^{ik_z z} \;, \;\;\;\;\; Z_1 = e^{-ik_z z} \; ,
+\end{eqnarray}
+onde $k_z$ \'e dado por $k_z = (\frac{\omega^2}{c^2} - k_x^2
+- k_y^2)^{\frac{1}{2}}$.
+
+A solu\cao\ geral para este caso \'e
+\begin{eqnarray}\label{solcconst}
+p(x_m,t) &=& \intii d\omega \intii dk_x \intii dk_y \; W_1(k_x,k_y,\omega)
+e^{-i\omega t + ik_x x + ik_y y + ik_z z} \nonumber \\
+& & + \intii d\omega \intii dk_x \intii dk_y \; W_2(k_x,k_y,\omega) 
+e^{-i\omega t + ik_x x + ik_y y - ik_z z} \; .
+\end{eqnarray}
+
+Se reescrevermos os termos exponenciais acima como
+\begin{eqnarray}
+e^{-i2\pi f (t - p_x x - p_y y - p_z z)} \;\;\;\; \mbox{e} \;\;\;\;
+e^{-i2\pi f (t - p_x x - p_y y + p_z z)} \; ,
+\end{eqnarray} 
+podemos ver que a f\'ormula \refi{solcconst} representa uma expans\ao\
+da solu\cao\ da equa\cao\ ac\'ustica em ondas planas. O primeiro termo
+cont\'em ondas planas propagando na dire\cao\ positiva do eixo $z$ e o
+segundo termo ondas planas propagando na dire\cao\ negativa do
+eixo $z$. Na seq\"u\^encia, consideramos que a orienta\cao\ positiva do
+eixo $z$ \'e para baixo, isto \'e, o eixo $z$ positivo representa o 
+eixo profundidade. Ent\ao\ o primeiro termo descreve ondas descendo e
+o segundo ondas subindo. Do ponto de vista matem\'atico, a equa\cao\
+\refi{solcconst} tem a forma da transformada de Fourier 3D inversa
+(faltando somente alguns fatores escalares na frente das integrais), que
+tranforma as vari\'aveis $\omega$, $k_x$ e $k_y$ nas vari\'avies $t$,
+$x$ e $y$, respectivamente. A quantidade $k_z$ n\ao\ \'e vari\'avel de
+transforma\cao. N\ao\ h\'a integra\cao\ sobre $k_z$ e, de fato, $k_z$
+n\ao\ \'e uma vari\'avel independente, esta est\'a em fun\cao\ de
+$k_x$ e $k_y$. Agora fica claro porque escolhemos o expoente
+$(-i\omega t)$ na fun\cao\ exponencial na solu\cao\ geral. Esta
+corresponde a transformada de Fourier inversa introduzida
+anteriormente.
+
+As ondas planas na expans\ao\ \refi{solcconst} s\ao\ ondas homog\^eneas
+quando
+\begin{eqnarray}
+k_x^2 + k_y^2 \leq k^2 \;\;\;\; \Longleftrightarrow \;\;\;\;
+p_x^2 + p_y^2 \leq c^{-2}
+\end{eqnarray}
+e ondas inomog\^eneas quando
+\begin{eqnarray}
+k_x^2 + k_y^2 > k^2 \;\;\;\; \Longleftrightarrow \;\;\;\;
+p_x^2 + p_y^2 > c^{-2} \; .
+\end{eqnarray}
+No \'ultimo caso, $k_z$ deve ser considerado na forma $k_z =
+\pm i|k_x^2 + k_y^2 - k^2|^{\frac{1}{2}}$
+
+A escolha do sinal deve ser feita tal que a amplitude das ondas
+inomog\^eneas decaem com o acr\'escimo da dist\^ancia da fonte. Isto
+\'e satisfeito quando o sinal positivo \'e selecionado para ondas
+descendo e o sinal negativo para ondas subindo.
+
+A f\'ormula expandida \refi{solcconst} tem v\'arias aplica\coes\
+importantes. N\'os consideraremos duas delas.
+
+
+\section{Extrapola\cao\ do campo de onda} \label{extra}
+
+Vamos assumir que conhecemos o campo de onda para alguma profundidade
+$z=z_0$, i.e., que n\'os conhecemos $p(x,y,z_0,t)$ e vamos extrapolar
+o campo de onda da profundidade $z_0$ para a profundidade $z_1$, onde
+$z_1 > z_0$. Se usarmos ondas descendo, estamos falando de
+{\it extrapola\cao\ ``forward''} (para frente). Se usarmos ondas subindo,
+estamos falando de {\it extrapola\cao\ ``backward''} (para tr\'as). Ambos
+os conceitos s\ao\ muito importantes na ent\ao\ chamada migra\cao\
+$(\omega - k)$.
+
+Vamos considerar a extrapola\cao\ avan\ca da, i.e., vamos considerar
+somente ondas des\-cendo na expans\ao\ da f\'ormula. A expans\ao\ da
+f\'ormula fornece para $z = z_0$
+\begin{eqnarray} 
+p(x,y,z_0,t) = \intii d\omega \intii dk_x \intii dk_y \;
+W_1(k_x,k_y,\omega) \; e^{-i\omega t + ik_x x + ik_y y + ik_z z_0} \; .
+\end{eqnarray}
+N\'os podemos tamb\'em expressar o campo de onda para $z = z_0$
+na forma da transformada de Fourier 3D inversa
+\begin{eqnarray} 
+p(x,y,z_0,t)=\frac{1}{(2\pi)^3}\intii d\omega \intii dk_x \intii dk_y \;
+S(k_x,k_y,\omega,z_0) \; e^{-i\omega t + ik_x x + ik_y y} \; ,
+\end{eqnarray}
+onde o fator $(2\pi)^3$ \'e uma conseq\"u\^encia\ do uso da transformada
+de Fourier com a vari\'avel $\omega$ ao inv\'es de $f$. Por compara\cao\
+das express\oes\ para $p(x,y,z_0,t)$, chegamos
+\begin{eqnarray}
+S(k_x,k_y,\omega,z_0) = (2\pi)^3 \; W_1(k_x,k_y,\omega) \;
+e^{ik_z z_0} \; ,
+\end{eqnarray}
+e, portanto,
+\begin{eqnarray}
+W_1(k_x,k_y,\omega) = \frac{1}{(2\pi)^3} \; S(k_x,k_y,\omega,z_0) \;
+e^{-ik_z z_0} \; .
+\end{eqnarray}
+Desta maneira, podemos determinar $W_1(k_x,k_y,\omega)$ desde que
+$S(k_x,k_y,\omega,z_0)$ \'e a transformada de Fourier do conhecido
+campo de onda para $z = z_0$,
+\begin{eqnarray}
+S(k_x,k_y,\omega,z_0) = \intii dt \intii dx \intii dy \; p(x,y,z_0,t) \;
+e^{i\omega t - ik_x x - ik_y y} \; .
+\end{eqnarray}
+O campo de onda para alguma profundidade $z_1$ pode ser determinado
+da expans\ao\ da f\'ormula (introduzindo a express\ao\ acima para $W_1$)
+\begin{eqnarray}
+p(x,y,z_1,t)=\frac{1}{(2\pi)^3} \intii d\omega \intii dk_x \intii dk_y
+\; S(k_x,k_y,\omega,z_0) \; e^{-i\omega t + ik_x x + ik_y y +
+ik_z(z_1 - z_0)}
+\; .
+\end{eqnarray}
+Ent\ao, a f\'ormula acima representa a extrapola\cao\ da f\'ormula para
+o campo de onda da profundidade $z = z_0$ para a profundidade $z = z_1$.
+A extrapola\cao\ no dom\inio\ $(\omega - k)$ \'e muito simples. Se o
+espectro do campo de onda \'e conhecido na profundidade $z = z_0$
+ent\ao\ o espectro $S(k_x,k_y,\omega,z_1)$ para a profundidade $z = z_1$
+\'e obtido pela mudan\ca\ de fase $k_z(z_1 - z_0)$,
+\begin{eqnarray}
+S(k_x,k_y,\omega,z_1) = S(k_x,k_y,\omega,z_0) \; e^{ik_z(z_1 - z_0)} \; .
+\end{eqnarray}
+Exatamente da mesma maneira, n\'os podemos fazer para o caso
+da extrapola\cao\ atrasada de uma onda subindo. O fator multiplicativo
+ent\ao\ seria $e^{-ik_z(z_1 - z_0)}$ para $z_1> z_0$.
+
+
+\section{Expans\ao\ de uma onda esf\'erica em ondas planas}
+
+De uma maneira similar a se\cao\ anterior, determinamos o
+coeficiente $W_1(k_x,k_y,\omega)$ no caso de uma onda
+esf\'erica descendo. Na Se\cao~\ref{esf}  achamos que a onda
+esf\'erica expansiva pode ser expressa como
+\begin{eqnarray}
+p(x_m,t) = \frac{P_1}{r} F\left(t-\frac{r}{c}\right) \; .
+\end{eqnarray}
+Consideremos agora uma onda harm\^onica com amplitude
+unit\'aria $P_1 = 1$.  Ent\ao, podemos escrever
+\begin{eqnarray}
+p(x_m,\omega,t) = \frac{e^{-i\omega(t - r/c)}}{r} \; .
+\end{eqnarray}
+A expans\ao\ da f\'ormula para uma onda harm\^onica descendo
+leva
+\begin{eqnarray}
+p(x_m,\omega,t) = \intii dk_x \intii dk_y \; W_1(k_x,k_y,\omega) \;
+e^{-i\omega t + ik_x x + ik_y y + ik_z z}  \; ,
+\end{eqnarray}
+onde $k_z = (\frac{\omega^2}{c^2} - k_x^2 - k_y^2)^{\frac{1}{2}}$.
+Desde que $\omega$ n\ao\ \'e uma vari\'avel de integra\cao, podemos
+reescrever a expans\ao\ da f\'ormula para uma onda harm\^onica
+descendo como
+\begin{eqnarray}
+p(x_m,\omega,t) = e^{-i\omega t} \; \intii dk_x \intii dk_y \;
+W_1(k_x,k_y,\omega) \; e^{ik_x x + ik_y y + ik_z z}  \; .
+\end{eqnarray}
+Podemos avaliar $W_1(k_x,k_y,\omega)$ em uma profundidade arbitr\'aria
+$z$. A maneira mais simples \'e fazer $z=0$.  L\'a a onda esf\'erica tem a
+forma
+\begin{eqnarray}
+p(x,y,0,\omega,t) = \frac{e^{-i\omega(t-\sqrt{x^2+y^2}/c)}}
+{\sqrt{x^2+y^2}} \; .
+\end{eqnarray}
+A expans\ao\ da f\'ormula tem, para $z=0$, a forma
+\begin{eqnarray}
+p(x,y,0,\omega,t) = e^{-i\omega t} \; \intii dk_x \intii dk_y \;
+W_1(k_x,k_y,\omega) \; e^{ik_x x + ik_y y}  \; .
+\end{eqnarray}
+Como na Se\cao~\ref{extra}, n\'os achamos $W_1$ de sua rela\cao\
+ao espectro da onda esf\'erica. A onda esf\'erica para $z=0$
+pode ser escrita como
+\begin{eqnarray}
+p(x,y,0,\omega,t) & = & \frac{e^{-i\omega(t-\sqrt{x^2+y^2}/c)}}{\sqrt{x^2+y^2}}
+\nonumber \\
+& = & \frac{e^{-i\omega t}}{(2\pi)^2} \; \intii dk_x \intii dk_y \;
+S(k_x,k_y,\omega,z=0) \; e^{ik_x x + ik_y y}  \; .
+\end{eqnarray}
+Aqui $S(k_x,k_y,\omega,0)$ \'e a transformada de Fourier 2D da
+express\ao\ para onda esf\'erica harm\^onica
+\begin{eqnarray}
+S(k_x,k_y,\omega,0) = \intii dx \intii dy \; \frac{e^{i\omega
+\frac{\sqrt{x^2+y^2}}{c}}}{\sqrt{x^2+y^2}} \; e^{-ik_x x - ik_y y} \; .
+\end{eqnarray}
+Por compara\cao\ da expans\ao\ da f\'ormula com a express\ao\ da
+transformada de Fourier inversa acima, achamos que
+\begin{eqnarray}
+W_1(k_x,k_y,\omega) = \frac{1}{(2\pi)^2} S(k_x,k_y,\omega,0) \; .
+\end{eqnarray}
+Ent\ao, para determinar $W_1$, precisamos avaliar a express\ao\
+para $S(k_x,k_y,\omega,0)$. Introduzimos coordenadas polares no
+plano $(x, y)$ tal que
+\begin{eqnarray}
+k_x = q \cos\psi \; , \;\;\;\;  k_y = q \sin\psi \; , \;\;\;\; q^2=k_x^2+k_y^2 \; ,\\
+x = \rho \cos\varphi \; , \;\;\;\;\ y = \rho \sin\varphi \; , \;\;\;\; dxdy =
+\rho d\rho d\varphi \; .
+\end{eqnarray}
+A express\ao\ para $S(k_x,k_y,\omega,0)$ agora leva
+\begin{eqnarray}
+S(k_x,k_y,\omega,0) = \int_0^{2\pi} d\varphi \int_0^{\infty} d\rho \;
+e^{i\rho\left[\frac{\omega}{c}-q\cos(\psi-\varphi) \right]} \; . 
+\end{eqnarray}
+Podemos simplesmente avaliar a integral com respeito a $\rho$. Isto
+fornece
+\begin{eqnarray}
+S(k_x,k_y,\omega,0) = \int_0^{2\pi} d\varphi \left[ \frac{e^{i\rho
+\left[k-q\cos(\psi-\varphi) \right]}}{i[k-q\cos(\psi-\varphi)]}\right]_0^{\infty}
+\; . 
+\end{eqnarray}
+Supondo que o meio \'e muito ligeiramente absorvente, isto \'e, a
+velocidade $c$ \'e complexa e $c^{-1}$ tem a parte imagin\'aria pequena.
+Ent\ao\ o limite $\rho \rightarrow \infty$ fornece zero e temos
+\begin{eqnarray}
+S(k_x,k_y,\omega,0) = \int_0^{2\pi} \frac{i}{[k-q\cos(\psi-\varphi)]} d\varphi
+= \int_0^{2\pi} \frac{i}{k-q\cos\delta} d\delta \; . 
+\end{eqnarray}
+Para a integral acima, temos
+\begin{eqnarray}
+\int_0^{2\pi} \frac{i}{k-q\cos\delta} d\delta = \frac{2\pi i}{\sqrt{k^2-q^2}}
+\;\;\;\;\; \mbox{para } q^2 < k^2 
+\end{eqnarray}
+e
+\begin{eqnarray}
+\int_0^{2\pi} \frac{i}{k-q\cos\delta} d\delta = \frac{i(-2\pi i)}{\sqrt{q^2-k^2}}
+\;\;\;\;\; \mbox{para } q^2 > k^2 \; . 
+\end{eqnarray}
+Ent\ao, para $S(k_x,k_y,\omega,0)$, escrevemos
+\begin{eqnarray}
+S(k_x,k_y,\omega,0) = \int_0^{2\pi} \frac{i}{k-q\cos\delta}d\delta =
+\frac{2\pi i}{k_z} \; ,
+\end{eqnarray}
+onde
+\begin{eqnarray}
+k_z = \left\{
+\begin{array}{ll}
+\sqrt{k^2-q^2} & \mbox{para } \; q^2 < k^2 \; , \\
+               &                                \\
+i\sqrt{k^2-q^2} & \mbox{para } \; q^2 > k^2 \; .
+\end{array} 
+\right.
+\end{eqnarray}
+Para $W_1(k_x,k_y,\omega)$ esta fornece
+\begin{eqnarray}
+W_1(k_x,k_y,\omega) = \frac{i}{2 \pi k_z} \; .
+\end{eqnarray}
+Se  substituirmos esta na expans\ao\ da f\'ormula geral para onda
+descendo, chegamos
+\begin{eqnarray}
+r^{-1} \; e^{-i\omega(t -  r/c)} = \frac{i}{2\pi} \intii dk_x \intii dk_y \;
+k_z^{-1} \; e^{-i\omega t + ik_x x + ik_y y + ik_z z} \; .
+\end{eqnarray}
+Esta \'e a {\it integral de Weyl} que oferece uma expans\ao\ de uma onda
+esf\'erica em ondas planas. A integral de Weyl \'e conhecida de v\'arias
+formas diferentes. Vamos apresentar algumas delas. Se usarmos a rela\cao\
+entre o vetor onda e o vetor vagarosidade que tem sido usado anteriormente
+neste cap\itulo,
+\begin{eqnarray}
+\vec{k} = \omega \vec{p} \;\;\;\; \Longrightarrow \;\;\;\;
+(k_x,k_y,k_z) = \omega (p_x,p_y,p_z) \; ,
+\end{eqnarray}
+ent\ao
+\begin{eqnarray}
+r^{-1} \; e^{-i\omega(t - r/c)} = \frac{i\omega}{2\pi} \intii dp_x \intii dp_y \;
+p_z^{-1} \; e^{-i\omega (t + ip_x x + ip_y y + ip_z z)} \; .
+\end{eqnarray}
+ou, com $f=\frac{\omega}{2\pi}$,
+\begin{eqnarray}
+r^{-1} \; e^{-i2\pi f(t - r/c)} = i f \intii dp_x \intii dp_y \;
+p_z^{-1} \; e^{-i 2\pi f (t - p_x x - p_y y - p_z z} \; .
+\end{eqnarray}
+Aqui
+\begin{eqnarray}
+p_z = (c^{-2} - p_x^2 - p_y^2)^{\frac{1}{2}} \; .
+\end{eqnarray}
+Ao inv\'es de $p_x$ e $p_y$, podemos introduzir coordenadas polares $p$ 
+e $\phi$ ($p \geq 0, 0 \leq \phi \leq 2\pi$),
+\begin{eqnarray}
+p_x = p \cos\phi \; , \;\;\;\;\; p_y = p \sin\phi \; .
+\end{eqnarray}
+
+Para esta especifica\cao, temos
+\begin{eqnarray}
+dp_x dp_y = p dp d\phi \; , \;\;\;\;\; p_z = \sqrt{c^{-2} - p^2} \; .
+\end{eqnarray}
+Ent\ao\ a integral de Weyl fornece a forma
+\begin{eqnarray}
+r^{-1} \; e^{-i\omega(t - r/c)} = \frac{i\omega}{2\pi} e^{-i\omega t}
+\int_0^{\infty} \left[ \frac{p \; e^{i\omega z\sqrt{c^{-2}-p^2}}}
+{\sqrt{c^{-2}-p^2}} \int_0^{2\pi} e^{i\omega p (x\cos\phi + y\sin\phi)}
+d\phi \right] dp \; .
+\end{eqnarray}
+Se n\'os expressarmos tamb\'em $x$ e $y$ em coordenadas polares
+$x=\rho\cos\varphi$ e $y=\rho\sin\varphi$ a integras com $\phi$ pode ser
+reescrita com segue
+\begin{eqnarray}
+\int_0^{2\pi} e^{i\omega p\rho\cos(\phi-\varphi)} d\phi =
+2\pi{\cal J}_{0} (\omega p \rho) \; ,
+\end{eqnarray}
+onde
+\begin{eqnarray}
+{\cal J}_0(z) = \frac{1}{2\pi} \int_0^{2\pi} e^{iz\cos t} dt
+\end{eqnarray}
+\'e a fun\cao\ de Bessel de ordem zero e do primeiro tipo. A integral de
+Weyl 2D ent\ao\ se reduz a simples integral sobre $p$,
+\begin{eqnarray}
+r^{-1} \; e^{-i\omega(t - r/c)} = i\omega e^{-i\omega t} \int_0^{\infty}
+\frac{p \; e^{i\omega z \sqrt{c^{-2}-p^2}}}{\sqrt{c^{-2}-p^2}}
+{\cal J}_0(\omega p\rho) dp \; .
+\end{eqnarray}
+Esta \'e a {\it integral de Sommerfeld}. Esta representa a expans\ao\ da onda
+esf\'erica em ondas cilindricas.
+
+Vamos retornar a \'ultima forma da integral de Weyl. Como notamos antes, a
+expans\ao\ integral cont\'em ondas homog\^eneas e inomog\^eneas. A onda abaixo
+da integral \'e homog\^enea quando
+\begin{eqnarray}
+p_x^2 + p_y^2 < c^{-2} \;\;\;\;\; \Longleftrightarrow \;\;\;\;\; p < c^{-1} \; ,
+\end{eqnarray}
+e inomog\^enea quando
+\begin{eqnarray}
+p_x^2 + p_y^2 > c^{-2} \;\;\;\;\; \Longleftrightarrow \;\;\;\;\; p > c^{-1} \; ,
+\end{eqnarray}
+No caso anterior $p_z = \sqrt{c^{-2}-p^2}$ enquanto no caso de uma onda
+inomog\^enea $p_z = i\sqrt{c^{-2}-p^2}$. A escolha do sinal positivo na frente
+do $i$ garante o decaimento da amplitude com o acr\'escimo da profundidade,
+isto \'e, com acr\'escimo da dist\^ancia da fonte. A integral de Weyl pode
+ser ent\ao\ expressa como uma soma de duas integrais sobrepostas, a primeira
+sendo a sobreposi\cao\ de ondas homog\^eneas e a segunda a sobreposi\cao\ de
+ondas inomog\^eneas
+\begin{eqnarray}
+r^{-1} \; e^{-i\omega(t - r/c)} &=& \frac{i\omega}{2\pi} \; e^{-i\omega t}
+\int_0^{c^{-1}} \left[\frac{p \; e^{i\omega z \sqrt{c^{-2}-p^2}}}
+{\sqrt{c^{-2}-p^2}} \int_0^{2\pi} e^{i\omega p (x\cos\phi + y\sin\phi)}
+d\phi \right] dp \\
+&+& \frac{\omega}{2\pi} \; e^{-i\omega t} \int_{c^{-1}}^{\infty} \left[\frac{p \;
+e^{-\omega z \sqrt{p^2-c^{-2}}}}{\sqrt{p^2-c^{-2}}} \int_0^{2\pi}
+e^{i\omega p (x\cos\phi + y\sin\phi)} d\phi \right] dp \; .
+\end{eqnarray}
+A superposi\cao\ de somente ondas homog\^eneas deveria somente dar valores
+finitos do campo de onda da fonte. A exist\^encia de ondas planas inomog\^eneas
+causa singularidades necess\'arias na fonte.
+
+Note que a expans\oes\ das f\'ormulas s\ao\ frequentemente usadas para
+investiga\cao\ de um importante problema de incid\^encia da onda esf\'erica
+numa interface plana. A onda esf\'erica incidente na interface \'e expandida
+em ondas planas homog\^eneas e inomog\^eneas. Estas ondas planas individuais
+interagem com a interface e gera ondas, que s\ao\ novamente sobrepostas
+usando a expans\ao\ da f\'ormula acima. Este problema \'e conhecido na
+literatura como {\it problema de Lamb}.
+

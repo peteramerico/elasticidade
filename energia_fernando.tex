@@ -1,0 +1,484 @@
+
+\section{Considera\coes\ sobre energia}
+
+Em se\coes\ anteriores foram introduzidas algumas
+densidades de energia como energia de deforma\cao\
+$W$, energia cin\'etica $K$, energia el\'astica
+$E=W+K$ e vetor de fluxo de energia $S_i$. Nesta
+se\cao\ estudamos tais densidades de energia para
+propaga\coes\ de ondas planas em meios ac\'ustico
+homog\^eneo, anisotr\'opico e isotr\'opico. As
+quantidades acima s\ao\ definidas como quantidades
+instant\^aneas, isto \'e, em fun\cao\ do tempo,
+apesar de, na pr\'atica trabalharmos com estas
+independente do tempo. Conseguimos esta
+independ\^endia no tempo pela aproxima\cao\ da
+{\it m\'edia temporal} que \'e conveniente para
+aplica\coes\ em ondas harm\^onicas no tempo ou
+pela aproxima\cao\ da {\it integra\cao\ no tempo}
+para ondas transientes, ou seja, sinais s\ismicos.
+
+A m\'edia temporal para ondas harm\^onicas \'e feita
+sobre um per\iodo. As quantidades de m\'edia temporal 
+$\overline{W}$, $\overline{K}$, $\overline{E}$ e
+$\overline{S}_i$ s\ao\ determinadas pelos
+seus equivalentes instant\^aneos $W$, $K$, $E$ e
+${S_i}$ pela seguinte regra aplicada aqui, por
+exemplo, para a energia de deforma\cao\ $W$
+\begin{eqnarray}
+\overline{W}(x_m) = \frac{1}{T} \int_{t}^{t+T}
+W(x_m,t) dt \; ,
+\end{eqnarray}
+e as quantidades integradas $\hat{W}$, $\hat{K}$,
+$\hat{E}$ e $\hat{S}_i$ pela regra
+\begin{eqnarray}
+\hat{W}(x_m) = \intii W(x_m,t) dt \; .
+\end{eqnarray}
+
+Desde que um sinal s\ismico\ dure somente dentro de
+um intervalo de tempo limitado, somente este
+intervalo contribui para a integral, fora deste
+intervalo a contribui\cao\ da integral \'e zero.
+
+Desde que as quantidades de energia s\ao\  n\ao-%
+lineares na press\ao, velocidade da part\icula\ ou
+deslocamento, devemos trabalhar com partes
+fisicamente significativas da solu\cao\ complexa
+da equa\cao\ do movimento. Na sequ\^encia, consideramos,
+ent\ao, somente a parte real da solu\cao\ complexa
+\begin{eqnarray*}
+w(x_m,t) = W_0 F(t-T(x_m)) \; .
+\end{eqnarray*} 
+Por simplicidade, denotamos a parte real por
+$w(x_m,t)$, definindo
+\begin{eqnarray*}
+w(x_m,t) = \frac{1}{2}(W_0F +W_0^{*}F^{*}) \; ,
+\end{eqnarray*}
+onde o s\imbolo\ $^{*}$ denota o conjugado complexo.
+
+
+\subsection{Meio ac\'ustico}
+\label{enacus}
+
+Partes reais de solu\coes\ complexas para press\ao\ e
+velocidade da part\icula\ podem ser escritas, quando
+consideramos $p_i$ real, como
+\begin{eqnarray}
+p = \frac{1}{2}(PF + P^{*}F^{*}) \; , \hspace{1cm}
+v_i = \frac{1}{2}\frac{p_i}{\rho}(PF + P^{*}F^{*}) \; ,
+\end{eqnarray}
+onde omitimos o argumento do sinal anal\itico\
+$F(t-(N_i x_i)/c)$. Vamos expressar $W$, $K$, $E$ e
+$S_i$ em termos da press\ao\ e da velocidade da
+part\icula\ dadas acima. Tendo em mente que no
+caso ac\'ustico 
+\begin{eqnarray}
+p = -k\theta, \hspace{1cm}
+\tau_{ij} = -p\delta_{ij} \; ,
+\end{eqnarray}
+podemos escrever
+\begin{eqnarray}
+W &=& \frac{1}{2}\tau_{ij}u_{i,j}=-\frac{1}{2}pu_{i,i}
+= \frac{1}{2k}p^2 = \frac{1}{2}\kappa p^2 =
+\frac{1}{8}\kappa(PF+P^{*}F^{*})^2\;,\label{enerdef}\\
+K &=& \frac{1}{2}\rho\dot{u_i}\dot{u_i} =
+\frac{1}{2}\rho v_i v_i = \frac{1}{8}(\rho c^2)^{-1}
+(PF + P^{*}F^{*})^2 \; , \label{enercin}\\
+S_i &=& -\tau_{ij}\dot{u_j} = p \delta_{ij} v_j =
+p v_i =\frac{1}{4}p_i\rho^{-1}(PF+P^{*}F^{*})^2 \; ,
+\label{fluxo}
+\end{eqnarray}
+onde usamos $v_i = \dot{u_i} = \fracpp{u_i}{t}$.
+Desde que $c^2 = (\kappa\rho)^{-1}$, as equa\coes\
+acima levam a um importante resultado, $W = K$.
+Ent\ao, a energia de deforma\cao\ de uma onda
+ac\'ustica plana \'e igual para qualquer tempo
+a sua energia cin\'etica. Logo, para a energia
+el\'astica temos
+\begin{eqnarray} \label{enerelas}
+E = \frac{1}{4}\kappa(PF + P^{*}F^{*})^2 \; .
+\end{eqnarray}
+Podemos tamb\'em chegar na express\ao\ para a
+velocidade do fluxo de energia, conhecida tamb\'em
+como {\it velocidade de grupo} $v_i^{(g)}$,
+\begin{eqnarray}
+v_i^{(g)} = S_i/E = c^2 p_i = c N_i = c_i \; .
+\end{eqnarray} 
+Portanto, em um meio a\'custico homog\^eneo, a
+velocidade do fluxo de energia tem a mesma
+dire\cao\ e magnitude que a velocidade de fase.
+
+Agora vamos estudar as quantidades integradas no
+tempo trabalhando com as seguintes integrais
+\begin{eqnarray} \label{integs}
+\intii F^2(t) dt \; , \hspace{1cm}
+\intii (F^{*}(t))^2 dt \; , \hspace{1cm}
+\intii F(t)F^{*}(t) dt \; .
+\end{eqnarray}
+
+As integrais de \refi{integs}\ podem ser
+simplesmente avaliadas se levarmos em conta as
+seguintes propriedades de uma fun\cao\
+quadraticamente integr\'avel $g(t)$,
+\begin{eqnarray}
+\intii g^2(t) dt = \intii h^2(t) dt, \hspace{1cm}
+\intii g(t) h(t) dt = 0 \; ,
+\end{eqnarray}
+onde $h(t)$ denota a transformada de Hilbert de
+$g(t)$. As igualdadades acima s\ao\ obtidas, utilizando
+a equa\cao\ \refi{thth}, da seguinte forma
+\begin{eqnarray}
+\intii h^2(t) dt &=& \intii h(t) \left[\frac{1}{\pi} \intii 
+\frac{g(\xi)}{(\xi-t)} d\xi \right] dt \nonumber \\
+&=& \intii g(\xi) \left[
+\frac{1}{\pi} \intii \frac{h(t)}{(\xi-t)} dt
+\right] d\xi \nonumber \\
+&=& \intii g(\xi) \left[-\frac{1}{\pi} \intii
+\frac{h(t)}{(t-\xi)} dt \right] d\xi \nonumber \\
+&=& \intii g(\xi)g(\xi) d\xi \; = \; \intii g^2(t) dt \; ,
+\end{eqnarray}
+e
+\begin{eqnarray}
+\intii g(t) h(t) dt &=& \intii g(t) \left[ \frac{1}{\pi}
+\intii \frac{g(\xi)}{t-\xi} d\xi \right] dt \nonumber \\
+& = &
+\intii g(\xi) \left[-\frac{1}{\pi}
+\intii \frac{g(t)}{\xi-t} dt \right] d\xi \nonumber \\
+&=& -\intii g(\xi) h(\xi) d\xi 
+\; = \; - \intii g(t) h(t) dt \; .
+\end{eqnarray}
+
+Assim, para as integrais em \refi{integs}, conclu\imos\ que
+\begin{eqnarray}
+\intii F^2(t) dt 
+& = &\intii[g(t) + ih(t)]^2 dt \nonumber \\
+& = &
+\intii [g^2(t)-h^2(t)]dt + 2i\intii g(t)h(t) dt \nonumber \\
+& = &0 \; .
+\end{eqnarray}
+Similarmente, pode ser mostrado que
+\begin{eqnarray}
+\intii (F^{*}(t))^2 dt = 0 \; , \hspace{1cm}
+\intii F(t)F^{*}(t) dt = 2 \intii g^2(t) dt \; .
+\end{eqnarray}
+
+Ent\ao, usando os resultados acima e as express\oes\
+de \refii{enerdef}{fluxo}\, podemos achar as
+quantidades integradas no tempo $\hat{W}$, $\hat{K}$,
+$\hat{E}$ e $\hat{S}_i$ como segue
+\begin{eqnarray}
+\hat{W} = \intii W dt = \frac{\kappa}{8}
+\intii(PF + P^{*}F^{*})^2 dt =
+\frac{\kappa}{2} P P^{*} f_a \; ,
+\end{eqnarray}
+onde $f_a = \intii g^2(t) dt$. Correspondentemente,
+chegamos que 
+\begin{eqnarray}
+\hat{K} = \frac{\kappa}{2} P P^{*} f_a \;
+\hspace{1cm}\mbox{e} \hspace{1cm}
+\hat{S}_i = \frac{p_i}{\rho}
+ P P^{*} f_a \; .
+\end{eqnarray} 
+Vemos que, como esperado, a energia de deforma\cao\
+e a energia cin\'etica integradas no tempo s\ao\
+iguais, logo temos
+\begin{eqnarray}
+\hat{E} = \kappa P P^{*} f_a \; .
+\end{eqnarray}
+
+Temos tamb\'em que a velocidade de grupo $v_i^{(g)}$,
+definida aqui como a velocidade do fluxo de energia
+integrado no tempo, \'e dada por
+\begin{eqnarray}
+v_i^{(g)} = \frac{\hat{S}_i}{\hat{E}} = c^2 p_i
+= c N_i \; .
+\end{eqnarray}
+
+De forma similar, podemos obter as quantidades
+m\'edias temporais $\overline{W}$, $\overline{K}$,
+$\overline{E}$ e $\overline{S}_i$ s\'o que agora
+com a integral $f_a$ definida por
+\begin{eqnarray}
+f_A = \frac{1}{T} \int_{t}^{t+T} g^2(t) dt \; .
+\end{eqnarray}
+
+
+\subsection{Meio anisotr\'opico homog\^eneo}
+
+Nesta se\cao\ trabalhamos com a parte real do vetor
+deslocamento escrito na forma
+\begin{eqnarray}
+u_i = \frac{1}{2}(U_iF + U_i^{*}F^{*}) = 
+\frac{1}{2} (AF + A^{*}F^{*}) g_i \; ,
+\end{eqnarray}
+onde $A$ \'e um escalar possivelmente complexo e
+$g_i$ \'e um vetor unit\'ario especificando a
+polariza\cao\ da onda considerada. Note tamb\'em
+que aqui estamos o mesmo s\imbolo\ $u_i$ para
+denotar a parte real do vetor deslocamento $u_i$.
+
+As quantidades $W$, $K$, $E$ e $S_i$ podem ser
+escritas em termos de $A$, $F$, $F'$ (onde
+$F'(\xi)=dF/d\xi$ \'e tamb\'em um sinal anal\itico)
+e $g_i$ como segue
+\begin{eqnarray}
+W &=& \frac{1}{2}\rho a_{ijkl} u_{i,j} u_{k,l}
+= \frac{1}{8}\rho a_{ijkl} c^{-2} (U_i N_j F' + 
+U_i^{*} N_j F^{*'})(U_k N_l F'+U_k^{*} N_l F^{*'})
+\nonumber\\
+&=& \frac{1}{8}\rho c^{-2} \Gamma_{ik}(AF' +
+A^{*}F^{*'})^2 g_i g_k \; , \\
+K &=& \frac{1}{2}\rho\dot{u_i}\dot{u_i} =
+\frac{1}{8}\rho(AF' + A^{*}F^{*'})^2 \\
+S_i &=& -\rho a_{ijkl} u_{k,l}\dot{u_j} = \frac{1}{4}
+\rho a_{ijkl} c^{-1} N_l (AF'+ A^{*}F^{*'})^2
+g_j g_k \; .
+\end{eqnarray}
+
+Se considerarmos a equa\cao\ de Christoffel,
+$(\Gamma_{ik} - c^2 \delta_{ik}) g_k = 0$,
+multiplicada pelo vetor $g_i$, chegamos a
+\begin{eqnarray}
+\Gamma_{ik} g_i g_k - c^2 = 0 \; ,
+\end{eqnarray}
+de onde podemos concluir que $c^{-2}\Gamma_{ik} g_i
+g_k = 1$. Logo, ao substituirmos esta identidade
+na express\ao\ para $W$, vemos que, como no caso
+do meio ac\'ustico, $W = K$, isto \'e, que para ondas
+planas propagando em meios anisotr\'opicos
+homog\^eneos a energia de deforma\cao\ $W$ \'e igual
+a energia cin\'etica $K$ para qualquer tempo. Assim,
+para a energia el\'astica $E$ temos
+\begin{eqnarray}
+E = \frac{1}{4} \rho (AF'+ A^{*}F^{*'})^2 \; .
+\end{eqnarray}
+
+Para a express\ao\ da velocidade de grupo $v_i^{(g)}$
+temos
+\begin{eqnarray} \label{vgmah}
+v_i^{(g)} = S_i/E = a_{ijkl} N_l c^{-1} g_j g_k =
+a_{ijkl} p_l g_j g_k \; .
+\end{eqnarray}
+
+Note que, em constraste com o meio ac\'ustico, a
+equa\cao\ \refi{vgmah}\ n\ao\ coincide com a
+velocidade de fase. Al\'em disso, devido a
+depend\^encia em $N_i$, podemos esperar que o valor
+e a dire\cao\ da velocidade de grupo varie com a
+varia\cao\ da dire\cao\ de $N_i$. Podemos concluir
+tamb\'em que a energia de uma onda plana propagando
+em um meio anisotr\'opico homog\^eneo propaga 
+geralmente em uma dire\cao\ diferente da dire\cao\
+da propaga\cao\ da frente de fase e a velocidade
+da propaga\cao\ de energia \'e diferente da
+velocidade de fase. Para esclarecer esta rela\cao\
+entre velocidade de grupo e de fase, vamos
+multiplicar \refi{vgmah}\ por $p_i=N_i/c$, logo
+\begin{eqnarray}
+v_i^{(g)} p_i = a_{ijkl} p_l p_i g_j g_k = c^{-2}
+\Gamma_{jk} g_j g_k \; . 
+\end{eqnarray}
+Da equa\cao\ de Christoffel
+$(\Gamma_{jk}-c^2 \delta_{jk})g_k = 0$
+multiplicada por $g_j$ chegamos que
+\begin{eqnarray}
+\Gamma_{jk} g_j g_k = c^2 \; .
+\end{eqnarray}
+Agora, ao usarmos esta identidade na express\ao\ para
+$v_i^{(g)} p_i$, temos
+\begin{eqnarray}
+v_i^{(g)}p_i = 1 \hspace{0.5cm} \Leftrightarrow 
+\hspace{0.5cm} v_i^{(g)}N_i = c \; .
+\end{eqnarray}
+
+Desta equa\cao, vemos que a velocidade de grupo \'e
+igual a velocidade de fase somente se
+$\vec{v^{(g)}} \parallel \vec{N}$. Outra
+consequ\^encia do resultado acima \'e que a
+velocidade de grupo \'e sempre maior ou igual a
+velocidade de fase, isto \'e, durante um intervalo
+de tempo unit\'ario a frente de fase muda da
+deposi\cao\ $t$ para a posi\cao\ $t+1$ e o vetor
+$\vec{c}$ que corresponde a velocidade de fase \'e
+perpendicular a frente de fase e \'e igual a
+dist\^ancia entre duas frentes de onda, j\'a o 
+vetor da velocidade de grupo geralmente n\ao\
+\'e perpendicular a frente de fase e portanto
+deve ser maior que a velocidade de fase.
+
+Vejamos ent\ao\ as quantidades integradas no tempo
+$\hat{W}$, $\hat{K}$, $\hat{E}$ e $\hat{S}_i$ levando
+em conta que $F'$ e $F^{*'}$ tem as mesmas
+propriedades que $F$ e $F^{*}$. Para energia de 
+deforma\cao\ $\hat{W}$, temos
+\begin{eqnarray}
+\hat{W}= \intii W dt = \frac{1}{8}\rho c^{-2}
+\Gamma_{ik} g_i g_k \intii (AF'+ A^{*}F^{*'})^2 dt
+= \frac{1}{2} \rho c^{-2} \Gamma_{ik} g_i g_k
+AA^{*} f_e \; ,
+\end{eqnarray}
+onde $f_e = \intii \dot{g}^2(t) dt$.
+E, correspondentemente,
+\begin{eqnarray}
+\hat{K} = \frac{1}{2} \rho A A^{*} f_e 
+\hspace{1cm} \mbox{e} \hspace{1cm}
+\hat{S}_i = c^{-1} \rho a_{ijkl}
+N_l g_j g_k A A^{*} f_e \; .
+\end{eqnarray}
+
+Novamente, vemos que as quantidades integradas no
+tempo satisfazem $\hat{W} = \hat{K}$, logo
+\begin{eqnarray}
+\hat{E} = \rho A A^{*} f_e \; ,
+\end{eqnarray}
+e $v_i^{(g)} = \hat{S}_i/\hat{E} = c^{-1} a_{ijkl}
+N_l g_j g_k$.
+
+As express\oes\ para as quantidades
+m\'edias temporais $\overline{W}$, $\overline{K}$,
+$\overline{E}$ e $\overline{S}_i$ s\ao\ novamente
+as mesmas que as obtidas para as integradas no
+tempo, mudando apenas a integral $f_e$ por $f_E$
+definida por
+\begin{eqnarray}
+f_E = \frac{1}{T} \int_{t}^{t+T} \dot{g}^2(t) dt \; .
+\end{eqnarray}
+
+
+\subsection{Meio isotr\'opico homog\^eneo}
+
+As express\oes\ para os valores instant\^aneos de
+$W$, $K$, $E$ e $S_i$ e seus valores para
+tempo integrado e m\'edia temporal podem ser 
+obtidos da mesma maneira que nas sec\oes\
+anteriores. Em espec\ifico\ na \'ultima se\cao,
+podemos trabalhar para o caso isotr\'opico
+tomando
+\begin{eqnarray}
+a_{ijkl} = (\alpha^2 -2\beta^2)\delta_{ij}\delta_{kl}
++ \beta^2(\delta_{ik}\delta_{jl} + \delta_{il}
+\delta_{jk}) \; .
+\end{eqnarray}
+
+Aqui, consideramos o vetor deslocamente
+separadamente para a onda $P$
+\begin{eqnarray}
+u_i = \frac{1}{2} (AF + A^{*}F^{*}) N_i
+\end{eqnarray}
+e para onda $S$
+\begin{eqnarray}
+u_i = \frac{1}{2}[(BF + B^{*}F^{*}) g_i^{(1)} + 
+(CF + C^{*}F^{*}) g_i^{(2)}] \; .
+\end{eqnarray}
+
+Logo, para cada um dos casos acima obtemos 
+\begin{eqnarray}
+W_P &=& \frac{1}{8} \rho (AF' + A^{*}F^{*'})^2 \; ,
+\hspace{0.9cm}
+W_S = \frac{1}{8} \rho [(BF' + B^{*}F^{*'})^2 +
+(CF' + C^{*}F^{*'})^2] \; , \\
+K_P &=& \frac{1}{8} \rho (AF' + A^{*}F^{*'})^2 \; ,
+\hspace{0.9cm}
+K_S = \frac{1}{8} \rho [(BF' + B^{*}F^{*'})^2 +
+(CF' + C^{*}F^{*'})^2] \; , \\
+S_{Pi}&=&\frac{1}{4}\rho\alpha N_i(AF'+A^{*}F^{*'})^2\; ,
+\hspace{0.2cm}
+S_{Si}=\frac{1}{4}\rho\beta N_i[(BF'+B^{*}F^{*'})^2 +
+(CF'+C^{*}F^{*'})^2] , \hspace{1.2cm} \\
+E_P &=& \frac{1}{4} \rho (AF' + A^{*}F^{*'})^2 \; ,
+\hspace{0.9cm}
+E_S = \frac{1}{4} \rho [(BF' + B^{*}F^{*'})^2 +
+(CF' + C^{*}F^{*'})^2] \; ,
+\end{eqnarray}
+onde o \indice\ $P$ denota que a correspondente
+quantidade est\'a relacionada com a ondas $P$ e o
+\indice\ $S$ relacionada com a onda $S$.
+
+Assim, as quantidades integradas no tempo s\ao\
+agora
+\begin{eqnarray}
+& &\hat{W}_P=\hat{K}_P=\frac{1}{2}\rho AA^{*}f_e \; ,
+\hspace{1.5cm}
+\hat{W}_S=\hat{K}_S=\frac{1}{2}\rho (BB^{*} +
+CC^{*})f_e\; , \\
+& &\hat{E}_P=\rho AA^{*}f_e \; ,
+\hspace{3.0cm}
+\hat{E}_S=\rho (BB^{*} + CC^{*})f_e \; , \\
+& &\hat{S}_{Pi}=\rho\alpha N_i AA^{*}f_e \; ,
+\hspace{2.2cm}
+\hat{S}_{Si}=\rho\beta N_i (BB^{*} + CC^{*})f_e \; . 
+\end{eqnarray}
+
+Como consequ\^encia das express\oes\ acima para 
+quantidades instant\^aneas e integradas no tempo,
+chegamos para velocidade de grupo das ondas $P$ e
+$S$
+\begin{eqnarray}
+v_{Pi}^{(g)} = S_{Pi}/E_P = \hat{S}_{Pi}/\hat{E}_P
+= \alpha N_i \; , \hspace{1cm} v_{Si}^{(g)} =
+S_{Si}/E_S = \hat{S}_{Si}/\hat{E}_S = \beta N_i \; .
+\end{eqnarray}
+Ent\ao\ em um meio isotr\'opico homo\^geneo,
+similarmente para o caso ac\'ustico, a velocidade
+de grupo \'e igual a velocidade de fase, ambas
+com mesmo tamanho e dire\cao. Finalmente, vamos
+acrescentar que as f\'ormulas para as quantidades
+m\'edias temporais $\overline{W}$, $\overline{K}$,
+$\overline{E}$ e $\overline{S}_i$ podem ser
+obtidas das f\'ormulas acima, para quantidades
+integradas no tempo, pela substitui\cao\ da
+integral $f_e$ por $f_E$.
+
+
+\section[Compara\cao\ dos meios anisotr\'opico, isotr\'opico e
+ac\'ustico]{Compara\cao\ da propaga\cao\ de ondas
+nos meios anisotr\'opico, isotr\'opico e ac\'ustico}
+
+A propaga\cao\ de onda em meios anisotr\'opicos e
+isotr\'opico homog\^eneos diferem nas seguintes
+caracter\isticas:
+
+\begin{enumerate}
+\item Para uma dire\cao\ especificada da fase normal
+existe geralmente tr\^es ondas planas independentes
+com diferentes velocidades de fase em um meio
+anisotr\'opico, duas ondas planas independentes
+em um meio isotr\'opico e uma onda plana em um meio
+ac\'ustico.
+
+\item Vetores de velocidade de fase e de grupo s\ao\
+geralmente diferentes em um meio anisotr\'opico,
+onde a velocidade de grupo \'e maior que a velocidade
+de fase. A velocidade de grupo e a velocidade de
+fase t\^em o mesmo tamanho e dire\cao\ em meio
+isotr\'opico e ac\'ustico.
+
+\item Vetores de velocidade de fase e de grupo s\ao\
+geralmente angularmente dependentes em meio
+anisotr\'opico. Especificamente, ambos dependem da
+normal $N_i$ da frente de fase. A velocidade de fase
+(e tamb\'em a velocidade de grupo) \'e a mesma em
+todas as dire\coes\ em meio isotr\'opico e ac\'ustico.
+
+\item A polariza\cao\ da onda em meio anisotr\'opico
+\'e geralmente linear com a dire\cao\ de polariza\cao\
+geralmente diferente da dire\cao\ da fase normal, da
+tangente da frente de onda ou do vetor de velocidade
+de grupo. Em meio isotr\'opico, a dire\cao\ de
+polariza\cao\ \'e paralela a fase normal (ondas $P$)
+ou no plano da frente de fase (ondas $S$). A
+polariza\cao\ das ondas $P$ \'e linear, das ondas
+$S$ \'e geralmente el\iptica\ ou quase-el\iptica.
+A polariza\cao\ da onda no caso ac\'ustico \'e a 
+mesma que para onda $P$ no caso isotr\'opico.
+
+\item Singularidades da onda cisalhante ocorrem
+em certas dire\coes\ em meio anisotr\'opico. Nestas
+dire\coes, ondas $qS_1$ e $qS_2$ propagam com mesma
+velocidade de fase e t\^em comportamento complicado.
+Estas singularidades usualmente n\ao\ existem para
+ondas $P$ em meio anisotr\'opico bem como para todo
+tipo de onda em meio isotr\'opico e meio ac\'ustico.  
+
+\end{enumerate}
+

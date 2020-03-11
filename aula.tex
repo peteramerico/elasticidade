@@ -1,0 +1,129 @@
+\documentclass[12pt]{report}
+%\documentclass[12pt]{book}
+
+\usepackage{graphicx}
+\usepackage[latin1]{inputenc}
+\usepackage[brazil]{babel}
+%%\usepackage{utopia}
+%%\usepackage{hyperref}
+%\usepackage{amsmath}
+%\usepackage{amssymb}
+
+%\usepackage{fleqn}
+
+%\input{form}
+\setlength{\textwidth}{16cm}
+\setlength{\textheight}{22cm}
+%\setlength{\baselineskip}{0.7cm}
+\setlength{\evensidemargin}{-0.5cm}
+\setlength{\oddsidemargin}{-0.5cm}
+\setlength{\topmargin}{-1cm}
+
+%\usepackage{mylabels}
+
+%\renewcommand{\baselinestretch}{1.2}
+\newcommand{\R}{I\!\!R}
+\newcommand{\N}{I\!\!N}
+\newcommand{\Q}{C\!\!\!\!Q}
+\newcommand{\Z}{Z\!\!\!Z}
+\newcommand{\e}{\mbox{\large e}}
+\newcommand{\disp}{\displaystyle}
+\newcommand{\pc}{\widehat{P}}
+\newcommand{\gc}{\widehat{G}}
+\newcommand{\sgn}{\mbox{sgn}}
+\newcommand{\intii}{\int_{-\infty}^{+\infty}}
+\newcommand{\iio}{\int_{-\infty}^{0}}
+\newcommand{\ioi}{\int_{0}^{\infty}}
+\newcommand{\refi}[1]{(\ref{#1})}
+\newcommand{\refii}[2]{(\ref{#1}) \mbox{at\'e} (\ref{#2})}
+\newcommand{\eps}{\varepsilon}
+\newcommand{\cv}{\c{c}\~}
+\newcommand{\h}{\mathbb{H}}
+\newcommand{\coC}{\mathbb{C}}
+\newcommand{\re}{\mathbb{R}}
+\newcommand{\ih}{\'{\i}}
+\newcommand{\utt}{\frac{\partial^{2}u}{\partial t^{2}}}
+\newcommand{\uxx}{\frac{\partial^{2}u}{\partial x^{2}}}
+\newcommand{\uttt}{\frac{\partial^{2}T}{\partial t^{2}}}
+\newcommand{\uxxx}{\frac{\partial^{2}X}{\partial x^{2}}}
+\newcommand{\TF}[1]{{\cal T \kern-2pt F} \left\{ #1 \right\}}
+\newcommand{\fracpp}[2]{\frac{\partial #1}{\partial #2}}
+
+\renewcommand{\textfraction}{0}
+\renewcommand{\floatpagefraction}{0.8}
+\renewcommand{\topfraction}{0.8}
+
+\renewcommand{\contentsname}{\'Indice}
+\newcommand{\refname}{Bibliografia}
+\renewcommand{\figurename}{Figura}
+
+\input port
+%\input form
+
+\begin{document}
+
+\thispagestyle{empty}
+
+\begin{center}
+\vspace*{2cm}
+
+{\huge\bf Propaga\cao\ de Ondas S\ismicas\ em \\[0.3cm]
+Meios El\'asticos}
+
+\vfill
+
+{\large Notas de Aula} \\[0.5cm]
+{\large 1\uo\ Semestre de 2004} \\[0.5cm]
+{\large Prof. J\"org Schleicher} 
+
+\vfill
+
+{\large\bf DMA -- IMECC -- UNICAMP}
+
+\vspace*{1cm}
+
+\end{center}
+
+\newpage
+\setcounter{page}{1}
+
+\tableofcontents
+
+\input{intro}
+\input{cap1}
+\input{plan}    		% Matheus
+\input{esf}     		% Matheus
+\input{cil}     		% Matheus
+\input{cap2}
+\input{onda}    		% Rafael
+\input{aulagabi1}     		% Gabi
+\input{cap3}
+\input{transfou}     		% Fernando
+\input{delta}
+\input{tensor_aleixo}  		% Rafael
+\input{tensor_matheus} 		% Matheus
+\input{opdif}    		% Gabi
+\input{cap4}
+\input{elast}     		% Fernando
+\input{tensor_tensao}  		% Matheus
+\input{energia_rafael} 		% Rafael
+\input{parametros}    		% Fernando
+\input{aula3_gabi}    		% Gabi
+\input{aula4a_rafael}  		% Rafael
+\input{dalembert_marina}        % IC Marina
+\input{ondplan}     		% Matheus
+\input{energia_fernando} 	% Fernando
+\input{aula4a_gabi}    		% Gabi
+\input{aula4b_rafael}  		% Rafael
+\input{aula4b_gabi}    		% Gabi
+\input{meioisotr}     		% Matheus
+\input{aula5_rafael}   		% Rafael
+\input{aula5_gabi}    		% Gabi
+\input{aula5_coord_fernando}  	% Fernando
+
+%\bibliographystyle{ieeetr}
+%\nocite{*}
+%\bibliography{refs}
+\input{refer}
+
+\end{document}

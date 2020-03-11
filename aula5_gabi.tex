@@ -1,0 +1,271 @@
+
+\section{Absor\cao\ e dispers\ao}
+
+A propaga\cao\ de uma onda poderia continuar para sempre se n\ao\
+houvesse perda de energia el\'astica. Na realidade a energia el\'astica
+se transforma em outros tipos de energia e a amplitude das ondas que se
+propagam em meios reais decresce. Aqui explicamos a perda de energia em
+termos de fric\cao\ interna. Usamos o fator de qualidade $Q$ para
+descrever a fric\cao\ interna. Para tens\oes\ que variam harmonicamente
+e s\ao\ aplicadas num volume de um meio, definimos $Q$ como
+\begin{eqnarray}
+\frac{1}{Q(\omega)} = Q^{-1}(\omega) = -\Delta E/2\pi\overline{E}
+\end{eqnarray}
+onde $\overline{E}$ \'e a quantidade de energia el\'astica m\'edia no
+tempo de um volume de um meio, $\Delta E$ \'e a perda de energia num
+volume durante um ciclo e $\omega$ \'e a frequ\^encia circular. Em um
+meio perfeitamente el\'astico n\ao\ h\'a perda de energia e $\Delta E =
+0$ e $Q(\omega) \rightarrow \infty$. Observamos tamb\'em que $Q(\omega)$
+decresce com o aumento de $\Delta E$.
+
+Como j\'a foi visto, a energia el\'astica \'e proporcioal ao quadrado da
+amplitude de uma onda plana harm\^onica. Consideremos uma onda plana
+ac\'ustica propagando com velocidade $c$ na dire\cao\ $N_i$
+\begin{eqnarray}
+p(x_m,t) = P\exp\left[ -i\omega \left( t - \frac{N_m x_m}{c} \right) \right],
+\end{eqnarray}
+entrando na regi\ao\ de um meio ac\'ustico com absor\cao. Reescrevemos a
+equa\cao\ para $Q^{-1}(\omega)$ em termos da amplitude $P$,
+\begin{eqnarray}
+Q^{-1}(\omega) = -\Delta P/\pi P.
+\end{eqnarray}
+
+Consideramos que a atenua\cao\ e a mudan\ca\ de amplitude s\ao\
+isotr\'opicos. Ent\ao\ podemos escrever
+\begin{eqnarray}
+\Delta P = \frac{dP}{ds}\lambda = (2\pi c/\omega)\frac{dP}{ds},
+\end{eqnarray}
+onde $ds$ \'e o elemento diferencial na dire\cao\ $N_i$. Inserindo
+$\Delta P$ na equa\cao\ para $Q^{-1}(\omega)$ temos
+\begin{eqnarray}
+P^{-1}\frac{dP}{ds} = -\frac{\omega}{2cQ(\omega)}\Rightarrow
+P = P_0\exp\left[-\frac{\omega s}{2cQ(\omega)}\right] = P_0\exp\left[
+-\frac{\omega N_i x_i}{2cQ(\omega)}\right],
+\end{eqnarray}
+onde $s$ \'e a dist\^ancia at\'e a origem e $P_0$ \'e a amplitude da
+onda na origem. Inserindo a express\ao\ para $P$ na equa\cao\ da onda
+plana ac\'ustica temos
+\begin{eqnarray}
+p(x_m,t) = P_0\exp\left[-i\omega\left(t -\frac{N_m x_m}{c_a}\right)\right],
+\end{eqnarray}
+onde
+\begin{eqnarray}
+\frac{1}{c_a} = \frac{1}{c} + \frac{i}{2cQ(\omega)},
+\end{eqnarray}
+ou ainda, podemos reescrever a equa\cao\ acima na forma
+\begin{eqnarray}
+p(x_m,t) = P_0\exp[-i\omega(t -p_m^{(a)}x_m)] = P_0\exp(-\omega p_m^I x_m)
+\exp[-i\omega(t - p_m^R x_m))],
+\end{eqnarray}
+onde
+\begin{eqnarray}
+p_i^{(a)} = \frac{N_i}{c_a} = p_i^R + ip_i^I.
+\end{eqnarray}
+
+A express\ao\ acima \'e semelhante \`a express\ao\ da onda plana
+inomog\^enea em um meio perfeitamente el\'astico. A diferen\ca\ \'e que
+aqui os vetores $p_i^R$ e $p_i^I$ s\ao\ paralelos, onde $p_i^R = N_i/c,
+p_i^I = N_i/2cQ$. Vimos at\'e agora a f\'ormula que descreve a
+propaga\cao\ de uma onda plana homog\^enea em um meio com absor\cao\ na
+dire\cao\ $N_i$ e com velocidade de fase $c$. A amplitude desta onda
+decresce na mesma dire\cao, i.e., os planos de fase constante e
+amplitude constante s\ao\ paralelos. Os efeitos de atenua\cao\ podem ser
+descritos atrav\'es de outra quantidade chamada coeficiente de
+absor\cao\ $\alpha_{ABS}$ definido como
+\begin{eqnarray}
+\alpha_{ABS}(\omega) = \omega/2cQ(\omega).
+\end{eqnarray}
+Para $Q \rightarrow \infty$ (meio perfeitamente el\'astico),
+$\alpha_{ABS} \rightarrow 0$. Usando $\alpha_{ABS}$ podemos reescrever
+$p(x_m,t)$ como
+\begin{eqnarray}
+p(x_m,t) = P_0\exp(-\alpha_{ABS}(\omega)N_m x_m)\exp\left[
+-i\omega\left(t - \frac{N_m x_m}{c}\right)\right].
+\end{eqnarray}
+
+Consideremos agora os efeitos de atenua\cao\ numa onda impulso cuja
+forma de onda \'e a $\delta$-fun\cao,
+\begin{eqnarray}
+p(x_m,t) = P\delta(t - p_m x_m).
+\end{eqnarray}
+O espectro da fun\cao\ $\delta(t - p_m x_m)$ \'e
+\begin{eqnarray}
+\delta(\omega) = \intii\delta(t - p_m x_m)e^{i\omega t}dt = e^{i\omega p_m x_m}
+\end{eqnarray}
+ent\ao\ o onda plana impulso pode ser expressa por
+\begin{eqnarray}
+p(x_m,t) = (2\pi)^{-1}P\intii e^{-i\omega(t-p_m x_m)}d\omega.
+\end{eqnarray}
+Vemos que a onda $\delta-$impulso pode ser obtida pela s\'intese de
+ondas harm\^onicas de amplitudes iguais. Estendamos esta s\'intese para
+meios n\ao\ el\'asticos, para a qual achamos que a onda plana
+harm\^onica com frequ\^encia $\omega = 2\pi f$ tem a forma
+\begin{eqnarray}
+p(x_m,t) = P_0\exp\left[-\frac{1}{2Q(\omega)}|\omega p_m x_m| \right]\exp[-i\omega(t-p_m x_m)]
+\end{eqnarray}
+e vejamos como a rela\cao\ das amplitudes \'e afetada pela atenua\cao.
+Por simplicidade consideremos $Q$ independente da frequ\^encia. Ent\ao,
+temos
+\begin{eqnarray}
+p(x_m,t) = \frac{P_0}{2\pi}\intii e^{-i\omega(t-p_m x_m)}e^{-\frac{|\omega p_m x_m|}{2Q}}d\omega.
+\end{eqnarray}
+Consideremos $|\omega p_m x_m|$ para evitar crescimento infinito das
+amplitudes em termos que possuem frequ\^encia negativa e $p_m x_m > 0$
+(ou $\omega > 0$ e $p_m x_m < 0$). Assim, ficamos com
+\begin{eqnarray}
+p(x_m,t) = \frac{P_0}{2\pi}\iio e^{-i\omega(t-p_m x_m)}e^{\frac{-|\omega|}{2Q}|p_m x_m|}d\omega 
++ \frac{P_0}{2\pi}\ioi e^{-i\omega(t-p_m x_m)}e^{\frac{-\omega}{2Q}|p_m x_m|}d\omega,
+\end{eqnarray}
+que leva \`a
+\begin{eqnarray}
+p(x_m,t) &=& \frac{P_0}{2\pi}\ioi e^{i\omega(t-p_m x_m)}e^{\frac{-\omega}{2Q}|p_m x_m|}d\omega +
+\frac{P_0}{2\pi}\ioi e^{-i\omega(t-p_m x_m)}e^{\frac{-\omega}{2Q}|p_m x_m|}d\omega \nonumber\\  
+&=& -\frac{P_0}{i2\pi(t-p_m x_m) - \pi|p_m x_m|Q^{-1}} +
+     \frac{P_0}{i2\pi(t-p_m x_m) + \pi|p_m x_m|Q^{-1}} \nonumber\\
+&=& \frac{2Q|p_m x_m|P_0}{4\pi(t-p_m x_m)^2 Q^2 + \pi(p_m x_m)^2}.
+\end{eqnarray}
+
+O resultado que obtivemos viola observa\coes\ em v\'arios aspectos. A
+viola\cao\ mais grave \'e a que viola o princ\ih pio da causalidade. O
+sinal \'e n\ao\ nulo inclusive para $t<0$. Nosso sinal \'e sim\'etrico
+enquanto as observa\coes\ indicam curto tempo de ascens\ao\ do sinal
+seguido por um vagaroso decaimento. Existem muitas explica\coes\ poss\ih
+veis para o desajuste de nossa teoria simplificada e observa\coes. O
+motivo b\'asico do nosso problema \'e a neglig\^encia da dispers\ao\ de
+ondas, i.e., a velocidade $c$ precisa ser considerada como fun\cao\ da
+frequ\^encia, $c=c(\omega)$. Desta maneira removemos a simetria do
+sinal. Para garantir causalidade do sinal, i.e., $p(x_m,t)=0$ para
+$t<0$, a velocidade $c(\omega)$ e $Q(\omega)$ n\ao\ podem ser
+independentes, e s\ao\ conectados pelas ent\ao\ chamadas rela\coes\ de
+Kramers-Kronig. Estas rela\coes\ s\ao\ consequ\^encia do fato que as
+partes real e imagin\'aria do espectro de uma fun\cao\ causal formam um
+par de Hilbert.
+
+Um modelo well-fitting de absor\cao\ nos d\'a a seguinte rela\cao\ entre
+as velocidades de fase e duas frequ\^encias diferentes
+\begin{eqnarray}
+\frac{c(\omega_1)}{c(\omega_2)} = 1 + \frac{1}{\pi Q}\ln\left(\frac{\omega_1}{\omega_2}\right).
+\end{eqnarray}
+
+Aqui $Q$ depende de $\omega$ muito fracamente, ent\ao\ \'e praticamente
+constante.
+
+A lei de Hooke para um s\'olido anel\'astico anisotr\'opico pode ser
+escrita como
+\begin{eqnarray}
+\tau_{ij} = a_{ijkl}^{(a)}e_{kl}
+\end{eqnarray}
+onde
+\begin{eqnarray}
+a_{ijkl}^{(a)} = a_{ijkl} + ia_{ijkl}^I
+\end{eqnarray}    
+Aqui $a_{ijkl}^I$ controla o efeito de absor\cao\ que neste caso \'e
+dependente da dire\cao. Ambas componentes de $a_{ijkl}^{(a)}$ (real e
+imagin\'aria) s\ao\ dependentes da frequ\^encia.
+
+Como os par\^ametros el\'asticos dependem da frequ\^encia, a velocidade
+de fase tamb\'em depende da frequ\^encia e temos novamente ondas
+dispersivas.
+
+Analogamente ao modo com que a anelasticidade afeta a propaga\cao\ da
+onda num meio ilimitado, tamb\'em afeta a reflex\ao\ e a transmiss\ao\
+na interface separando meios anel\'asticos. Vejamos agora os efeitos de
+dispers\ao. Consideremos uma onda plana ac\'ustica
+\begin{eqnarray}
+p(x_m,t) = PF\left(t - \frac{N_m x_m}{c}\right)
+\end{eqnarray}
+propagando num meio ac\'ustico sem absor\cao. Agora, consideremos a
+velocidade de fase dependendo da frequ\^encia $c = c(\omega)$. O sinal
+anal\'itico tem ent\ao\ a forma
+\begin{eqnarray}
+F\left(t - \frac{N_m x_m}{c}\right) = 
+\frac{1}{\pi}\ioi g(\omega)e^{-i\omega\left(t - \frac{N_m x_m}{c(\omega)} \right)}d\omega,
+\end{eqnarray}
+onde $g(\omega)$ \'e o espectro do sinal real considerado. Ent\ao, a
+express\ao\ da onda plana ac\'ustica fica
+\begin{eqnarray}
+p(x_m,t) = \frac{P}{\pi}\ioi g(\omega)e^{-i\omega\left(t - \frac{N_m x_m}{c(\omega)} \right)}d\omega.
+\end{eqnarray}
+Se $c$ for independente da frequ\^encia, a f\'ormula acima se reduz \`a
+f\'ormula da onda plana transiente harm\^onica
+\begin{eqnarray}
+p(x_m,t) = PF\left(t - \frac{N_m x_m}{c}\right).
+\end{eqnarray}
+
+Considerando $c = c(\omega)$, assumindo que $g(\omega)$ \'e efetivamente
+n\ao\ nulo somente para uma faixa de frequ\^encias $\omega_0 -
+\Delta\omega < \omega < \omega_0 + \Delta\omega$, podemos escrever
+\begin{eqnarray}
+p(x_m,t) = \frac{P}{\pi}\int_{\omega_0 - \Delta\omega}^{\omega_0 + \Delta\omega}
+g(\omega)e^{-i(\omega t - k(\omega)N_m x_m)}d\omega,
+\end{eqnarray}
+onde $k(\omega) = \omega/c(\omega)$ \'e o n\'umero de onda. Na
+vizinhan\ca\ de $\omega_0$ podemos expandir o n\'umero de onda como
+\begin{eqnarray}
+k(\omega) = k(\omega_0) + \left.\frac{dk}{d\omega}\right|_{\omega_0}(\omega - \omega_0) + ...
+\end{eqnarray}
+Definindo $U = \frac{d\omega}{dk}$ e usando $\omega = kc(k)$ temos
+\begin{eqnarray}
+U(k) = c(k) + k\frac{dc(k)}{dk}.
+\end{eqnarray} 
+Vemos que a quantidade $U$ tem a mesma dimens\ao\ da velocidade $c$.
+Mostramos a seguir que $U$ \'e a velocidade de grupo, i.e., a velocidade
+cim que a energia el\'astica se propaga. Usamos $U$ da seguinte forma
+\begin{eqnarray}
+U(\omega) = \frac{c(\omega)}{1 - \frac{\omega}{c(\omega)}\frac{dc(\omega)}{d\omega}}.
+\end{eqnarray}
+Se $c$ n\ao\ depende da frequ\^encia $\omega$, ent\ao\ $U = c$. Em meios
+ac\'usticos, a velocidade de grupo $U$ e a velocidade de fase $c$
+diferem somente se ambos dependem da frequ\^encia. Se assumirmos que o
+espectro n\ao\ varia muito no intervalo $(\omega_0 -
+\Delta\omega,\omega_0 + \Delta\omega)$, podemos aproximar $g(\omega)$
+como $g(\omega) \sim g(\omega_0)$ e a express\ao\ para $p(x_m,t)$ fica
+\begin{eqnarray}
+p(x_m,t) \approx \frac{P}{\pi}e^{-i(\omega_0 t - k(\omega_0)N_m x_m)}g(\omega_0)
+\int_{\omega_0 - \Delta\omega}^{\omega_0 + \Delta\omega}
+e^{-i(\omega - \omega_0)(t - \frac{N_m x_m}{U(\omega_0)})}d\omega.
+\end{eqnarray}
+Calculamos agora a integral
+\begin{eqnarray}
+\int_{\omega_0 - \Delta\omega}^{\omega_0 + \Delta\omega}e^{-i(\omega - \omega_0)(t - \frac{N_m x_m}{U(\omega_0)})}d\omega &=&
+\left[- \frac{e^{-i(\omega - \omega_0)(t - \frac{N_m x_m}{U(\omega_0)})}}{i(t - \frac{N_m x_m}{U(\omega_0)})} 
+\right]_{\omega_0 - \Delta\omega}^{\omega_0 + \Delta\omega} \nonumber\\
+&=& \frac{e^{-i\Delta\omega(t - \frac{N_m x_m}{U(\omega_0)})} + e^{i\Delta\omega(t - 
+\frac{N_m x_m}{U(\omega_0)})}}{i(t - \frac{N_m x_m}{U(\omega_0)})} \nonumber\\
+&=& 2\Delta\omega \mbox{sinc}\left[\Delta\omega\left(t - \frac{N_m x_m}{U(\omega_0)} \right) \right],
+\end{eqnarray}
+onde a fun\cao\ $sinc(t)$ \'e definida como
+\begin{eqnarray}
+\mbox{sinc}(t) = \frac{\sin t}{t}.
+\end{eqnarray}
+Esta fun\cao\ possui um m\'aximo igual a 1 em $t=0$ e se aproxima de
+zero quando $t \longrightarrow \pm \infty$.
+
+Escrevemos ent\ao\ a express\ao\ final para $p(x_m,t)$
+\begin{eqnarray}
+p(x_m,t) \approx C\,sinc\,\left[\Delta\omega\left(t - \frac{N_k x_k}{U(\omega_0)} \right) \right]
+e^{-i\omega_0(t - \frac{N_m x_m}{c(\omega_0)}) + i\varphi_0},
+\end{eqnarray}
+onde
+\begin{eqnarray}
+C &=& \frac{2}{\pi}P|g(\omega_0)|\Delta\omega, \;\; g(\omega_0) = |g(\omega_0)|e^{i\varphi_0}, \;\; k(\omega_0) = 
+\frac{\omega_0}{c(\omega_0)}, \\
+U(\omega_0) &=& \frac{c(\omega_0)}{1 - \frac{\omega_0}{c(\omega_0)}\frac{dc(\omega_0)}{d\omega_0}}.
+\end{eqnarray}
+A f\'ormula acima descreve uma onda plana harm\^onica propagando na
+dire\cao\ de $N_i$ com velocidade de fase $c(\omega_0) = \omega_0/k_0$ e
+frequ\^encia $\omega_0$. A amplitude da onda plana \'e modulada pela
+fun\cao\ $sinc$. A fun\cao\ forma um envelope da onda plana e este
+envelope tamb\'em se propaga na dire\cao\ $N_i$ mas com velocidade
+$U(\omega_0)$. Como a energia el\'astica \'e proporcional ao quadrado da
+amplitude da onda plana, em nosso caso da fun\cao\ $sinc$, significa que
+a energia se move com velocidade $U$ e ent\ao\ $U$ \'e a velocidade de
+grupo. Poder\'iamos chegar ao mesmo resultado mesmo sem fazer
+simplifica\coes, mas seria mais complicado. Dispers\ao\ n\ao\ est\'a
+relacionada apenas com meios anel\'asticos, mas tamb\'em com v\'arias
+ondas de interfer\^encia como, por exemplo, ondas de superf\'icie. Neste
+caso falamos de dispers\ao\ geom\'etrica. No caso de dispers\ao\ devido
+a comportamento anel\'astico do meio, falamos de dispers\ao\ do
+material. Se $U \leq c$ temos dispers\ao\ normal. Se $U \geq c$ temos
+dispers\ao\ de anomalia.
+

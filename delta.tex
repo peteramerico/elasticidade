@@ -1,0 +1,237 @@
+
+\section{A fun\cao\ delta de Dirac}
+
+Uma fun\cao\ extremamente \'util para a descri\cao\ de solu\coes\ de
+equa\coes\ diferenciais \'e a fun\cao\ delta de Dirac. Ela \'e definida
+pelas seguintes propriedades.
+\begin{enumerate}
+\item \hspace*{1cm} $\displaystyle \delta(t) = 0 \; \forall \; t \neq 0 $,
+\item \hspace*{1cm} $\displaystyle \intii \delta(t) dt = 1 $.
+\end{enumerate}
+Obviamente, estas duas propriedades s\ao\ mutuamente exclusivas para
+fun\coes\ comuns, uma vez que o valor da integral sobre uma fun\cao\ n\ao\ altera se o
+valor da fun\cao\ e alterada em um \'unico ponto. Portanto, uma fun\cao\
+que satisfaz a condi\cao\ 1. nunca pode satisfazer a condi\cao\ 2. e
+vice versa. Por reunir as duas propriedades, a ``fun\cao\ delta'',
+introduzida por Paul Dirac, foi a primeira de uma nova classe de
+``fun\coes'', mais tarde chamadas de ``fun\coes\ generalizadas'' ou
+``distribui\coes''. Apesar disso, \'e de praxe comum na literatura
+o uso da palavra ``fun\cao'' quando se refere \`a $\delta(t)$. Seguimos
+aqui este costume.
+
+Para que a fun\cao\ delta possa satisfazer duas propriedades ao mesmo
+tempo, \'e necess\'ario que ela esteja infinita na origem. Por\'em, este
+"infinito" n\ao\ \'e um infinito comum. Observamos que normalmente,
+esperariamos que $2\delta(t)$ seria igual a $\delta(t)$, uma vez que
+duas vezes infinito ainda \'e infinito. Por\'em, pela condi\cao\ 2.,
+vemos que a fun\cao\ delta \'e normalizada que implica que
+$2\delta(t)\neq\delta(t)$.
+
+\subsection{Defini\cao\ da fun\cao\ delta}
+
+A fun\cao\ delta \'e utilizada para descrever excita\coes\ pontuais no
+espa\co\ ou no tempo. Para introduzirmos excita\coes\ pontuais,
+consideramos uma fun\cao\ auxiliar, $d(t)$, que seja n\ao\ nula somente
+em um intervalo pequeno $(-\eps,\eps)$, onde $\eps > 0$.
+Observamos que 
+\begin{equation}
+\intii d(t) \, dt = 
+\int_{-\eps}^{\eps} d(t) \, dt 
+\label{eq:idt}
+\end{equation}
+Para que esta fun\cao\ seja normalizada, queremos que a integral acima
+forneca o valor um. Uma possibilidade de definir a fun\cao\ $d(t)$ \'e
+\begin{equation}
+d(t) = \left\{ \begin{array}{ccc}
+\displaystyle \frac{1}{2\eps} & \forall & -\eps < t <
+\eps \\
+0 && \mbox{sen\ao}.
+\end{array}
+\right.
+\label{eq:dt}
+\end{equation}
+Notamos que esta fun\cao\ descreve um pequeno ret\^angulo.
+Com esta defini\cao, a integral acima \'e
+\begin{equation}
+\intii d(t) \, dt = 
+\int_{-\eps}^{\eps} \frac{1}{2\eps} \, dt =
+\left.\frac{t}{2\eps}\right|_{-\eps}^{\eps} = 1,
+\label{eq:idtu}
+\end{equation}
+independentemente do valor de $\eps$. Portanto,
+\begin{equation}
+\intii \lim_{\eps\to0} d(t) \, dt = 
+\lim_{\eps\to0} \intii d(t) \, dt = 1.
+\label{eq:idtl}
+\end{equation}
+Por outro lado, para todo $t\neq0$, temos que $\displaystyle
+\lim_{\eps\to0} d(t) = 0$. Desta forma, observamos que a fun\cao\
+\begin{equation}
+\delta(t) = \lim_{\eps\to0} \, d(t)
+\label{eq:defdel}
+\end{equation}
+satisfaz as duas condi\coes\ da fun\cao\ delta.
+
+Devemos notar que esta defini\cao\ da fun\cao\ delta n\ao\ \'e \'unica.
+Todas as poss\iveis\ defini\coes\ da fun\cao\ delta usam um procedimento
+correspondente ao de cima. O que muda \'e a fun\cao\ que faz o papel da
+$d(t)$. Outras possibilidades incluem
+\begin{equation}
+d(t) = \left\{ \begin{array}{ccc}
+\displaystyle \frac{\eps+t}{\eps^2} & \forall & -\eps < t < 0 \\
+\displaystyle \frac{\eps-t}{\eps^2} & \forall & 0 \leq t < \eps \\
+0 && \mbox{sen\ao}.
+\end{array} \right.
+\label{eq:dta}
+\end{equation}
+Esta fun\cao\ representa um pequeno tri\^angulo. Tamb\'em podem ser
+utilizadas a fun\cao\ em forma de sino ({\it bell-shaped function})
+\begin{equation}
+d(t) = \frac{1}{\pi} \frac{\eps}{\eps^2+t^2}
+\label{eq:dtb}
+\end{equation}
+e a Gaussiana
+\begin{equation}
+d(t) = \frac{1}{\sqrt{\pi\eps}} \, e^{-t^2/\eps} \; .
+\label{eq:dtc}
+\end{equation}
+Para as duas \'ultimas, o desenvolvimento acima precisa ser modificado
+ligeiramente, uma vez que estas s\ao\ diferentes de zero no eixo $t$
+inteiro para todo $\eps\neq0$ e s\'o tendem a zero para todo $t\neq0$
+quando $\eps$ tende a zero. Mesmo assim, ambas t\^em \'area unit\'aria
+independentemente do valor de $\eps$ e, portanto, possuem a propriedade
+\refi{eq:idtl}. Desta forma, tendem \`a fun\cao\ delta quando $\eps$
+tende a zero.
+
+\subsection{Propriedades da fun\cao\ delta}
+
+Utilizando a fun\cao\ $d(t)$ definida na equa\cao\ \refi{eq:dt}, bem
+como seu limite quando $\eps$ tende a zero, podemos discutir as
+propriedades da fun\cao\ delta. Primeiramente, observamos que a fun\cao\
+delta \'e uma fun\cao\ par, que segue da condi\cao\ 1., junto com a
+observa\cao\ que
+\begin{equation}
+\intii \delta(-t) \, dt =  
+- \intii \delta(\tau) \, d\tau =  
+\intii \delta(\tau) \, d\tau \; .
+\label{eq:delpar}
+\end{equation}
+
+Para uma fun\cao\ cont\inua\ e limitada $f(t)$, estudamos a integral
+\begin{eqnarray}
+\intii \delta(t-\tau)f(t) \, dt
+& = & \intii \lim_{\eps\to0} d(t-\tau) f(t) \, dt
+\nonumber \\ & = &
+\lim_{\eps\to0} \intii d(t-\tau) f(t) \, dt
+%\nonumber \\ & = &
+=
+\lim_{\eps\to0} \int_{\tau-\eps}^{\tau+\eps}
+\frac{f(t)}{2\eps} \, dt.
+\end{eqnarray}
+Pelo teorema do valor m\'edio da integra\cao,
+\begin{equation}
+\int_a^b f(t) \, dt = f(\xi) (b-a) \qquad (a\leq\xi\leq b) \; ,
+\label{eq:tvm}
+\end{equation}
+concluimos que
+\begin{equation}
+\int_{\tau-\eps}^{\tau+\eps} \frac{f(t)}{2\eps} \, dt
+= \frac{f(\xi)}{2\eps} \, 2\eps = f(\xi) 
+\qquad (\tau-\eps \leq \xi \leq \tau+\eps) \; ,
+\label{eq:res}
+\end{equation}
+e, portanto, no limite quando $\eps$ tende a zero,
+\begin{equation}
+\intii \delta(t-\tau)f(t) \, dt = f(\tau) \; .
+\label{eq:samp}
+\end{equation}
+
+Em conseq\"u\^encia das propriedades \refi{eq:delpar} e \refi{eq:samp},
+a fun\cao\ delta \'e a fun\cao\ unit\'aria da convolu\cao,
+i.e.,
+\begin{equation}
+f(t) * \delta(t) = \intii f(\tau) \delta(t-\tau) \, d\tau = 
+\intii f(\tau) \delta(\tau-t) \, d\tau = f(t) \; .
+\label{eq:unconv}
+\end{equation}
+
+Outra propriedade da fun\cao\ delta em conseq\"u\^encia da propriedade
+\refi{eq:samp} \'e o fato da transformada de Fourier dela ser facil de
+calcular, fornecendo
+\begin{equation}
+\hat{\delta}(\omega) = \TF{\delta(t)}
+= \intii \delta(t) e^{-i\omega t} dt
+= e^{-i\omega 0} = 1 \; .
+\label{eq:ftdel}
+\end{equation}
+Pela transformada de Fourier inversa, podemos escrever
+\begin{equation}
+\delta(t) = \frac{1}{2\pi} \intii \hat{\delta}(\omega) e^{i\omega t} d\omega 
+= \frac{1}{2\pi} \intii e^{i\omega t} d\omega \; .
+\label{eq:ftidel}
+\end{equation}
+
+Mediante o par de transformadas de Fourier, mostra-se tamb\'em que
+\begin{equation}
+\TF{\delta(ct)} = \intii \delta(ct) e^{-i\omega t} dt
+= \frac{1}{c} \intii \delta(\tau) e^{-i\frac{\omega}{c}\tau} d\tau =
+\frac{1}{c} = \frac{1}{c} \hat{\delta}(\omega) \; ,
+\label{eq:scadelf}
+\end{equation}
+e, portanto, 
+\begin{equation}
+\delta(ct) = \frac{1}{c} \delta(t) \; .
+\label{eq:scadel}
+\end{equation}
+Esta propriedade \'e fundamental quando queremos analisar a unidade de
+uma express\ao\ que envolve a fun\cao\ delta. Da equa\cao\
+\refi{eq:scadel} segue, por exemplo, que, quando $t$ simboliza o tempo em
+segundos, $\delta(t)$ tem a unidade de Hz = s$^{-1}$.
+
+\subsection{Fun\cao\ delta multidimensional}
+
+Para descrever a\coes\ pontuais em mais do que uma dimens\ao, pode-se
+usar uma fun\cao\ delta multidimensional. Por exemplo, se $\vec x$
+denota um vetor tridimensional com componentes $x$, $y$, e $z$, a
+fun\cao\ delta tridimensional pode ser definida por
+\begin{equation}
+\delta(\vec x) = \delta(x)\delta(y)\delta(z) \; .
+\label{eq:delmul}
+\end{equation}
+Uma outra possibilidade \'e a defini\cao\ mediante uma fun\cao\
+$d(\vec{x})$, cujo limite tenda \`a fun\cao\ delta tridimensional, i.e.,
+\begin{equation}
+\delta(\vec x) = \lim_{\eps\to0} d(\vec x) \; .
+\label{eq:del3d}
+\end{equation}
+Um exemplo para uma fun\cao\ assim \'e
+\begin{equation}
+d(\vec x) = \left\{ \begin{array}{ccc}
+\displaystyle \frac{3}{4\pi\eps^3} & \forall & -\eps < r < \eps \\
+0 && \mbox{sen\ao},
+\end{array}
+\right.
+\label{eq:dt3d}
+\end{equation}
+onde $r=\sqrt{x^2+y^2+z^2}$. Esta fun\cao\ $d(\vec{x})$ \'e diferente de
+zero em uma pequena esfera em volta da origem. Outras possibilidades
+correspondentes \`as diferentes fun\coes\ $d(t)$ acima tamb\'em podem
+ser utilizados, por exemplo representando pequenos cubos,
+paralelep\ipedos, cilindros, Gaussianas ou sinos tridimensionais. Para
+todas elas, \'e necess\'ario que $\displaystyle \lim_{\eps\to0} d(\vec
+x) = 0$ para $r\neq0$ e que
+\begin{equation}
+\intii \intii \intii d(\vec x) \, dxdydz = 1,
+\label{eq:volum}
+\end{equation}
+independentemente do valor de $\eps$. N\ao\ \'e dif\icil\ enxergar que
+estas condi\coes\ s\ao\ satisfeitas pela fun\cao\ $d(\vec{x})$ da
+equa\cao\ \refi{eq:dt3d}.
+
+De forma eq\"uivalente \`a fun\cao\ delta unidimensional, a fun\cao\ delta
+multidimensional possui a propriedade 
+\begin{equation}
+\intii \intii \intii d(\vec x-\vec x_0) f(\vec x) \, dxdydz = f(\vec x_0),
+\label{eq:samp3d}
+\end{equation}
+com as correspondentes conseq\"u\^encias.

@@ -1,0 +1,546 @@
+
+\section{Teoria Elastodin\^amica}
+
+\subsection{Introdu\cao}
+
+Sob uma carga externa, um corpo pode ser transladado,
+rotacionado ou deformado. Na seq\"u\^encia, estudamos
+o efeito chamado de ``deforma\cao'', pois estamos
+trabalhando pontualmente e assim n\ao\ \'e poss\ih vel
+que haja transla\cao\ ou rota\cao.
+
+A deforma\cao\ de um material \'e um processo no qual
+dist\^ancias entre pontos individuais do material s\ao\
+alteradas. Em um material real\ih stico, a aplica\cao\
+de uma for\ca\ em um lugar particular causa deforma\coes,
+primeiro nas proximidades deste lugar e sucessivamente em
+partes mais distantes. Este processo \'e chamado de
+``propaga\cao\ de onda''.
+
+A propaga\cao\ de onda deve superar a resit\^encia do
+material causada pela consist\^encia e a resist\^encia
+causada pela in\'ercia. Se a consist\^encia \'e tal que o
+material \'e n\ao\ deform\'avel (r\ih gido), o efeito da
+aplica\cao\ de for\cas\ externas em um ponto do corpo
+poderia ser sentido imediatamente em cada ponto do
+material, i.e., o corpo seria movido. Se o material \'e
+deform\'avel, ent\ao\ todas as part\ih culas do material
+seriam excitadas simultaneamente. N\'os consideramos aqui
+um material real\ih stico que \'e deform\'avel e que,
+depois de removida a carga, retorna para um estado, que
+\'e o mesmo ou similar ao estado antes do carregamento.
+Neste \'ultimo caso n\'os falamos sobre materiais
+``imperfeitamente el\'asticos'', e no caso anterior sobre
+materias ``perfeitamente el\'asticos'', no qual
+concentramos nossos estudos.
+
+Uma propaga\cao\ de onda \'e conectada por transmiss\ao\
+de energia. A energia \'e transportada de uma part\ih cula
+do material para outra, e este transporte n\ao\ \'e pelo
+fluxo das part\ih culas. As part\ih culas do material
+oscilam ao redor de suas posi\coes\ m\'edias.
+
+Na mec\^anica cl\'assica, o movimento de onda \'e assumido
+ser pequenas pertuba\coes\ no estado inicial do material,
+chamado de ``estado natural''. No estado inicial n\ao\ h\'a
+tens\oes\ e deforma\coes, ent\ao\ consideramos o estado
+inicial sendo o estado de equil\ih brio est\'atico em que a
+deforma\cao\ n\ao\ muda com o tempo.
+
+Estudamos aqui como a deforma\cao\ altera rela\coes\ entre
+duas part\ih culas pr\'oximas da m\'edia. Esta mudan\ca\
+\'e descrita pelo ``tensor de deforma\cao''. Antes
+introduzimos o {\it vetor deslocamento} descrevendo um
+deslocamento de uma part\ih cula simples sob uma
+deforma\cao. Consideramos para ambos o sistema de
+coordenadas $x_1$, $x_2$, $x_3$ com origem no ponto 0.
+
+
+\subsection{Vetor deslocamento}
+
+Consideramos uma part\ih cula, que, no estado
+inicial, est\'a situada no ponto $P[x_1,x_2,x_3]$. Na deforma\cao\
+do material no tempo $t$, esta part\ih cula ser\'a movida
+para o ponto $P'[x_1',x_2',x_3']$. O movimento do ponto $P$
+para $P'$ \'e especificado pelo ``vetor deslocamento''
+$u_i(x_k,t)$ tal que
+\begin{eqnarray}
+x_i' = x_i + u_i(x_k,t) = x_i + u_i(P,t) \; .
+\end{eqnarray}
+Aqui, o vetor deslocamento \'e especificado como uma
+fun\cao\ vetorial de coordenadas $x_i$ do ponto $P$ (a
+posi\cao\ da part\ih cula no estado inicial) e do tempo
+$t$. Esta descri\cao\ \'e extremamente usada em
+sismologia e prospec\cao\ s\ih smica e \'e conhecida como
+``descri\cao\ Lagrangeana''. Nela, o sistema de coordenadas usado para
+descrever o movimento \'e fixo e a part\icula\ se move nele.
+
+Consideramos, agora, o vetor deslocamento em fun\cao\
+das coordenadas $x_i'$ do ponto $P'$ (posi\cao\ da
+part\ih cula no estado deformado) e do tempo $t$,
+$u_i(x_k',t)$. Em tal caso, $u_i$ depende do tempo
+atrav\'es das coordenadas $x_k'$, que est\ao\ dependendo do tempo. Esta
+descri\cao\ \'e conhecida como
+``descri\cao\ de Euler'' e esta \'e mais usada em
+hidrodin\^amica. Nela, o sistema de coordenadas usado para
+descrever o movimento acompanha a part\icula\ e esta, portanto tem
+posi\cao\ fixa nele. Aqui, usamos a descri\cao\ Lagrangeana.
+
+Na descri\cao\ Lagrangeana, a velocidade de movimento da
+part\ih cula pode ser simplismente obtida por deriva\cao\
+parcial de $u_i(x_k,t)$ com respeito ao tempo $t$
+\begin{eqnarray}
+v_i(x_k,t) = \dot{u}_i(x_k,t) = \frac{\partial u_i(x_k,t)}
+{\partial t} \; .
+\end{eqnarray}
+
+Similarmente, para a acelera\cao\ da part\ih cula chegamos em
+\begin{eqnarray}
+a_i(x_k,t) = \ddot{u}_i(x_k,t) = \frac{\partial^2 u_i(x_k,t)}
+{\partial t^2} \; .
+\end{eqnarray}
+
+A quantidade $v_i(x_k,t)$ \'e conhecida como ``velocidade
+da part\ih cula'' e $a_i(x_k,t)$ como a ``acelera\cao\ da
+part\ih cula''.
+
+
+\subsection{Tensor de deforma\cao}
+
+Em adi\cao\ ao ponto $P$, n\'os consideramos agora um ponto
+$Q[x_1+dx_1,x_2+dx_2,x_3+dx_3]$ situado nas proximidades do
+ponto $P$, estando o material ainda n\ao\ deformado. O
+ponto $Q$ ser\'a movido durante a deforma\cao\ para o ponto
+$Q'[x_1'+dx_1',x_2'+dx_2',x_3'+dx_3']$. O vetor
+deslocamento do ponto $Q$ pode ser expresso em termos do
+vetor deslocamento $u_i(P)$. Segue, por aproxima\cao\ de Taylor de
+primeira ordem (uma vez que $dx_i$ \'e supostamente infinitesimalmente
+pequeno), que
+\begin{eqnarray} \label{vdq}
+u_i(Q) = u_i(x_k+dx_k) \sim u_i(x_k) +
+\frac{\partial u_i(x_k)}
+{\partial x_j} dx_j = u_i(P) + \frac{\partial u_i(P)}
+{\partial x_j} dx_j \; ,
+\end{eqnarray}
+para todos os pontos $Q$ na vizinhan\ca\ de $P$.
+
+Agora investigamos a mudan\ca\ da dist\^ancia entre os pontos
+$P$ e $Q$ devido \`a deforma\cao. Para isso fazemos a
+compara\cao\ do quadrado das dist\^ancias $\overline{PQ}$
+e $\overline{P'Q'}$.
+Para $\overline{PQ}^2$, n\'os temos
+\begin{eqnarray}
+\overline{PQ}^2 = dx_i \; dx_i \; .
+\end{eqnarray}
+Para determinarmos $dx_i'$, observamos que
+\begin{eqnarray}
+dx_i' = dx_i + u_i(Q) - u_i(P) \sim dx_i +
+\frac{\partial u_i(P)}{\partial x_j} dx_j \; .
+\label{dxidxi}
+\end{eqnarray}
+
+Logo, para $\overline{P'Q'}^2$, temos
+\begin{eqnarray}
+\overline{P'Q'}^2 = dx_i' \; dx_i' &\sim& \left(dx_i +
+\frac{\partial u_i}{\partial x_j} dx_j\right) \left(dx_i +
+\frac{\partial u_i}{\partial x_k} dx_k\right) \\
+&=& dx_i dx_i +  \frac{\partial u_i}{\partial x_j} dx_j
+dx_i + \frac{\partial u_i}{\partial x_k} dx_k  dx_i
++ \frac{\partial u_i}{\partial x_k} \frac{\partial u_i}
+{\partial x_j} dx_j dx_k \\
+&=& dx_i dx_i + \left( \frac{\partial u_k}{\partial x_j} +
+\frac{\partial u_j}{\partial x_k} + \frac{\partial u_i}
+{\partial x_j} \frac{\partial u_i}{\partial x_k}\right)
+dx_j dx_k \; .
+\end{eqnarray}
+
+Para $\overline{P'Q'}^2 - \overline{PQ}^2$, chegamos em
+\begin{eqnarray}
+\overline{P'Q'}^2 - \overline{PQ}^2 \sim 2 E_{jk}
+dx_j dx_k \; ,
+\end{eqnarray}
+onde
+\begin{eqnarray} \label{tensorE}
+E_{jk} = \frac{1}{2} \left( \frac{\partial u_k}
+{\partial x_j} + \frac{\partial u_j}{\partial x_k} +
+\frac{\partial u_i}{\partial x_j} \frac{\partial u_i}
+{\partial x_k}\right) \; .
+\end{eqnarray}
+
+
+A quantidade $E_{jk}$ \'e um tensor de segunda ordem.
+Este \'e chamado de ``tensor de deforma\cao\ finita''.
+Desde que todas as derivadas para $E_{jk}$ sejam tomadas
+de $P$, o tensor (\ref{tensorE}) caracteriza a
+deforma\cao\ nas proximidades do ponto $P$. O tensor
+$E_{jk}$ \'e sim\'etrico ($E_{jk} = E_{kj}$) e ent\ao\ \'e
+especificado por somente 6 componentes independentes. Por
+causa do terceiro termo em (\ref{tensorE}), o tensor de
+deforma\cao\ finita \'e considerado n\ao\ linear.
+
+Mas, aqui, consideramos somente processos de ondas
+em que a deforma\cao\ seja pequena, isto \'e,
+\begin{eqnarray}
+\left|\frac{\partial u_i}{\partial x_j}\right| \ll 1 \; .
+\label{def_peq}
+\end{eqnarray}
+Logo, \'e poss\ih vel desconsiderar o termo n\ao\ linear
+na express\ao\ (\ref{tensorE}) desde que \'e da segunda
+ondem com respeito a  $|\partial u_i / \partial x_j|$.
+Apesar desta lineariza\cao\ simplificar as opera\coes\
+matem\'aticas devemos manter a aproxima\cao\ acima sempre
+em mente nas aplica\coes.
+
+N\'os denotaremos a lineariza\cao\ do tensor de
+deforma\cao\ finita, $e_{jk}$, como
+\begin{eqnarray} \label{td}
+e_{jk} = \frac{1}{2} \left( \frac{\partial u_j}
+{\partial x_k} +\frac{\partial u_k}{\partial x_j}\right)
+\; ,
+\end{eqnarray}
+que \'e comumente chamado de ``tensor de deforma\cao\
+pequena'' ou abreviadamente ``tensor de deforma\cao''.
+Este \'e sim\'etrico e linear. Notamos tamb\'em que o
+tensor de deforma\cao\ pequena $e_{ik}$ tem a mesma forma
+Lagrangeana e de formula\cao\ de Euler.
+
+Em decorr\^encia da f\'ormula (\ref{td}) obtida para o
+tensor de deforma\cao\ podemos escrever a express\ao\
+(\ref{vdq}) na forma
+\begin{eqnarray} \label{vdq2}
+u_i(Q) = u_i(P) + \frac{1}{2}\left( \frac{\partial u_i}
+{\partial x_j} + \frac{\partial u_j}{\partial x_i}\right)
+dx_j + \frac{1}{2}\left( \frac{\partial u_i}{\partial x_j}
+- \frac{\partial u_j}{\partial x_i}\right)dx_j \; ,
+\end{eqnarray}
+onde temos que o primeiro termo do lado direito ($u_i(P)$)
+pode ser identificado como transla\cao, uma vez que \'e
+igual para todos os pontos na vizinhan\ca\ de $P$. O segundo
+termo cont\'em o conhecido tensor de deforma\cao\ e descreve, portanto a
+deforma\cao\ do meio. Mostramos a seguir que
+o terceiro termo  representa uma rota\cao.
+Os elementos $\xi_{ij} = \frac{1}{2} \left(\frac{\partial u_i}{\partial x_j} -
+\frac{\partial u_j}{\partial x_i}\right)$ deste termo formam a matriz
+anti-sim\'etrica $\Xi$, conhecida como o tensor de rota\cao.
+
+\subsection{Tensor de rota\cao}
+
+Vejamos como o termo $\left( \Xi d\vec{x} \right)_i=
+\frac{1}{2} \left( \frac{\partial u_i}{\partial x_j} -
+\frac{\partial u_j}{\partial x_i}\right) dx_j = \xi_{ij}
+dx_j$ representa uma rota\cao.
+Para tal, observamos que o produto
+\begin{eqnarray}
+\Xi d\vec{x} = \left(
+\begin{array}{ccc}
+0 & \xi_{12} & \xi_{13} \\
+\xi_{21} & 0 & \xi_{23} \\
+\xi_{31} & \xi_{32} & 0
+\end{array} \right)
+\left(
+\begin{array}{c}
+dx_1 \\
+dx_2 \\
+dx_3
+\end{array} \right)
+= \left(
+\begin{array}{c}
+\xi_{12} dx_2 + \xi_{13} dx_3 \\
+\xi_{21} dx_1 + \xi_{23} dx_3 \\
+\xi_{31} dx_1 + \xi_{32} dx_2
+\end{array}
+\right) \;
+\end{eqnarray}
+pode ser representado como produto vetorial de um vetor
+$\vec{a}$  com $d\vec{x}$:
+\begin{eqnarray}
+\vec{a} \times d\vec{x} = \left|
+\begin{array}{ccc}
+i & j & k \\
+a_1 & a_2 & a_3 \\
+dx_1 & dx_2 & dx_3
+\end{array} \right|
+= \left(
+\begin{array}{c}
+a_2 dx_3 - a_3 dx_2 \\
+-a_1 dx_3 + a_3 dx_1 \\
+a_1 dx_2 - a_2 dx_1
+\end{array}
+\right) \; .
+\end{eqnarray}
+
+Basta identificarmos:
+\begin{eqnarray}
+\left\{
+\begin{array}{ccccc}
+a_1 & = & -\xi_{23} & = & \xi_{32} \\
+a_2 & = & \xi_{13} & = & -\xi_{31} \\
+a_3 & = & -\xi_{12} & = & \xi_{21}
+\end{array} \right.
+\end{eqnarray}
+que reflete corretamente a anti-simetria de $\Xi$.
+Observamos ainda que
+\begin{eqnarray}
+\vec{a} = \left(
+\begin{array}{c}
+\xi_{32} \\
+\xi_{13} \\
+\xi_{21}
+\end{array} \right)
+= \frac{1}{2}  \left(
+\begin{array}{c}
+\frac{\partial u_3}{\partial x_2}-\frac{\partial u_2}
+{\partial x_3}\\
+\frac{\partial u_1}{\partial x_3}-\frac{\partial u_3}
+{\partial x_1}\\
+\frac{\partial u_2}{\partial x_1}-\frac{\partial u_1}
+{\partial x_2}
+\end{array} \right)
+= \frac{1}{2} \; \mbox{rot} \; \vec{u} \; .
+\end{eqnarray}
+Portanto, $\Xi d\vec{x} = \frac{1}{2} \; \mbox{rot}
+\;\vec{u} \times d\vec{x}$.
+
+Assim, quando n\ao\ temos nem transla\cao\ ($u_i(P)=0$) nem deforma\cao\
+($e_{ij}=0$), a equa\cao\ (\ref{vdq2}) pode ser escrita como
+\begin{eqnarray}
+u_i(Q) = \xi_{ij} dx_j \; \; \; \Longrightarrow \; \; \;
+\vec{u}(Q) = \frac{1}{2} \;\mbox{rot}\; \vec{u}\times
+d\vec{x} \; ,
+\end{eqnarray}
+que \'e perpendicular a $d\vec{x}$.
+Logo, neste caso a equa\cao\ (\ref{dxidxi}
+tem a forma
+\begin{eqnarray}
+d\vec{x}' = d\vec{x} + \frac{1}{2} \;\mbox{rot}\; \vec{u}\times
+d\vec{x} \; .
+\end{eqnarray}
+No tri\^angulo $PQQ'$, observamos, para $|\partial u_i/\partial x_j|\ll 1$,
+que $\overline{QQ'} = \tan \alpha |d\vec{x}| \approx
+\alpha |d\vec{x}|$, onde $\alpha$ denota o \^angulo entre $PQ$ e $PQ'$.
+Mas, por outro lado, $\overline{QQ'} = |\vec{u}(Q)|=
+\mbox{$|\frac{1}{2} \; \mbox{rot} \; \vec{u} \times
+d\vec{x}|$} = |\frac{1}{2} \; \mbox{rot} \; \vec{u}|
+|d\vec{x}| \sin \frac{\pi}{2}$. Logo, $\alpha \approx
+|\frac{1}{2} \mbox{rot} \; \vec{u}|$. 
+
+Desta forma, vimos que o \^angulo $\alpha$ que a desloca\cao\ de $Q$
+para $Q'$ cobra depende somente do rotacional do vetor deslocamento. Em
+particular, n\ao\ depende da posi\cao\ original de $Q$ em rela\cao\ a
+$P$, descrita por $dx_i$. Isso implica que o \^angulo $\alpha$ \'e o
+mesmo para todos os pontos $Q$ na vizinhan\ca\ de $P$.
+Conseq\"uentemente, o terceiro termo da equa\cao\ (\ref{vdq2}) descreve
+uma rota\cao\ de todos os pontos $Q$ em volta de $P$ pelo \^angulo
+$\alpha$.
+
+\subsection{Interpreta\cao\ f\ih sica dos elementos do %
+tensor de deforma\cao}
+
+O tensor de deforma\cao\ descreve deforma\cao\ pura, este
+n\ao\ cont\'em informa\cao\ sobre deslocamento ou
+rota\cao\ do corpo deformado como um todo. N\'os esperamos
+ent\ao\ que a interpreta\cao\ f\ih sica dos elementos que
+est\ao\ na diagonal e daqueles que n\ao\ est\ao\ seja
+diferente. Vejamos essas diferen\cas.
+
+\begin{itemize}
+\item Significado  dos elementos $e_{11}$, $e_{22}$ e
+$e_{33}$
+
+Considerando os pontos $P$ e $Q$ situados ao longo do eixo
+$x_1$, temos $dx_i = (dx_1,0,0)$ e $\overline{PQ} = dx_1$.
+Da defini\cao\ de deforma\cao\ (pequena), chegamos, no
+nosso caso, em
+\begin{eqnarray}
+\overline{P'Q'}^2 -\overline{PQ}^2 \sim 2e_{ij}dx_idx_j
+= 2e_{11}(dx_1)^2 \; ,
+\end{eqnarray}
+de onde podemos concluir que
+\begin{eqnarray}
+\overline{P'Q'} \sim \sqrt{1 + 2 e_{11}} dx_1 \; .
+\end{eqnarray}
+
+Se n\'os definirmos a extens\ao\ relativa como
+$(\overline{P'Q'}-\overline{PQ}) / \overline{PQ}$ e usarmos
+a aproxima\cao\ de Taylor de primeira ordem na raiz quadrada, i.e.,
+$\sqrt{y}\approx 1 + \frac{1}{2}y$, temos a aproxima\cao
+\begin{eqnarray}
+e_r \sim \frac{\sqrt{1+2 e_{11}} dx_1-dx_1}{dx_1}
+= \sqrt{1+2 e_{11}} - 1 \approx e_{11} \; .
+\end{eqnarray}
+
+Ent\ao\ o elemento $e_{11}$ do tensor de deforma\cao\
+representa aproximadamente a extens\ao\ (contra\cao)
+relativa do material ao longo do eixo $x_1$. As
+componentes $e_{22}$ e $e_{33}$ tem interpreta\coes\
+similares.
+
+\item Significado  dos elementos $e_{12}$, $e_{13}$ e
+$e_{23}$
+
+Vamos considerar dois pontos $Q$ e $R$ nas proximidades
+do ponto $P$. Vamos especificar os pontos $Q$ e $R$ no
+estado inicial da seguinte maneira:
+\begin{eqnarray}
+dx_i^{Q}=(dx_1,0,0) \hspace{0.5cm}, \hspace{0.5cm} dx_i^{R}
+=(0,dx_2,0) \; .
+\end{eqnarray}
+Ent\ao, os vetores $dx_i^Q$ e $dx_i^R$ s\ao\ perpendiculares.
+Depois da deforma\cao, os pontos $Q$ e $R$ ser\ao\ movidos
+para novas posi\coes\ expecificadas pelas aproxima\coes\
+seguintes
+\begin{eqnarray}
+dx_i^{'Q} \sim dx_1 \delta_{1i} + \frac{\partial u_i}
+{\partial x_1} dx_1
+\hspace{0.5cm}, \hspace{0.5cm}
+dx_i^{'R} \sim dx_2 \delta_{i2} + \frac{\partial u_i}
+{\partial x_2} dx_2 \; .
+\end{eqnarray}
+
+Vamos agora investigar como a deforma\cao\ altera a orienta\cao\
+das linhas $\overline{PQ}$ e $\overline{PR}$, que s\ao\
+originalmente perpendiculares. Para isto propomos, considerar o
+produto escalar dos vetores $dx_i^{'Q}$ e $dx_i^{'R}$ dado por
+\begin{eqnarray}
+dx_i^{'Q} dx_i^{'R} \sim \left( \frac{\partial u_2}{\partial x_1}
++ \frac{\partial u_1}{\partial x_2}\right) dx_1 dx_2 +
+\frac{\partial u_i}{\partial x_1}  \frac{\partial u_i}
+{\partial x_2} dx_1 dx_2 \; .
+\end{eqnarray}
+
+O \'ultimo termo pode ser desconsiderado desde que consideremos
+as deforma\coes\ pequenas e \'e de uma ordem mais elevada em
+$|\partial u_i/ \partial x_j|$.
+
+Do produto interno sabemos que
+\begin{eqnarray}
+dx_i^{'Q} dx_i^{'R} = |dx_i^{'Q}| |dx_i^{'R}| \cos(\gamma)
+\sim 2e_{12}dx_1 dx_2 \; ,
+\end{eqnarray}
+onde $\gamma$ \'e o \^angulo entre os vetores $dx_i^{'Q}$ e
+$dx_i^{'R}$. Logo,
+\begin{eqnarray} \label{cosg}
+\cos(\gamma) \sim \frac{2e_{12}dx_1 dx_2}{|dx_i^{'Q}|
+|dx_i^{'R}|} \; .
+\end{eqnarray}
+
+De $|dx_i^{'Q}|$ chegamos em
+\begin{eqnarray*}
+|dx_i^{'Q}| = \sqrt{(dx_1)^2 + 2 \frac{\partial u_1}{\partial x_1}
+(dx_1)^2 + \left( \frac{\partial u_1}{\partial x_1} \right)^2
+(dx_1)^2} = dx_1 \sqrt{1 + 2 \frac{\partial u_1}{\partial x_1}
++ \left( \frac{\partial u_1}{\partial x_1} \right)^2} \; ,
+\end{eqnarray*}
+onde, para $|\partial u_i/ \partial x_j| \ll 1$ e usando Taylor na
+raiz quadrada, temos
+\begin{eqnarray} \label{dxQR}
+|dx_i^{'Q}| \approx dx_1 \left(1+\frac{\partial u_1}{\partial x_1}\right)
+\mbox{ e similarmente } |dx_i^{'R}|
+\approx dx_2 \left(1+\frac{\partial u_2}{\partial x_2}\right) \; .
+\end{eqnarray}
+
+Assim, substituindo as express\oes\ de (\ref{dxQR}) em (\ref{cosg})
+obtemos
+\begin{eqnarray} \label{app}
+\cos(\gamma) \sim \frac{2e_{12}dx_1 dx_2}{|dx_i^{'Q}|
+|dx_i^{'R}|} &\approx& \frac{2e_{12}dx_1 dx_2}{\left(1+\frac{\partial u_1}
+{\partial x_1}\right) \left(1+\frac{\partial u_2}{\partial x_2}
+\right) dx_1  dx_2} = \frac{2e_{12}}{1 + \frac{\partial u_1}
+{\partial x_1} + \frac{\partial u_2}{\partial x_2}} \nonumber \\
+&\approx& 2e_{12} \left(1 - \frac{\partial u_1}{\partial x_1} -
+\frac{\partial u_2}{\partial x_2} \right) \approx 2e_{12} \; .
+\end{eqnarray}
+
+Se chamamos $\alpha_{12} = \frac{\pi}{2} - \gamma$, temos,
+equa\cao\ (\ref{app}),
+\begin{eqnarray}
+\sin \alpha_{12} \sim \alpha_{12} \approx 2e_{12} \;\;\;\Rightarrow
+\;\;\; e_{12} \approx \frac{1}{2} \alpha_{12} \; ,
+\end{eqnarray}
+pois a aproxima\cao\ $\sin \alpha_{12} \sim \alpha_{12}$ \'e
+poss\ih vel j\'a que $\gamma \sim \frac{\pi}{2} \Rightarrow
+\alpha_{12} \ll 1$.
+
+Ent\ao, o elemento $e_{12}$ do tensor de deforma\cao\ representa
+metade da mudan\ca\ do \^angulo correto entre as dire\coes, que
+eram originalmente perperdiculares. Esta mudan\ca\ \'e chamada
+de ``cisalhamento''  e o elemento $e_{12}$ de ``deforma\cao\ de
+cisalhamento''. Os elementos $e_{13}$ e $e_{23}$ tem uma
+interpreta\cao\ similar.
+
+\end{itemize}
+
+\subsection{Deforma\coes\ quadr\'aticas}
+
+A superf\ih cie de um tensor de deforma\cao\ pode ser escrita
+na forma
+\begin{eqnarray}
+e_{ij} x_i x_j = \pm 1 \; ,
+\end{eqnarray}
+onde depois de uma rota\cao\ apropriada nas coordenadas, esta
+pode ser diagonalizada tal que
+\begin{eqnarray}
+e_{11}' x_1^{'2}+e_{22}' x_2^{'2}+e_{33}' x_3^{'2} = \pm 1 \; .
+\end{eqnarray}
+
+Os eixos desta quadr\'atica s\ao\ os eixos principais do tensor
+de deforma\cao, os valores $e_{11}', e_{22}',  e_{33}'$ s\ao\ as
+{\it deforma\coes\ principais}. As deforma\coes\ de cisalhamento
+s\ao\ zero no primeiro sistema de coordenadas.
+
+
+\subsection{Dilata\cao\ de volume}
+
+Vamos considerar o sistema de coordenadas Cartesianas $x_i$
+escolhido tal que este eixo coincide com o eixo principal do
+tensor de deforma\cao\ e vamos considerar uma mudan\ca\ de
+um volume elementar $dV$ durante a deforma\cao. No estado
+inicial n\'os temos
+\begin{eqnarray}
+dV = dx_1 dx_2 dx_3 \; ,
+\end{eqnarray}
+que depois da deforma\cao, $dV$ mudar\'a para $dV'$
+\begin{eqnarray}
+dV' = dx_1' dx_2' dx_3' \; .
+\end{eqnarray}
+
+Para $dx_i'$ n\'os derivamos sobre
+\begin{eqnarray}
+dx_i' \sim dx_i + \frac{\partial u_i}{\partial x_k} dx_k \; .
+\end{eqnarray}
+
+Em nosso sistema de coordenadas isto dar\'a para $dx_i'$
+(no sistema principal, as deforma\coes\ de cisalhamento
+s\ao\ zero),
+\begin{eqnarray}
+dx_1' \sim dx_1 + \frac{\partial u_1}{\partial x_1} dx_1
+= dx_1(1+e_{11}) \;,
+\end{eqnarray}
+e similarmente para $dx_2'$ e $dx_3'$. Para $dV'$ temos
+\begin{eqnarray}
+dV' \sim (1+e_{11})(1+e_{22})(1+e_{33})dx_1 dx_2 dx_3
+\sim dV + (e_{11} + e_{22} + e_{33}) dV \; ,
+\end{eqnarray}
+onde foi ignorado os temos de maior ordem (como
+$e_{11}e_{22}, ...$). Logo,
+\begin{eqnarray}
+\theta = \mbox{div}\; \vec{u} = (e_{11} + e_{22} + e_{33})
+\sim \frac{dV'-dV}{dV} \; .
+\end{eqnarray}
+
+A quantidade $\theta$ \'e chamada de {\it dilata\cao\ de
+volume} ou abreviadamente {\it dilata\cao}. Ela representa
+aproximadamente a mudan\ca\ relativa do volume durante a
+deforma\cao. Ela n\ao\ depende das deforma\coes\ de cisalhamento
+$e_{12}$, $e_{13}$ e $e_{23}$ porque um cisalhamento n\ao\ altera o
+volume de um corpo. Como $\theta$ \'e o tra\c co do tensor de
+deforma\cao\ que \'e invariante sob transforma\cao\ de
+coordenadas, temos que $\theta$ descreve a dilata\cao\ 
+de volume em qualquer sistema de coordenadas cartesianas.
+
+
+%\begin{thebibliography}{99}
+%\bibitem{Psencik} P\v{s}en\v{c}ik, I., 1994, {\em Introduction
+%to seismic methods} - Lecture Notes, PPPG / UFBa.
+%\end{thebibliography}
+

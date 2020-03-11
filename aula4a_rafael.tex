@@ -1,0 +1,184 @@
+%\documentclass{article}
+%\usepackage{amsmath}
+%\usepackage{amssymb}
+%\usepackage[brazil]{babel}
+%\begin{document}
+
+
+\section[Meio homog\^eneo e isotr\'opico]{Separa\c{c}\~ao da equa\cao\
+elastodin\^amica para um meio homog\^eneo e isotr\'opico}
+
+Consideramos a equa\c{c}\~ao elastodin\^amica para meios
+homog\^eneos e isotr\'opicos na nota\c{c}\~ao de componentes.
+Em tal meio, as derivadas de $\lambda$ e $\mu$ s\ao\ zero, fornecendo a
+partir da equacao (\ref{eqelaiso}) 
+\begin{equation}
+(\lambda+\mu)u_{k,ki}+\mu u_{i,kk}+f_{i}=\rho u_{i,tt}.
+\label{eqelahom}
+\end{equation}
+
+Agora, aplicamos a opera\c{c}\~ao de diverg\^encia
+na equa\c{c}\~ao acima, nos retornando
+\begin{equation}
+(\lambda+\mu)u_{k,kii}+\mu u_{i,kki}+f_{i,i}=\rho u_{i,itt},
+\label{div}
+\end{equation}
+Usando a nota\c{c}\~ao $\theta=u_{k,k}$, a equa\c{c}\~ao
+(\ref{div}) pode ser reescrita como
+\[
+(\lambda+\mu)\theta_{,ii}+\mu \theta_{,kk}+f_{i,i}=\rho \theta_{,tt} \Rightarrow \frac{\lambda+2\mu}{\rho}
+\theta_{,ii}+\rho^{-1}f_{i,i}=\theta_{,tt}.
+\]
+
+Correspondentemente, aplicamos a opera\c{c}\~ao de rotacional
+na equa\c{c}\~ao (\ref{eqelahom}), nos retornando
+\begin{equation}
+(\lambda+\mu)\epsilon_{jli}u_{k,kil}+\epsilon_{jli}\mu
+u_{i,kkl}+\epsilon_{jli}f_{i,l}=\rho\epsilon_{jli} u_{i,ltt}.
+\label{rot}
+\end{equation}
+Usando a nota\c{c}\~ao $\Omega_{j}=\epsilon_{jli}u_{i,l}$ e
+notando que $\epsilon_{jli}u_{k,kil}=0$, a equa\c{c}\~ao
+(\ref{rot}) pode ser escrita como
+\[
+\frac{\mu}{\rho}\Omega_{,kk}+\rho^{-1}\epsilon_{jli}f_{i,l}=\Omega_{j,tt}.
+\]
+
+Essas equa\c{c}\~oes podem se escritas na forma vetorial, obtendo
+\[\alpha^{2}\Delta\theta+\rho^{-1}\mbox{div}\vec{f}=\frac{\partial^{2} \theta }{\partial t^{2}},\]
+onde $\alpha^{2}=\frac{\lambda+2\mu}{\rho}$, e
+\[\beta^{2}\Delta\vec{\Omega}+\rho^{-1}\mbox{rot}\vec{f}=\frac{\partial^{2} \vec{\Omega} }{\partial t^{2}},\]
+onde $\beta^{2}=\frac{\mu}{\rho}$.
+
+As equa\c{c}\~oes acima s\~ao a equa\c{c}\~ao escalar da onda para
+$\theta$ e a equa\c{c}\~ao vetorial da onda para $\vec{\Omega}$.
+
+Consideramos o caso unidimensional no qual todas a quantidades
+dependendem somente da coordenada espacial $x$. Omitindo o efeito
+das for\c{c}as sobre o corpo, isto \'e, $f_{i}=0$. Ent\~ao as
+equa\c{c}\~oes acima se reduzem a forma
+\[\alpha^{2}\frac{\partial^{2} \theta }{\partial x^{2}}-\frac{\partial^{2} \theta }{\partial t^{2}}=0,\]
+onde $\theta=\frac{\partial u_1}{\partial x}$, e
+\[\beta^{2}\frac{\partial^{2} \vec{\Omega} }{\partial x^{2}}-\frac{\partial^{2} \vec{\Omega} }{\partial t^{2}}=0,\]
+onde $\vec{\Omega}=(0,\frac{-\partial u_{3}}{\partial
+x},\frac{\partial u_{2}}{\partial x})$.
+
+A solu\c{c}\~ao para a equa\c{c}\~ao escalar tem a seguinte forma
+(solu\c{c}\~ao de D'Alambert),
+\[\theta=\theta(at+bx),\]
+onde $a$ e $b$ s\~ao constantes a serem determinadas.
+Inserimos a solu\c{c}\~ao acima na equa\c{c}\~ao escalar reduzida da
+onda. Temos
+\[\alpha^{2}\theta''b^{2}-a^{2}\theta''=0,\]
+de onde $b^{2}=a^{2}/\alpha^{2}$.
+Sem perda de generalidade podemos colocar $a=1$, obtendo assim a
+solu\c{c}\~ao mais geral para a equa\c{c}\~ao da onda
+\[\theta=\theta(t\pm \frac{x}{\alpha}).\]
+
+Analogamente, para a equa\c{c}\~ao vetorial da onda temos,
+\[\vec{\Omega}=\vec{\Omega}(t\pm \frac{x}{\beta}).\]
+
+Cada uma dessas solu\c{c}\~oes descrevem duas ondas se propagando
+em dire\c{c}\~oes opostas ao longo do eixo $x$ com velocidades
+$\alpha$ e $\beta$.
+
+Deste modo, as equa\c{c}\~oes descrevem ondas caracterizadas por suas
+velocidades $\alpha$ e $\beta$. Essas velocidade s\~ao chamadas
+velocidades de propaga\c{c}\~ao. Em um meio homog\^eneo e isotr\'opico,
+n\'os temos duas ondas independentes. Como $\lambda$ e $\mu$ s\ao\
+par\^ametros el\'asticos positivos, \'e facil reconhecer que $\alpha >
+\beta$ Por\'em, as ondas n\~ao s\'o diferem por suas velocidades, mas
+tamb\'em por suas propriedades. A onda mais r\'apida, que se propaga com
+velocidade $\alpha$, \'e uma onda longitudinal, i.e., a sua
+polariza\cao\ \'e na dire\cao\ de propaga\cao. Ela \'e descrita pela
+dilata\c{c}\~ao $\theta$, a qual caracteriza mudan\c{c}as de volume. Por
+essa caracter\istica, tamb\'em pode ser chamada de onda compressional.
+Com frequ\^encia, ela \'e chamada na s\ismica\ de onda P, onde P vem de
+prim\'aria. A onda mais lenta, que se propaga com velocidade $\beta$,
+\'e uma onda transversal, i.e., a sua polariza\cao\ \'e perpendicular
+\`a dire\cao\ de propaga\cao. Como ela n\ao\ gera varia\coes\ no volume,
+tamb\'em pode ser chamada de onda cisalhante. Com frequ\^encia, ela \'e
+chamada na s\ismica\ de onda S, onde S vem de secund\'aria, pois chegam
+depois a onda P.
+
+Aplicando as opera\c{c}\~oes de div e rot na equa\c{c}\~ao
+elastodin\^amica para um s\'olido homog\^eneo e isotr\'opico,
+n\'os encontramos que a equa\c{c}\~ao elastodin\^amica descreve
+duas ondas separadas. Se aplicarmos os mesmos operadores para a
+equa\c{c}\~ao elastodin\^amica para meios n\~ao-homog\^eneos e
+isotr\'opicos, n\'os n\~ao temos sucesso na separa\c{c}\~ao em
+duas ondas. Em meios n\~ao-homog\^eneos, ambas ondas s\~ao
+acopladas. Isto significa que as ondas em meios n\~ao-homog\^eneos
+e isotr\'opicos n\~ao s\~ao puramente longitudinais, nem puramente
+transversais. Por causa disso  em meios n\~ao-homog\^eneos e
+ondas P e ondas S s\~ao acopladas.
+
+De nossa defini\c{c}\~ao forma de fluido como um meio onde $\mu=0$
+segue imediatamente que em fluidos s\'o uma onda pode se propagar,
+a onda P. A velocidade da onda S em fluidos $\beta=0$.
+
+As equa\c{c}\~oes da onda que n\'os encontramos n\~ao \'e a
+solu\c{c}\~ao final para nosso problema. Nós devemos resolver
+ent\~ao para $\theta$ e $\vec{\Omega}$ e ent\~ao determinar o
+vetor de deslocamento $\vec{u}$ de
+\[\theta=\mbox{div}\vec{u}, \mbox{  }\mbox{  }\mbox{  }\mbox{  }\mbox{  }\vec{\Omega}=\mbox{rot}\vec{u}. \]
+Esse procedimento complicado pode ser evitado pelo uso do teorema
+de Lam\'e. A principal id\'eia \'e expressar o vetor delocamento
+satisfazendo a equa\c{c}\~ao elastodin\^amica como dois termos
+separados correspondendo as ondas P e S. De acordo com o teorema,
+o vetor deslocamento pode ser espresso em termos dos pontenciais
+de Helmholtz $\varphi$ e $\vec{\psi}$,
+\[\vec{u}=\mbox{grad}\varphi+\mbox{rot}\vec{\psi}, \mbox{  }\mbox{  }\mbox{  }\mbox{  }\mbox{  } \mbox{div}\vec{\psi}=0,\]
+com $\varphi$ e $\vec{\psi}$ satisfazendo a equa\c{c}\~ao escalar
+e vetorial da onda. Isso vale se a for\c{c}as sobre o corpo
+$\vec{f}$  tamb\'em podem ser expressas em termos de potenciais de Helmholtz
+\[\vec{f}=\mbox{grad}\Phi+\mbox{rot}\vec{\Psi}, \mbox{  }\mbox{  }\mbox{  }\mbox{  }\mbox{  } \mbox{div}\vec{\Psi}=0,\]
+e se certas condi\c{c}\~oes s\~ao satisfeitas.
+
+
+Abaixo, mostramos que a condi\c{c}\~ao suficiente para a equa\c{c}\~ao
+elastodin\^amica  valer \'e que $\varphi$ e $\vec{\psi}$
+satisfa\c{c}am as correspondentes equa\c{c}\~oes da onda. Para tal,
+inserimos $\vec{u}$ expressado em termos dos potenciais de Helmholtz
+na equa\c{c}\~ao elastidin\^amica
+\[(\lambda+\mu)u_{k,ki}+\mu u_{i,kk}+f_{i}=\rho u_{i,tt}.\]
+
+N\'os temos
+\[(\lambda+\mu)(\varphi_{,kki}+\epsilon_{klm}\psi_{m,lki})+\mu
+(\varphi_{,ikk}+\epsilon_{ilm}\psi_{m,lkk})+(\Phi_{,i}+
+\epsilon_{ilm}\Psi_{m,l})=\rho
+(\varphi_{,itt}+\epsilon_{ilm}\psi_{m,ltt}),\] que pode ser
+reescrita como
+\[[(\lambda+2\mu)\varphi_{,kk}+\Phi-\rho\varphi_{,tt}]_{,i}+
+\epsilon_{ilm}[\mu\psi_{m,kk}+\Psi_{m}-\rho\psi_{m,tt}]_{,l}=0.\]
+
+\'E suficiente, mas n\~ao necess\'ario que
+\begin{eqnarray*}
+(\lambda+2\mu)\varphi_{,kk}+\Phi-\rho\varphi_{,tt} & = & 0, \\
+\mu\psi_{m,kk}+\Psi_{m}-\rho\psi_{m,tt} & = & 0,
+\end{eqnarray*}
+que na forma vetorial nos d\'a
+\begin{eqnarray*}
+\alpha^{2}\Delta\varphi+\rho^{-1}\Phi & = &\frac{\partial^{2} \varphi
+}{\partial t^{2}}, \\
+\beta^{2}\Delta\vec{\psi}+\rho^{-1}\vec{\Psi} & = &\frac{\partial^{2}
+\vec{\psi} }{\partial t^{2}}.
+\end{eqnarray*}
+Essas s\~ao as equa\c{c}\~oes para os
+potenciais de Helmholtz $\varphi$ (ondas P) e $\vec{\psi}$ (ondas S).
+Logo, o vetor deslocamento pode simplesmente ser determinado pela
+equa\c{c}\~ao
+\[
+\vec{u}=\mbox{grad}\varphi+\mbox{rot}\vec{\psi}.
+\]
+
+
+%\begin{thebibliography}{bib}
+%
+%\bibitem{pse}{I. P\v{s}en\v{c}\'\i k - \emph{Introduction to seismic
+%methods}, Lecture Notes, PPPG/UFBa, 1994.}
+%\bibitem{aki}{Aki and Richards - \emph{Qualitative Seismology}, second
+%edition, University Science Books, 2002.}
+%
+%\end{thebibliography}
+%\end{document}

@@ -1,0 +1,257 @@
+
+\section{Tensores Cartesianos}
+
+Quantidades f\'\i sicas podem ser matematicamente representadas
+por tensores. As equa\c{c}\~oes s\~ao equa\c{c}\~oes tensoriais.
+Em nosso trabalho vamos nos concentrar em tensores no espa\c{c}o
+euclidiano $3D$.
+
+Alguns exemplos de tensores: \[  \begin{array}{l}
+               \mbox{\emph{temperatura, densidade} - escalares - tensor de ordem zero}; \\
+               \mbox{\emph{velocidade, deslocamento, for\c{c}a} -vetores - tensor de primeira ordem}; \\
+               \mbox{\emph{tensor de tens\~ao, tensor de in\'ercia} - tensor de segunda ordem}; \\
+               \mbox{\emph{tensor de par\^ametros el\'asticos} -  tensor de quarta ordem}. \\
+
+\end{array}  \]
+
+\subsection{Transforma\c{c}\~ao de Coordenadas}
+
+Considere dois pontos $A$ e $B$ no espa\c{c}o euclidiano $3D$, os
+pontos t\^em as respectivas coordenadas $[x_{1}^{A}, x_{2}^{A},
+x_{3}^{A}]$, $[x_{1}^{B}, x_{2}^{B}, x_{3}^{B}]$. Definimos a
+dist\^ancia entre estes pontos como,
+\[d(A,B)=\left[(x_{i}^{B}-x_{i}^{A})(x_{i}^{B}-x_{i}^{A})\right]^{1/2}.\]
+
+Aqui estamos utilizando a conve\c{c}\~ao de Einstein, que diz,
+quando dois \'\i ndices iguais se repentem num produto, tem-se
+ impl\'\i cito uma soma spbre todos valores deste \'\i ndice.
+ Note que s\~ao dois \'\i ndices, coisas do tipo $u_{i}v_{i}w_{i}$ n\~ao s\~ao permitidas.
+Tamb\'em utilizaremos $u_{i}$ para representar uma componente gen\'erica do vetor $(u_{1},
+u_{2}, u_{3})$.
+
+Note que a fun\c{c}\~ao dist\^ancia satisfaz:
+\[  \begin{array}{l}
+            d(A,B) \mbox{ \'e real e n\~ao-negativa};\\
+            d(A,A)=0;\\
+             d(A,B)= d(B,A);\\
+             d(A,B) \leq d(A,C)+ d(C,B).
+\end{array}  \]
+
+
+Com essas defini\c{c}\~oes podemos considerar as
+transfoma\c{c}\~oes de coordenadas. Consideremos dois sistemas de
+ coordenadas $x_{i}$ e $x'_{i}$. A rela\c{c}\~ao entre os dois sistemas de coordenadas \'e
+\[x'_{i}=\alpha_{ij}(x_{j}-x_{oj}),\]
+onde $x_{oj}$ \'e a coordenada da origem do sistema $x'_{i}$ nas coordenadas de
+$x_{i}$ e os $\alpha_{ij}$ s\~ao os elementos da matriz de
+tranfoma\c{c}\~ao.
+
+Lembremos da difini\c{c}\~ao do delta de Kronecker,
+\[\delta_{ij}=\left \{ \begin{array}{l}
+                0, \mbox{   }\mbox{   }\mbox{se } i \neq j,\\
+                1, \mbox{   }\mbox{   }\mbox{se } i= j,\\
+\end{array} \right.\]
+pela conven\c{c}\~ao de Einstein tems que
+$\delta_{ii}=\delta_{11}+\delta_{22}+\delta_{33}=3$.
+
+Se fizermos $\alpha_{ij}=\delta_{ij}$, a tranforma\c{c}\~ao de
+coordenadas ser\'a
+\[x'_{i}=(x_{i}-x_{oi}),\]
+o que a uma transla\c{c}\~ao paralela de um sistem de coordenada
+com respeito ao outro. Se fizermos  $x_{oj}=0$, a rela\c{c}\~ao de
+transforma\c{c}\~ao ser\'a
+\[x'_{i}=\alpha_{ij}x_{j},\]
+o que descreve uma rota\c{c}\~ao e/ou uma deforma\c{c}\~ao em torno da origem do primeiro
+sistema em rela\c{c}\~ao ao outro.
+
+Neste momento, iremos investigar a natureza da matriz
+$\alpha_{ij}$. Vamos introduzir o vetor raio $r_{i}$, partindo da
+origem de um sistema de coordenadas at\'e um ponto $x_{i}$, isto
+\'e, $x_{i}=r_{i}$. Sejam $\vec{i}_{1}$, $\vec{i}_{2}$ e
+$\vec{i}_{3}$ tr\^es vetores mutuamente ortogonais unit\'arios
+perpendiculares e orientado ao longo dos eixos $x_{1}$, $x_{2}$,
+$x_{3}$, respectivamente. Assim como $\vec{i'_{1}}$,
+$\vec{i'_{2}}$, $\vec{i'_{3}}$ s\~ao vetores unit\'arios no
+sistema $x'_{i}$, o que implica que eliminamos a deforma\c{c}\~ao.
+Podemos expressar o vetor $r_{i}$ nos dois sistemas de
+coordenadas, como
+\[ \vec{r}=x_{1}\vec{i}_{1}+x_{2}\vec{i}_{2}+x_{3}\vec{i}_{3}=x'_{1}\vec{i'}_{1}+
+x'_{2}\vec{i'}_{2}+x'_{3}\vec{i'}_{3}=x_{j}\vec{i_{j}},\]
+utilizando no lado direito a rela\c{c}\~ao de transforma\c{c}\~ao
+\[x'_{i}=\alpha_{ij}x_{j},\]
+teremos
+\[\vec{r}=x_{1}\vec{i}_{1}+x_{2}\vec{i}_{2}+
+x_{3}\vec{i}_{3}=\alpha_{1j}x_{j}\vec{i'}_{1}+
+\alpha_{2j}x_{j}\vec{i'}_{2}+\alpha_{3j}x_{j}\vec{i'}_{3}.\]
+
+Se multiplicarmos a equa\c{c}\~ao acima por $\vec{i}_{k}$, teremos
+\[x_{j}\vec{i}_{j}\vec{i'}_{k}=
+\alpha_{kj}x_{j} \Rightarrow
+\alpha_{kj}=\vec{i}_{j}\vec{i'}_{k},\] note que os elementos de
+$\alpha_{ij}$ s\~ao cossenos, denominados cossenos diretores.
+
+Iremos analisar a transforma\c{c}\~ao inversa a
+\[x'_{i}=\alpha_{ij}(x_{j}-x_{oj}).\]
+
+Iremos mostrar que para a matriz $\alpha_{ij}$ existe uma inversa,
+$(\alpha^{-1})_{ij}$, tal que
+\[\alpha_{ij}(\alpha^{-1})_{jk}=\delta_{ik}, \mbox{    }\mbox{    }\mbox{    }(\alpha^{-1})_{jk}\alpha_{kl}=\delta_{jl}.\]
+
+Com a matriz inversa teremos a transfoma\c{c}\~ao inversa que
+ser\'a dada por
+\[x_{i}=x_{oi}-(\alpha^{-1})_{ij}x'_{j}\]
+
+Como a distan\^ancia entre $A$ e $B$ devem ser independente do
+sistema de coordenada utilizado, teremos
+\[ (x_{i}^{B}-x_{i}^{A})(x_{i}^{B}-x_{i}^{A})=(x'_i{}^{B}-x'_i{}^{A})(x'_i{}^{B}-x'_i{}^{A}),\]
+o que nos d\'a
+\[ (x_{i}^{B}-x_{i}^{A})(x_{i}^{B}-x_{i}^{A})=\alpha_{kj}\alpha_{kl}(x_{j}^{B}-x_{j}^{A})(x_{l}^{B}-x_{l}^{A}),\]
+o que implica
+\[ \alpha_{kj}\alpha_{kl}=\delta_{jl}.\]
+
+Agora supondo que exista a inversa, teremos
+\[(\alpha^{-1})_{jk}\alpha_{kl}=\delta_{jl},\]
+e portanto,
+\[(\alpha^{-1})_{jk}=\alpha_{kj}.\]
+
+Isso significa que a matriz inversa de $\alpha_{ij}$ \'e obtida
+transpondo a matriz $\alpha_{ij}$, por esta propridade vemos que a
+matriz em discuss\~ao \'e ortogonal. Pela ortogonalidade, temos
+que
+\[|det(\alpha_{ij})|=1\].
+
+\subsection{Defini\c{c}\~ao e Propriedades dos Tensores Cartesianos}
+
+Nesta se\c{c}\~ao vamos definir um tensor cartesiano e algumas de
+suas propriedades.
+
+Para cada ponto do espa\c{c}o, o tensor cartesiano \'e uma
+sequ\^encia
+ finita de n\'umeros os quais correspondem, de maneira \'unica, as coordenadas
+cartesianas do ponto. A sequ\^encia representa um tensor se
+satisfaz as seguintes  condi\c{c}\~oes:
+
+1-) A sequ\^encia cont\'em $3^{k}$ n\'umeros onde $3$ representa a
+dimens\~ao do espa\c{c}o e $k$ \'e um inteiro n\~ao-negativo
+chamado ordem:
+\[T_{m_{1},m_{2},...,m_{k}}, \mbox{   }\mbox{   }\mbox{   }\mbox{   } m_{i}=1,2,3.\]
+
+2-) Um elemento do tensor no sistema de coordenadas $x'_{i}$ \'e
+associado ao tensor no sistema de coordenadas $x_{i}$ pela
+rela\c{c}\~ao:
+\[T'_{p_{1},p_{2},...,p_{k}}=
+\alpha_{p_{1}m_{1}}\alpha_{p_{2}m_{2}}...\alpha_{p_{k}m_{k}}T_{m_{1},m_{2},...,m_{k}}.\]
+
+Para um tensor de ordem zero definimos $T=T'$. J\'a para tensores
+de primeira de segunda ordem,temos
+\[T'_{i}=\alpha_{ij}T_{j},\mbox{   }\mbox{   }\mbox{   }\mbox{   }
+T'_{ij}=\alpha_{im}\alpha_{jn}T_{mn}.\]
+
+
+
+Agora definimos as opera\c{c}\~oes b\'asicas com tensores.
+Com a mesma ordem a adi\c{c}\~ao e subtra\c{c}\~ao de tensores
+correspondem a:
+\[A_{ij} \pm B_{ij}=C_{ij}.\]
+
+Mas a multiplica\c{c}\~ao n\~ao necessita que os tensores tenham as
+mesma ordem. Se todos os \'\i ndices s\~ao distintos a
+multiplica\c{c}\~ao soma os \'\i ndices, como por exemplo,
+\[A_{ij}B_{klm}=C_{ijklm}.\]
+A multiplica\c{c}\~ao de do tensores com mesmos \'\i ndices reduz
+a ordem do tensor resultante por $2$,
+\[A_{ij}B_{j}=C_{i}.\]
+A redu\c{c}\~ao da ordem \'e dita contra\c{c}\~ao. Um t\'\i pico
+exemplo \'e o produto escalar.
+
+Posteriormente iremos trabalhar com com tensores sim\'etricos e
+anti-sim\'etricos, por isso definimos essa propriedade dos
+tensores. Entendemos um  tensor sim\'etrico com a seguinte
+propriedade
+\[T_{m_{1},m_{2},...,m_{k}}=T_{m_{2},m_{1},...,m_{k}},\]
+esse tensor \'e sim\'etrico nos \'\i ndices $m_{1}$ e
+$m_{2}$.Entendemos um  tensor anti-sim\'etrico com a seguinte
+propriedade
+\[T_{m_{1},m_{2},...,m_{k}}=-T_{m_{k},m_{2},...,m_{1}},\]
+esse tensor \'e anti-sim\'etrico nos \'\i ndices $m_{1}$ e $m_{k}$.
+
+Lembremos das propridades de matrizes, para ver que um tensor de
+ordem $2$, pode ser escrito como a soma de um tensor sim\'etrico e
+um anti-sim\'etrico da seguinte forma:
+\[B_{ij}=\frac{1}{2}(B_{ij}+B_{ji})+\frac{1}{2}(B_{ij}-B_{ji})=S_{ij}+A_{ij}.\]
+
+Note que simetria e anti-simetria s\~ao preservadas ap\'os uma
+transforma\c{c}\~ao de coordenadas.
+ Se $T_{mnl}=T_{nml}$, temos
+\[T'_{ijk}=\alpha_{im}\alpha_{jn}\alpha_{kl}T_{mnl}=\alpha_{im}\alpha_{jn}\alpha_{kl}T_{nml}=
+\alpha_{jn}\alpha_{im}\alpha_{kl}T_{nml}=T'_{jik}.\] Para
+anti-sim\'etricos a racioc\'\i nio \'e o mesmo.
+
+\subsection{Tensores Isotr\'opicos (especiais)}
+
+
+Um tensor \'e dito isotr\'opico se ap\'os uma transforma\c{c}\~ao
+de coordenadas o tensor se mant\'em inalterado.
+
+Por exemplo o delta de Kronecker \'e um tensor de ordem $2$
+isotr\'opico, pois
+\[\delta'_{ij}=\alpha_{im}\alpha_{jn}\delta_{mn}=\alpha_{im}\alpha_{jm}=\delta_{ij}.\]
+
+Um outro tensor isotr\'opico \'e o s\'\i mbolo de Levi-Civita,
+$\epsilon_{ijk}$, que \'e um tensor de ordem $3$, definido como:
+\[\epsilon_{ijk}=\left\{ \begin{array}{l}
+           1,\mbox{   }\mbox{   }\mbox{   }\mbox{se $i,j,k$ formam uma
+permuta\c{c}\~ao par de $1,2,3$};\\
+          -1,\mbox{   }\mbox{   }\mbox{   }\mbox{se $i,j,k$ formam uma
+permuta\c{c}\~ao \'\i mpar de $1,2,3$};\\
+           0,\mbox{   }\mbox{   }\mbox{   }\mbox{se dois \'\i ndices tem o mesmo
+valor}.\\
+\end{array} \right.\]
+
+Note que
+\[\epsilon_{ijk}\epsilon_{lmn}= \begin{array}{lllll}
+                \vline & \delta_{il} & \delta_{im} & \delta_{in} & \vline\\
+                \vline &\delta_{jl} & \delta_{jm} & \delta_{jn} &\vline\\
+                 \vline &\delta_{kl} & \delta_{km} & \delta_{kn} &\vline\\
+\end{array}.\]
+
+E, portanto,
+\[\epsilon_{ijk}\epsilon_{imn}= \begin{array}{lllll}
+                \vline & 3 & \delta_{im} & \delta_{in}&\vline \\
+                \vline & \delta_{ji} & \delta_{jm} & \delta_{jn}& \vline\\
+               \vline & \delta_{ki} & \delta_{km} & \delta_{kn}& \vline\\
+\end{array}=\delta_{jm}\delta_{kn}-\delta_{jn}\delta_{km},\]
+o qual \'e uma importante identidade. A partir disto, temos que
+\[\epsilon_{ijk}\epsilon_{ijn}=3\delta_{kn}-\delta_{kn}=2\delta_{kn}\]
+e
+\[\epsilon_{ijk}\epsilon_{ijk}=6.\]
+
+Para uma matriz arbitr\'aria $a_{ij}$, usando as identidades  para
+$\epsilon_{ijk}\epsilon_{lmn}$, podemos escrever
+\[\epsilon_{ijk}a_{1i}a_{2j}a_{3k}=\epsilon_{ijk}\epsilon_{123}a_{1i}a_{2j}a_{3k}=
+\begin{array}{lllll}
+                \vline&\delta_{i1} & \delta_{i2} & \delta_{i3}&\vline \\
+                \vline&\delta_{j1} & \delta_{j2} & \delta_{j3}&\vline \\
+                \vline&\delta_{k1} & \delta_{k2} & \delta_{k3}& \vline\\
+\end{array}a_{1i}a_{2j}a_{3k}=\] \[ =\begin{array}{lllll}
+                \vline&a_{11} & a_{12} & a_{13}& \vline\\
+                \vline&a_{21} & a_{22} & a_{23}&\vline \\
+                \vline&a_{31} & a_{32} & a_{33}&\vline \\
+\end{array}=det(a_{ij}).\]
+
+A rela\c{c}\~ao acima pode ser generalizada
+\[\epsilon_{ijk}a_{mi}a_{nj}a_{lk}=det(a_{pq})\epsilon_{mnl}.\]
+
+Com a rela\c{c}\~ao anterior podemos demonstrar que  o s\'\i mbolo
+de Levi-Civita \'e um tensor isotr\'opico de ordem $3$. De fato,
+\[\epsilon'_{ijk}=\alpha_{im}\alpha_{jn}\alpha_{kl}\epsilon_{mnl}=det(\alpha_{pq})\epsilon_{ijk}=\epsilon_{ijk}.\]
+
+E tamb\'em temos a seguinte rela\c{c}\~ao
+\[det(a_{pq})=\frac{1}{6}\epsilon_{mnl}\epsilon_{ijk}a_{mi}a_{nj}a_{lk}.\]
+
+
+
+%\begin{thebibliography}{bib}
+%\bibitem{pse}{I. P\v{s}en\v{c}\'\i k - \emph{Introduction to seismic methods}, Lecture Notes, PPPG/UFBa, 1994.}
+%\end{thebibliography}
+

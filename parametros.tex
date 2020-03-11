@@ -1,0 +1,324 @@
+
+\section{Par\^ametros El\'asticos}
+
+N\'os observamos que $c_{ijkl}$ s\ao\ elementos de um
+tensor de quarta ordem com 81 elementos. Mostramos aqui
+que nem todos eles s\ao\ independentes por causa da
+simetria da matriz de par\^ametros $c_{ijkl}$ em alguns
+\indices.
+
+Devido a simetria do tensor de tens\ao\ e do tensor de
+deforma\cao, n\'os chegamos imediatamente da lei de Hooke
+que 
+\begin{eqnarray}
+c_{ijkl} = c_{jikl} = c_{ijlk} \; .
+\end{eqnarray}
+
+Outras condi\coes\ de simetria seguem da express\ao\ para
+energia de deforma\cao
+\begin{eqnarray}
+c_{ijkl} = \frac{\partial \tau_{ij}}{\partial e_{kl}}
+= \frac{\partial^2 W}{\partial e_{ij} \partial e_{kl}}
+= \frac{\partial^2 W}{\partial e_{kl} \partial e_{ij}}
+= c_{klij} \; .
+\end{eqnarray}
+Todas as tr\^es condi\coes\ de simetria reduzem os
+par\^ametros el\'aticos independentes de 81 para 21.
+
+Por causa da simetria nos \indices\ $i,j$ e $k,l$, existe
+6 componentes de $i,j$ e $k,l$ (ao inv\'es  de 9 no caso
+n\ao\ sim\'etrico) especificando par\^ametros el\'asticos
+independentes. Estas 6 combina\coes\ de $i,j$ e $k,l$
+s\ao\ algumas vezes substitu\ih das por inteiros de 1 a 6
+e o tensor de par\^ametros el\'asticos \'e ent\ao\
+substitu\ih do por uma matriz 6 x 6. Denotamos os
+elementos desta matriz por $C_{\alpha \beta}$ ($\alpha,
+\beta = 1,2,...,6;$ os \indices\ Gregos diferindo assim
+dos \indices\ em Latim que assumem valores 1,2,3). O
+\indice\ $\alpha$ corresponde aos \indices\ $i,j$ e 
+$\beta$ aos \indices\ $k,l$ para o tensor $c_{ijkl}$.
+Os \indices\ s\ao\ relacionados como segue
+\begin{eqnarray*}
+1 \leftrightarrow 1,1 \;\;\;\;\;\;
+2 \leftrightarrow 2,2 \;\;\;\;\;\;
+3 \leftrightarrow 3,3 \;\;\;\;\;\;
+4 \leftrightarrow 2,3 \;\;\;\;\;\;
+5 \leftrightarrow 3,1 \;\;\;\;\;\;
+6 \leftrightarrow 1,2 \;.
+\end{eqnarray*} 
+
+Devido a simetria $c_{ijkl} = c_{klij}$ da matriz
+$c_{ijkl}$ a matriz $C_{\alpha \beta}$ \'e tamb\'em
+sim\'etrica $C_{\alpha \beta} = C_{\beta \alpha}$ mas
+n\ao\ \'e um tensor. Esta substitui\cao\ de \indices\ \'e
+chamada {\it nota\cao\ comprimida}.
+
+Podemos introduzir uma nota\cao\ comprimida similar para
+os elementos do tensor de deforma\cao\ e de tens\ao, 
+$e_{kl}$ e $\tau_{ij}$. Introduzimos $e_{\beta}$ e
+$\tau_{\alpha}$ de tal maneira que a Lei de Hooke
+generalizada e a express\ao\ para a energia de deforma\cao\
+tem a forma
+\begin{eqnarray}
+\tau_{\alpha} = C_{\alpha \beta} e_{\beta} \;\;\;\;\;\;
+W = \frac{1}{2}\tau_{\alpha}e_{\alpha} \; .
+\end{eqnarray}
+
+Por compara\cao\ da express\ao\ para $W$ na nota\cao\
+padr\ao\ e na nota\cao\ comprimida encontramos que
+\begin{eqnarray*}
+e_{11} \leftrightarrow e_{1} \;\;\;\;\;\;
+e_{22} \leftrightarrow e_{2} \;\;\;\;\;\;
+e_{33} \leftrightarrow e_{3} \;\;\;\;\;\;
+2e_{23} \leftrightarrow e_{4} \;\;\;\;\;\;
+2e_{13} \leftrightarrow e_{5} \;\;\;\;\;\;
+2e_{12} \leftrightarrow e_{6} \\
+\tau_{11} \leftrightarrow \tau_{1} \;\;\;\;\;\;
+\tau_{22} \leftrightarrow \tau_{2} \;\;\;\;\;\;
+\tau_{33} \leftrightarrow \tau_{3} \;\;\;\;\;\;
+\tau_{23} \leftrightarrow \tau_{4} \;\;\;\;\;\;
+\tau_{13} \leftrightarrow \tau_{5} \;\;\;\;\;\;
+\tau_{12} \leftrightarrow \tau_{6} \; .
+\end{eqnarray*}
+
+A energia de deforma\cao\ \'e m\ih nima se n\ao\ existe
+deforma\cao. Para este caso definimos $W=0$. Isto
+significa que para alguma deforma\cao\ a energia de
+deforma\cao\ deve ser positiva, $W>0$. Esta desigualdade
+implica defini\coes\ positivas de
+forma quadr\'atica
+\begin{eqnarray}
+W = \frac{1}{2}C_{\alpha \beta}e_{\alpha}e_{\beta}>0 \; .
+\end{eqnarray}
+
+Como consequ\^encia disto, todo menor principal da matriz $C_{\alpha
+\beta}$ s\ao\ positivos (menor principal de uma matriz \'e a matriz que
+permanece depois da elimina\cao\ das $n$ \'ultimas linhas e colunas).
+Isto significa que todos os elementos da diagonal da matriz $C_{\alpha
+\beta}$ devem ser positivos. Outra consequ\^encia da defini\cao\
+positiva da express\ao\ para a energia de deforma\cao\ \'e
+\begin{eqnarray}
+|C_{\alpha \beta}| = \mbox{det}(C_{\alpha \beta}) > 0 \; ,
+\end{eqnarray}
+que nos indica que a matriz inversa de $C_{\alpha \beta}$ exite tal que
+$C_{\alpha \beta} S_{\beta \gamma} = \delta_{\alpha \gamma}$. A matriz 6
+x 6 $S_{\beta \gamma}$ tem sua equival\^encia no tensor $s_{ijkl}$ de
+quarta ordem que tem as mesmas propriedades de simetria que o tensor
+$c_{ijkl}$. Com esta matriz a Lei de Hooke generalizada pode ser escrita
+como
+\begin{eqnarray}
+e_{ij} = s_{ijkl} \tau_{ij} \; .
+\end{eqnarray}
+Vamos notar que $s_{ijkl}$ \'e conhecido como {\it tensor compliance}
+(for\ca\ de resist\^encia de um material contra a deforma\cao).
+
+\section{V\'arios tipos de simetria anisotr\'opica}
+
+Um material anisotr\'opico pode ser de diferentes graus de
+simetria. Com o crescimento do grau de simetria, o n\'umero
+de par\^ametros el\'aticos independentes decresce. Sobre
+simetria de um material n\'os entendemos que depois de uma
+transforma\cao\ de um sistema de coordenada em que o tensor
+$c_{ijkl}$ \'e especificado, suas propriedades permanecem
+as mesmas. N\'os podemos tratar da simetria reflexiva ou
+simetria com respeito a uma rota\cao\ em torno de um eixo.
+
+H\'a um sistema inteiro de materiais anisotropicos com
+graus diferentes de simetria. O material mais geral que
+\'e especificado por 21 par\^ametros el\'asticos
+independentes \'e chamado {\it triclinic}. O material que
+\'e especificado por 13 par\^ametros independentes \'e
+chamado {\it monoclinic}. Os sistemas n\ao\ s\ao\
+considerados em aplica\coes\ s\ismicas.
+
+A mais complexa anisotropia considerada algumas vezes em 
+sismologia \'e a simetria {\it orthorhombic} com 9
+par\^ametros el\'asticos independentes. Esta \'e
+caracterizada por tr\^es eixos de simetria mutuamente
+perpendiculares. Uma rota\cao\ de $180^{o}$ em
+torno de algum eixo n\ao\ altera o tensor $c_{ijkl}$.
+Esta condi\cao\ leva a matriz $C_{\alpha \beta}$ em
+\begin{eqnarray}
+C_{\alpha \beta} = \left(
+\begin{array}{cccccc}
+C_{11} & C_{12} & C_{13} & 0      & 0      & 0 \\
+       & C_{22} & C_{23} & 0      & 0      & 0 \\
+       &        & C_{33} & 0      & 0      & 0 \\
+       &        &        & C_{44} & 0      & 0 \\
+       &        &        &        & C_{55} & 0 \\
+       &        &        &        &        & C_{66}
+\end{array} \right) \; .
+\end{eqnarray}
+
+A matriz acima \'e completamente especificada quando o
+sistema de coordenadas em que esta \'e indicada \'e
+tamb\'em dado. No caso acima, o sistema de coordenada foi
+escolhido tal que os eixos de coordenada coincide com os
+eixos de simetria. Em um sistema de coordenadas diferente
+haveria elementos menores que zero mas o n\'umero de
+par\^ametros independentes permaneceria 9.
+
+A simetria anisotr\'opica freq\"uentemente usada \'e a
+{\it simetria hexagonal}. Este sistema tem uma simetria
+mais elevada que um ortorhombic. Este sistema tem um eixo
+de simetria tal que a rota\cao\ por um \^angulo
+arbitr\'ario ao redor deste eixo n\ao\ altera o tensor
+$c_{ijkl}$. Isto significa que, em um plano perpendicular
+a este eixo, o tensor comporta-se isotropicamente. Por
+causa disto, a simetria \'e tamb\'em algumas vezes
+chamada de {\it isotropia transversal}, especialmente em
+casos em que o eixo de simetria rotacional coincide com o
+eixo $x_3$ do sistema de coordenadas. A matriz
+$C_{\alpha \beta}$ de um material sim\'etrico
+hexagonalmente, com o eixo vertical de simetria, tem a
+forma
+\begin{eqnarray}
+C_{\alpha \beta} = \left(
+\begin{array}{cccccc}
+C_{11} & C_{12} & C_{13} & 0      & 0      & 0 \\
+       & C_{11} & C_{13} & 0      & 0      & 0 \\
+       &        & C_{33} & 0      & 0      & 0 \\
+       &        &        & C_{44} & 0      & 0 \\
+       &        &        &        & C_{44} & 0 \\
+       &        &        & & & \frac{C_{11}-C_{12}}{2}
+\end{array} \right) \; .
+\end{eqnarray}
+
+A simetria hexagonal \'e descrita por 5 par\^ametros
+el\'asticos independentes. Novamente o sistema de
+coordenadas em que a matriz $C_{\alpha \beta}$ \'e
+definida deve ser especificado. No caso acima, o eixo
+$x_3$ coincide com o eixo de simetria rotacional, os
+eixos $x_1$ e $x_2$ est\ao\ situados no plano de
+isometria.
+
+Algumas vezes, a ent\ao\ chamada nota\cao\ de Love para
+cinco par\^ametros el\'asticos independentes de um meio
+isotr\'opico transversal \'e usada. Nele
+\begin{eqnarray}
+A=C_{11}, \;\;\;\; C=C_{33} \;\;\;\; L=C_{44} \;\;\;\;
+N=C_{66}, \;\;\;\; F=C_{13} \; .
+\end{eqnarray}
+
+O meio isotr\'opico possui a mais elevada simetria entre
+os materiais anisotr\'opicos. Material isotr\'opico \'e
+invariante para alguma rota\cao. Este \'e descrito por
+dois par\^ametros el\'asticos independentes. A matriz
+$C_{\alpha \beta}$ para um material isotr\'opico tem a
+forma
+\begin{eqnarray}
+C_{\alpha \beta} = \left(
+\begin{array}{cccccc}
+C_{11} & C_{11}-2C_{44} & C_{11}-2C_{44} & 0 & 0 & 0 \\
+       & C_{11} & C_{11}-2C_{44} & 0 & 0 & 0 \\
+       &        & C_{11} & 0 & 0 & 0 \\
+       &        &        & C_{44} & 0      & 0 \\
+       &        &        &        & C_{44} & 0 \\
+       &        &        &  &  & C_{44}
+\end{array} \right) \; .
+\end{eqnarray}
+
+Em vez de $C_{11}$ e de $C_{44}$, os ent\ao\ chamados
+par\^ametros de Lam\'e $\lambda$ e $\mu$ s\ao\ usados.
+A matriz $C_{\alpha \beta}$ tem ent\ao\ a forma
+\begin{eqnarray}
+C_{\alpha \beta} = \left(
+\begin{array}{cccccc}
+\lambda+2\mu & \lambda  & \lambda & 0 & 0 & 0 \\
+     & \lambda+2\mu & \lambda & 0  & 0 & 0 \\
+     &       & \lambda+2\mu & 0 & 0 & 0 \\
+     &       &        & \mu & 0 & 0 \\
+     &       &        &     & \mu & 0 \\
+     &       &        &     &     & \mu
+\end{array} \right) \; .
+\end{eqnarray}
+
+A lei de Hooke pode agora ser reescrita como segue
+\begin{eqnarray*}
+\tau_{11} &=& \tau_1 = \lambda(e_1 + e_2 + e_3)+2\mu e_1=
+\lambda \theta + 2 \mu e_{11} \; , \\
+\tau_{22} &=& \tau_2 = \lambda(e_1 + e_2 + e_3)+2\mu e_2=
+\lambda \theta + 2 \mu e_{22} \; , \\
+\tau_{33} &=& \tau_3 = \lambda(e_1 + e_2 + e_3)+2\mu e_3=
+\lambda \theta + 2 \mu e_{33} \; , \\
+\tau_{23} &=& \tau_4 = \mu e_4 = 2 \mu e_{23} \; , \\
+\tau_{13} &=& \tau_5 = \mu e_5 = 2 \mu e_{13} \; , \\
+\tau_{12} &=& \tau_6 = \mu e_6 = 2 \mu e_{12} \; ,
+\end{eqnarray*}
+ou para uma equa\cao
+\begin{eqnarray}
+\tau_{ij} = \lambda \theta \delta_{ij} + 2 \mu e_{ij} \; ,
+\end{eqnarray}
+onde usamos $\theta = e_{ii}$.
+
+Para o tensor de par\^ametros el\'asticos $c_{ijkl}$
+chegamos (usando $2e_{ij} = e_{ij} + e_{ji}$)
+\begin{eqnarray} \label{tpelas}
+c_{ijkl} &=& \fracpp{\tau_{ij}}{e_{kl}} = \lambda
+\fracpp{e_{mm}}{e_{kl}} \delta_{ij} + \mu \left(
+\fracpp{e_{ij}}{e_{kl}} + \fracpp{e_{ji}}{e_{kl}}
+\right) \nonumber \\
+&=& \lambda \delta_{kl} \delta_{ij} + \mu (\delta_{ik}
+\delta_{jl} + \delta_{jk} \delta_{il}) \; .
+\end{eqnarray}
+
+Vamos notar que a lei de Hooke para meio anisotr\'opico
+e isotr\'opico pode tamb\'em ser reescrita em termos de
+vetor de deslocamento. Temos ent\ao
+\begin{eqnarray}
+\mbox{anisotr\'opico:} &\hspace{0.6cm}& \tau_{ij}=\frac{1}{2}
+c_{ijkl} \left( \fracpp{u_k}{x_l} + \fracpp{u_l}{x_k}\right)
+= c_{ijkl}\fracpp{u_k}{x_l} \; , \label{lhanis} \\
+\mbox{isotr\'opico:} &\hspace{0.6cm}& \tau_{ij} = 
+\lambda \theta \delta_{ij} + \mu \left( \fracpp{u_i}{x_j} +
+\fracpp{u_j}{x_i} \right) \; , \label{lhiso}
+\end{eqnarray} 
+onde $\theta = \fracpp{u_k}{x_k}$.
+
+Com as rela\coes\ (\ref{tpelas}) e (\ref{lhiso}), podemos
+especificar a forma inversa da lei de Hooke para o caso
+isotr\'opico,
+\begin{eqnarray}
+e_{ij} = s_{ijkl}\tau_{kl} \; ,
+\end{eqnarray}
+isto \'e, determinar a forma isotr\'opica do tensor
+$s_{ijkl}$. Vamos primeiro determinar $\tau_{ii}$,
+\begin{eqnarray}
+\tau_{ii} = (3\lambda + 2\mu) \theta \; .
+\end{eqnarray}
+Assumindo que $3\lambda + 2\mu \neq 0$, podemos escrever
+\begin{eqnarray}
+\theta = \frac{\tau_{ii}}{3\lambda + 2\mu} \; .
+\end{eqnarray} 
+Se substituirmos na lei de Hooke, achamos para $e_{ij}$
+\begin{eqnarray}
+e_{ij} = \frac{1}{2\mu} \tau_{ij} - \lambda \delta_{ij}
+\frac{\tau_{kk}}{2\mu(3\lambda + 2\mu)} \; .
+\end{eqnarray}
+Usando as identidades $\tau_{ij} = \delta_{ik}\delta_{jl}
+\tau_{kl}$ e $\tau_{kk}=\delta_{kl} \tau_{kl}$, temos
+similarmente
+\begin{eqnarray}
+e_{ij} = \left( \frac{\delta_{ik}\delta_{jl}}{2\mu} -
+\frac{\lambda \delta_{ij} \delta_{kl}}{2\mu(3\lambda +
+2\mu)} \right) \tau_{kl} \; .
+\end{eqnarray}
+Logo podemos escrever o tensor $s_{ijkl}$ em um meio isotr\'opico como
+\begin{eqnarray}
+s_{ijkl} = \frac{\delta_{ik}\delta_{jl}}{2\mu} -
+\frac{\lambda \delta_{ij} \delta_{kl}}{2\mu(3\lambda +
+2\mu)} \; .
+\end{eqnarray}
+
+
+Vamos agora escolher um sistema de coordenadas tal que
+este coincide com o eixo principal do tensor de
+deforma\cao. Ent\ao\ temos que $e_{12}=e_{13}=e_{23}=0$.
+Da lei de Hooke para meio isotr\'opico chegamos
+imediatamente que $\tau_{12}=\tau_{13}=\tau_{23}=0$.
+Isto significa que nosso sistema de coordenadas tamb\'em
+coincide com o eixo principal do tensor de deforma\cao.
+Em um meio isotr\'opico, o eixo principal de um tensor
+de deforma\cao\ coincide com o eixo principal do tensor
+de tens\ao.
+

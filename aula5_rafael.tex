@@ -1,0 +1,275 @@
+
+
+\section{Coeficientes de reflex\~ao/transmiss\~ao}
+
+J\'a sabemos que $F(\xi)=F^{r}(\xi)=F^{t}(\xi)$ ao longo da
+interface $\Sigma$. Pelas condi\coes\ de contorno, temos
+\begin{equation}\label{coef}
+P+P^{r}=P^{t},  \quad \quad \quad
+\rho_{1}^{-1}Pp_{l}n_{l}+\rho_{1}^{-1}P^{r}p_{l}^{r}n_{l}=
+\rho_{2}^{-1}P^{t}p_{l}^{t}n_{l}.
+\end{equation}
+Acima temos temos dois sistema n\~ao-homog\^eneos nas vari\'aveis
+$P^{r}$ e $P^{t}$. Mas
+\[p_{k}^{r}=p_{k}-2(p_{m}n_{m})n_{k} \quad \Rightarrow \quad p_{k}^{r}n_{k}
+=p_{k}n_{k}-2(p_{m}n_{m})n_{k}n_{k} \quad \Rightarrow \quad
+p_{k}^{r}n_{k} =p_{k}n_{k},\] que pode ser introduzida na segunda
+equa\cao\ da equa\cao\ (\ref{coef}). Vamos introduzir as seguintes
+quantidades
+\[R_{P}^{r}=\frac{P^{r}}{P}, \quad \quad \quad R_{P}^{t}=\frac{P^{t}}{P}\]
+que s\~ao chamados  os coeficientes de reflex\~ao/transmiss\~ao,
+respectivamente. Introduzindo esta defini\cao\ na equa\cao
+(\ref{coef}), temos
+\[R_{P}^{r}-R_{P}^{t}=-1,  \quad \quad \quad
+\rho_{1}^{-1}p_{l}n_{l}R_{P}^{r}+\rho_{2}^{-1}p_{l}^{t}n_{l}R_{P}^{t}=
+\rho_{1}^{-1}p_{l}n_{l},\]
+cuja solu\cao\ \'e
+\[R_{P}^{r}=\frac{\rho_{2}p_{l}n_{l}-\rho_{1}p_{l}^{t}n_{l}}{\rho_{2}p_{l}n_{l}+\rho_{1}p_{l}^{t}n_{l}}
+\quad \quad \quad
+R_{P}^{t}=\frac{2\rho_{2}p_{l}n_{l}}{\rho_{2}p_{l}n_{l}+\rho_{1}p_{l}^{t}n_{l}},\]
+a partir da equa\coes\ acima vemos que contra a nossa intui\cao
+$R_{P}^{r}+R_{P}^{t} \neq 1$.
+
+
+Usando os \^angulos de incide\^encia e relex\~ao/transmiss\~ao,
+obtemos
+\[R_{P}^{r}=\frac{\rho_{2}c_{2}\cos(\theta)-\rho_{1}c_{l}\cos(\theta_{t})}{\rho_{2}c_{2}\cos(\theta)+\rho_{1}c_{l}\cos(\theta_{t})}
+\quad \quad \quad
+R_{P}^{t}=\frac{2\rho_{2}c_{2}\cos(\theta)}{\rho_{2}c_{2}\cos(\theta)+\rho_{1}c_{l}\cos(\theta_{t})},\]
+pois $p_{l}n_{l}=|\vec{p}|\cos(\theta)=c_{1}^{-1}\cos(\theta)$ e
+analogamente $p_{l}^{t}n_{l}=c_{2}^{-1}\cos(\theta_{t})$.
+
+Gostar\ih amos de introduzir algumas nota\coes\ \'utis que aparacem
+com certa frequ\^encia na literatura. O vetor vagarosidade pode
+ser escrito da seguinte forma
+\[\vec{p}=(p,0,P_{(p)}),\]
+onde $p$ \'e a chamada vagarosidade horizontal. Podemos escrever
+os coeficientes de reflex\~ao/transmiss\~ao como
+\[R_{P}^{r}=\frac{\rho_{2}P_{1(p)}-\rho_{1}P_{2(p)}}{\rho_{2}P_{1(p)}+\rho_{1}P_{2(p)}},
+\quad \quad \quad
+R_{P}^{t}=\frac{2\rho_{2}P_{1(p)}}{\rho_{2}P_{1(p)}+\rho_{1}P_{2(p)}},\]
+pois $p_{l}n_{l}=P_{1(p)}=\cos(\theta)/c_{1}$,
+$p_{l}^{t}n_{l}=P_{2(p)}=\cos(\theta_{t})/c_{2}$ e
+$p=\sin(\theta)/c$. Outra nota\cao\ \'e utilizando a imped\^ancia
+$I=\rho c \sec(\theta)$, e assim os coeficiente de
+reflex\~ao/transmiss\~ao podem ser reescritos como
+\[R_{P}^{r}=\frac{I_{2}-I_{1}}{I_{2}+I_{1}}, \quad \quad \quad R_{P}^{t}=\frac{2I_{2}}{I_{2}+I_{1}},\]
+quando $\theta=\theta_{t}=0$, incide\^encia vertical, chamamos
+$I=\rho c$ de imped\^ancia novamente, e neste caso tamb\'em
+\[R_{P}^{r}=\frac{I_{2}-I_{1}}{I_{2}+I_{1}}, \quad \quad \quad R_{P}^{t}=\frac{2I_{2}}{I_{2}+I_{1}}.\]
+
+
+Note que os coeficientes de reflex\~ao/transmiss\~ao introduzidos
+acima relacionam a press\~ao da onda refltida/transmitida coma
+press\~ao da onda incidente
+\[p_{r}=R_{P}^{r}p, \quad \quad \quad p_{t}=R_{P}^{t}p,\]
+e s\~ao, potanto, camados coeficientes de reflex\~ao/transmiss\~ao
+de press\~ao. De maneira
+ an\'aloga podemos introduzir os  coesficientes de velocidade  de part\ih cula
+$R^{r}$, $R^{t}$ por
+\[A^{r}=R^{r}A, \quad \quad \quad A^{t}=R^{t}A,\]
+onde $A$, $A^{r}$ e $A^{t}$ s\~ao definidos como se segue
+\[\begin{array}{ll}
+v_{i}=AN_{i}F(t-p_{k}x_{k}), &  A =\rho_{1}^{-1}Pc_{1}^{-1},\\
+v_{i}^{r}=A^{r}N_{i}^{r}F(t-p_{k}^{r}x_{k}), &  A^{r}
+=\rho_{1}^{-1}R_{P}^{r}Pc_{1}^{-1},\\
+v_{i}^{t}=A^{t}N_{i}^{t}F(t-p_{k}^{t}x_{k}), &  A^{t}
+=\rho_{2}^{-1}R_{P}^{t}Pc_{2}^{-1}.\\
+\end{array}\]
+Simplificando, temos
+\[R^{r}=\frac{A_{r}}{A}=\frac{\rho_{1}^{-1}R_{P}^{r}Pc_{1}^{-1}}{\rho_{1}^{-1}Pc_{1}^{-1}}=R_{P}^{r},\]
+\[R^{t}=\frac{A_{t}}{A}=\frac{\rho_{2}^{-1}R_{P}^{t}Pc_{2}^{-1}}{\rho_{1}^{-1}Pc_{1}^{-1}}=\rho_{2}^{-1}c_{2}^{-1}\rho_{1}c_{1}R_{P}^{t}.\]
+
+Logo o coeficiente de reflex\~ao de velocidade de part\ih culas
+$R_{r}$ \'e  igual ao de press\~ao $R_{P}^{r}$. Mas, o coeficiente
+de transmiss\~ao de velocidade de part\ih culas \'e:
+\[R^{t}=\frac{2\rho_{1}c_{1}\cos(\theta)}{\rho_{2}c_{2}\cos(\theta)+\rho_{1}c_{l}\cos(\theta_{t})}\]
+
+Considere
+\[n=\frac{c_{1}}{c_{2}}, \quad \quad \quad m=\frac{\rho_{2}}{\rho_{1}},\]
+onde, $n$ \'e o \ih ndice de refra\cao. \'E \'util expressar
+$R^{r}$ e $R^{t}$ somente em termos do \^angulo de incid\^encia
+$\theta$. Ent\~ao
+\[R^{r}=\frac{m\cos(\theta)-(n^{2}-\sin^{2}(\theta))^{1/2}}{m\cos(\theta)+(n^{2}-\sin^{2}(\theta))^{1/2}}
+\quad \quad \quad
+R^{t}=\frac{2n\cos(\theta)}{m\cos(\theta)-(n^{2}+\sin^{2}(\theta))^{1/2}},\]
+pois,
+\[\frac{c_{2}^{2}}{c_{1}^{2}}\sin^{2}(\theta)=1-\cos^{2}(\theta_{t})
+\Rightarrow cos^{2}(\theta_{t})=1-\frac{1}{n^{2}}\sin^{2}(\theta)
+\Rightarrow
+ m\cos(\theta_{t})= (n^{2}-\sin^{2}(\theta))^{1/2}.\]
+
+\section{Propriedades dos coeficientes de reflex\~ao/transmiss\~ao}
+
+No caso do \^angulo de incid\^encia ser zero, i.e., $\theta=0$,
+temos  uma incid\^encia normal.  A lei  de Snell produz
+$\theta_{t}=\theta_{r}=0$ e as leis de reflex\~ao/transmiss\~ao
+dos vetores vagarosidade geram
+\[p_{k}^{r}=-p_{k}, \quad \quad \quad p_{k}^{t}=\frac{-n_{k}}{c_{2}}.\]
+Os coeficientes $R^{r}$ e $R^{t}$, tem a forma
+\[R^{r}=\frac{m-n}{m+n}=\frac{\rho_{2}c_{2}-\rho_{1}c_{1}}{\rho_{2}c_{2}+\rho_{1}c_{1}},
+\quad \quad \quad
+R^{t}=\frac{2n}{m+n}=\frac{2\rho_{1}c_{1}}{\rho_{2}c_{2}+\rho_{1}c_{1}}.\]
+Os coeficientes de pendem dos produtos de $\rho$ e $c$ somente, os
+quais s\~ao chamados imped\^ancias caracter\ih sticas.
+
+No caso que $c_{1}=c_{2}$ (pela lei de Snell $\theta=\theta_{t}$),
+mas $\rho_{1} \neq \rho_{2}$, os coeficiente de
+refle\~ao/transmiss\~ao de a forma
+\[R^{r}=\frac{m-1}{m+1},
+\quad \quad \quad R^{t}=\frac{2}{m+1}.\] Vemos que os coeficiente
+n\~ao dependem do \^angulo de incid\^encia.
+
+No caso em que
+\[m\cos(\theta)-n\cos(\theta_{t})=m\cos(\theta)-(n^{2}-\sin^{2}(\theta))^{1/2}=0,\]
+o coeficiente $R^{r}$ se torna zero. Esta fen\^omeno \'e chamado
+de transpar\^encia total da interface. Da equa\cao\ acima podemos
+encontrar o \^angulo de transpar\^encia total. Elevando ao
+quadrado a equa\cao\ acima, temos
+\[m^{2}\cos^{2}(\bar{\theta})=n^{2}-\sin^{2}(\bar{\theta}),\]
+obtendo
+\[(m^{2}-n^{2})\cos^{2}(\bar{\theta})=n^{2}-\sin^{2}(\bar{\theta})-n^{2}\cos^{2}(\bar{\theta})=
+n^{2}(1-\cos^{2}(\bar{\theta}))-\sin^{2}(\bar{\theta}),\] e,
+portanto
+\[\tan^{2}(\bar{\theta})=\frac{m^{2}-n^{2}}{n^{2}-1}.\]
+Note que o \^angulo de transpar\^encia total  \'e real quando
+temos simultaneamente $m>n>1$ ou $m<n<1$.
+
+Derivando as exprss\~oes para os coeficiente de
+reflex\~ao/tranmiss\~ao em rela\cao\ ao \^angulo de incid\^encia
+podemos concluir que:
+
+a-) para $n>1$ ($c_{1}>c_{2}$): os coeficiente $R^{r}$ e $R^{t}$
+s\~ao fun\coes\ monotonicamente decrescentes do \^angulo de
+incid\^encia.
+
+b-) para $n<1$ ($c_{1}<c_{2}$): os coeficiente $R^{r}$ e $R^{t}$
+s\~ao fun\coes\ monotonicamente crescentes do \^angulo de
+incid\^encia, mas somente no intervalo $0\leq \theta \leq
+\theta^{*}$. Para $\theta>\theta^{*}$, os coeficientes de
+reflex\~ao/tranmiss\~ao se tornam complexos, pois $\theta_{t}$ se
+torna complexo. O coeficiente $R^{r}$ para $\theta>\theta^{*}$ tem
+a forma
+\[R^{r}=\frac{m\cos(\theta)-i(\sin^{2}(\theta)-n^{2})^{1/2}}{m\cos(\theta)+i(\sin^{2}(\theta)-n^{2})^{1/2}}.\]
+Botamos o sinal em frente da raiz quadrada de acordo com a escolha
+pr\'evia quando determinamos o vetor vagarosidade da onda
+inomog\^enea transmitida. Para $\theta>\theta^{*}$, i.e., quando
+$\theta_{t}$ se torna complexo, temos
+\begin{eqnarray}\nonumber\cos(\theta_{t})&=&-c_{2}(p_{k}^{t}n_{k})=-ic_{2}(p_{k}^{tI}n_{k})=
+ic_{2}(c_{1}^{-2}-c_{2}^{-2}-c_{1}^{-2}\cos^{2}(\theta))^{1/2}\\
+\nonumber &=& \frac{i}{n}(\sin^{2}(\theta)-n^{2})^{1/2}.
+\end{eqnarray}
+
+O coeficiente de reflex\~ao pode temb\'em ser reescrito como:
+\[R^{r}=|R^{r}|\mbox{e}^{i\varphi_{r}},\]
+onde
+\[|R^{r}|=1, \quad \quad \quad \varphi_{r}=-2\tan^{-1}\left[\frac{(\sin^{2}(\theta)-n^{2})^{1/2}}{m\cos(\theta)}\right].\]
+
+Podemos ver que a reflex\~ao supercr\ih tica \'e total, pois o
+m\'odulo do coeficiente de reflex\~ao \'e igual a 1.
+
+O coeficiente de transmiss\~ao \'e tamb\'em complexo. Seu m\'odulo
+varia de $2n/m$ de $\theta=\theta^{*}$\footnote{neste caso temos
+reflex\~ao total, e como $\theta_{t}=\pi/2$, conclu\ih mos que
+$R^{r}_{P}=1$.} a zero para $i \to \pi/2$. A mudança de fase
+$\varphi_{t}$ representa a metade da mudança da fase do
+coeficiente de reflex\~ao, i.e.,
+$\varphi_{t}=\frac{1}{2}\varphi_{r}$.
+
+\section{Considera\coes\ energ\'eticas}
+
+Como j\'a mostrado na se\cao\ \ref{enacus}, o fluxo de energia integrada no
+tempo de uma onda ac\'ustica plana
+\begin{equation}\label{fluxopl}
+\mbox{\^S}_{i}=\rho^{-1}p_{i}PP^{*}f_{a},
+\end{equation}
+onde $f_{a}=\int_{-\infty}^{\infty}g^{2}dt$. Tamb\'em consideremos
+as situa\coes, na quais $p_{i}$ se torna complexo (incid\^encia
+supercr\ih tica). Ent\~ao a equa\cao\ (\ref{fluxopl}) deve ser lida
+como,
+\[\mbox{\^S}_{i}=\rho^{-1}p_{i}^{R}PP^{*}f_{a},\]
+onde $p^{R}$ \'e a parte real do vetor vagarosidade,
+$p_{i}=p_{i}^{R}+ip_{i}^{I}$. O fluxo de enrgia atrav\'es de um
+elemento da interface $\Sigma$ com vetor unit\'ario $n_{i}$ \'e
+\[\begin{array}{ll}
+|\mbox{\^S}_{i}n_{i}|=\rho^{-1}|p_{i}n_{i}|PP^{*}f_{a}=\rho^{-1}c^{-1}\cos(\theta)PP^{*}f_{a}
+& \mbox{se } p_{i}^{I}=0,\\
+|\mbox{\^S}_{i}n_{i}|=\rho^{-1}|p_{i}^{R}n_{i}|PP^{*}f_{a}=0
+                           & \mbox{se } p_{i}^{I} \neq 0,\\
+\end{array}\]
+pois j\'a demonstramos que $p_{i}^{R}$ e $n_{i}$ s\~ao ortogonais.
+
+Podemos introduzir os coeficientes de energia de
+reflex\~ao/transmiss\~ao $R_{E}$ por
+R=\[R_{E}^{r}R_{E}^{r*}=\frac{|\mbox{\^S}^{r}_{i}n_{i}|}{|\mbox{\^S}_{i}n_{i}|};
+\quad \quad \quad
+T=R_{E}^{t}R_{E}^{t*}=\frac{|\mbox{\^S}^{t}_{i}n_{i}|}{|\mbox{\^S}_{i}n_{i}|},\]
+onde $R,T$ s\~ao os coeficientes de energia, e $R_{E}^{r,t}$ s\~ao
+os coeficientes normalizados na energia.
+
+E imediatamente, a partir da defini\cao\ acima, vemos que
+\[\begin{array}{ll}
+R_{E}^{r}R_{E}^{r*}=\frac{\rho_{1}^{-1}c_{1}^{-1}\cos(\theta)P^{r}P^{r*}f_{a}}{\rho_{1}^{-1}c_{1}^{-1}\cos(\theta)PP^{*}f_{a}}=R_{P}^{r}R_{P}^{r*}
+&    \\
+R_{E}^{t}R_{E}^{t*}=\frac{\rho_{2}^{-1}c_{2}^{-1}\cos(\theta_{t})P^{t}P^{t*}f_{a}}{\rho_{1}^{-1}c_{1}^{-1}\cos(\theta)PP^{*}f_{a}}
+=R_{P}^{t}R_{P}^{t*}\frac{\rho_{1}c_{1}\cos(\theta_{t})}{\rho_{2}c_{2}\cos(\theta)}
+      & \mbox{ se  Im }\theta_{t} = 0,\\
+R_{E}^{t}R_{E}^{t*}=0      &\mbox{ se  Im }\theta_{t} \neq 0.
+\end{array}\]
+Que resulta em,
+\[\begin{array}{ll}
+R_{E}^{r}=R_{P}^{r}=R^{r}=\frac{\rho_{2}c_{2}\cos(\theta)-\rho_{1}c_{l}\cos(\theta_{t})}{\rho_{2}c_{2}\cos(\theta)+\rho_{1}c_{l}\cos(\theta_{t})}
+&    \\
+R_{E}^{t}=R_{P}^{t}\left(\frac{\rho_{1}c_{1}\cos(\theta_{t})}{\rho_{2}c_{2}\cos(\theta)}\right)^{1/2}
+=\frac{2(\rho_{1}c_{1}\rho_{2}c_{2}\cos(\theta)\cos(\theta_{t}))^{1/2}}{\rho_{2}c_{2}\cos(\theta)+\rho_{1}c_{1}\cos(\theta\_{t})}
+       & \mbox{ se  Im }\theta_{t} = 0,\\
+R_{E}^{t}R_{E}^{t*}=0      &\mbox{ se  Im }\theta_{t} \neq 0.
+\end{array}\]
+
+Agora vamos determinar o fluxo de energia atrav\'es de um elemento
+da interface $\Sigma$ das ondas refletida e transmitida. Assim,
+\begin{eqnarray}\nonumber|\mbox{\^S}^{r}_{i}n_{i}|+|\mbox{\^S}^{t}_{i}n_{i}|&=&(R_{E}^{r}R_{E}^{r*}+R_{E}^{t}R_{E}^{t*})|\mbox{\^S}_{i}n_{i}|=
+|\mbox{\^S}_{i}n_{i}|\frac{(\rho_{2}c_{2}\cos(\theta)+\rho_{1}c_{1}\cos(\theta_{t}))^{2}}{(\rho_{2}c_{2}\cos(\theta)+\rho_{1}c_{1}\cos(\theta_{t}))^{2}}\\\nonumber
+&=&|\mbox{\^S}_{i}n_{i}|\quad \quad \quad \mbox{se Im
+}\theta_{t}=0,\\\nonumber
+|\mbox{\^S}^{r}_{i}n_{i}|+|\mbox{\^S}^{t}_{i}n_{i}|&=&(R_{E}^{r}R_{E}^{r*})|\mbox{\^S}_{i}n_{i}|
+\quad \quad \quad \mbox{se Im }\theta_{t} \neq 0.\end{eqnarray} O
+resultado acima segue da observa\cao\ de que $|R_{E}^{r}|=1$. Das
+equa\coes\ acima podemos concluir que
+\[|\mbox{\^S}^{r}_{i}n_{i}|+|\mbox{\^S}^{t}_{i}n_{i}|=|\mbox{\^S}_{i}n_{i}|, \quad \quad \quad
+(R_{E}^{r}R_{E}^{r*}+R_{E}^{t}R_{E}^{t*})=1.\] Acabamos de provar
+a conserva\cao\ de energia para o processo de
+reflex\~ao/transmiss\~ao. A primeira  equa\cao\ acima nos diz que o
+fluxo total de energia \'e distribuido entre a onda refletida e
+transmitida.
+
+No caso da incid\^encia supercr\'itica, o fluxo de energia
+associado a uma onda transmitida inomog\^enea \'e zero, pois o
+vetor $S_{i}$ \'e paralelo a interface $\Sigma$. Ou seja, toda a
+energia da onda incidente \'e totalmente refletida.
+
+\section{Mudanças da forma das ondas geradas}
+
+O fato de considerarmos os coeficientes de
+reflex\~ao/transmiss\~ao complexos causam
+ mundanças na forma
+das ondas estudadas. Como explicado anteriormente, somente a parte
+real dos coeficientes de  press\~ao e de velocidade de part\ih
+culas tem significado f\ih sico. Para a velocida de part\ih cula
+da onda refletida, temos
+\[v_{i}^{r}(x_{m},t)=\rho_{1}^{-1}R^{r}Pp_{i}^{r}F(t-p_{k}^{r}x_{k}).\]
+Sua para real \'e dada por
+\[\mbox{Re}[v_{i}^{r}(x_{m},t)]=\rho_{1}^{-1}Pp_{i}^{r}[\mbox{Re}(R^{r})g(t-p_{k}^{r}x_{k})
+-\mbox{Im}(R^{r})h(t-p_{k}^{r}x_{k})].\]
+
+No caso de reflex\~ao subcr\ih tica, quando $R^{r}$ \' e real, a
+f\'ormula acima produz
+\[\mbox{Re}[v_{i}^{r}(x_{m},t)]=\rho_{1}^{-1}Pp_{i}^{r}R^{r}g(t-p_{k}^{r}x_{k}),\]
+e podemos ver que o movimento da onda refletida subcriticamente
+tem a mesma forma do movimento de part\ih cula da onda incidente.
+
+No caso da reflex\~ao supercr\ih tica, quando $R^{r}$ \'e
+complexo, a forma da onda refletida difere da forma onda
+incidente. Na verdade, a forma \'e dada por uma combina\cao\ linear
+da onda incidente  e de sua tranformada de Hilbert.
+

@@ -1,0 +1,65 @@
+\section{Ondas Cil\'{\i}ndricas}
+\label{cil}
+
+A onda cil\'{\i}ndrica \'e uma fun\c{c}\~ao que satisfaz a equa\c{c}\~ao
+da onda ac\'ustica (\ref{eoadc}) e apresenta uma simetria
+cil\'{\i}ndrica, ou seja, n\~ao apresenta varia\c{c}\~ao com o plano
+horizontal. Analogamente ao caso anterior, antes de encontrar uma
+solu\c{c}\~ao, devemos fazer uma mudan\c{c}a de coordenadas de
+cartesianas para cil\'{\i}ndricas na equa\c{c}\~ao da onda ac\'ustica
+(\ref{eoadc}).
+
+Mudando as coordenadas $(x,y,z)$ para $(r,\phi,z)$, de tal forma
+que
+$$
+x=r\cos{\phi}\;, \;\;\;\; y=r\sin{\phi} \;\;\;\;\mathrm{e}\;\;\;\; z=z \;,
+$$
+onde $0 \leq r <\infty $, $-\pi < \phi \leq \pi $, podemos obter a
+equa\c{c}\~ao da onda ac\'ustica em coordenadas cil\'{\i}ndricas:
+\begin{equation}
+\nabla^2 \Phi = \frac{\partial^2 \Phi}{\partial r^2} +
+\frac{1}r{}\frac{\partial \Phi}{\partial r} +
+\frac{1}{r^2}\frac{\partial^2 \Phi}{\partial
+\phi^2}+\frac{\partial^2 \Phi}{\partial z^2}=
+\frac{1}{c^2}\frac{\partial^2 \Phi}{\partial t^2} \;.
+\label{eq_onda_cil}
+\end{equation}
+Como procuramos solu\c{c}\~oes que j\'a s\~ao cil\'{\i}ndricas,
+isto \'e, n\~ao dependam do \^angulo $\phi$ e varie conforme
+aumenta o raio (an\'alogo ao caso esf\'erico), a equa\c{c}\~ao
+(\ref{eq_onda_cil}) toma a forma
+\begin{equation}
+\frac{\partial^2 \Phi}{\partial r^2} + \frac{1}{r}\frac{\partial
+\Phi}{\partial r} = \frac{1}{c^2}\frac{\partial^2 \Phi}{\partial
+t^2} \;.
+\label{eq_cil}
+\end{equation}
+A solu\c{c}\~ao geral para este problema \'e aproximadamente
+\begin{equation}
+\Phi(r,t) = \frac{1}{\sqrt{r}}f(kr-\omega t) \;.
+\label{sol_cil_apr}
+\end{equation}
+Dizemos aproximadamente pois, ao calcularmos as derivadas e
+substituirmos estas na equa\c{c}\~ao (\ref{eq_cil}), fica
+sobrando um fator da ordem de $r^{-5/2}$, o qual pode ser
+desprezado para valores grandes de $r$. A solu\c{c}\~ao exata da
+referida equa\c{c}\~ao \'e dada por
+\begin{equation}
+\Phi(r,t) = \frac{H(t-r/c)}{\sqrt{t^2-(r/c)^2}}\ast f(t)\;,
+\label{sol_cil_exata}
+\end{equation}
+onde $H$ \'e a fun\c{c}\~ao degrau (ou fun\c{c}\~ao Heaviside):
+\begin{equation}
+H(a)= \left \{
+\begin{array}{ll}
+0, & se  \; \; a < 0 \\
+1, & se \; \;   a \geq 0
+\end{array}  \right..
+\label{heaviside}
+\end{equation}
+
+Assim como no caso da onda esf\'erica, podemos entender o
+decaimento da amplitude da onda apenas considerando a
+conserva\c{c}\~ao de energia. Como a \'area do cilindro \'e
+proporcional a $r$, o fluxo de energia decai segundo a raz\~ao
+$1/r$. Portando,  a amplitude da onda deve variar $1/\sqrt{r}$.

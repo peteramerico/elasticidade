@@ -1,0 +1,198 @@
+\section {Ondas Planas}
+\label{plan}
+
+Uma onda plana \'e uma fun\c{c}\~ao que satisfaz a equa\c{c}\~ao
+da onda e que em um certo plano assume um valor constante,
+acontecendo o mesmo para todos os planos paralelos \cite{moura}. Assim, para
+determinarmos uma representa\c{c}\~ao matem\'atica desta onda
+plana, vamos impor que ela precisa ter um valor constante ao longo
+de um plano e que ela deve propagar satisfazendo a equaç\~ao da
+onda ac\'ustica (\ref{eoadc}).
+
+A equa\c{c}\~ao de um plano no espa\c{c}o de tr\^es dimens\~oes
+\'e dada por:
+\begin{equation}
+   ax + by + lz = d \;,
+   \label{eq_plano}
+\end{equation}
+sendo $a$, $b$ e $l$ as componentes do vetor normal unit\'ario
+$\vec{n}$ e $d$ a dist\^ancia do plano \`a origem. Reescrevendo a
+equa\c{c}\~ao (\ref{eq_plano}) usando o produto escalar, obtemos
+\begin{equation}
+   \vec{n} \cdot \vec{x} = d \;.
+   \label{eq_plano_esc}
+\end{equation}
+Como a onda plana tem os mesmos valores ao longo de planos,
+ent\~ao ela \'e uma fun\c{c}\~ao que depende destes planos, ou
+seja,
+\begin{equation}
+   \Phi(\vec{x},t) = f[(\vec{n} \cdot \vec{x} - d)/d_0] \;,
+   \label{eq_ondapl_1}
+\end{equation}
+onde $d_0$ \'e usada apenas para normalizar o argumento da
+fun\c{c}\~ao. Este argumento normalizado \'e chamado de fase,
+denotado por $\varphi$. Precisamos analisar a depend\^encia
+temporal da propaga\c{c}\~ao do plano, ou seja, $d=d(t)$. Antes
+disso, vamos interpretar fisicamente a constante $d_0$.
+
+Vamos tomar como exemplo, a fun\c{c}\~ao $f$ sendo representada
+pela fun\c{c}\~ao seno. Logo,
+\begin{equation}
+   \Phi(\vec{x},t) = \sin[(\vec{n} \cdot \vec{x} - d)/d_0] \;.
+   \label{eq_ondapl_seno}
+\end{equation}
+A dist\^ancia entre dois planos onde $\Phi$ tem o mesmo valor
+chama-se de comprimento de onda, denotado por $\lambda$. Sendo
+$d_1$ e $d_2$ a dist\^ancia destes dois planos em rela\c{c}\~ao
+\`a origem e usando que a fun\c{c}\~ao seno \'e peri\'odica com
+per\'{\i}odo $2\pi$, escrevemos,
+\begin{equation}
+   \Phi_1(\vec{x},t) = \sin[(\vec{n} \cdot \vec{x} - d_1)/d_0] = \sin{\varphi_1}\;,
+   \label{eq_ondapl_d1}
+\end{equation}
+\begin{equation}
+   \Phi_2(\vec{x},t) = \sin[(\vec{n} \cdot \vec{x} - d_2)/d_0] = \sin{(\varphi_1+2\pi)}\;.
+   \label{eq_ondapl_d2}
+\end{equation}
+Como $d_1-d_2=\lambda$ e pelas equa\c{c}\~oes
+(\ref{eq_ondapl_d1}) e (\ref{eq_ondapl_d2}) temos
+$d_1-d_2=2 \pi d_0$, ent\~ao encontramos a rela\c{c}\~ao entre
+$d_0$ e $\lambda$:
+\begin{equation}
+   d_0=\frac{\lambda}{2\pi} \;\;\; \mathrm{ou} \;\;\;
+   \frac{1}{d_0}=\frac{2\pi}{\lambda}=k \;,
+   \label{rel_d0_lam}
+\end{equation}
+que \'e a defini\c{c}\~ao do n\'umero de onda, $k$. O n\'umero de
+onda \'e igual ao n\'umero de onda por comprimento $2\pi$. No caso
+da fun\c{c}\~ao seno, cujo comprimento de onda vale $2\pi$, o
+n\'umero de onda $k$ vale 1. Reescrevendo a equa\c{c}\~ao
+(\ref{eq_ondapl_seno}), temos,
+\begin{equation}
+   \Phi(\vec{x},t) = \sin[k(\vec{n} \cdot \vec{x} - d)]\;.
+   \label{eq_ondapl_seno2}
+\end{equation}
+
+Esta forma de representa\c{c}\~ao \'e v\'alida para outras ondas.
+Assim, a equa\c{c}\~ao (\ref{eq_ondapl_1}) pode ser escrita
+como,
+\begin{equation}
+   \Phi(\vec{x},t) = f[k(\vec{n} \cdot \vec{x} - d)] \;.
+   \label{eq_ondapl_2}
+\end{equation}
+Expandindo o termo no argumento da \'ultima equa\c{c}\~ao e
+definindo o vetor do n\'umero de onda como sendo
+$k\vec{n}=\vec{k}$, a equa\c{c}\~ao (\ref{eq_ondapl_2}) fica
+\begin{equation}
+   \Phi(\vec{x},t) = f(\vec{k} \cdot \vec{x} - kd) \;.
+   \label{eq_ondapl_3}
+\end{equation}
+Para que a onda plana se propague com velocidade constante \'e
+necess\'ario que a constante de fase $kd$ que est\'a no argumento
+varie proporcionalmente ao tempo, ou seja, $kd=\omega t$, onde
+$\omega$ \'e uma constante. Portanto, a equa\c{c}\~ao
+(\ref{eq_ondapl_3}) que descreve a onda plana passa a ser
+escrita como
+\begin{equation}
+   \Phi(\vec{x},t) = f(\vec{k} \cdot \vec{x} - \omega t) \;.
+   \label{eq_ondapl_4}
+\end{equation}
+
+Observemos que, se tomarmos dois tempos distintos $t_1$ e $t_2$ de
+tal modo que a onda plana tenha a mesma configura\c{c}\~ao e tenha
+sofrido uma mudan\c{c}a de fase $2\pi$, ou seja, tenha passado um
+per\'{\i}odo $T$ entre eles, podemos escrever (analogamente ao que
+foi feito nas equa\c{c}\~oes (\ref{eq_ondapl_d1}) e
+(\ref{eq_ondapl_d2}))
+\begin{equation}
+   \vec{k} \cdot \vec{x} - \omega t_1=\vec{k} \cdot \vec{x} - \omega t_2 + 2\pi \;,
+   \label{omega1}
+\end{equation}
+de onde obtemos a frequ\^encia angular
+\begin{equation}
+   \omega = 2\pi / T \;.
+   \label{omega2}
+\end{equation}
+
+Precisamos mostrar que a fun\c{c}\~ao da onda plana
+(\ref{eq_ondapl_3}) satisfaz a equa\c{c}\~ao da onda ac\'ustica
+(\ref{eoadc}). Vamos
+denotar o argumento da fun\c{c}\~ao $\Phi$ por $\eta$. Logo,
+\begin{equation}
+   \eta = \vec{k} \cdot \vec{x} - \omega t =
+   k_{x}x+k_{y}y+k_{z}z-wt \;,
+   \label{eta}
+\end{equation}
+onde $k_x=ka$, $k_y=kb$ e $k_z=kl$. Agora, derivando a
+fun\c{c}\~ao $\Phi$ e aplicando a regra da cadeia obtemos,
+\begin{equation}
+   \frac{\partial \Phi}{\partial x} = \frac{\partial f}{\partial \eta} \frac{\partial \eta}{\partial
+   x}= \frac{\partial f}{\partial \eta} k_x\;,
+   \label{dPhi/dx}
+\end{equation}
+\begin{equation}
+   \frac{{\partial}^2 \Phi}{\partial {x}^2} = \frac{\partial}{\partial \eta}
+   \left( \frac{\partial f}{\partial \eta} k_x\ \right) \frac{\partial \eta}{\partial   x}= \frac{\partial^2 f}{\partial \eta^2}
+   k_x^2\;.
+   \label{dPhi 2/dx 2}
+\end{equation}
+Analogamente, temos
+$$\frac{{\partial}^2 \Phi}{\partial {y}^2}=\frac{\partial^2 f}{\partial \eta^2}
+   k_y^2\;, \;\;\;\;\; \frac{{\partial}^2 \Phi}{\partial {z}^2}=\frac{\partial^2 f}{\partial \eta^2}
+   k_z^2\;, \;\;\;\;\; \frac{{\partial}^2 \Phi}{\partial {t}^2}=\frac{\partial^2 f}{\partial \eta^2}
+   \omega^2\;. $$
+Substituindo estas derivadas na equa\c{c}\~ao da onda ac\'ustica
+(\ref{eoadc}) obtemos
+\begin{equation}
+   \frac{{\partial}^2 f}{\partial {\eta}^2}(k_x^2+k_y^2+k_z^2- \omega^2/ c^2)=0\;.
+   \label{eq_ondapl_eta}
+\end{equation}
+Logo, a fun\c{c}\~ao (\ref{eq_ondapl_4}) satisfaz a
+equa\c{c}\~ao da onda desde que
+\begin{equation}
+   k_x^2+k_y^2+k_z^2 = \omega^2/ c^2 \;.
+   \label{eq_ondapl_cond}
+\end{equation}
+
+Como o vetor normal $\vec{n}$ \'e unit\'ario, temos que
+$k_x^2+k_y^2+k_z^2 = k^2\|n\|^2 = k^2$. Sendo assim, o n\'umero de
+onda e a frequ\^encia angular devem satisfazer a rela\c{c}\~ao
+\begin{equation}
+   c = \omega/ k \;.
+   \label{k_w_c}
+\end{equation}
+Portanto, a fun\c{c}\~ao dada em (\ref{eq_ondapl_4}) se propaga
+como uma onda plana, j\'a que sua fase \'e constante ao longo de
+um plano e ela satisfaz a equa\c{c}\~ao da onda, desde que sua
+velocidade de propaga\c{c}\~ao seja dada por (\ref{k_w_c}). N\'os
+chegamos neste resultado pela constru\c{c}\~ao da solu\c{c}\~ao,
+mas podemos mostrar agora que a velocidade da fase da onda plana
+\'e dada por $c=\omega / k \;$.
+
+Tendo um plano conhecido de fase constante num instante $t_0$,
+sabemos que um plano correspondente e paralelo ao original ser\'a
+localizado num instante $t_1$. Ent\~ao, queremos saber onde se
+encontra o plano no qual no instante $t_1$ a fase assume o mesmo
+valor $\varphi$. Ou seja, queremos posi\c{c}\~oes $\vec{x}_0$ e
+$\vec{x}_1$ tal que
+\begin{equation}
+   \vec{k} \cdot \vec{x}_0 - \omega t_0 = \vec{k} \cdot \vec{x}_1 - \omega t_1 = \varphi
+   \;,
+   \label{fase1}
+\end{equation}
+ou ainda,
+\begin{equation}
+   \vec{k} \cdot \Delta \vec{x}= \omega \Delta t
+   \;,
+   \label{fase2}
+\end{equation}
+onde $\Delta \vec{x}=\vec{x}_1-\vec{x}_0$ e $\Delta t=t_1 - t_0$.
+Supondo que o vetor $\Delta \vec{x}$ esteja na mesma dire\c{c}\~ao
+do vetor $\vec{k}$, que \'e a dire\c{c}\~ao de propaga\c{c}\~ao,
+podemos escrever $\vec{k} \cdot \Delta \vec{x} = \|\vec{k}\|
+\|\Delta \vec{x}\|= k \Delta x$. Substituindo esta rela\c{c}\~ao
+na equa\c{c}\~ao (\ref{fase2}), obtemos
+\begin{equation}
+   c = \Delta x / \Delta t = \omega/k \;.
+   \label{fase3}
+\end{equation}

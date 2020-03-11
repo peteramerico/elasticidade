@@ -1,0 +1,223 @@
+%\documentclass{article}
+%\usepackage{amsmath}
+%\usepackage{amssymb}
+%\usepackage[brazil]{babel}
+%\begin{document}
+
+\section{Dedu\c{c}\~ao da equa\c{c}\~ao da onda ac\'ustica 1D}
+\label{dedonda}
+
+Esta se\c{c}\~ao trata do movimento de uma corda, que \'e deixada
+para vibrar. Para simplificar o problema, admite-se que a corda s\'o
+vibre no plano vertical e que sua amplitude de vibra\c{c}\~ao seja
+suficientemente pequena para que cada ponto situado na corda se mova
+apenas na vertical, e de maneira que a tens\~ao $\tau$ n\~ao varie
+apreciavelmente durante a vibra\c{c}\~ao. Como veremos, esta \'e a
+situa\cao\ da propaga\cao\ unidimensional de uma onda transversal ao
+longo da corda.
+
+Um ponto sobre a corda \'e identificado por $x$, ou seja, $x$ \'e
+a dist\^ancia na reta horizontal a partir da extremidade \`a
+esquerda . A dist\^ancia que o ponto $x$ se move na linha vertical
+designa-se $u(x)$.
+
+Para obter a equa\c{c}\~ao do movimento da corda, considera-se um
+segmento de corda de comprimento $dx$, entre $x$ e $dx$. Se a
+corda tiver a seguinte densidade por unidade de comprimento
+$\sigma$ (densidade linear), ent\~ao a massa ser\'a $\sigma dx$. A
+velocidade da corda \'e $\partial u/\partial t$, assim como a
+inclina\c{c}\~ao da corda no ponto $x$ \'e $\partial u/ \partial
+x$.
+
+A componente vertical de $\tau$, a tra\c{c}\~ao da corda em
+qualquer ponto \'e
+\[\tau_{u}=\tau \sin (\theta),\]
+sendo $\theta$ muito pequeno
+\[\tau \sin (\theta) \doteq \tau \tan (\theta)=\tau \frac{\partial u}{\partial x},\]
+logo,
+\[\tau_{u}=\tau\frac{\partial u}{\partial x}\]
+
+A for\c{c}a resultante, $dF$, devido a tens\~ao agindo sobre o
+segmento $dx$ da corda \'e
+\[dF=[\tau_{u}]_{x+dx}-[\tau_{u}]_{x}=\frac{[\tau_{u}]_{x+dx}-[\tau_{u}]_{x}}{dx}dx
+\doteq \frac{\partial}{\partial x}\left( \tau \frac{\partial
+u}{\partial x}\right)dx\]
+
+Seja $f$ uma for\c{c}a vertical por unidade de comprimento agindo
+ao longo da corda, a equa\c{c}\~ao do movimento do segmento $dx$
+ser\'a
+\[\sigma dx \frac{\partial^{2}u}{\partial t^{2}}=\frac{\partial}{\partial x}\left( \tau \frac{\partial u}{\partial x}\right)dx+fdx\]
+
+Para uma corda horizontal, em que as for\c{c}as horizontais atuam
+somente em suas extremidades, e para pequenas amplitude de vibra
+for\c{c}\~ao, a tra\c{c}\~ao  \'e constante e a equa\c{c}\~ao
+acima pode ser reescrita como
+\[\sigma \frac{\partial^{2}u}{\partial t^{2}}=\tau \frac{\partial^{2}u}{\partial x^{2}}+f,\]
+se tomarmos $f=0$ teremos,
+\begin{equation}\label{eqonda}
+\frac{\partial^{2}u}{\partial x^{2}}-\frac{1}{c^{2}}
+\frac{\partial^{2}u}{\partial t^{2}}=0,
+\end{equation}
+onde $c^{2}=\tau/\sigma$. Obtivemos assim a equa\cao\ da onda ac\'ustica
+unidimensional (compare com a equa\cao\ (\ref{eoadc})).
+
+\section{Solu\c{c}\~oes da equa\c{c}\~ao da onda ac\'ustica 1D}
+
+\subsection{Solu\c{c}\~ao geral}
+
+Antes de resolvermos a equa\c{c}\~ao da onda vejamos alguns conceitos
+de edp's. A forma mais geral de uma edp linear de segunda ordem \'e
+\[
+A(x,t) \frac{\partial^{2}u}{\partial x^{2}}+2B(x,t)
+\frac{\partial^{2}u}{\partial x \partial t}+ C(x,t)
+\frac{\partial^{2}u}{\partial t^{2}} = 
+F\left(\frac{\partial u}{\partial x},\frac{\partial u}{\partial t},u
+\right)\; .
+\]
+Para resolver a edp
+acima usa-se uma mudan\c{c}a de vari\'avel, atrav\'es de
+\[
+\frac{dx}{dt}=\frac{-B\pm\sqrt{(B^{2}-AC)}}{A},
+\]
+onde as duas fun\coes\ $x(t)$ s\~ao chamadas de equa\c{c}\~oes
+caracter\'\i sticas. A seguir veremos como utilizar essas
+equa\c{c}\~oes para resolvermos a equa\c{c}\~ao da onda ac\'ustica
+unidimensional (\ref{eqonda}).
+
+Gostar\'\i amos de resolver (\ref{eqonda}), para isto consideremos as
+equa\c{c}\~oes caracter\'\i sticas da mesma. Note que $A=1$, $B=0$ e
+$C=-c^{2}$, logo
+\[
+\frac{dx}{dt} = \frac{-B\pm\sqrt{(B^{2}-AC)}}{A} = \pm c,
+\]
+cuja solu\c{c}\~ao \'e a fam\'\i lia de retas $x=\pm
+ct+k$, onde $k$ \'e uma constante. A partir disto iremos propor a
+seguinte mudan\c{c}a de vari\'avel,
+\begin{eqnarray*}
+\xi=x+ct, \\
+\mu=x-ct.
+\end{eqnarray*}
+
+Utilizando a regra da cadeia, temos
+\[\frac{\partial}{\partial x}=\frac{\partial \xi}{\partial x}\frac{\partial}{\partial \xi}+
+\frac{\partial \mu}{\partial x}\frac{\partial}{\partial \mu},\]
+logo,
+\begin{equation}\label{d2x}
+\frac{\partial^{2}}{\partial x^{2}}=\frac{\partial^{2}}{\partial
+\xi^{2}}+2\frac{\partial^{2}}{\partial \xi \partial \mu}+
+\frac{\partial^{2}}{\partial \mu^{2}}
+\end{equation}
+
+Agora,
+\[\frac{\partial}{\partial t}=\frac{\partial \xi}{\partial t}\frac{\partial}{\partial \xi}+
+\frac{\partial \mu}{\partial t}\frac{\partial}{\partial \mu}=c\frac{\partial \xi}-c\frac{\partial \mu},\]
+logo,
+\begin{equation}\label{d2t}
+\frac{1}{c^{2}}\frac{\partial^{2}}{\partial
+t^{2}}=\frac{\partial^{2}}{\partial
+\xi^{2}}-2\frac{\partial^{2}}{\partial \xi \partial \mu}+
+\frac{\partial^{2}}{\partial \mu^{2}}
+\end{equation}
+
+Substituindo (\ref{d2x}) e (\ref{d2t}) em (\ref{eqonda}), teremos
+\[
+\frac{\partial^{2}v}{\partial \xi \partial \mu}=0,
+\]
+tendo como solu\c{c}\~ao
+\[
+v(\xi, \mu)=\phi(\xi)+\psi(\mu)\Rightarrow u(x,t)=\phi(x+ct)+\psi(x-ct).
+\]
+Observamos que a solu\cao\ geral da equa\cao\ da onda ac\'ustica
+unidimensional \'e a forma geral da onda como discutida em
+(\ref{onda2}).
+
+\subsection{Resolu\c{c}\~ao para uma corda infinita}
+
+Para resolvermos a corda infinita precisamos de algumas
+condi\c{c}\~oes (condi\c{c}\~oes iniciais), que podem ser dadas da
+seguinte forma
+\[\left \{ \begin{array}{l}
+                u_{tt}=c^{2}u_{xx}\\
+               u(x,0)=f(x)\\
+               u_{t}(x,0)=g(x)\\
+ \end{array} \right. \]
+
+J\'a sabemos que $u(x,t)=\phi(x+ct)+\psi(x-ct)$, impondo a
+condi\c{c}\~oes iniciais, temos
+\[\left \{ \begin{array}{l}
+               \phi(x)+\psi(x)=f(x),\\
+                c\phi'(x)-c\psi'(x)=g(x)\\
+\end{array} \right. \Rightarrow \left \{ \begin{array}{l}
+               \phi'(x)=\frac{1}{2}f'(x)+\frac{1}{2c}g(x),\\
+                \psi'(x)=\frac{1}{2}f'(x)-\frac{1}{2c}g(x)\\
+\end{array} \right.\]
+
+Integrando,
+\[\left \{ \begin{array}{l}
+                \phi(x)=\phi(0)-\frac{1}{2}f(0)+\frac{1}{2}f(x)+\frac{1}{2c}\int_{0}^{x}g(s)ds\\
+                \psi(x)=\psi(0)-\frac{1}{2}f(0)+\frac{1}{2}f(x)-\frac{1}{2c}\int_{0}^{x}g(s)ds\\
+\end{array} \right. ,\]
+ e lembrando que $f(0)=\phi(0)+\psi(0)$
+\begin{equation}\label{solonda}
+u(x,t)=\frac{f(x+ct)+f(x-ct)}{2}+\frac{1}{2c}\int_{x-ct}^{x+ct}g(s)ds.
+\end{equation}
+Esta f\'ormula representa a solu\c{c}\~ao geral do problema
+proposto, conhecida como f\'omula de D'Lambert, e \'e o
+deslocamento de uma em uma corda infinita, pois n\~ao impusemos
+nenhuma condi\c{c}\~ao de contorno.
+
+\subsection{Deslocamento em uma corda finita}
+
+A solu\c{c}\~ao da equa\c{c}\~ao de onda, para uma corda infinita
+\'e dada por (\ref{solonda}). Nesta momento queremos resolver, ou
+seja, encontrar a solu\c{c}\~ao da equa\c{c}\~ao de onda para uma
+corda finita (de comprimento $l$). Para isso devemos resolver
+\[\frac{\partial^{2}u}{\partial t^{2}}-\frac{1}{c^{2}} \frac{\partial^{2}u}{\partial x^{2}}=0,\]
+com as seguintes condi\c{c}\~oes de contorno e iniciais,
+\[\left \{ \begin{array}{l}
+               u(x,0)=f(x),\\
+               u_{t}(x,0)=g(x),\\
+               u(0,t)=0,\\
+               u(l,t)=0.\\
+ \end{array} \right. \]
+
+Tomando a solu\c{c}\~ao de D'Lambert, queremos que  a
+condi\c{c}\~ao $u(0,t)=0$ seja satisfeita, mas
+\[u(0,t)=\frac{f(ct)+f(-ct)}{2}+\frac{1}{2c}\int_{-ct}^{ct}g(s)ds.\]
+como $f$ e  $g$ s\~a independnetes a \'unica forma para que tenhamos $u(0,t)=0$ \'e que
+ $f$ seja \'\i mpar no intervalo $[-l,l]$, assim como $g$, e portanto
+\[\left \{ \begin{array}{l}
+               f(ct)=-f(-ct),\\
+               \int_{-ct}^{ct}g(s)ds=0.\\
+ \end{array} \right. \]
+Logo a  condi\c{c}\~ao $u(0,t)=0$  \'e satisfeita. Observe
+que com esta hip\'oteses acabamos de encontrar a solu\c{c}\~ao
+ da para uma corda semi-infinita, ou seja, com a condi\c{c}\~ao se apenas uma das extremidades presa.
+
+Agora queremos que a condi\c{c}\~ao $u(l,t)=0$ seja satisfeita,
+como
+\[u(l,t)=\frac{f(l+ct)+f(l-ct)}{2}+\frac{V_{0}(l+ct)-V_{0}(l-ct)}{2c},\]
+onde $(d/dx)V_{0}(x)=g(x)$, lembrando novamente que como $f$ e  $g$ s\~a independnetes a \'unica forma
+de termos $u(l,t)=0$ \'e impor a condi\c{c}\~ao (simetria) de
+que $f(l+ct)=-f(l-ct)$ e impor para $V_{0}$ a condi\c{c}\~ao
+(anti-simetria) de que $V_{0}(l+ct)=V_{0}(l-ct)$, assim a
+condi\c{c}\~ao $u(l,t)=0$ \'e satisfeita.
+
+Portanto sob certas condi\c{c}\~oes  a solu\c{c}\~ao de D'Lambert
+satisfaz as condi\c{c}\~oes de contorno. E assim podemos dizer que
+a solu\c{c}\~ao de D'Lambert tamb\'em descreve o comportamento  de
+uma onda se propagando em uma corda finita.
+
+Note que como $f(x)=-f(-x)$ e $f(l+x)=f(l-x)$, assim
+$f(l+x)=-f(-l-x)=f(x-l)$, logo se tomarmos $x'=x-l$, termos
+$f(x')=f(x'+2l)$. O mesmo vale para $g$, assim a solu\c{c}\~ao
+para a corda finita tem per\'\i odo $2l$.
+
+%\begin{thebibliography}{bib}
+%
+%\bibitem{symon}{Symon, K. R. - \emph{Mec\^anica}, Editora Campus, Rio de Janeiro, 1982.}
+%\bibitem{valeria}{I\'orio,V. M. - \emph{EDP - Um Curso de Gradua\c{c}\~ao}, Editora do IMPA, Rio de Janeiro, 2001.}
+%\bibitem{marina}{Marina Hirota Magalh\~aes. - \emph{Estudo de ondas planas em meios ac\'usticos}, Relat\'orio FAPESP de inicia\c{c}\~ao cient\'\i fica, 2000.}
+%
+%\end{thebibliography}
+%\end{document}

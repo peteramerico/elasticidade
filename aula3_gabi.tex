@@ -1,0 +1,260 @@
+%\documentclass[12pt]{article}
+%\usepackage[latin1]{inputenc}
+%\usepackage[brazil]{babel}
+%\usepackage{epsfig}
+%\usepackage{showlabels}
+
+%\newcommand{\cv}{\c{c}\~}
+%\newcommand{\h}{\mathbb{H}}
+%\newcommand{\co}{\mathbb{C}}
+%\newcommand{\re}{\mathbb{R}}
+%\newcommand{\cao}{\c{c}\~ao}
+%\newcommand{\ao}{\~ao}
+%\newcommand{\ih}{\'{\i}}
+%\newcommand{\coes}{\c{c}\~oes}
+
+%\renewcommand{\textfraction}{0}
+%\renewcommand{\floatpagefraction}{0.8}
+%\renewcommand{\topfraction}{0.8}
+
+%\renewcommand{\contentsname}{\'Indice}
+%\renewcommand{\refname}{Bibliografia}
+%\renewcommand{\figurename}{Figura}
+
+%\input{form}
+%\topmargin0.0cm \textheight23.5cm
+
+%\begin{document}
+
+\section{Par\^ametros El\'asticos para Meios Isotr\'opicos}
+
+Como foi visto anteriormente, o meio isotropico pode ser descrito por
+dois par\^ametros, $\mu$ e $\lambda$. Pode-se introduzir outros
+par\^ametros al\'em destes, mas comecemos estudando a rigidez $\mu$.
+Pela lei de Hooke
+\begin{eqnarray}
+\tau_{ij} =
+c_{ijkl}e_{kl} \mbox{, onde } c_{ijkl} = \lambda\delta_{kl}\delta_{ij} 
++ \mu(\delta_{ik}\delta_{jl} + \delta_{jk}\delta_{il})
+\end{eqnarray}
+para $i \neq j$ temos
+\begin{eqnarray}
+\tau_{ij} = 2\mu e_{ij}.
+\end{eqnarray}
+
+Vemos que a rigidez $\mu$ relaciona a tens\ao\ de cisalhamento com a
+deforma\cao\ de cisalhamento, e \`as vezes $\mu$ \'e chamado de m\'odulo
+de cisalhamento. Juntamente com o fato da energia de deforma\cao\ $W$
+ser definida positiva, a rigidez de um s\'olido isotr\'opico \'e sempre
+positiva, $\mu > 0$. Agora, vejamos o m\'odulo bulk $k$ e a
+compressibilidade $\kappa$. Considere uma deforma\cao\ esfericamente
+sim\'etrica, onde $e_{11}=e_{22}=e_{33} \neq 0$ e
+$e_{12}=e_{13}=e_{23}=0$, que significa que o material foi estirado
+igualmente em todas as dire\coes. Neste caso, a tens\ao\ correspondente
+\'e chamada hidrost\'atica. Pela lei de Hooke para meios isotr\'opicos
+temos, como visto anteriormente
+\begin{eqnarray}
+\tau_{ii} = (3\lambda+2\mu)\theta = 3k\theta, \; k = \lambda + 2/3\mu.
+\end{eqnarray}
+
+O m\'odulo bulk $k$ tamb\'em \'e conhecido por incompressibilidade e \'e
+sempre positivo, ent\ao\ uma tens\ao\ positiva $\tau_{ii}>0$ causa uma
+dilata\cao\ positiva $\theta>0$.
+
+A compressibilidade $\kappa$ \'e definida como
+\begin{eqnarray}
+\kappa = \frac{1}{k}.
+\end{eqnarray}
+
+Considere agora uma haste orientada ao longo do eixo $x_{1}$ e puxada
+nesta dire\cao, provocando uma tens\ao\ ao longo de $x_{1}$ e portanto
+$\tau_{11} \neq 0$, e considere tamb\'em que todos os outros componentes
+do tensor de tens\ao\ s\ao\ nulos. J\'a vimos da lei de Hooke que
+\begin{eqnarray}
+e_{ij} &=& \frac{1}{2\mu}\tau_{ij} - \lambda\delta_{ij}\frac{\tau_{kk}}{2\mu(3\lambda + 2\mu)} \Longrightarrow \nonumber \\
+e_{11} &=& \frac{\lambda + \mu}{\mu(3\lambda+2\mu)}\tau_{11}, \; 
+e_{22} = e_{33} = -\frac{\lambda\tau_{11}}{2\mu(3\lambda+2\mu)}, \; e_{12} = e_{13} = e_{23} = 0.
+\end{eqnarray}
+
+Introduzimos agora os par\^ametros $E$ e $\sigma$ da seguinte forma,
+\begin{eqnarray}
+\tau_{11} &=& Ee_{11}, \; \sigma = -\frac{e_{22}}{e_{11}} = -\frac{e_{33}}{e_{11}} \Longrightarrow \nonumber \\
+E &=& \mu\frac{(3\lambda + 2\mu)}{\lambda + \mu}, \; \sigma = \frac{1}{2}\frac{\lambda}{\lambda + \mu}
+\end{eqnarray}
+onde $E$ \'e chamado de m\'odulo de Young e representa a raz\ao\ entre a
+tens\ao\ e a extens\ao\ relativa causada pela tens\ao\, e $\sigma$ \'e o
+raio de Poisson que representa a raz\ao\ entre o raio da contra\cao\
+relativa da espessura da haste e a sua extens\ao\ relativa,
+respectivamente. Por defini\cao\ s\ao\ ambos positivos. Para $\lambda$
+grande e/ou $\mu$ pequeno temos $0<\sigma<1/2$, e portanto, $\lambda>0$.
+
+\subsection{Unidades, Valores Num\'ericos}
+
+Da lei de Hooke vemos que os par\^ametros $c_{ijkl}$, ${\mu}$ e
+${\lambda}$ possuem as mesmas unidades da tens\ao, ou seja, s\ao\
+medidos em Pascal $(1Pa = Kgm^{-1}s^{-2})$. Por suas defini\coes\ $k$ e
+$E$ tamb\'em o s\~ao. O raio de Poisson e $\sigma$ s\ao\ adimensionais e
+$\kappa$ \'e medido em $(Pa)^{-1}$.
+
+\section{Equa\coes\ Elastodin\^amicas}
+
+A teoria estudada at\'e agora envolve propaga\cao\ de ondas em s\'olidos
+el\'asticos. No entanto, \`as vezes precisamos considerar propaga\cao\
+de ondas atrav\'es de fluidos el\'asticos, como por exemplo os oceanos e
+o n\'ucleo externo da Terra. \`As vezes a propaga\cao\ em materiais
+s\'olidos \'e tamb\'em considerada como propaga\cao\ em fluidos ( o
+ent\ao\ chamado caso ac\'ustico em sismologia de reflex\~ao). Podemos
+derivar as equa\coes\ de movimento para fluidos de equa\coes\
+hidromec\^anicas. Outra maneira \'e fazer $\mu \longrightarrow 0$ nas
+equa\coes\ obtidas anteriormente.
+
+\subsection{Equa\coes\ Elastodin\^amicas para Meios S\'olidos}
+
+Introduzimos a forma geral da lei de Hooke generalizada
+\begin{eqnarray*}
+\tau_{ij} = c_{ijkl}e_{kl} = c_{ijkl}\frac{\partial u_k}{\partial x_l},
+\end{eqnarray*}
+na equa\cao\ do movimento
+\begin{eqnarray*}
+\tau_{ji,j} + f_{i} = \rho\frac{\partial^2 u_i}{\partial t^2}
+\end{eqnarray*}
+e obtemos a forma mais geral da equa\cao\ elastodin\^amica ou equa\cao\
+da onda el\'astica
+\begin{eqnarray}
+\frac{\partial}{\partial x_j}\left(c_{ijkl}\frac{\partial u_k}{\partial x_l}\right) + f_i
+= \rho\frac{\partial^2 u_i}{\partial t^2}
+\end{eqnarray}
+
+Como $c_{ijkl} = c_{ijkl}(x_m)$ e $\rho = \rho(x_m)$ esta equa\cao\
+descreve um meio anisotr\'opico n\~ao-homog\~eneo geral. Esta \'e uma
+equa\cao\ diferencial parcial vetorial linear de segunda ordem com
+coeficientes vari\'aveis, e n\ao\ possui uma solu\cao\ de forma fechada.
+Pode-se usar m\'etodos num\'ericos como FD (Diferen\c cas Finitas) e FE
+(Elementos Finitos) para obter solu\coes\ num\'ericas. Outra maneira \'e
+aplicar m\'etodos assint\'oticos de alta frequ\^encias como m\'etodo de
+raios.
+
+Para um meio anisotr\'opico homogeneo onde os par\^ametros el\'asticos e
+a densidade s\ao\ constantes, a equa\cao\ acima fica
+\begin{eqnarray}
+c_{ijkl}\frac{\partial^2 u_k}{\partial x_j\partial x_l} + f_i = \rho\frac{\partial^2 u_i}{\partial t^2},
+\end{eqnarray}
+e agora os coeficientes s\ao\ constantes. Para esta equa\cao\ podemos
+encontrar uma solu\cao\ na forma de ondas planas. A equa\cao\
+elastodin\^amica para um meio isotr\'opico n\~ao homog\^eneo pode ser
+obtido inserindo
+\begin{eqnarray}
+c_{ijkl} = \lambda\delta_{kl}\delta_{ij} + \mu(\delta_{ik}\delta_{kl} + \delta_{jk}\delta_{kl})
+\end{eqnarray}
+onde $c_{ijkl} = c_{ijkl}(x_m)$, $\lambda = \lambda(x_m)$, $\mu =
+\mu(x_m)$ na equa\cao\ do movimento. Reescrevemos a equa\cao\ do
+movimento da seguinte maneira
+\begin{eqnarray}
+(c_{ijkl}u_{k,l})_{,j} + f_i = \rho u_{i,tt}
+\end{eqnarray}
+e obtemos
+\begin{eqnarray}
+\lambda_{,i}u_{k,k} + \mu_{,l}u_{i,l} + \mu_{,k}u_{k,i} + \lambda u_{l,li} + \mu u_{i,ll} + \mu u_{j,ij} + f_i 
+= \rho u_{i,tt}.
+\label{eqelaiso}
+\end{eqnarray}
+Isto pode ser reescrito em nota\cao\ vetorial se observarmos que
+\begin{eqnarray}
+(\nabla\mu\times\mbox{rot}\vec{u})_i = \mu_{,k}u_{k,i} - \mu_{,k}u_{i,k}.
+\end{eqnarray}
+
+Temos ent\ao\
+\begin{eqnarray}
+(\lambda + \mu)\nabla(\mbox{div}\vec{u}) + \mu\Delta\vec{u} + \nabla\lambda\mbox{div}\vec{u} 
++ \nabla\mu\times\mbox{rot}\vec{u} + 2(\nabla\mu\cdot\nabla)\vec{u} + \vec{f} = \rho\frac{\partial^2 u_i}{\partial t^2}.
+\end{eqnarray}
+
+Fazendo $\lambda$, $\mu$ e $\rho$ constantes, isto \'e,
+$\lambda_{,i}=\mu_{,i}=\rho_{,i}=0$, obtemos a equa\cao\ de movimento
+para meios isotr\'opicos homog\^eneos,
+\begin{eqnarray}
+(\lambda + \mu)u_{k,ki} + \mu u_{i,kk} + f_i = \rho u_{i,tt}
+\end{eqnarray}
+ou em nota\cao\ vetorial
+\begin{eqnarray}
+(\lambda + \mu)\nabla(\mbox{div}\vec{u}) + \mu\Delta\vec{u} + \vec{f} = \rho\frac{\partial^2\vec{u}}{\partial t^2}
+\end{eqnarray}
+
+Ainda podemos usar a identidade
+\begin{eqnarray}
+\Delta\vec{u} = \nabla(\mbox{div}\vec{u}) - \mbox{rot}(\mbox{rot}\vec{u})
+\end{eqnarray}
+para reescrever como abaixo
+\begin{eqnarray}
+(\lambda + 2\mu)\nabla(\mbox{div}\vec{u}) - \mu\mbox{rot}(\mbox{rot}\vec{u}) + \vec{f} 
+= \rho\frac{\partial^2\vec{u}}{\partial t^2}
+\end{eqnarray}
+
+\subsection{Equa\coes\ de Movimento para Fluidos - Caso Ac\'ustico}
+
+Como foi dito, podemos obter a equa\cao\ de movimento de s\'olidos
+el\'asticos para fluidos fazendo $\mu \longrightarrow 0$. Isto nos
+fornece $E = 0$, $\sigma = 1/2$ e $k = \lambda$. Nos fluidos, a tens\ao\
+hidrost\'atica e a tens\ao\ m\'edia $\tau_{ii}/3$ normalmente s\ao\
+negativos, e esta \'ultima \'e denotada por $-p$, onde $p$ \'e chamado
+de press\ao. A lei de Hooke
+\begin{eqnarray}
+\tau_{ij} = \lambda\theta\delta_{ij} = k\theta\delta_{ij}  (\mu = 0, \; \lambda = k)
+\end{eqnarray}
+pode ent\ao\ ser escrita como
+\begin{eqnarray}
+p = -k\theta \mbox{ ou } \theta = -\kappa p
+\end{eqnarray}
+
+Em ac\'ustica \'e comum trabalhar com press\ao\ $p$ e velocidade de
+part\'icula $v_i = \partial u_i/\partial t$ no lugar do deslocamento
+$u_i$ da part\'icula. Reescrevemos ent\ao\ a equa\cao\ elastodin\^amica
+como
+\begin{eqnarray}
+-p_{,i} + f_i = \rho\frac{\partial v_i}{\partial t}
+\end{eqnarray}
+
+Temos ent\ao\ 3 componentes desconhecidas de $v_i$ e $p$ \'e a quarta
+quantidade desconhecida. Precisamos ent\ao\ de mais uma equa\cao\ que
+\'e obtida derivando a lei de Hooke $\theta = -\kappa p$ com rela\cao\
+ao tempo. O sistema completo com 4 equa\coes\ \'e ent\ao
+\begin{eqnarray}
+p_{,i} + \rho\frac{\partial v_i}{\partial t} = f_i,
+\label{eqondpres} \\
+v_{k,k} + \kappa\frac{\partial p}{\partial t} = 0 .
+\label{eqondvel}
+\end{eqnarray}
+
+Derivando as equa\coes\ acima para $x_i$ e $t$ respectivamente obtemos:
+\begin{eqnarray}
+(p_{,i} + \rho\frac{\partial v_i}{\partial t} = f_i)_{,i} &\Rightarrow& 
+(p_{,i}/\rho)_{,i} + \frac{\partial v_{i,i}}{\partial t} = (f_i/\rho)_{,i} \;\; , \\
+(v_{k,k} + \kappa\frac{\partial p}{\partial t} = 0)_{,t} &\Rightarrow&
+\frac{\partial v_{k,k}}{\partial t} + \kappa\frac{\partial^2 p}{\partial t^2} = 0.
+\end{eqnarray}
+Ent\ao\ temos
+\begin{eqnarray}
+\frac{\partial v_{k,k}}{\partial t} = -\kappa\frac{\partial^2 p}{\partial t^2},
+\end{eqnarray}
+portanto
+\begin{eqnarray}
+(p_{,i}/\rho)_{,i} - \kappa\frac{\partial^2 p}{\partial t^2} = (f_i/\rho)_{,i},
+\end{eqnarray}
+ou na forma vetorial
+\begin{eqnarray}
+\nabla(\nabla p/\rho) - \kappa\frac{\partial^2 p}{\partial t^2} = \nabla(\vec{f}/\rho),
+\end{eqnarray}
+que \'e a equa\cao\ da onda ac\'ustica.
+
+Caso a densidade for constante, podemos multiplicar a equa\c{c}\~ao por
+$\rho$ e simplificar esta express\~ao, 
+obtendo
+\begin{eqnarray}
+\nabla(\nabla p) - \frac{1}{c^2}\frac{\partial^2 p}{\partial t^2} = \nabla(\vec{f}),
+\label{ondaacu}
+\end{eqnarray}
+onde introduzimos a velocidede de propaga\c{c}\~ao
+$c=1/\sqrt{\kappa\rho}=\sqrt{k/\rho}$. Equa\c{c}\~ao (\ref{ondaacu})
+\'e a equa\cao\ da onda ac\'ustica com densidade constante, muitas
+as vezes simplesmente denominada equa\c{c}\~ao da onda.
+%\end{document}

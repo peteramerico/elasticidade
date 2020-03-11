@@ -1,0 +1,138 @@
+%\documentclass{article}
+%\usepackage{amsmath}
+%\usepackage{amssymb}
+%\usepackage[brazil]{babel}
+%\begin{document}
+
+\section{Condi\c{c}\~oes iniciais e de contorno}
+
+Nosso objetivo agora \'e resolver as equa\c{c}\~oes de movimento
+para encontrar o vetor de distribui\c{c}\~ao de deslocamento
+temporal e espacial (no caso elastodin\^amico) vetor de velocidade
+de part\'\i cula e press\~ao (no caso ac\'ustico) em uma dada
+regi\~ao. Para este prop\'osito, ainda precisamos saber os
+valores do vetor de deslocamento $u_{i}(x_{j},t)$ e sua derivada
+$\dot{u}_{i}(x_{j},t)$ para o tempo $t_{0}$ em qualquer ponto de
+uma dada regi\~ao. Essa informa\c{c}\~ao representa as
+condi\c{c}\~oes iniciais. Precisamos tamb\'em saber os valores
+do vetor de deslocamento e/ou tra\c{c}\~ao na fronteira que cerca
+a regi\~ao investigada para um tempo $t$ qualquer maior que
+$t_{0}$. Essa informa\c{c}\~ao representa as condi\c{c}\~oes de
+contorno. A informa\c{c}\~ao final que precisamos \'e a
+distribui\c{c}\~ao espacial das for\c{c}as no corpo na regi\~ao
+investigada para $t \leq t_{0}$. O efeito das for\c{c}as
+gravitacionais  na propa\c{c}\~ao de onda \'e omitida em
+compara\c{c}\~ao  com o efeito das for\c{c}as na superf\'\i cie.
+Portanto consideramos a contribui\c{c}\~ao das for\c{c}as
+externas no volume como sendo zero.
+
+\subsection{Condi\c{c}\~oes iniciais}
+
+Normalmente em sismologia condi\c{c}\~oes iniciais s\~ao tais que que
+$u_{i}(x_{j},t)$ e $\dot{u}_{i}(x_{j},t)$ s\~ao zero em $t=t_{0}$. Nesse
+momento, isto \'e, $t=t_{0}$, ou depois, for\c{c}as concentradas em um
+ponto come\c{c}am a agir. Para descrever essa situa\c{c}\~ao usamos
+duas abordagens.
+
+Na primeira especificamos as for\c{c}as de volume $f_{i}$ na
+equa\c{c}\~ao de movimento de tal maneira que elas representem fontes
+s\'\i smicas. Nessa abordagem \'e, por exemplo, usada quando as
+equa\c{c}\~oes elastodin\^amicas s\~ao resolvidas pelos m\'etodos de
+diferen\c{c}as finitas ou elementos finitos. Usamos essa
+aproxima\c{c}\~ao quando olharmos para as solu\c{c}\~oes das
+equa\c{c}\~oes elastodin\^amicas usando transformadas integrais ou o
+m\'etodo de Fourier de separa\c{c}\~ao de vari\'aveis.
+
+Na segunda abordagem consideramos a equa\c{c}\~ao
+elastodin\^amica somente fora da regi\~ao da fonte. Ent\~ao o
+termo $f_{i}$ representando as for\c{c}as no volumes da
+equa\c{c}\~ao elastodin\^amica \'e zero e a equa\c{c}\~ao se torna
+homog\^enea. O efeito de uma fonte \'e especificado pelas
+condi\c{c}\~oes de contorno, que s\~ao dadas pela superf\'\i cie
+cercando a fonte. Tal especifica\c{c}\~ao \'e conhecida como
+radia\c{c}\~ao padr\~ao da fonte. Essa aproxima\c{c}\~ao \'e t\'\i
+pica para a teoria dos raios.
+
+\subsection{Condi\c{c}\~oes de contorno}
+
+As v\'arias formas das equa\c{c}\~oes de movimento derivas podem
+ser aplicadas para meios no qual os par\^ametros el\'asticos  ou
+compressibilidade e densidade juntas com suas derivadas variam
+continuamente ent\~ao os coeficientes da equa\c{c}\~ao de
+movimento est\~ao definidos. Existem, entretanto, superf\'\i cies
+no meio, onde a continuidade acima \'e violada (superf\'\i cies da
+Terra, descontinuidade Moho, etc.). Tais superf\'\i cies s\~ao
+chamadas fronteiras ou interfaces.
+
+O vetor de deslocamento e a tra\c{c}\~ao devem satisfazer nas fronteiras
+e interfaces certas condi\c{c}\~oes, chamadas condi\c{c}\~oes de
+contorno. \'As vezes, condi\c{c}\~oes de contorno imposta sobre o vetor
+deslocamento s\~ao chamadas cinem\'aticas, e as condi\c{c}\~oes impostas
+sobre a tra\c{c}\~ao s\~ao chamadas din\^amicas.
+
+No que se segue consideramos que os dois materiais dos dois lados da
+interface se encontram em {\em welded contact}, que traduz literalmente
+para ``contato soldado'', ou mais livremente para ``contato colado'' ou
+``grudado''. O significado \'e que os dois materiais s\ao\
+insepar\'aveis um do outro. Desta forma {\em welded contacts} previnem a
+cria\c{c}\~ao de cavidades nas interfaces ou difus\~ao do material de
+uma lado da interface para o outro lado. Isso tamb\'em previne
+deslizamento dos dois materiais ao longo da interface que separa.
+
+A seguir discutimos as condi\c{c}\~oes sobre o deslocamento e tra\cao\
+resultantes de {\em welded contacts} de ambas as partes no meio separada
+pela interface. Consideramos duas situa\c{c}\~oes\ diferentes.
+\begin{enumerate}
+\item \emph{Interface entre dois meios} \\
+Nesta situa\cao, temos que distinguir tr\^es casos.
+\begin{enumerate}
+\item \emph{Interface entre dois s\'olidos} \\
+Para que dois s\'olidos estejam em {\em welded contact}, \'e
+necess\'ario a continuidade do vetor de deslocamento e da tra\c{c}\~ao
+atrav\'es da interface.
+\item \emph{Interface entre fluido e s\'olido} \\
+Uma vez que as part\iculas\ do fluido podem deslizar arbitrariamente ao
+longo da interface, n\~ao podemos impor qualquer condi\c{c}\~ao sobre as
+componentes tangenciais do vetor deslocamento. Componentes normais do
+vetor deslocamento, entretanto, devem mudar continuamente na interface
+para evitar a forma\c{c}\~ao de cavidades ou difus\~ao do fluido no
+s\'olido. Observamos ainda que uma tens\~ao tangencial no fluido
+causaria uma transla\cao, j\'a que nada impede o deslisamento do fluito.
+Para evitar isso, precisamos exigir que os componentes tangenciais da
+tra\c{c}\~ao sejam zero e as componentes normais cont\'\i nuas sobre a
+interface.
+\item \emph{Interface entre dois fluidos} \\
+Esta \'e uma situa\cao\ puramente ac\'ustica. Para descrever a
+propaga\cao\ de ondas em meios ac\'usticos, usamos o vetor de velocidade
+da part\'\i cula e a press\~ao ao inv\'es do vetor delocamento e
+tra\c{c}\~ao\ (veja as equa\coes\ (\ref{eqondpres}) e (\ref{eqondvel})).
+Pelas mesmas raz\~oes apresentadas acima, somente as componentes normais
+do vetor deslocamento e da tra\c{c}\~ao devem mudar continuamente sobre
+a interface. Essas condi\c{c}\~oes resultam na continuidade da press\~ao
+sobre a interface e da componente normal da velocidade da part\icula.
+\end{enumerate}
+\item \emph{Superf\'\i cie livre} \\
+Por superf\'\i cie livre, n\'os entendemos a fronteira entre o s\'olido
+ou fluido de um lado e vac\'uo do outro. Isso aproxima a superf\'\i cie
+de continentes da Terra ou do oceano.
+\begin{enumerate}
+\item \emph{Superf\'\i cie livre de s\'olido} \\
+N\~ao podemos impoe qualquer condi\c{c}\~ao no vetor deslocamento, mas
+impomos que a tra\c{c}\~ao seja zero na fronteira.
+\item \emph{Superf\'\i cie livre de fluido} \\
+N\~ao podemos impor qualquer condi\c{c}\~ao sobre o vetor deslocamento e
+a componente tangencial da tra\c{c}\~ao. A componente normal da
+tra\c{c}\~ao, entretanto, deve ser zero. Para os par\^ametros do caso
+ac\'ustico, isto resulta na imposi\c{c}\~ao de press\~ao zero na
+superf\'\i cie livre.
+\end{enumerate}
+\end{enumerate}
+
+Finalmente, notemos que para todos casos especiais de interfaces,
+condi\c{c}\~oes de contorno podem tamb\'em ser obtidas de uma maneira
+formal a partir das condi\c{c}\~oes de contorno para a interface
+separando meios s\'olidos. Nessa maneira formal, um fluido \'e
+especificado colocando $\mu=0$ nas express\~oes para um s\'olido
+isotr\'opico. O v\'acuo \'e especificado colocando-se $c_{ijkl}=0 $ ou
+$\lambda=\mu=0$ e $\rho=0$ na superf\'\i cie livre.
+

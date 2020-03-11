@@ -1,0 +1,360 @@
+
+\section{Operadores Diferenciais e Teoremas Integrais }
+
+\subsection {Coordenadas Cartesianas}
+
+\begin{enumerate}
+
+\item {\bf Operador Gradiente}\\
+O operador gradiente pode ser escrito como
+\begin{eqnarray}
+\frac{\partial A}{\partial x_{i}} = A_{,i},
+\end{eqnarray}
+onde a v\ih rgula e o \ih ndice $i$ denotam a derivada com
+rela\cao\ \`a coordenada espacial $x_{i}$. A nota\cao\ vetorial
+deste operador pode ser $\nabla A$ ou grad$A$.
+
+\item {\bf Operador Divergente}\\
+Aplicado ao vetor $u_{i}$ o operador divergente pode ser escrito
+como
+\begin{eqnarray}
+\frac{\partial u_{i}}{\partial x_{i}} = u_{i,i},
+\end{eqnarray}
+e sua nota\cao\ vetorial \'e $\nabla\!\cdot\!\vec{u}$ ou div$\vec{u}$.
+
+\item {\bf Operador Rotacional}\\
+Aplicado ao vetor $u_{i}$ o operador rotacional pode ser escrito
+como
+\begin{eqnarray}
+\epsilon_{ijk}\frac{\partial u_{k}}{\partial x_{j}} =
+\epsilon_{ijk}u_{k,j},
+\end{eqnarray}
+e sua nota\cao\ vetorial \'e $\nabla\!\times\!\vec{u}$, rot$\vec{u}$ ou
+curl$\vec{u}$.
+
+\item {\bf Operador de Laplace}\\
+Pode ser escrito como uma combina\cao\ do operador divergente com
+o gradiente. Pode ser escrito como
+\begin{eqnarray}
+\frac{\partial^{2}A}{\partial x_{i}^{2}} = A_{,ii},
+\end{eqnarray}
+e sua nota\cao\ vetorial \'e $\Delta A$ ou $\nabla^{2}A$.
+\\
+
+Note que $\mbox{div}\;\mbox{rot}\;\vec{u} = 0$, $\mbox{rot}\;\mbox{grad}\; A = 0$.
+
+\item {\bf Teorema de Gauss}\\
+Mostra como transformar uma integral de volume numa integral de
+superf\ih cie e vice versa,
+\begin{eqnarray}
+\int\!\!\!\int\!\!\!\int_{V}\mbox{div}\vec{u}dV = \int\!\!\!\int_{\Sigma}\vec{u}\! \vec{n}dS
+\end{eqnarray}
+onde $V$ \'e um volume envolvido pela superf\ih cie fechada
+$\Sigma$ e $\vec{n}$ \'e um vetor normal externo unit\'ario de
+$\Sigma$.
+
+\item {\bf Teorema de Stokes}\\
+Indica como transformar uma integral de superf\ih cie em uma
+integral de linha e vice versa,
+\begin{eqnarray}
+\int\!\!\!\int_{\Sigma}\vec{n}\cdot\mbox{rot}\vec{u}dS = \int_{L}\vec{u}\; \vec{t}dl,
+\end{eqnarray}
+onde $\Sigma$ \'e uma superf\ih cie envolta por uma linha fechada
+$L$ com um vetor tangente unit\'ario $\vec{t}$.
+
+\end{enumerate}
+
+\subsection {Coordenadas Ortogonais Curvil\ih neas}
+
+A rela\cao\ de transforma\cao\ entre coordenadas curvil\ih neas
+$\gamma_{k}$, $k = 1,2,3$, e coordenadas cartesianas pode ser
+escrita como
+\begin{eqnarray}
+x_{i} = x_{i}(\gamma_{k}).
+\end{eqnarray}
+Um elemento diferencial de comprimento ao longo de $x_{i}$ \'e
+\begin{eqnarray}
+dx_{i} = \frac{\partial x_{i}}{\partial \gamma_{k}}d\gamma_{k},
+\end{eqnarray}
+portanto temos
+\begin{eqnarray}
+(ds)^{2} = dx_{i}dx_{i} = \frac{\partial x_{i}}{\partial
+\gamma_{k}}\frac{\partial x_{i}}{\partial
+\gamma_{l}}d\gamma_{k}d\gamma_{l} = g_{kl}d\gamma_{k}d\gamma_{l},
+\end{eqnarray}
+onde $s$ \'e o comprimento da curva e
+\begin{eqnarray}
+g_{kl} = \frac{\partial x_{i}}{\partial \gamma_{k}}\frac{\partial
+x_{i}}{\partial \gamma_{l}}.
+\end{eqnarray}
+
+Se $g_{kl} \neq 0$ somente para $k = l$ e $g_{kl} = 0$ se $k \neq
+l$, temos coordenadas curvil\ih neas ortogonais. Isto significa que
+o vetor $\partial x_{i}$/$ \partial \gamma_{k}$ que \'e tangente a
+$\gamma_{k}$, \'e ortogonal a $\partial x_{i}$/$\partial
+\gamma_{l}$, tangente \`a coordenada $\gamma_{l}$. Ent\ao\
+$\gamma_{k}$ e $\gamma_{l}$ s\ao\ ortogonais em qualquer ponto.
+Nessas coordenadas temos
+\begin{eqnarray}
+(ds)^{2} = h_{1}^{2}(d\gamma_{1})^{2} + h_{2}^{2}(d\gamma_{2})^{2}
++ h_{3}^{2}(d\gamma_{3})^{2},
+\end{eqnarray}
+onde
+\begin{eqnarray}
+h_{1}^{2} = \frac{\partial x_{1}}{\partial
+\gamma_{1}}\frac{\partial x_{1}}{\partial \gamma_{1}} +
+\frac{\partial x_{2}}{\partial \gamma_{1}}\frac{\partial
+x_{2}}{\partial \gamma_{1}} + \frac{\partial x_{3}}{\partial
+\gamma_{1}}\frac{\partial x_{3}}{\partial \gamma_{1}}.
+\end{eqnarray}
+
+Um diferencial de elemento ao longo de $\gamma_{i}$ \'e
+\begin{eqnarray}
+ds_{1} = h_{1}d\gamma_{1}.
+\end{eqnarray}
+Podemos escrever
+\begin{eqnarray}
+\frac{\partial}{\partial s_{1}} \Leftrightarrow
+\frac{1}{h_{1}}\frac{\partial}{\partial\gamma_{1}}.
+\end{eqnarray}
+Assim o operador gradiente fica
+\begin{eqnarray}
+\nabla = \left(
+\frac{1}{h_{1}}\frac{\partial}{\partial\gamma_{1}},
+\frac{1}{h_{2}}\frac{\partial}{\partial\gamma_{2}},
+\frac{1}{h_{3}}\frac{\partial}{\partial\gamma_{3}}\right)
+\end{eqnarray}
+
+Vejamos agora como fica a express\~ao do Laplaciano. Para isso usamos o Teorema de Gauss
+\begin{eqnarray*}
+\int\!\!\!\int\!\!\!\int_{V} u_{i,i}dV = \int\!\!\!\int_{S} u_{i}n_{i}dS
+\end{eqnarray*}
+onde $n_{i}$ \'e vetor normal externo unit\'ario da superf\ih cie $S$ que envolve o volume $V$. 
+Considere um sistema de coordenadas ortogonais curvil\ih neas $\gamma_{1}$,$\gamma_{2}$ e $\gamma_{3}$, 
+e um volume elementar $dV = ds_{1}ds_{2}ds_{3}$. As contribui\coes\ das superf\ih cies mais pr\'oximas aos eixos s\ao:
+\begin{eqnarray*}
+-u_{1}ds_{2}ds_{3}, \; -u_{2}ds_{1}ds_{3}, \; -u_{3}ds_{1}ds_{2},
+\end{eqnarray*}
+onde os sinais s\~ao negativos porque as orienta\coes\ dos vetores normais s\ao\ contr\'arias \`as dos eixos.
+As contribui\coes\ das outras superf\ih cies s\ao:
+\begin{eqnarray*}
+u_{1}ds_{2}ds_{3}+\frac{\partial}{\partial s_{1}}(u_{1}ds_{2}ds_{3})ds_{1},\\
+u_{2}ds_{1}ds_{3}+\frac{\partial}{\partial s_{2}}(u_{2}ds_{1}ds_{3})ds_{2},\\
+u_{3}ds_{1}ds_{2}+\frac{\partial}{\partial s_{3}}(u_{3}ds_{1}ds_{2})ds_{3}.
+\end{eqnarray*}
+
+Somando as contribui\coes\ das seis faces e igualando \`a contribui\cao\ da integral de volume no Teorema de Gauss temos,
+\begin{eqnarray*}
+u_{i,i} ds_1 ds_2 ds_3 &=& \frac{1}{h_1}\frac{\partial}{\partial \gamma_1} (h_2 h_3 u_1) d\gamma_2 d\gamma_3 ds_1 
+ + \frac{1}{h_{2}}\frac{\partial}{\partial \gamma_{2}}(h_{1}h_{3}u_{2})d\gamma_{1}d\gamma_{3}ds_{2} \\ 
+&+&\frac{1}{h_{3}}\frac{\partial}{\partial \gamma_{3}}(h_{1}h_{2}u_{3})d\gamma_{1}d\gamma_{2}ds_{3}
+\end{eqnarray*}
+
+Usando $ds_{1} = h_{1}d\gamma_{1}$, etc., podemos escrever
+\begin{eqnarray*}
+u_{i,i}=\frac{1}{h_{1}h_{2}h_{3}}\left[\frac{\partial}{\partial\gamma_{1}}(h_{2}h_{3}u_{1}) 
+       +\frac{\partial}{\partial \gamma_{2}}(h_{1}h_{3}u_{2})  
+       +\frac{\partial}{\partial \gamma_{3}}(h_{1}h_{2}u_{3})\right].
+\end{eqnarray*}
+
+Combinando as express\~oes para o gradiente e para o divergente em coordenadas curvil\ih neas ortogonais obtemos a express\ao\ para o 
+Laplaciano $\Delta = \frac{\partial^{2}}{\partial x_{i}^{2}}$
+\begin{eqnarray}
+\Delta = \frac{1}{h_1 h_2 h_3}\left[\frac{\partial}{\partial\gamma_1}\left(\frac{h_2 h_3}{h_1}\frac{\partial}{\partial\gamma_1}\right)
++\frac{\partial}{\partial\gamma_{2}}\left(\frac{h_{1}h_{3}}{h_{2}}\frac{\partial}{\partial\gamma_{2}}\right)+
+ \frac{\partial}{\partial\gamma_{3}}\left(\frac{h_{1}h_{2}}{h_{3}}\frac{\partial}{\partial\gamma_{3}}\right)\right].
+\end{eqnarray}
+
+\section{Sinal Anal\ih tico}
+
+A fun\cao\ sinal anal\ih tico $F(\xi)$ \'e definida como
+\begin{eqnarray}
+F(\xi) = g(\xi) + ih(\xi)
+\end{eqnarray}
+e ser\'a usada no estudo de ondas transientes. Aqui $g(\xi)$ \'e o
+sinal transiente real para o qual o sinal anal\ih tico \'e
+constru\ih do e $h(\xi)$ \'e a transformada de Hilbert de
+$g(\xi)$,
+\begin{eqnarray}
+h(\xi) =
+\frac{1}{\pi}\int_{-\infty}^{\infty}\frac{g(\sigma)}{\sigma-\xi}d\sigma,
+\end{eqnarray}
+onde $g(\xi)$ e $h(\xi)$ formam um par da transformada de Hilbert.
+Antes de entrar na discuss\ao\ do sinal anal\ih tico na teoria de
+propaga\cao\ de ondas planas transientes, vejamos alguns fatos
+importantes da an\'alise de Fourier. Considerando o grupo de
+fun\coes\ de Fourier do tipo padr\ao, que s\ao\ as absolutamente
+integr\'aveis em $(-\infty,\infty)$ e satisfazem as condi\coes\ de
+Dirichlet num intervalo finito. Uma fun\cao\ \'e dita
+absolutamente integr\'avel se
+\begin{eqnarray}
+\int_{-\infty}^{\infty}\mid g(t)\mid dt \leq A,
+\end{eqnarray}
+onde $A$ \'e uma constante real positiva. A condi\cao\ de
+Dirichlet requer a continuidade de $g(\xi)$ em um intervalo finito
+com a possibilidade de finitas descontinuidades do primeiro tipo
+(onde existem limites finitos \`a esquerda e \`a direita), e
+n\'umero finito de m\'aximos e m\ih nimos. Sob essas codi\coes\ a
+transformada de Fourier \'e definida como
+\begin{eqnarray}
+G(f) = \int_{-\infty}^{\infty}g(t)e^{i2\pi ft}dt,\; g(t) =
+\int_{-\infty}^{\infty}G(f)e^{-i2\pi ft}df
+\end{eqnarray}
+
+Seja a fun\cao
+\begin{eqnarray}
+c(t) = \int_{-\infty}^{\infty} a(\tau)b(t-\tau)d\tau,
+\end{eqnarray}
+que tamb\'em \'e escrita como $c(t) = a(t)*b(t)$. O teorema da
+convolu\cao\ diz que a transformada de Fourier de uma convolu\cao\
+\'e igual ao produto da transformada das fun\coes\ $a(t)$ e
+$b(t)$,
+\begin{eqnarray}
+c(f) = a(f)b(f).
+\end{eqnarray}
+
+A fun\cao\ sinal \'e definida como
+\begin{eqnarray}
+\sgn(f) = \left\{
+\begin{array}{ll}
+1 , f > 0 \\
+0 , f = 0 \\
+-1 , f < 0
+\end{array}
+\right.
+\end{eqnarray}
+Como esta fun\cao\ n\ao\ \'e absolutamente integr\'avel, \'e
+preciso achar a inversa da transformada de Fourier como um caso
+limite de uma fun\cao\ auxiliar que no limite se aproxima da
+fun\cao\ $\sgn(f)$. Esta fun\cao\ pode ser
+\begin{eqnarray}
+g_{\alpha}(f) = e^{-\alpha \mid f\mid}i \sgn(f)
+\end{eqnarray}
+com $\alpha > 0$. Esta \'e uma fun\cao\ integr\'avel e quando
+$\alpha\rightarrow 0$ a fun\cao\ se aproxima de $i$ $\sgn(f)$.
+Ent\ao\ basta tomar a transformada de Fourier inversa e fazer
+$\alpha\rightarrow 0$ para obter a transformada inversa de $i\sgn(f)$.
+\begin{eqnarray*}
+g_{\alpha}(t) &=& \int_{-\infty}^{\infty}e^{-\alpha \mid
+f\mid}i\sgn(f)e^{-i2\pi ft}df \\
+&=& -\int_{-\infty}^{0}e^{\alpha f}e^{-i2\pi ft}i df +
+\int_{0}^{\infty}e^{-\alpha f}e^{-i2\pi ft}i df \\
+&=& -\int_{0}^{\infty}e^{-\alpha f^{'}}e^{i2\pi f^{'}t}i df^{'} +
+\int_{0}^{\infty}e^{-(\alpha+i2\pi t)f}i df \\
+&=& -\int_{0}^{\infty}e^{(-\alpha+2i\pi t)f}i df +
+\int_{0}^{\infty}e^{-(\alpha + 2i\pi t)f}i df \\
+&=& \frac{i}{i2\pi t - \alpha} + \frac{i}{i2\pi t + \alpha}.
+\end{eqnarray*}
+Para $\alpha\rightarrow 0$ temos
+\begin{eqnarray}
+g_{\alpha}(t)\rightarrow g_{0}(t) = \int_{-\infty}^{\infty}i\sgn(f)e^{-i2\pi ft}dt =
+\frac{1}{\pi t}.
+\end{eqnarray}
+Temos ent\ao\ um par de Fourier
+\begin{eqnarray}
+g_{0}(t) = (\pi t)^{-1},\; G_{0}(f) = i\sgn(f).
+\end{eqnarray}
+
+Sabemos que, para uma fun\cao\ real $g(t)$
+\begin{eqnarray}
+G^{*}(f) = \int_{-\infty}^{\infty}g(t)e^{-i2\pi ft}dt = G(-f).
+\end{eqnarray}
+
+Usando esta propriedade reescrevemos a expressao para o sinal real
+da seguinte maneira
+\begin{eqnarray}
+g(t) &=& \int_{-\infty}^{\infty}G(f)e^{-i2\pi ft}df \\
+&=& \int_{-\infty}^{0}G(f)e^{-i2\pi ft}df +
+\int_{0}^{\infty}G(f)e^{-i2\pi ft}df \\
+&=& \int_{0}^{\infty}G(-f^{'})e^{-i2\pi f^{'}t}df +
+\int_{0}^{\infty}
+G(f)e^{-i2\pi ft}df \\
+&=& \int_{0}^{\infty}G^{*}(f)e^{i2\pi ft}df +
+\int_{0}^{\infty}G(f)e^{-i2\pi ft}df \\
+&=& 2Re\int_{0}^{\infty}G(f)e^{-i2\pi ft}df.
+\end{eqnarray}
+
+Ent\ao,
+\begin{eqnarray}
+g(t) = 2Re\int_{0}^{\infty}G(f)e^{-i2\pi ft}df
+\end{eqnarray}
+
+Introduzindo o sinal complexo
+\begin{eqnarray}
+F(t) = 2\int_{0}^{\infty}G(f)e^{-i2\pi ft}df,
+\end{eqnarray}
+que pode ser escrito como
+\begin{eqnarray}
+F(t) = g(t) + ih(t),
+\label{sinan}
+\end{eqnarray}
+onde
+\begin{eqnarray}
+h(t) = 2Im\int_{0}^{\infty}G(f)e^{-i2\pi ft}df.
+\end{eqnarray}
+Esta express\ao\ pode ser reescrita da seguinte maneira
+\begin{eqnarray}
+h(t) &=& -i\left[\int_{0}^{\infty}G(f)e^{-i2\pi ft}df -
+\int_{0}^{\infty}G^{*}(f)e^{i2\pi ft}df  \right]\nonumber \\
+&=& -i\left[\int_{0}^{\infty}G(f)e^{-i2\pi ft}df -
+\int_{-\infty}^{0}G(f^{'})e^{-i2\pi f^{'}t}df^{'}  \right]\nonumber \\
+&=& -i\left[\int_{-\infty}^{\infty}G(f)\sgn(f)e^{-i2\pi ft}df
+\right]\nonumber \\
+&=& -g(t) * \frac{1}{\pi t}\nonumber \\
+&=&
+-\frac{1}{\pi}\int_{-\infty}^{\infty}\frac{g(\sigma)}{t-\sigma}d\sigma
+\nonumber \\
+&=& \frac{1}{\pi}\int_{-\infty}^{\infty}\frac{g(\sigma)}{\sigma -
+t}d\sigma.
+\label{thil}
+\end{eqnarray}
+
+Ent\ao\ $g(t)$ e $h(t)$ formam um par de Hilbert, isto \'e, $h(t)$ \'e
+a transformada de Hilbert de $g(t)$. O sinal complexo (\ref{sinan})
+\'e o sinal anal\ih tico.
+
+Devemos observar que a Transformada de Hilbert da Transformada de
+Hilbert de um sinal $g(t)$ fornece $-g(t)$, ou seja,
+\begin{equation}
+g(t) = - \frac{1}{\pi} \int_{-\infty}^{\infty} \frac{h(\xi)}{\xi-t}d\xi
+= \frac{1}{\pi} \int_{-\infty}^{\infty} \frac{h(\xi)}{t-\xi}d\xi \; .
+\label{thth}
+\end{equation}
+Isso pode ser provado usando o sinal anal\itico\ $Y(t) = -iF(t) = -i
+(g(t) + ih(t)) = h(t) - i g(t)$. Usando o mesmo racioc\inio\ das equa\coes\
+(\ref{thil}), mostra-se que $-g(t)=Im \{Y(t)\}$ \'e a transformada de
+Hilbert de $h(t)=Re\{Y(t)\}$.
+
+Um importante par de Hilbert e seu correspondente sinal anal\ih
+tico est\'a relacionado ao sinal real na forma da fun\cao\
+$\delta$ de Dirac. Para $g(t) = \delta(t)$, a equa\cao\ para
+$h(t)$ fica
+\begin{eqnarray}
+h(t) = \int_{-\infty}^{\infty}\frac{\delta(\sigma)}{\sigma - t}d\delta
+= -\frac{1}{\pi t}.
+\end{eqnarray}
+O correspondente sinal anal\ih tico tem a forma
+\begin{eqnarray}
+F(t) = \delta(t) - \frac{i}{\pi t}.
+\end{eqnarray}
+
+Uma propriedade importante da transformada de Hilbert \'e que a
+transformada de Hilbert da derivada $dg(t)/dt$ \'e a derivada
+$dh(t)/dt$ da transformada de Hilbert do sinal $g(t)$.
+\begin{eqnarray}
+\frac{dh(t)}{dt} &=& 2Im\int_{0}^{\infty}g(f)(-i2\pi f)e^{-i2\pi
+ft}df, \\
+\frac{dg(t)}{dt} &=& 2Re\int_{0}^{\infty}g(f)(-i2\pi f)e^{-i2\pi
+ft}df.
+\end{eqnarray}
+Da primeira equa\cao\ vemos que a derivada da transformada de
+Hilbert $h(t)$ corresponde a um "novo" sinal cuja transformada de
+Fourier \'e $g(f)(-i2\pi f)$. Da segunda equa\cao\ vemos que o
+"novo" sinal \'e $dg(t)/dt$.
+
+
+%\begin{thebibliography}{99}
+%\bibitem{Psencik} P\v{s}en\v{c}ik, I., 1994, {\em Introduction to seismic
+%methods - Lecture Notes}, PPPG / UFBa.
+%\end{thebibliography}
+

@@ -1,0 +1,120 @@
+\subsection{A solu\c{c}\~ao da Equa\c{c}\~ao da Onda Ac\'ustica
+unidimensional}
+
+Nesta se\c{c}\~ao, resolvemos a equa\c{c}\~ao da onda ac\'ustica em 1D
+sem fontes para um meio homog\^eneo, i.e., com densidade e velocidade
+constantes, a saber
+\begin{equation}
+\frac{\partial^2 u}{\partial x^2} - \frac{1}{c^2}
+\frac{\partial^2 u}{\partial t^2} = 0 \ .
+\label{ondaacu1d}
+\end{equation}
+
+Para poder resolver uma equa\c{c}\~ao diferencial parcial de segunda
+ordem, necessitamos de condi\c{c}\~oes iniciais.
+Devemos considerar, inicialmente, as condi\c{c}\~oes em $t=0$
+\begin{equation}
+u(x,0)=u_0 (x) \qquad \mbox{e}\qquad  \frac{\partial u}{\partial t}(x,0)=v_0 (x).
+\end{equation}
+Agora, resolvemos a EDP pelo m\'etodo de mudan\c{c}as de vari\'aveis,
+isto \'e, definiremos vari\'aveis independentes entre si, como
+fun\c{c}\~oes de $x$ e $t$
+\begin{equation}
+ \xi =\xi (x,t) \qquad\mbox{e}\qquad \mu =\mu (x,t).
+\end{equation}
+Particularmente,
+\begin{equation}
+ \xi (x,t)=x-ct \qquad\mbox{e}\qquad \mu (x,t)=x+ct,
+\end{equation}
+com seus respectivos operadores diferenciais
+\begin{equation}
+ \frac{\partial}{\partial x}=\frac{\partial \xi}{\partial x}\frac{\partial}{\partial  \xi}+
+\frac{\partial \mu}{\partial x}\frac{\partial}{\partial \mu}=\frac{\partial}{\partial  \xi}+
+\frac{\partial}{\partial \mu},
+\end{equation}
+pois $\frac{\partial \xi}{\partial x}=\frac{\partial \mu}{\partial x}=1$.
+
+Derivando esta rela\c{c}\~ao novamente com respeito a $x$, obtemos para
+a segunda derivada
+\begin{equation}\label{opx}
+ \frac{\partial ^2}{\partial x^2}=\frac{\partial ^2}{\partial \xi ^2}+2\frac{\partial  ^2}
+{\partial \xi \partial \mu}+\frac{\partial ^2}{\partial \mu ^2}.
+\end{equation}
+
+Analogamente em rela\c{c}\~ao a $t$
+\begin{equation}
+ \frac{\partial}{\partial t}=-c\frac{\partial}{\partial \xi}+c\frac{\partial}{\partial \mu},
+\end{equation}
+e, derivando novamente,
+\begin{equation}\label{opt}
+ \frac{1}{c^2}\frac{\partial ^2}{\partial t^2}=\frac{\partial ^2}
+{\partial \xi  ^2}-2\frac{\partial ^2}{\partial \xi \partial \mu}+\frac{\partial ^2}
+{\partial \mu ^2}.
+\end{equation}
+Substituindo~(\ref{opx}) e~(\ref{opt}) na EDP da onda~(\ref{ondaacu1d}), temos,
+\begin{equation}
+ \frac{\partial ^2u}{\partial \xi \partial \mu}=0.
+\end{equation}
+Logo, $\frac{\partial u}{\partial \mu}$ deve ser independente de $\xi$. Ent\~ao podemos 
+definir
+\begin{equation}
+ \frac{\partial u}{\partial \mu}=\Phi (\mu),
+\end{equation}
+onde $\Phi (\mu)$ \'e uma fun\c{c}\~ao arbitr\'aria de $\mu$. Integrando com respeito a $\mu$
+\begin{equation}\label{integral}
+ u(\xi,\mu)=(\int^\mu \Phi (\mu ')d\mu ')+f(\xi),
+\end{equation}
+onde $f(\xi)$ \'e uma fun\c{c}\~ao arbitr\'aria de $\xi$.  Denominando a integral indefinida 
+em ~(\ref{integral}) como $g(\mu )$ temos
+\begin{equation}
+ u(\xi,\mu)=f(\xi)+g(\mu),
+\end{equation}
+em termos dessas vari\'aveis j\'a definidas
+\begin{equation}\label{peqonda}
+ u(x,t)=f(x-ct)+g(x+ct),
+\end{equation}
+obtivemos a solu\c{c}\~ao geral da equa\c{c}\~ao (\ref{ondaacu1d}). Esta
+forma revela a natureza f\'{\i}sica das solu\c{c}\~oes. Aqui, o termo
+$f(x-ct)$ representa o deslocamento na dire\c{c}\~ao de $x$ positivo,
+com velocidade $c$. E similarmente, o termo $g(x+ct)$ representa o
+deslocamento na dire\c{c}\~ao oposta, com a mesma velocidade $c$. Ou
+seja, a solu\c{c}\~ao da equa\c{c}\~ao da onda com velocidade e
+densidade constantes \'e uma superposi\c{c}\~ao de uma onda com qualquer
+formato propagando para a direita com uma outra onda de qualquer
+formato, possivelmente diferente, propagando para a esquerda.
+
+A quest\~ao \'e determinar as fun\c{c}\~oes $f$ e $g$ para satisfazerem
+as condi\c{c}\~oes iniciais. Em $t=0$, temos
+\begin{equation}
+ u_0 (x)=f(x)+g(x)    \qquad   v_0 (x)=c\left[\frac{dg}{dx}-\frac{df}{dx}\right].
+ \label{condini}
+\end{equation}
+
+Podemos, agora, integrar $v_0 (x)$. O limite inferior dessa
+integra\c{c}\~ao \'e uma constante $a$ indeterminada, que poder ser
+adicionada \`a $f$ e subtra\'{\i}da da $g$ sem afetar a solu\c{c}\~ao.
+Assim, as fun\c{c}\~oes $f$ e $g$ n\~ao s\~ao \'unicas. Ao integrar a
+direita das equa\c{c}\~oes (\ref{condini}, obtemos
+\begin{equation}
+ c[g(x)-f(x)]=\int_{a}^{x} v_0 (x')dx'.
+\end{equation}
+Resolvendo o conjunto dessa equa\c{c}\~ao com a da esquerda de
+(\ref{condini}) para $f(x)$ e $g(x)$, encontramos
+\begin{equation}
+ f(x)=\frac{1}{2}u_0 (x)-\frac{1}{2c}\int_{a}^{x} v_0 (x')dx'
+\end{equation}
+\begin{equation}
+ g(x)=\frac{1}{2}u_0 (x)+\frac{1}{2c}\int_{a}^{x} v_0 (x')dx'.
+\end{equation}
+Substituindo $f(x)$ por $f(x-ct)$ e $g(x)$ por $g(x+ct)$ e combinando de
+acordo com~(\ref{peqonda}), temos
+\begin{equation}
+u(x,t)=\frac{1}{2}[u_0 (x-ct)+u_0 (x+ct)]+\frac{1}{2c}\int_{x-ct}^{x+ct} v_0 (x')dx'.
+\end{equation}
+Esta f\'ormula, que representa a solu\c{c}\~ao geral do problema, \'e
+conhecida como a {\it F\'ormula de D'Alembert}. Ela mostra que dadas
+condi\c{c}\~oes iniciais, a solu\c{c}\~ao deve ter a forma
+$f(x-ct)+g(x+ct)$. Podemos dizer, ent\~ao que o comportamento
+f\'{\i}sico do deslocamento da onda, j\'a descrito, \'e aplicado a esta
+equa\c{c}\~ao obtida.
+
