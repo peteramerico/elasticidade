@@ -50,46 +50,73 @@ transfoma\c{c}\~ao.
 Lembremos da difini\c{c}\~ao do delta de Kronecker,
 \[\delta_{ij}=\left \{ \begin{array}{l}
                 0, \mbox{   }\mbox{   }\mbox{se } i \neq j,\\
-                1, \mbox{   }\mbox{   }\mbox{se } i= j,\\
+                1, \mbox{   }\mbox{   }\mbox{se } i= j.\\
 \end{array} \right.\]
-pela conven\c{c}\~ao de Einstein tems que
+Pela conven\c{c}\~ao de Einstein temos que
 $\delta_{ii}=\delta_{11}+\delta_{22}+\delta_{33}=3$.
 
 Se fizermos $\alpha_{ij}=\delta_{ij}$, a tranforma\c{c}\~ao de
 coordenadas ser\'a
-\[x'_{i}=(x_{i}-x_{oi}),\]
-o que a uma transla\c{c}\~ao paralela de um sistem de coordenada
-com respeito ao outro. Se fizermos  $x_{oj}=0$, a rela\c{c}\~ao de
+\[x'_{i}=(x_{i}-x_{oi}).\]
+Esta transforma\c{c}\~ao descreve uma transla\c{c}\~ao paralela de um sistem de coordenada
+com respeito ao outro (veja a figura). 
+
+\begin{tikzpicture}
+\draw[thick,->] (0,0) -- (4.5,0) node[anchor=north west] {$x_2$};
+\draw[thick,->] (0,0) -- (0,4.5) node[anchor=south east] {$x_3$};
+\draw[thick,->] (0,0) -- (-2.5,-2.5) node[anchor=north west] {$x_1$};
+\node[below] at (0,0) {$0$};
+\end{tikzpicture}
+\begin{tikzpicture}
+\draw[thick,->] (5,0) -- (9.5,0) node[anchor=north west] {$x_2'$};
+\draw[thick,->] (5,0) -- (5,4.5) node[anchor=south east] {$x_3'$};
+\draw[thick,->] (5,0) -- (2.5,-2.5) node[anchor=north west] {$x_1'$};
+\node[below] at (5,0) {$0'$};
+\end{tikzpicture}
+
+Se fizermos  $x_{oj}=0$, a rela\c{c}\~ao de
 transforma\c{c}\~ao ser\'a
 \[x'_{i}=\alpha_{ij}x_{j},\]
-o que descreve uma rota\c{c}\~ao e/ou uma deforma\c{c}\~ao em torno da origem do primeiro
-sistema em rela\c{c}\~ao ao outro.
+que descreve uma rota\c{c}\~ao em torno da origem do primeiro
+sistema (ver figura).
 
-Neste momento, iremos investigar a natureza da matriz
+\begin{tikzpicture}
+\draw[thick,->] (0,0) -- (4.5,0) node[anchor=north west] {$x_2$};
+\draw[thick,->] (0,0) -- (0,4.5) node[anchor=south east] {$x_3$};
+\draw[thick,->] (0,0) -- (-2.5,-2.5) node[anchor=north west] {$x_1$};
+%\node[below] at (0,0) {$0$};
+%\end{tikzpicture}
+%\begin{tikzpicture}
+\draw[thick,->] (0,0) -- (4.5,0.5) node[anchor=north west] {$x_2'$};
+\draw[thick,->] (0,0) -- (-0.5,4.5) node[anchor=south east] {$x_3'$};
+\draw[thick,->] (0,0) -- (-2,-2.5) node[anchor=north west] {$x_1'$};
+\node[below right] at (0,0) {$0 = 0'$};
+\end{tikzpicture}
+
+Agora iremos investigar o significado dos elementos da matriz de transforma\c{c}\~ao
 $\alpha_{ij}$. Vamos introduzir o vetor raio $r_{i}$, partindo da
 origem de um sistema de coordenadas at\'e um ponto $x_{i}$, isto
 \'e, $x_{i}=r_{i}$. Sejam $\vec{i}_{1}$, $\vec{i}_{2}$ e
 $\vec{i}_{3}$ tr\^es vetores mutuamente ortogonais unit\'arios
-perpendiculares e orientado ao longo dos eixos $x_{1}$, $x_{2}$,
+perpendiculares e orientados ao longo dos eixos $x_{1}$, $x_{2}$,
 $x_{3}$, respectivamente. Assim como $\vec{i'_{1}}$,
 $\vec{i'_{2}}$, $\vec{i'_{3}}$ s\~ao vetores unit\'arios no
-sistema $x'_{i}$, o que implica que eliminamos a deforma\c{c}\~ao.
+sistema $x'_{i}$.
 Podemos expressar o vetor $r_{i}$ nos dois sistemas de
-coordenadas, como
-\[ \vec{r}=x_{1}\vec{i}_{1}+x_{2}\vec{i}_{2}+x_{3}\vec{i}_{3}=x'_{1}\vec{i'}_{1}+
-x'_{2}\vec{i'}_{2}+x'_{3}\vec{i'}_{3}=x_{j}\vec{i_{j}},\]
-utilizando no lado direito a rela\c{c}\~ao de transforma\c{c}\~ao
+coordenadas
+\[ \vec{r}=x_{j}\vec{i_{j}}=x_{1}\vec{i}_{1}+x_{2}\vec{i}_{2}+x_{3}\vec{i}_{3}=x'_{1}\vec{i'}_{1}+
+x'_{2}\vec{i'}_{2}+x'_{3}\vec{i'}_{3}.\]%=x_{j}\vec{i_{j}}.\]
+Se substituimos, no lado direito, a rela\c{c}\~ao de transforma\c{c}\~ao
 \[x'_{i}=\alpha_{ij}x_{j},\]
 teremos
 \[\vec{r}=x_{1}\vec{i}_{1}+x_{2}\vec{i}_{2}+
 x_{3}\vec{i}_{3}=\alpha_{1j}x_{j}\vec{i'}_{1}+
 \alpha_{2j}x_{j}\vec{i'}_{2}+\alpha_{3j}x_{j}\vec{i'}_{3}.\]
-
-Se multiplicarmos a equa\c{c}\~ao acima por $\vec{i}_{k}$, teremos
+Se multiplicarmos a equa\c{c}\~ao acima por $\vec{i'}_{k}$, teremos
 \[x_{j}\vec{i}_{j}\vec{i'}_{k}=
 \alpha_{kj}x_{j} \Rightarrow
 \alpha_{kj}=\vec{i}_{j}\vec{i'}_{k},\] note que os elementos de
-$\alpha_{ij}$ s\~ao cossenos, denominados cossenos diretores.
+$\alpha_{ij}$ s\~ao cossenos, denominados cossenos direcionais.
 
 Iremos analisar a transforma\c{c}\~ao inversa a
 \[x'_{i}=\alpha_{ij}(x_{j}-x_{oj}).\]
