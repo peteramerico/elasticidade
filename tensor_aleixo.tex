@@ -2,14 +2,14 @@
 \section{Tensores Cartesianos}
 
 Quantidades f\'\i sicas podem ser matematicamente representadas
-por tensores. As equa\c{c}\~oes s\~ao equa\c{c}\~oes tensoriais.
+por tensores. As equa\c{c}\~oes que descrevem essas leis f\'isicas s\~ao, ent\~ao, equa\c{c}\~oes tensoriais.
 Em nosso trabalho vamos nos concentrar em tensores no espa\c{c}o
 euclidiano $3D$.
 
 Alguns exemplos de tensores: \[  \begin{array}{l}
                \mbox{\emph{temperatura, densidade} - escalares - tensor de ordem zero}; \\
                \mbox{\emph{velocidade, deslocamento, for\c{c}a} -vetores - tensor de primeira ordem}; \\
-               \mbox{\emph{tensor de tens\~ao, tensor de in\'ercia} - tensor de segunda ordem}; \\
+               \mbox{\emph{tensor de tens\~ao, tensor de deforma\c{c}\~ao} - tensor de segunda ordem}; \\
                \mbox{\emph{tensor de par\^ametros el\'asticos} -  tensor de quarta ordem}. \\
 
 \end{array}  \]
@@ -23,9 +23,10 @@ dist\^ancia entre estes pontos como,
 \[d(A,B)=\left[(x_{i}^{B}-x_{i}^{A})(x_{i}^{B}-x_{i}^{A})\right]^{1/2}.\]
 
 Aqui estamos utilizando a conve\c{c}\~ao de Einstein, que diz,
-quando dois \'\i ndices iguais se repentem num produto, tem-se
- impl\'\i cito uma soma spbre todos valores deste \'\i ndice.
- Note que s\~ao dois \'\i ndices, coisas do tipo $u_{i}v_{i}w_{i}$ n\~ao s\~ao permitidas.
+quando um \'\i ndice se repete duas vezes num produto, t\^em-se
+ impl\'\i cito uma soma sobre todos valores deste \'\i ndice.
+ Note que o mesmo \'\i ndice pode aparecer no m\'aximo duas vezes na mesma equa\c{c}\~ao,
+ ent\~ao, coisas do tipo $u_{i}v_{i}w_{i}$ n\~ao s\~ao permitidas.
 Tamb\'em utilizaremos $u_{i}$ para representar uma componente gen\'erica do vetor $(u_{1},
 u_{2}, u_{3})$.
 
@@ -44,7 +45,7 @@ transfoma\c{c}\~oes de coordenadas. Consideremos dois sistemas de
 \[x'_{i}=\alpha_{ij}(x_{j}-x_{oj}),\]
 onde $x_{oj}$ \'e a coordenada da origem do sistema $x'_{i}$ nas coordenadas de
 $x_{i}$ e os $\alpha_{ij}$ s\~ao os elementos da matriz de
-tranfoma\c{c}\~ao.
+transfoma\c{c}\~ao.
 
 Lembremos da difini\c{c}\~ao do delta de Kronecker,
 \[\delta_{ij}=\left \{ \begin{array}{l}
