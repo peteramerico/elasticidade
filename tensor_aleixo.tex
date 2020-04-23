@@ -112,29 +112,26 @@ teremos
 \[\vec{r}=x_{1}\vec{i}_{1}+x_{2}\vec{i}_{2}+
 x_{3}\vec{i}_{3}=\alpha_{1j}x_{j}\vec{i'}_{1}+
 \alpha_{2j}x_{j}\vec{i'}_{2}+\alpha_{3j}x_{j}\vec{i'}_{3}.\]
-Se multiplicarmos a equa\c{c}\~ao acima por $\vec{i'}_{k}$, teremos
-\[x_{j}\vec{i}_{j}\vec{i'}_{k}=
-\alpha_{kj}x_{j} \Rightarrow
-\alpha_{kj}=\vec{i}_{j}\vec{i'}_{k},\] note que os elementos de
+Se multiplicarmos escalarmente a equa\c{c}\~ao acima por $\vec{i'}_{k}$, teremos
+%\[x_{j}\vec{i}_{j}\vec{i'}_{k}=
+%\alpha_{kj}x_{j} \Rightarrow
+\[ \alpha_{kj}=\vec{i}_{j} \cdot \vec{i'}_{k}.\] Note que os elementos de
 $\alpha_{ij}$ s\~ao cossenos, denominados cossenos direcionais.
 
-Iremos analisar a transforma\c{c}\~ao inversa a
+Considerando a transforma\c{c}\~ao inversa a
 \[x'_{i}=\alpha_{ij}(x_{j}-x_{oj}).\]
-
-Iremos mostrar que para a matriz $\alpha_{ij}$ existe uma inversa,
+Iremos mostrar que para a matriz $\alpha_{ij}$, existe uma inversa,
 $(\alpha^{-1})_{ij}$, tal que
 \[\alpha_{ij}(\alpha^{-1})_{jk}=\delta_{ik}, \mbox{    }\mbox{    }\mbox{    }(\alpha^{-1})_{jk}\alpha_{kl}=\delta_{jl}.\]
+Com a matriz inversa podemos escrever a transfoma\c{c}\~ao inversa da seguinte forma
+\[x_{i}=x_{oi}+(\alpha^{-1})_{ij}x'_{j}.\]
 
-Com a matriz inversa teremos a transfoma\c{c}\~ao inversa que
-ser\'a dada por
-\[x_{i}=x_{oi}-(\alpha^{-1})_{ij}x'_{j}\]
-
-Como a distan\^ancia entre $A$ e $B$ devem ser independente do
-sistema de coordenada utilizado, teremos
+Como a dist\^ancia entre $A$ e $B$ deve ser independente do
+sistema de coordenadas utilizado, temos
 \[ (x_{i}^{B}-x_{i}^{A})(x_{i}^{B}-x_{i}^{A})=(x'_i{}^{B}-x'_i{}^{A})(x'_i{}^{B}-x'_i{}^{A}),\]
 o que nos d\'a
-\[ (x_{i}^{B}-x_{i}^{A})(x_{i}^{B}-x_{i}^{A})=\alpha_{kj}\alpha_{kl}(x_{j}^{B}-x_{j}^{A})(x_{l}^{B}-x_{l}^{A}),\]
-o que implica
+\[ (x_{i}^{B}-x_{i}^{A})(x_{i}^{B}-x_{i}^{A})=\alpha_{kj}\alpha_{kl}(x_{j}^{B}-x_{j}^{A})(x_{l}^{B}-x_{l}^{A}).\]
+Ent\~ao,
 \[ \alpha_{kj}\alpha_{kl}=\delta_{jl}.\]
 
 Agora supondo que exista a inversa, teremos
@@ -170,50 +167,47 @@ rela\c{c}\~ao:
 \[T'_{p_{1},p_{2},...,p_{k}}=
 \alpha_{p_{1}m_{1}}\alpha_{p_{2}m_{2}}...\alpha_{p_{k}m_{k}}T_{m_{1},m_{2},...,m_{k}}.\]
 
-Para um tensor de ordem zero definimos $T=T'$. J\'a para tensores
-de primeira de segunda ordem,temos
+Para um tensor de ordem zero, definimos a transforma\c{c}\~ao como $T=T'$. J\'a para tensores
+de primeira (vetor) e de segunda ordem, temos as seguintes formas de transforma\c{c}\~ao
 \[T'_{i}=\alpha_{ij}T_{j},\mbox{   }\mbox{   }\mbox{   }\mbox{   }
 T'_{ij}=\alpha_{im}\alpha_{jn}T_{mn}.\]
 
-
-
-Agora definimos as opera\c{c}\~oes b\'asicas com tensores.
-Com a mesma ordem a adi\c{c}\~ao e subtra\c{c}\~ao de tensores
-correspondem a:
+Para tensores de mesma ordem somente, adi\c{c}\~ao e subtra\c{c}\~ao
+correspondem a
 \[A_{ij} \pm B_{ij}=C_{ij}.\]
 
-Mas a multiplica\c{c}\~ao n\~ao necessita que os tensores tenham as
+Em contraste com adi\c{c}\~ao e subtra\c{c}\~ao, na multiplica\c{c}\~ao, n\~ao
+necessitamos que os tensores tenham a
 mesma ordem. Se todos os \'\i ndices s\~ao distintos a
 multiplica\c{c}\~ao soma os \'\i ndices, como por exemplo,
 \[A_{ij}B_{klm}=C_{ijklm}.\]
-A multiplica\c{c}\~ao de do tensores com mesmos \'\i ndices reduz
-a ordem do tensor resultante por $2$,
+J\'a a multiplica\c{c}\~ao de tensores com \'\i ndices iguais reduz
+a ordem do tensor resultante por $2$, como em
 \[A_{ij}B_{j}=C_{i}.\]
 A redu\c{c}\~ao da ordem \'e dita contra\c{c}\~ao. Um t\'\i pico
-exemplo \'e o produto escalar.
+exemplo \'e o produto escalar de dois vetores.
 
 Posteriormente iremos trabalhar com com tensores sim\'etricos e
-anti-sim\'etricos, por isso definimos essa propriedade dos
-tensores. Entendemos um  tensor sim\'etrico com a seguinte
+anti-sim\'etricos. Entendemos um  tensor sim\'etrico com a seguinte
 propriedade
 \[T_{m_{1},m_{2},...,m_{k}}=T_{m_{2},m_{1},...,m_{k}},\]
 esse tensor \'e sim\'etrico nos \'\i ndices $m_{1}$ e
-$m_{2}$.Entendemos um  tensor anti-sim\'etrico com a seguinte
+$m_{2}$. Entendemos um  tensor anti-sim\'etrico com a seguinte
 propriedade
 \[T_{m_{1},m_{2},...,m_{k}}=-T_{m_{k},m_{2},...,m_{1}},\]
 esse tensor \'e anti-sim\'etrico nos \'\i ndices $m_{1}$ e $m_{k}$.
 
-Lembremos das propridades de matrizes, para ver que um tensor de
-ordem $2$, pode ser escrito como a soma de um tensor sim\'etrico e
-um anti-sim\'etrico da seguinte forma:
+Um tensor de
+ordem $2$, pode ser escrito da seguinte forma (soma de um tensor
+sim\'etrico com um anti-sim\'etrico):
 \[B_{ij}=\frac{1}{2}(B_{ij}+B_{ji})+\frac{1}{2}(B_{ij}-B_{ji})=S_{ij}+A_{ij}.\]
 
-Note que simetria e anti-simetria s\~ao preservadas ap\'os uma
+Simetria e anti-simetria s\~ao preservadas ap\'os uma
 transforma\c{c}\~ao de coordenadas.
  Se $T_{mnl}=T_{nml}$, temos
 \[T'_{ijk}=\alpha_{im}\alpha_{jn}\alpha_{kl}T_{mnl}=\alpha_{im}\alpha_{jn}\alpha_{kl}T_{nml}=
-\alpha_{jn}\alpha_{im}\alpha_{kl}T_{nml}=T'_{jik}.\] Para
-anti-sim\'etricos a racioc\'\i nio \'e o mesmo.
+\alpha_{jn}\alpha_{im}\alpha_{kl}T_{nml}=T'_{jik}.\] 
+O racioc\'\i nio \'e o mesmo para tensores anti-sim\'etricos.
 
 \subsection{Tensores Isotr\'opicos (especiais)}
 
