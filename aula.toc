@@ -31,7 +31,7 @@
 \contentsline {subsection}{\numberline {4.3.2}Defini\c {c}\~ao e Propriedades dos Tensores Cartesianos}{34}
 \contentsline {subsection}{\numberline {4.3.3}Tensores Isotr\'opicos (especiais)}{36}
 \contentsline {subsection}{\numberline {4.3.4}Autovalores e autovetores de um tensor sim\'etrico de ordem dois}{37}
-\contentsline {subsection}{\numberline {4.3.5}Diferencia\c {c}\~ao do Tensor}{40}
+\contentsline {subsection}{\numberline {4.3.5}Diferencia\c {c}\~ao de um tensor}{40}
 \contentsline {section}{\numberline {4.4}Operadores Diferenciais e Teoremas Integrais }{40}
 \contentsline {subsection}{\numberline {4.4.1}Coordenadas Cartesianas}{40}
 \contentsline {subsection}{\numberline {4.4.2}Coordenadas Ortogonais Curvil\'{\i }neas}{41}

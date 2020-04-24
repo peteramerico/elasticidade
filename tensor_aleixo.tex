@@ -214,11 +214,9 @@ O racioc\'\i nio \'e o mesmo para tensores anti-sim\'etricos.
 
 Um tensor \'e dito isotr\'opico se ap\'os uma transforma\c{c}\~ao
 de coordenadas o tensor se mant\'em inalterado.
-
 Por exemplo o delta de Kronecker \'e um tensor de ordem $2$
 isotr\'opico, pois
 \[\delta'_{ij}=\alpha_{im}\alpha_{jn}\delta_{mn}=\alpha_{im}\alpha_{jm}=\delta_{ij}.\]
-
 Um outro tensor isotr\'opico \'e o s\'\i mbolo de Levi-Civita,
 $\epsilon_{ijk}$, que \'e um tensor de ordem $3$, definido como:
 \[\epsilon_{ijk}=\left\{ \begin{array}{l}
@@ -226,24 +224,21 @@ $\epsilon_{ijk}$, que \'e um tensor de ordem $3$, definido como:
 permuta\c{c}\~ao par de $1,2,3$};\\
           -1,\mbox{   }\mbox{   }\mbox{   }\mbox{se $i,j,k$ formam uma
 permuta\c{c}\~ao \'\i mpar de $1,2,3$};\\
-           0,\mbox{   }\mbox{   }\mbox{   }\mbox{se dois \'\i ndices tem o mesmo
-valor}.\\
+           0,\mbox{   }\mbox{   }\mbox{   }\mbox{se dois \'\i ndices s\~ao repetidos}.\\
 \end{array} \right.\]
-
-Note que
+Pode-se provar a seguinte identidade
 \[\epsilon_{ijk}\epsilon_{lmn}= \begin{array}{lllll}
                 \vline & \delta_{il} & \delta_{im} & \delta_{in} & \vline\\
                 \vline &\delta_{jl} & \delta_{jm} & \delta_{jn} &\vline\\
                  \vline &\delta_{kl} & \delta_{km} & \delta_{kn} &\vline\\
 \end{array}.\]
-
 E, portanto,
 \[\epsilon_{ijk}\epsilon_{imn}= \begin{array}{lllll}
                 \vline & 3 & \delta_{im} & \delta_{in}&\vline \\
                 \vline & \delta_{ji} & \delta_{jm} & \delta_{jn}& \vline\\
                \vline & \delta_{ki} & \delta_{km} & \delta_{kn}& \vline\\
 \end{array}=\delta_{jm}\delta_{kn}-\delta_{jn}\delta_{km},\]
-o qual \'e uma importante identidade. A partir disto, temos que
+que \'e uma identidade importante. A partir disto, temos que
 \[\epsilon_{ijk}\epsilon_{ijn}=3\delta_{kn}-\delta_{kn}=2\delta_{kn}\]
 e
 \[\epsilon_{ijk}\epsilon_{ijk}=6.\]
@@ -260,14 +255,11 @@ $\epsilon_{ijk}\epsilon_{lmn}$, podemos escrever
                 \vline&a_{21} & a_{22} & a_{23}&\vline \\
                 \vline&a_{31} & a_{32} & a_{33}&\vline \\
 \end{array}=det(a_{ij}).\]
-
 A rela\c{c}\~ao acima pode ser generalizada
 \[\epsilon_{ijk}a_{mi}a_{nj}a_{lk}=det(a_{pq})\epsilon_{mnl}.\]
-
 Com a rela\c{c}\~ao anterior podemos demonstrar que  o s\'\i mbolo
 de Levi-Civita \'e um tensor isotr\'opico de ordem $3$. De fato,
 \[\epsilon'_{ijk}=\alpha_{im}\alpha_{jn}\alpha_{kl}\epsilon_{mnl}=det(\alpha_{pq})\epsilon_{ijk}=\epsilon_{ijk}.\]
-
 E tamb\'em temos a seguinte rela\c{c}\~ao
 \[det(a_{pq})=\frac{1}{6}\epsilon_{mnl}\epsilon_{ijk}a_{mi}a_{nj}a_{lk}.\]
 
