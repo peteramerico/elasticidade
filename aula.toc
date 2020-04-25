@@ -1,4 +1,4 @@
-\babel@toc {brazil}{}
+\select@language {brazil}
 \contentsline {chapter}{\numberline {1}Introdu\c {c}\~ao}{4}
 \contentsline {section}{\numberline {1.1}O que \'e uma onda?}{4}
 \contentsline {section}{\numberline {1.2}Formas de propaga\c {c}\~ao}{5}
