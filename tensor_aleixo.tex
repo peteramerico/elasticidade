@@ -76,7 +76,7 @@ x'_{i}=(x_{i}-x_{oi}).
 
 Esta transforma\c{c}\~ao descreve uma transla\c{c}\~ao paralela de um sistem de coordenada
 com respeito ao outro (veja a figura). 
-\begin{figure}[!ptb]
+\begin{figure}[!tb]
 \begin{tikzpicture}
 \draw[thick,->] (0,0) -- (4.5,0) node[anchor=north west] {$x_2$};
 \draw[thick,->] (0,0) -- (0,4.5) node[anchor=south east] {$x_3$};
@@ -84,11 +84,16 @@ com respeito ao outro (veja a figura).
 \node[below] at (0,0) {$O$};
 \end{tikzpicture}
 \begin{tikzpicture}
+\begin{scope}[rotate=20]
 \draw[thick,->] (5,0) -- (9.5,0) node[anchor=north west] {$x_2'$};
 \draw[thick,->] (5,0) -- (5,4.5) node[anchor=south east] {$x_3'$};
 \draw[thick,->] (5,0) -- (2.5,-2.5) node[anchor=north west] {$x_1'$};
-\node[below] at (5,0) {$O'$};
+\node[below right] at (5,0) {$O'$};
+\end{scope}
 \end{tikzpicture}
+  \caption{Representa\c{c}\~ao de dois sistemas de coordenads ortogonais
+  distintos $\vec{e_j}$ e $\vec{e_k'}$.}
+  \label{fig:sistemasortogonais}
 \end{figure}
 
 Se fizermos  $x_{oj}=0$, a rela\c{c}\~ao de
@@ -97,33 +102,8 @@ transforma\c{c}\~ao ser\'a
 x'_{i}=\alpha_{ij}x_{j},
 \end{equation}
 que descreve uma rota\c{c}\~ao em torno da origem do primeiro
-sistema (ver figura).
+sistema (veja a Figura \ref{fig:sistemasortogonais}).
 
-\begin{figure}[!ptb]
-  \centering
-\begin{tikzpicture}
-\begin{scope}
-  \draw[thick,->] (0,0) -- (4.5,0) node[anchor=north west] {$x_2$};
-  \draw[thick,->] (0,0) -- (0,4.5) node[anchor=south east] {$x_3$};
-  \draw[thick,->] (0,0) -- (-2.5,-2.5) node[anchor=north east] {$x_1$};
-  \coordinate (e2) at (2,0);
-  \coordinate (e3) at (0,2);
-  \coordinate (e1) at (-1.3,-1.3);
-\end{scope}
-  \begin{scope}[rotate=12]
-  \draw[thick,->] (0,0) -- (4.5,0) node[anchor=north west] {$x'_2$};
-  \draw[thick,->] (0,0) -- (0,4.5) node[anchor=south east] {$x'_3$};
-  \draw[thick,->] (0,0) -- (-2.5,-2.5) node[anchor=north west] {$x'_1$};
-  \coordinate (e2rot) at (2,0);
-  \coordinate (e3rot) at (0,2);
-  \coordinate (e1rot) at (-1.3,-1.3);
-\end{scope}
-\node[below right] at (0,0) {$O = O'$};
-  \draw[bend right=30,thick, ->] (e1) node[below]{$\pmb\phi$} to (e1rot);
-  \draw[bend right=30,thick, ->] (e2)  to node[right]{$\pmb\beta$} (e2rot);
-  \draw[bend right=30,thick, ->] (e3)  to node[above]{$\pmb\gamma$} (e3rot);
-\end{tikzpicture}
-\end{figure}
 
 Agora iremos investigar o significado dos elementos da matriz de transforma\c{c}\~ao
 $\alpha_{ij}$. Vamos introduzir o vetor raio $r_{i}$, partindo da
@@ -168,60 +148,124 @@ Obtemos uma express\~ao para os termos de $\alpha_{kj}$
   \alpha_{kj}=\vec{e_{j}}\vec{e_{k}}'=\vec{e}_{j} \cdot \vec{e_{k}}' = 
   \lvert e_{j}\rvert\lvert e'_{k}\rvert \cos{\theta} \, .
 \end{equation}
- Note que os elementos de
+
+\begin{figure}[!tb]
+  \centering
+\begin{tikzpicture}
+\begin{scope}
+  \draw[thick,->] (0,0) -- (4.5,0) node[anchor=north west] {$x_2$};
+  \draw[thick,->] (0,0) -- (0,4.5) node[anchor=south east] {$x_3$};
+  \draw[thick,->] (0,0) -- (-2.5,-2.5) node[anchor=north east] {$x_1$};
+  \coordinate (e2) at (2,0);
+  \coordinate (e3) at (0,2);
+  \coordinate (e1) at (-1.3,-1.3);
+\end{scope}
+  \begin{scope}[rotate=20]
+  \draw[thick,->] (0,0) -- (4.5,0) node[anchor=north west] {$x'_2$};
+  \draw[thick,->] (0,0) -- (0,4.5) node[anchor=south east] {$x'_3$};
+  \draw[thick,->] (0,0) -- (-2.5,-2.5) node[anchor=north west] {$x'_1$};
+  \coordinate (e2rot) at (2,0);
+  \coordinate (e3rot) at (0,2);
+  \coordinate (e1rot) at (-1.3,-1.3);
+\end{scope}
+\node[below right] at (0,0) {$O = O'$};
+  \draw[bend right=30,thick, ->] (e1) to (e1rot); 
+  \node at ($(e1)-(-0.05,0.5)$) {$\alpha_{11}$};
+  \draw[bend right=30,thick, ->] (e2)  to node[right]{$\alpha_{22}$} (e2rot);
+  \draw[bend right=30,thick, ->] (e3)  to node[above]{$\alpha_{33}$} (e3rot);
+  \draw[bend right=50,thick, ->,red] ($(e1)+(0,0)$)  to node[below]{$\alpha_{21}$}
+  ($(e2rot)-(0,0)$);
+  \draw[bend left=25,thick, <-,blue] ($(e1rot)$)  to
+  node[left]{$\alpha_{13}$}
+  ($(e3)-(0,0)$);
+  \draw[bend right=25,thick, ->,OliveGreen] ($(e2)$)  to
+  node[above]{$\alpha_{32}$} ($(e3rot)-(0,0)$);
+\end{tikzpicture}
+  \caption{Ilustra\c{c}\~ao de uma rota\c{c}\~ao dos eixos de coordenadas de base
+  $\vec{e_j}$ em um novo sistema de coordenadas ortogonais $\vec{e_k}'$. Note
+  que os cossenos dos \^angulos entre os eixos determinam os termos da matriz
+  $\alpha_{kj}$.}
+  \label{fig:rotacaocoord}
+\end{figure}
+
+Note que os elementos de
 $\alpha_{ij}$ s\~ao cossenos, denominados cossenos direcionais, onde $\theta$
-representa o \^angulo entre os vetores $\vec{e_{j}}$ e $\vec{e_{k}}'$.
+representa o \^angulo entre os vetores $\vec{e_{j}}$ e $\vec{e_{k}}'$ (veja a
+Figura \ref{fig:rotacaocoord}).
 
 Considerando a transforma\c{c}\~ao inversa a
 \begin{equation}
 x'_{i}=\alpha_{ij}(x_{j}-x_{oj}).
+  \label{eq:rotacao}
 \end{equation}
 
 Iremos mostrar que para a matriz $\alpha_{ij}$, existe uma inversa,
 $(\alpha^{-1})_{ij}$, tal que
 \begin{equation}
-\alpha_{ij}(\alpha^{-1})_{jk}=\delta_{ik}, \mbox{    }\mbox{    }\mbox{    }(\alpha^{-1})_{jk}\alpha_{kl}=\delta_{jl}.
+\alpha_{ij}(\alpha^{-1})_{jk}=\delta_{ik}, \quad (\alpha^{-1})_{jk}\alpha_{kl}=\delta_{jl}.
+\label{eq:inversakronecker}
+\end{equation}
+Aqui vale relembrar que o produto entre uma matriz qualquer $\pmb{A}$ e sua inversa
+$\pmb{A}^{-1}$ \'e igual a matriz identidade $\pmb{\cal{I}}$. E que tamb\'em
+podemos definir o delta de Kronecker na forma matricial. Portanto,
+\begin{equation}
+  \delta_{ij} =
+  \begin{bmatrix}
+    1 & 0 & 0 \\
+    0 & 1 & 0 \\
+    0 & 0 & 1 
+  \end{bmatrix}
+  \equiv \pmb{\cal{I}}
+  \, .
 \end{equation}
 
-Com a matriz inversa podemos escrever a transfoma\c{c}\~ao inversa da seguinte forma
+Desta maneira, podemos escrever uma forma de obter a transforma\c{c}\~ao que
+relaciona $x_j$ e $x_i'$. Multiplicando a equa\c{c}\~ao \ref{eq:rotacao} por
+$(\alpha^{-1})_{ij}$, temos
 \begin{equation}
 x_{i}=x_{oi}+(\alpha^{-1})_{ij}x'_{j}.
 \end{equation}
-
 
 Como a dist\^ancia entre $A$ e $B$ deve ser independente do
 sistema de coordenadas utilizado, temos
 \begin{equation}
  (x_{i}^{B}-x_{i}^{A})(x_{i}^{B}-x_{i}^{A})=(x'_i{}^{B}-x'_i{}^{A})(x'_i{}^{B}-x'_i{}^{A}),
 \end{equation}
-o que nos d\'a
+reescrevendo os termos do lado direito com a rela\c{c}\~ao da equa\c{c}\~ao \ref{eq:rotacao},
+temos
 \begin{equation}
- (x_{i}^{B}-x_{i}^{A})(x_{i}^{B}-x_{i}^{A})=\alpha_{kj}\alpha_{kl}(x_{j}^{B}-x_{j}^{A})(x_{l}^{B}-x_{l}^{A}).
+ (x_{i}^{B}-x_{i}^{A})(x_{i}^{B}-x_{i}^{A})=\alpha_{ij}\alpha_{il}(x_{j}^{B}-x_{j}^{A})(x_{l}^{B}-x_{l}^{A}).
 \end{equation}
 
-Ent\~ao,
+Veja que, para mantermos a consist\^encia das equa\c{c}\~oes, 
+queremos apenas o resultado de quando $i=j$ e $i=l$. Desta maneira
+a igualdade \'e mantida se
 \begin{equation}
- \alpha_{kj}\alpha_{kl}=\delta_{jl}.
+  \alpha_{ij}\alpha_{il}=\delta_{ij}\delta_{il} = \delta_{jl} \, .
 \end{equation}
+onde \'e possivel provar que $\delta_{ij}\delta_{il} = \delta_{jl}$.
 
-Agora supondo que exista a inversa, teremos
+Agora supondo que exista a inversa, podemos relacionar o resultado obtido acima
+com o resultado da equa\c{c}\~ao \ref{eq:inversakronecker}
 \begin{equation}
-(\alpha^{-1})_{jk}\alpha_{kl}=\delta_{jl},
+(\alpha^{-1})_{ji}\alpha_{il}=\delta_{jl}\, ,
 \end{equation}
 e portanto,
 \begin{equation}
-(\alpha^{-1})_{jk}=\alpha_{kj}.
+(\alpha^{-1})_{ji}=\alpha_{ij}\, ,
 \end{equation}
-
+trocando a ordem dos \'indices chegamos a forma final
+\begin{equation}
+(\alpha^{-1})_{ij}=\alpha_{ji}\, .
+\end{equation}
 
 Isso significa que a matriz inversa de $\alpha_{ij}$ \'e obtida
 transpondo a matriz $\alpha_{ij}$, por esta propridade vemos que a
 matriz em discuss\~ao \'e ortogonal. Pela ortogonalidade, temos
 que
 \begin{equation}
-|det(\alpha_{ij})|=1
+|det(\alpha_{ij})|=1\, .
 \end{equation}
-.
 
 \subsection{Defini\c{c}\~ao e Propriedades dos Tensores Cartesianos}
 
@@ -230,34 +274,48 @@ suas propriedades.
 
 Para cada ponto do espa\c{c}o, o tensor cartesiano \'e uma
 sequ\^encia
- finita de n\'umeros os quais correspondem, de maneira \'unica, as coordenadas
+finita de n\'umeros os quais correspondem, de maneira \'unica, as coordenadas
 cartesianas do ponto. A sequ\^encia representa um tensor se
 satisfaz as seguintes  condi\c{c}\~oes:
 
-1-) A sequ\^encia cont\'em $3^{k}$ n\'umeros onde $3$ representa a
+\begin{enumerate}
+  \item A sequ\^encia cont\'em $n^{k}$ n\'umeros onde $n$ representa a
 dimens\~ao do espa\c{c}o e $k$ \'e um inteiro n\~ao-negativo
 chamado ordem:
 \begin{equation}
-T_{m_{1},m_{2},...,m_{k}}, \mbox{   }\mbox{   }\mbox{   }\mbox{   } m_{i}=1,2,3.
+T_{m_{1},m_{2},...,m_{k}}, \quad m_{i}=1,2,3,\dots, k.
 \end{equation}
+    A representa\c{c}\~ao matricial do tensor $T$ se d\'a na forma de uma matriz
+    $\pmb{\cal{T}}_{n\times n\times ...\times n}$ de $k$ dimens\~oes. Por exemplo, um tensor de
+    ordem 2 no espa\c{c}o tridimensional, $T_{ij}$ tem a representa\c{c}\~ao matricial:
+    \begin{equation}
+      T_{ij} =
+      \begin{bmatrix}
+        \tau_{11} & \tau_{12} &\tau_{13} \\
+        \tau_{21} & \tau_{22} &\tau_{23} \\
+        \tau_{31} & \tau_{32} &\tau_{33} 
+      \end{bmatrix}
+      \, .
+    \end{equation}
 
-
-2-) Um elemento do tensor no sistema de coordenadas $x'_{i}$ \'e
+\item Um elemento do tensor no sistema de coordenadas $x'_{i}$ \'e
 associado ao tensor no sistema de coordenadas $x_{i}$ pela
 rela\c{c}\~ao:
 \begin{equation}
-T'_{p_{1},p_{2},...,p_{k}}=
-\alpha_{p_{1}m_{1}}\alpha_{p_{2}m_{2}}...\alpha_{p_{k}m_{k}}T_{m_{1},m_{2},...,m_{k}}.
+T'_{p_{1},p_{2},\dots,p_{k}}=
+\alpha_{p_{1}m_{1}}\alpha_{p_{2}m_{2}}\dots\alpha_{p_{k}m_{k}}T_{m_{1},m_{2},\dots,m_{k}}.
 \end{equation}
+\end{enumerate}
 
 
-Para um tensor de ordem zero, definimos a transforma\c{c}\~ao como $T=T'$. J\'a para tensores
-de primeira (vetor) e de segunda ordem, temos as seguintes formas de transforma\c{c}\~ao
+Um tensor de ordem zero, i.e $k=0$, \'e a denomina\c{c}\~ao tensorial de um
+escalar. J\'a um tensor de ordem $k=1$ \'e a representa\c{c}\~ao tensorial de um
+vetor, onde a equa\c{c}\~ao \ref{eq:rotacao} permanece v\'alida.
+
+A rota\c{c}\~ao de um tensor de segunda ordem \'e dada por
 \begin{equation}
-T'_{i}=\alpha_{ij}T_{j},\mbox{   }\mbox{   }\mbox{   }\mbox{   }
-T'_{ij}=\alpha_{im}\alpha_{jn}T_{mn}.
+T'_{ij}=\alpha_{im}\alpha_{jn}T_{mn} \, .
 \end{equation}
-
 
 Para tensores de mesma ordem somente, adi\c{c}\~ao e subtra\c{c}\~ao
 correspondem a
@@ -354,11 +412,41 @@ E, portanto,
                \vline & \delta_{ki} & \delta_{km} & \delta_{kn}& \vline\\
 \end{array}=\delta_{jm}\delta_{kn}-\delta_{jn}\delta_{km},
 \end{equation}
-que \'e uma identidade importante. A partir disto, temos que
+que \'e uma identidade importante. Esta identidade, tamb\'em \'e chamada de
+regra de "E$\delta$", de
+f\'acil memoriza\c{c}\~ao. Basta lembrar que em um produto de dois s\'imbolos de
+Levi-Civita que compartilham um \'indice e possuem os outros distintos, o resultado
+desse produto \'e uma subtra\c{c}\~ao entre dois produtos de duas deltas que tem
+os \'indices da forma: "\textcolor{red}{Primeiro Primeiro} $*$ 
+\textcolor{blue}{Segundo Segundo} - \textcolor{red}{Primeiro}
+\textcolor{blue}{Segundo} $*$
+\textcolor{blue}{Segundo} \textcolor{red}{Primeiro}", i.e:
 \begin{equation}
-\epsilon_{ijk}\epsilon_{ijn}=3\delta_{kn}-\delta_{kn}=2\delta_{kn}
+  \epsilon_{\textcolor{gray}{i}
+  \textcolor{red}{j}
+  \textcolor{blue}{k}}
+  \epsilon_{\textcolor{gray}{i}
+  \textcolor{red}{m}
+  \textcolor{blue}{n}}
+ =
+  \delta_{\textcolor{red}{j}
+  \textcolor{red}{m}}
+  \delta_{\textcolor{blue}{k}
+  \textcolor{blue}{n}}
+  -
+  \delta_{\textcolor{red}{j}
+  \textcolor{blue}{n}}
+  \delta_{\textcolor{blue}{k}
+  \textcolor{red}{m}}
+   \,.
 \end{equation}
-e
+
+A partir da regra de "E$\delta$", tomando $m=j$ e lembrando que $\delta_{jj}=3$, temos que,
+\begin{align}
+  \epsilon_{ijk}\epsilon_{ijn}&=\delta_{jj}\delta_{kn}-\delta_{jn}\delta_{kj}\\
+  \epsilon_{ijk}\epsilon_{ijn}&=3\delta_{kn}-\delta_{kn} = 2\delta_{kn} \, ,
+\end{align}
+e de maneira similar, tomando $n=k$,
 \begin{equation}
 \epsilon_{ijk}\epsilon_{ijk}=6.
 \end{equation}

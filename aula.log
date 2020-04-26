@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016/Debian) (preloaded format=pdflatex 2020.4.25)  25 APR 2020 22:06
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016/Debian) (preloaded format=pdflatex 2020.4.25)  26 APR 2020 17:57
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -78,6 +78,26 @@ File: babel.def 2016/04/23 3.9r Babel common definitions
 \l@brazil = a dialect from \language\l@portuges 
 Package babel Info: Making " an active character on input line 145.
 ))
+(/usr/share/texlive/texmf-dist/tex/latex/xcolor/xcolor.sty
+Package: xcolor 2016/05/11 v2.12 LaTeX color extensions (UK)
+
+(/usr/share/texlive/texmf-dist/tex/latex/graphics-cfg/color.cfg
+File: color.cfg 2016/01/02 v1.6 sample color configuration
+)
+Package xcolor Info: Driver file: pdftex.def on input line 225.
+Package xcolor Info: Model `cmy' substituted by `cmy0' on input line 1348.
+Package xcolor Info: Model `hsb' substituted by `rgb' on input line 1352.
+Package xcolor Info: Model `RGB' extended on input line 1364.
+Package xcolor Info: Model `HTML' substituted by `rgb' on input line 1366.
+Package xcolor Info: Model `Hsb' substituted by `hsb' on input line 1367.
+Package xcolor Info: Model `tHsb' substituted by `hsb' on input line 1368.
+Package xcolor Info: Model `HSB' substituted by `hsb' on input line 1369.
+Package xcolor Info: Model `Gray' substituted by `gray' on input line 1370.
+Package xcolor Info: Model `wave' substituted by `hsb' on input line 1371.
+
+(/usr/share/texlive/texmf-dist/tex/latex/graphics/dvipsnam.def
+File: dvipsnam.def 2016/06/17 v3.0m Driver-dependent file (DPC,SPQR)
+))
 (/usr/share/texlive/texmf-dist/tex/latex/pgf/frontendlayer/tikz.sty
 (/usr/share/texlive/texmf-dist/tex/latex/pgf/basiclayer/pgf.sty
 (/usr/share/texlive/texmf-dist/tex/latex/pgf/utilities/pgfrcs.sty
@@ -148,23 +168,7 @@ File: pgfsyssoftpath.code.tex 2013/09/09  (rcs-revision 1.9)
 (/usr/share/texlive/texmf-dist/tex/generic/pgf/systemlayer/pgfsysprotocol.code.
 tex
 File: pgfsysprotocol.code.tex 2006/10/16  (rcs-revision 1.4)
-)) (/usr/share/texlive/texmf-dist/tex/latex/xcolor/xcolor.sty
-Package: xcolor 2016/05/11 v2.12 LaTeX color extensions (UK)
-
-(/usr/share/texlive/texmf-dist/tex/latex/graphics-cfg/color.cfg
-File: color.cfg 2016/01/02 v1.6 sample color configuration
-)
-Package xcolor Info: Driver file: pdftex.def on input line 225.
-Package xcolor Info: Model `cmy' substituted by `cmy0' on input line 1348.
-Package xcolor Info: Model `hsb' substituted by `rgb' on input line 1352.
-Package xcolor Info: Model `RGB' extended on input line 1364.
-Package xcolor Info: Model `HTML' substituted by `rgb' on input line 1366.
-Package xcolor Info: Model `Hsb' substituted by `hsb' on input line 1367.
-Package xcolor Info: Model `tHsb' substituted by `hsb' on input line 1368.
-Package xcolor Info: Model `HSB' substituted by `hsb' on input line 1369.
-Package xcolor Info: Model `Gray' substituted by `gray' on input line 1370.
-Package xcolor Info: Model `wave' substituted by `hsb' on input line 1371.
-)
+))
 (/usr/share/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcore.code.tex
 Package: pgfcore 2010/04/11 v3.0.1a (rcs-revision 1.7)
 
@@ -355,6 +359,14 @@ File: pgfmodulematrix.code.tex 2013/09/17  (rcs-revision 1.8)
 zlibrarytopaths.code.tex
 File: tikzlibrarytopaths.code.tex 2008/06/17 v3.0.1a (rcs-revision 1.2)
 )))
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tik
+zlibrarycalc.code.tex
+File: tikzlibrarycalc.code.tex 2013/07/15 v3.0.1a (rcs-revision 1.9)
+)
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tik
+zlibrarymatrix.code.tex
+File: tikzlibrarymatrix.code.tex 2013/07/12 v3.0.1a (rcs-revision 1.4)
+)
 (/usr/share/texlive/texmf-dist/tex/latex/amsmath/amsmath.sty
 Package: amsmath 2016/11/05 v2.16a AMS math features
 \@mathmargin=\skip43
@@ -416,18 +428,18 @@ LaTeX Info: Redefining \] on input line 2818.
 (./aula.aux)
 \openout1 = `aula.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 67.
-LaTeX Font Info:    ... okay on input line 67.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 67.
-LaTeX Font Info:    ... okay on input line 67.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 67.
-LaTeX Font Info:    ... okay on input line 67.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 67.
-LaTeX Font Info:    ... okay on input line 67.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 67.
-LaTeX Font Info:    ... okay on input line 67.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 67.
-LaTeX Font Info:    ... okay on input line 67.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 70.
+LaTeX Font Info:    ... okay on input line 70.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 70.
+LaTeX Font Info:    ... okay on input line 70.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 70.
+LaTeX Font Info:    ... okay on input line 70.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 70.
+LaTeX Font Info:    ... okay on input line 70.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 70.
+LaTeX Font Info:    ... okay on input line 70.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 70.
+LaTeX Font Info:    ... okay on input line 70.
  (/usr/share/texlive/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
 \scratchcounter=\count121
@@ -533,16 +545,17 @@ Overfull \hbox (17.19482pt too wide) in alignment at lines 316--328
  []
 
 ) (./delta.tex [28] [29] [30] [31]) (./tensor_aleixo.tex [32] [33] [34]
-[35] [36] [37]) (./tensor_matheus.tex [38] [39] [40]) (./opdif.tex [41]
+[35] [36] [37] [38]) (./tensor_matheus.tex [39] [40] [41]) (./opdif.tex
+[42]
 Underfull \hbox (badness 10000) in paragraph at lines 40--43
 
  []
 
-[42] [43] [44] [45] [46] [47]) (./cap4.tex [48]
+[43] [44] [45] [46] [47] [48]) (./cap4.tex [49]
 Cap\'{\i }tulo 5.
-) (./elast.tex [49
+) (./elast.tex [50
 
-] [50] [51] [52]
+] [51] [52] [53]
 Overfull \hbox (1.02383pt too wide) in paragraph at lines 337--337
 []\OT1/cmr/bx/n/14.4 Interpreta^^Xc~ao f^^S^^Psica dos ele-men-tos do ten-sor d
 e de-forma^^Xc~ao 
@@ -555,54 +568,54 @@ File: omscmr.fd 2014/09/29 v2.5h Standard LaTeX font definitions
 )
 LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <12> not available
 (Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 347.
- [53]
+ [54]
 Overfull \hbox (2.58315pt too wide) in alignment at lines 428--433
  [][][] []
  []
 
-[54] [55]) (./tensor_tensao.tex [56] [57] [58] [59] [60]) (./energia_rafael.tex
-[61] [62] [63]) (./parametros.tex [64] [65] [66] [67]) (./aula3_gabi.tex
-[68] [69] [70] [71]) (./aula4a_rafael.tex [72] [73] [74])
-(./dalembert_marina.tex [75] [76]) (./ondplan.tex [77]
+[55] [56]) (./tensor_tensao.tex [57] [58] [59] [60] [61]) (./energia_rafael.tex
+[62] [63] [64]) (./parametros.tex [65] [66] [67] [68]) (./aula3_gabi.tex
+[69] [70] [71] [72]) (./aula4a_rafael.tex [73] [74] [75])
+(./dalembert_marina.tex [76] [77]) (./ondplan.tex [78]
 Cap\'{\i }tulo 6.
-[78
+[79
 
-] [79] [80] [81] [82] [83] [84]) (./energia_fernando.tex [85]
+] [80] [81] [82] [83] [84] [85]) (./energia_fernando.tex [86]
 Overfull \hbox (4.20671pt too wide) in paragraph at lines 43--49
 []\OT1/cmr/m/n/12 Desde que as quan-ti-da-des de ener-gia s~ao n~ao-lineares na
  press~ao, ve-lo-ci-dade da part^^S^^Pcula
  []
 
-[86] [87] [88] [89]
+[87] [88] [89] [90]
 Overfull \hbox (8.64732pt too wide) in alignment at lines 375--392
  [][][] []
  []
 
-[90] [91]) (./aula4a_gabi.tex [92]) (./aula4b_rafael.tex [93] [94])
-(./aula4b_gabi.tex [95] [96] [97] [98]) (./meioisotr.tex [99] [100] [101]
-[102] [103]) (./aula5_rafael.tex [104] [105]
+[91] [92]) (./aula4a_gabi.tex [93]) (./aula4b_rafael.tex [94] [95])
+(./aula4b_gabi.tex [96] [97] [98] [99]) (./meioisotr.tex [100] [101] [102]
+[103] [104]) (./aula5_rafael.tex [105] [106]
 Overfull \hbox (46.4237pt too wide) in paragraph at lines 102--102
 []\OT1/cmr/bx/n/17.28 Propriedades dos co-e-fi-ci-en-tes de re-flex~ao/transmis
 s~ao 
  []
 
-[106] [107] [108]) (./aula5_gabi.tex [109] [110] [111] [112] [113])
-(./aula5_coord_fernando.tex [114] [115] [116] [117]
+[107] [108] [109]) (./aula5_gabi.tex [110] [111] [112] [113] [114])
+(./aula5_coord_fernando.tex [115] [116] [117] [118]
 Overfull \hbox (16.0353pt too wide) in alignment at lines 212--217
  [][][] []
  []
 
-[118] [119] [120] [121]) (./refer.tex [122]) [123
+[119] [120] [121] [122]) (./refer.tex [123]) [124
 
 ] (./aula.aux) ) 
 Here is how much of TeX's memory you used:
- 13238 strings out of 493013
- 253459 string characters out of 6135682
- 302469 words of memory out of 5000000
- 16308 multiletter control sequences out of 15000+600000
+ 13448 strings out of 493013
+ 258278 string characters out of 6135682
+ 310107 words of memory out of 5000000
+ 16508 multiletter control sequences out of 15000+600000
  12559 words of font info for 44 fonts, out of 8000000 for 9000
  1273 hyphenation exceptions out of 8191
- 55i,13n,54p,381b,762s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 55i,13n,54p,402b,766s stack positions out of 5000i,500n,10000p,200000b,80000s
 </usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/c
 mbx12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.
 pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></
@@ -618,10 +631,10 @@ cm/cmr8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy1
 0.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy6.pfb><
 /usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/sh
 are/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmti12.pfb>
-Output written on aula.pdf (124 pages, 565169 bytes).
+Output written on aula.pdf (125 pages, 569455 bytes).
 PDF statistics:
- 472 PDF objects out of 1000 (max. 8388607)
- 326 compressed objects within 4 object streams
+ 475 PDF objects out of 1000 (max. 8388607)
+ 328 compressed objects within 4 object streams
  0 named destinations out of 1000 (max. 500000)
  13 words of extra memory for PDF output out of 10000 (max. 10000000)
 
