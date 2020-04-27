@@ -46,8 +46,6 @@ Note que a fun\c{c}\~ao dist\^ancia satisfaz:
 \end{array}  
 \end{equation}
 
-
-
 Com essas defini\c{c}\~oes podemos considerar as
 transfoma\c{c}\~oes de coordenadas. Consideremos dois sistemas de
  coordenadas $x_{i}$ e $x'_{i}$. A rela\c{c}\~ao entre os dois sistemas de coordenadas \'e
@@ -65,17 +63,16 @@ Lembremos da difini\c{c}\~ao do delta de Kronecker,
                 1, \mbox{   }\mbox{   }\mbox{se } i= j.\\
 \end{array} \right.
 \end{equation}
-
 Pela conven\c{c}\~ao de Einstein temos que
 $\delta_{ii}=\delta_{11}+\delta_{22}+\delta_{33}=3$.
+
 Se fizermos $\alpha_{ij}=\delta_{ij}$, a tranforma\c{c}\~ao de
 coordenadas ser\'a
 \begin{equation}
 x'_{i}=(x_{i}-x_{oi}).
 \end{equation}
-
 Esta transforma\c{c}\~ao descreve uma transla\c{c}\~ao paralela de um sistem de coordenada
-com respeito ao outro (veja a figura). 
+com respeito ao outro (veja a figura \ref{fig:translacao-paralela}). 
 \begin{figure}[!tb]
 \begin{tikzpicture}
 \draw[thick,->] (0,0) -- (4.5,0) node[anchor=north west] {$x_2$};
@@ -84,26 +81,24 @@ com respeito ao outro (veja a figura).
 \node[below] at (0,0) {$O$};
 \end{tikzpicture}
 \begin{tikzpicture}
-\begin{scope}[rotate=20]
+\begin{scope}[rotate=0]
 \draw[thick,->] (5,0) -- (9.5,0) node[anchor=north west] {$x_2'$};
 \draw[thick,->] (5,0) -- (5,4.5) node[anchor=south east] {$x_3'$};
 \draw[thick,->] (5,0) -- (2.5,-2.5) node[anchor=north west] {$x_1'$};
 \node[below right] at (5,0) {$O'$};
 \end{scope}
 \end{tikzpicture}
-  \caption{Representa\c{c}\~ao de dois sistemas de coordenads ortogonais
+  \caption{Representa\c{c}\~ao de dois sistemas de coordenadas ortogonais
   distintos $\vec{e_j}$ e $\vec{e_k'}$.}
-  \label{fig:sistemasortogonais}
+  \label{fig:translacao-paralela}
 \end{figure}
-
 Se fizermos  $x_{oj}=0$, a rela\c{c}\~ao de
 transforma\c{c}\~ao ser\'a
 \begin{equation}
 x'_{i}=\alpha_{ij}x_{j},
 \end{equation}
 que descreve uma rota\c{c}\~ao em torno da origem do primeiro
-sistema (veja a Figura \ref{fig:sistemasortogonais}).
-
+sistema (veja a Figura \ref{fig:rotacaocoord}).
 
 Agora iremos investigar o significado dos elementos da matriz de transforma\c{c}\~ao
 $\alpha_{ij}$. Vamos introduzir o vetor raio $r_{i}$, partindo da
@@ -130,10 +125,12 @@ teremos
 x_{3}\vec{e}_{3}=\alpha_{1j}x_{j}\vec{e_{1}}'+
 \alpha_{2j}x_{j}\vec{e_{2}}'+\alpha_{3j}x_{j}\vec{e_{3}}'.
 \end{equation}
-
 Ao tomarmos o produto escalar entre a equa\c{c}\~ao acima e $\vec{e_{k}}'$, teremos
 \begin{align}
-  x_j\vec{e_{j}}\vec{e_{k}} &= \alpha_{ij}x_j\vec{e_{i}}'\vec{e_{k}}' \, ,
+%  x_j\vec{e_{j}}\vec{e_{k}} &= \alpha_{ij}x_j\vec{e_{i}}'\vec{e_{k}}' \, ,
+%  \label{eq:doteiek} \\
+%  x_j\vec{e_{j}}\vec{e_{k}}' &= \alpha_{ij}x_j\delta_{ik} \, .
+   x_j\vec{e_{j}} \vec{e_{k}}' &= \alpha_{ij}x_j\vec{e_{i}}'\vec{e_{k}}' \, ,
   \label{eq:doteiek} \\
   x_j\vec{e_{j}}\vec{e_{k}}' &= \alpha_{ij}x_j\delta_{ik} \, .
 \end{align}
@@ -141,8 +138,7 @@ Note que na equa\c{c}\~ao \ref{eq:doteiek}, $\,\vec{e_{i}}'$ e $\vec{e_{k}}'$ s\
 unit\'arios e ortogonais. Portanto, o
 produto escalar entre eles \'e diferente de zero e igual a 1, se e somente se,
 $i=k$. Que \'e exatamente a defini\c{c}\~ao do delta de Kronecker.
-
-Assim resolvendo o delta de Kronecker e simplificando os termos $x_j$.
+Assim, resolvendo o delta de Kronecker e simplificando os termos $x_j$.
 Obtemos uma express\~ao para os termos de $\alpha_{kj}$
 \begin{equation}
   \alpha_{kj}=\vec{e_{j}}\vec{e_{k}}'=\vec{e}_{j} \cdot \vec{e_{k}}' = 
@@ -198,7 +194,6 @@ Considerando a transforma\c{c}\~ao inversa a
 x'_{i}=\alpha_{ij}(x_{j}-x_{oj}).
   \label{eq:rotacao}
 \end{equation}
-
 Iremos mostrar que para a matriz $\alpha_{ij}$, existe uma inversa,
 $(\alpha^{-1})_{ij}$, tal que
 \begin{equation}
@@ -218,7 +213,6 @@ podemos definir o delta de Kronecker na forma matricial. Portanto,
   \equiv \pmb{\cal{I}}
   \, .
 \end{equation}
-
 Desta maneira, podemos escrever uma forma de obter a transforma\c{c}\~ao que
 relaciona $x_j$ e $x_i'$. Multiplicando a equa\c{c}\~ao \ref{eq:rotacao} por
 $(\alpha^{-1})_{ij}$, temos
