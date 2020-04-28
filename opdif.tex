@@ -69,7 +69,7 @@ $L$ com um vetor tangente unit\'ario $\vec{t}$.
 \subsection {Coordenadas Ortogonais Curvil\'ineas}
 
 A rela\cao\ de transforma\cao\ entre coordenadas curvil\'ineas
-$\gamma_{k}$, $k = 1,2,3$, e coordenadas cartesianas pode ser
+$\gamma_{k}$, $k = 1,2,3$ e coordenadas cartesianas pode ser
 escrita como
 \begin{eqnarray}
 x_{i} = x_{i}(\gamma_{k}).
@@ -89,7 +89,6 @@ onde $s$ \'e o comprimento da curva e
 g_{kl} = \frac{\partial x_{i}}{\partial \gamma_{k}}\frac{\partial
 x_{i}}{\partial \gamma_{l}}.
 \end{eqnarray}
-
 Se $g_{kl} \neq 0$ somente para $k = l$ e $g_{kl} = 0$ se $k \neq
 l$, temos coordenadas curvil\ih neas ortogonais. Isto significa que
 o vetor $\partial x_{i}$/$ \partial \gamma_{k}$ que \'e tangente a
@@ -109,8 +108,7 @@ h_{1}^{2} = \frac{\partial x_{1}}{\partial
 x_{2}}{\partial \gamma_{1}} + \frac{\partial x_{3}}{\partial
 \gamma_{1}}\frac{\partial x_{3}}{\partial \gamma_{1}}.
 \end{eqnarray}
-
-Um diferencial de elemento ao longo de $\gamma_{i}$ \'e
+Um elemento de comprimento ao longo de $\gamma_{i}$ \'e
 \begin{eqnarray}
 ds_{1} = h_{1}d\gamma_{1}.
 \end{eqnarray}
@@ -127,7 +125,7 @@ Assim o operador gradiente fica
 \frac{1}{h_{3}}\frac{\partial}{\partial\gamma_{3}}\right)
 \end{eqnarray}
 
-Vejamos agora como fica a express\~ao do Laplaciano. Para isso usamos o Teorema de Gauss
+Para encontrarmos o divergente e o laplaciano usamos o Teorema de Gauss
 \begin{eqnarray*}
 \int\!\!\!\int\!\!\!\int_{V} u_{i,i}dV = \int\!\!\!\int_{S} u_{i}n_{i}dS
 \end{eqnarray*}
@@ -144,15 +142,14 @@ u_{1}ds_{2}ds_{3}+\frac{\partial}{\partial s_{1}}(u_{1}ds_{2}ds_{3})ds_{1},\\
 u_{2}ds_{1}ds_{3}+\frac{\partial}{\partial s_{2}}(u_{2}ds_{1}ds_{3})ds_{2},\\
 u_{3}ds_{1}ds_{2}+\frac{\partial}{\partial s_{3}}(u_{3}ds_{1}ds_{2})ds_{3}.
 \end{eqnarray*}
-
 Somando as contribui\coes\ das seis faces e igualando \`a contribui\cao\ da integral de volume no Teorema de Gauss temos,
 \begin{eqnarray*}
 u_{i,i} ds_1 ds_2 ds_3 &=& \frac{1}{h_1}\frac{\partial}{\partial \gamma_1} (h_2 h_3 u_1) d\gamma_2 d\gamma_3 ds_1 
  + \frac{1}{h_{2}}\frac{\partial}{\partial \gamma_{2}}(h_{1}h_{3}u_{2})d\gamma_{1}d\gamma_{3}ds_{2} \\ 
 &+&\frac{1}{h_{3}}\frac{\partial}{\partial \gamma_{3}}(h_{1}h_{2}u_{3})d\gamma_{1}d\gamma_{2}ds_{3}
 \end{eqnarray*}
-
-Usando $ds_{1} = h_{1}d\gamma_{1}$, etc., podemos escrever
+Usando $ds_{1} = h_{1}d\gamma_{1}$, etc., encontramos a express\~ao do divergente em coordenadas
+ortogonais curvil\'ineas 
 \begin{eqnarray*}
 u_{i,i}=\frac{1}{h_{1}h_{2}h_{3}}\left[\frac{\partial}{\partial\gamma_{1}}(h_{2}h_{3}u_{1}) 
        +\frac{\partial}{\partial \gamma_{2}}(h_{1}h_{3}u_{2})  
