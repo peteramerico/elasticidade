@@ -15,7 +15,7 @@ rela\cao\ \`a coordenada espacial $x_{i}$. A nota\cao\ vetorial
 deste operador pode ser $\nabla A$ ou grad$A$.
 
 \item {\bf Operador Divergente}\\
-Aplicado ao vetor $u_{i}$ o operador divergente pode ser escrito
+Aplicado ao vetor $u$, o operador divergente pode ser escrito
 como
 \begin{eqnarray}
 \frac{\partial u_{i}}{\partial x_{i}} = u_{i,i},
@@ -23,7 +23,7 @@ como
 e sua nota\cao\ vetorial \'e $\nabla\!\cdot\!\vec{u}$ ou div$\vec{u}$.
 
 \item {\bf Operador Rotacional}\\
-Aplicado ao vetor $u_{i}$ o operador rotacional pode ser escrito
+Aplicado ao vetor $u$, o operador rotacional pode ser escrito
 como
 \begin{eqnarray}
 \epsilon_{ijk}\frac{\partial u_{k}}{\partial x_{j}} =
@@ -32,8 +32,8 @@ como
 e sua nota\cao\ vetorial \'e $\nabla\!\times\!\vec{u}$, rot$\vec{u}$ ou
 curl$\vec{u}$.
 
-\item {\bf Operador de Laplace}\\
-Pode ser escrito como uma combina\cao\ do operador divergente com
+\item {\bf Operador de Laplace (Laplaciano)}\\
+\'E uma combina\cao\ do operador divergente com
 o gradiente. Pode ser escrito como
 \begin{eqnarray}
 \frac{\partial^{2}A}{\partial x_{i}^{2}} = A_{,ii},
@@ -41,32 +41,34 @@ o gradiente. Pode ser escrito como
 e sua nota\cao\ vetorial \'e $\Delta A$ ou $\nabla^{2}A$.
 \\
 
+\item{\bf div rot e rot grad}\\
 Note que $\mbox{div}\;\mbox{rot}\;\vec{u} = 0$, $\mbox{rot}\;\mbox{grad}\; A = 0$.
+\\
 
 \item {\bf Teorema de Gauss}\\
 Mostra como transformar uma integral de volume numa integral de
 superf\ih cie e vice versa,
 \begin{eqnarray}
-\int\!\!\!\int\!\!\!\int_{V}\mbox{div}\vec{u}dV = \int\!\!\!\int_{\Sigma}\vec{u}\! \vec{n}dS
+\int\!\!\!\int\!\!\!\int_{V} \mbox{div}\; \vec{u}\; dV = \int\!\!\!\int_{\Sigma}\; \vec{u}\;  \vec{n}\; dS
 \end{eqnarray}
 onde $V$ \'e um volume envolvido pela superf\ih cie fechada
 $\Sigma$ e $\vec{n}$ \'e um vetor normal externo unit\'ario de
 $\Sigma$.
 
 \item {\bf Teorema de Stokes}\\
-Indica como transformar uma integral de superf\ih cie em uma
+Indica como transformar uma integral de superf\'icie em uma
 integral de linha e vice versa,
 \begin{eqnarray}
-\int\!\!\!\int_{\Sigma}\vec{n}\cdot\mbox{rot}\vec{u}dS = \int_{L}\vec{u}\; \vec{t}dl,
+\int\!\!\!\int_{\Sigma}\vec{n}\cdot\mbox{rot}\; \vec{u}\; dS = \int_{L}\vec{u}\; \vec{t}\; dl,
 \end{eqnarray}
 onde $\Sigma$ \'e uma superf\ih cie envolta por uma linha fechada
 $L$ com um vetor tangente unit\'ario $\vec{t}$.
 
 \end{enumerate}
 
-\subsection {Coordenadas Ortogonais Curvil\ih neas}
+\subsection {Coordenadas Ortogonais Curvil\'ineas}
 
-A rela\cao\ de transforma\cao\ entre coordenadas curvil\ih neas
+A rela\cao\ de transforma\cao\ entre coordenadas curvil\'ineas
 $\gamma_{k}$, $k = 1,2,3$, e coordenadas cartesianas pode ser
 escrita como
 \begin{eqnarray}

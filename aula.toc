@@ -1,4 +1,4 @@
-\select@language {brazil}
+\babel@toc {brazil}{}
 \contentsline {chapter}{\numberline {1}Introdu\c {c}\~ao}{4}
 \contentsline {section}{\numberline {1.1}O que \'e uma onda?}{4}
 \contentsline {section}{\numberline {1.2}Formas de propaga\c {c}\~ao}{5}
@@ -34,7 +34,7 @@
 \contentsline {subsection}{\numberline {4.3.5}Diferencia\c {c}\~ao de um tensor}{42}
 \contentsline {section}{\numberline {4.4}Operadores Diferenciais e Teoremas Integrais }{43}
 \contentsline {subsection}{\numberline {4.4.1}Coordenadas Cartesianas}{43}
-\contentsline {subsection}{\numberline {4.4.2}Coordenadas Ortogonais Curvil\'{\i }neas}{44}
+\contentsline {subsection}{\numberline {4.4.2}Coordenadas Ortogonais Curvil\'ineas}{44}
 \contentsline {section}{\numberline {4.5}Sinal Anal\'{\i }tico}{46}
 \contentsline {chapter}{\numberline {5}Equa\c {c}\~ao\ da onda el\'astica}{50}
 \contentsline {section}{\numberline {5.1}Teoria Elastodin\^amica}{50}
