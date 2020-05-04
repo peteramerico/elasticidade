@@ -68,39 +68,58 @@ $L$ com um vetor tangente unit\'ario $\vec{t}$.
 
 \subsection {Coordenadas Ortogonais Curvil\'ineas}
 
+A localiza\c{c}\~ao de um ponto no espa\c{c}o tridimensional
+(com respeito a alguma origem) \'e normalmente especificada pelas
+suas tr\^es coordenadas cartesianas ($x_1, x_2, x_3$) ou,
+equivalentemente, ao especificar o vetor posi\c{c}ao do ponto.
+Por\'em, existem situa\c{c}\~oes em que \'e mais conveniente
+descrever a posi\c{c}\~ao do ponto por outro sistema
+de coordenadas, mais apropriado para o problema em quest\~ao,
+por exemplo, por coordenadas esf\'ericas ou cil\'indricas. Estes
+exemplos, por sua vez, s\~ao casos espec\'ificos de sistemas
+de coordenadas curvil\'ineas.
+
 A rela\cao\ de transforma\cao\ entre coordenadas curvil\'ineas
-$\gamma_{k}$, $k = 1,2,3$ e coordenadas cartesianas pode ser
+$\gamma_{k}$ ($k = 1,2,3$) e coordenadas cartesianas pode ser
 escrita como
 \begin{eqnarray}
-x_{i} = x_{i}(\gamma_{k}).
+x_{i} = x_{i}(\gamma_{k})
 \end{eqnarray}
-Um elemento diferencial de comprimento ao longo de $x_{i}$ \'e
+ou
+\begin{equation}
+x_{i} = x_{i}(\gamma_{1}, \gamma_{2}, \gamma_{3}).
+\end{equation}
+Um elemento infinitesimal de comprimento ao longo do eixo $x_{i}$ \'e
 \begin{eqnarray}
-dx_{i} = \frac{\partial x_{i}}{\partial \gamma_{k}}d\gamma_{k},
+dx_{i} = \frac{\partial x_{i}}{\partial \gamma_{k}}d\gamma_{k}.
 \end{eqnarray}
-portanto temos
+O comprimento de arco, $ds$, que \'e, basicamente, a dist\^ancia entre
+dois pontos, \'e
 \begin{eqnarray}
 (ds)^{2} = dx_{i}dx_{i} = \frac{\partial x_{i}}{\partial
 \gamma_{k}}\frac{\partial x_{i}}{\partial
 \gamma_{l}}d\gamma_{k}d\gamma_{l} = g_{kl}d\gamma_{k}d\gamma_{l},
+\label{eq:arclenght}
 \end{eqnarray}
-onde $s$ \'e o comprimento da curva e
+onde
 \begin{eqnarray}
 g_{kl} = \frac{\partial x_{i}}{\partial \gamma_{k}}\frac{\partial
 x_{i}}{\partial \gamma_{l}}.
 \end{eqnarray}
-Se $g_{kl} \neq 0$ somente para $k = l$ e $g_{kl} = 0$ se $k \neq
-l$, temos coordenadas curvil\ih neas ortogonais. Isto significa que
+Temos coordenadas curvil\'ineas ortogonais quando $g_{kl} = 0$ para $k \neq l$,
+ou seja, na situa\c{c}\~ao em que termos mistos n\~ao aparecem na express\~ao
+do comprimento de arco (\ref{eq:arclenght}). Dizer que $g_{kl} = 0$ se $k \neq
+l$, significa que
 o vetor $\partial x_{i}$/$ \partial \gamma_{k}$ que \'e tangente a
 $\gamma_{k}$, \'e ortogonal a $\partial x_{i}$/$\partial
 \gamma_{l}$, tangente \`a coordenada $\gamma_{l}$. Ent\ao\
 $\gamma_{k}$ e $\gamma_{l}$ s\ao\ ortogonais em qualquer ponto.
-Nessas coordenadas temos
+Nessa situa\c{c}\~ao temos
 \begin{eqnarray}
 (ds)^{2} = h_{1}^{2}(d\gamma_{1})^{2} + h_{2}^{2}(d\gamma_{2})^{2}
 + h_{3}^{2}(d\gamma_{3})^{2},
 \end{eqnarray}
-onde
+onde, por exemplo,
 \begin{eqnarray}
 h_{1}^{2} = \frac{\partial x_{1}}{\partial
 \gamma_{1}}\frac{\partial x_{1}}{\partial \gamma_{1}} +
@@ -108,53 +127,71 @@ h_{1}^{2} = \frac{\partial x_{1}}{\partial
 x_{2}}{\partial \gamma_{1}} + \frac{\partial x_{3}}{\partial
 \gamma_{1}}\frac{\partial x_{3}}{\partial \gamma_{1}}.
 \end{eqnarray}
-Um elemento de comprimento ao longo de $\gamma_{i}$ \'e
+\begin{figure}
+\vspace{-2cm}
+\includegraphics[width=1\columnwidth]{./figuras/sist-curv-ort1}
+\vspace{-5.5cm}
+\caption{Ilustra\c{c}\~ao de um sistema de coordenadas curvil\'ineas ortogonais.}
+\label{fig:coord-curv-ort}
+\end{figure}
+Um elemento de comprimento ao longo de $\gamma_{1}$ (ver figura \ref{fig:coord-curv-ort}) \'e
 \begin{eqnarray}
-ds_{1} = h_{1}d\gamma_{1}.
+ds_{1} = h_{1}d\gamma_{1}
 \end{eqnarray}
-Podemos escrever
+e similarmente, para comprimentos de onda ao longo dos outros eixos. Ent\~ao, podemos escrever
 \begin{eqnarray}
 \frac{\partial}{\partial s_{1}} \Leftrightarrow
 \frac{1}{h_{1}}\frac{\partial}{\partial\gamma_{1}}.
 \end{eqnarray}
-Assim o operador gradiente fica
+Assim, o operador gradiente fica
 \begin{eqnarray}
 \nabla = \left(
 \frac{1}{h_{1}}\frac{\partial}{\partial\gamma_{1}},
 \frac{1}{h_{2}}\frac{\partial}{\partial\gamma_{2}},
-\frac{1}{h_{3}}\frac{\partial}{\partial\gamma_{3}}\right)
+\frac{1}{h_{3}}\frac{\partial}{\partial\gamma_{3}}\right).
 \end{eqnarray}
 
+%If for the moment we ascribe some constant value to qk> we have
+Se assumirmos um valor constante para $\gamma_{k}$, temos
+\begin{equation}
+\gamma_{k}(x_1,x_2,x_3)=cte.,    %\hspace{2cm}   (k=1,2,3)
+\end{equation}
+%which describes a surface in space. By assigning a series of different values to qk, we generate a family of surfaces on which qk is constant.. If the func- tions have been properly chosen there is at least one surface belonging to each of the three families which passes through any arbitrary point P in space. Thus, a point in space is characterized by the intersection of the three surfaces, qj = constant, q2 = constant, q3 = constant (see Fig. A-I.I), termed coordinate surfaces. The coordinate surface is named for that co- ordinate which is constant, the other two coordinates being variable along
+que descreve uma superf\'icie no espa\c{c}o (considerando que as outras coordenadas variam),
+conhecida por superf\'icie coordenada.
+A superf\'icie coordenada \'e nomeada pela coordenada com valor constante (ver figura \ref{fig:coord-curv-ort}).
+
 Para encontrarmos o divergente e o laplaciano usamos o Teorema de Gauss
-\begin{eqnarray*}
+\begin{eqnarray}
 \int\!\!\!\int\!\!\!\int_{V} u_{i,i}dV = \int\!\!\!\int_{S} u_{i}n_{i}dS
-\end{eqnarray*}
+\end{eqnarray}
 onde $n_{i}$ \'e vetor normal externo unit\'ario da superf\ih cie $S$ que envolve o volume $V$. 
 Considere um sistema de coordenadas ortogonais curvil\ih neas $\gamma_{1}$,$\gamma_{2}$ e $\gamma_{3}$, 
-e um volume elementar $dV = ds_{1}ds_{2}ds_{3}$. As contribui\coes\ das superf\ih cies mais pr\'oximas aos eixos s\ao:
-\begin{eqnarray*}
+e um volume elementar $dV = ds_{1}ds_{2}ds_{3}$ (figura \ref{fig:coord-curv-ort}).
+As contribui\coes\ das superf\ih cies mais pr\'oximas aos eixos s\ao:
+\begin{eqnarray}
 -u_{1}ds_{2}ds_{3}, \; -u_{2}ds_{1}ds_{3}, \; -u_{3}ds_{1}ds_{2},
-\end{eqnarray*}
+\end{eqnarray}
 onde os sinais s\~ao negativos porque as orienta\coes\ dos vetores normais s\ao\ contr\'arias \`as dos eixos.
 As contribui\coes\ das outras superf\ih cies s\ao:
-\begin{eqnarray*}
+\begin{eqnarray}
 u_{1}ds_{2}ds_{3}+\frac{\partial}{\partial s_{1}}(u_{1}ds_{2}ds_{3})ds_{1},\\
 u_{2}ds_{1}ds_{3}+\frac{\partial}{\partial s_{2}}(u_{2}ds_{1}ds_{3})ds_{2},\\
 u_{3}ds_{1}ds_{2}+\frac{\partial}{\partial s_{3}}(u_{3}ds_{1}ds_{2})ds_{3}.
-\end{eqnarray*}
+\end{eqnarray}
 Somando as contribui\coes\ das seis faces e igualando \`a contribui\cao\ da integral de volume no Teorema de Gauss temos,
-\begin{eqnarray*}
+\begin{eqnarray}
 u_{i,i} ds_1 ds_2 ds_3 &=& \frac{1}{h_1}\frac{\partial}{\partial \gamma_1} (h_2 h_3 u_1) d\gamma_2 d\gamma_3 ds_1 
  + \frac{1}{h_{2}}\frac{\partial}{\partial \gamma_{2}}(h_{1}h_{3}u_{2})d\gamma_{1}d\gamma_{3}ds_{2} \\ 
 &+&\frac{1}{h_{3}}\frac{\partial}{\partial \gamma_{3}}(h_{1}h_{2}u_{3})d\gamma_{1}d\gamma_{2}ds_{3}
-\end{eqnarray*}
+\end{eqnarray}
 Usando $ds_{1} = h_{1}d\gamma_{1}$, etc., encontramos a express\~ao do divergente em coordenadas
 ortogonais curvil\'ineas 
-\begin{eqnarray*}
+\begin{eqnarray}
 u_{i,i}=\frac{1}{h_{1}h_{2}h_{3}}\left[\frac{\partial}{\partial\gamma_{1}}(h_{2}h_{3}u_{1}) 
        +\frac{\partial}{\partial \gamma_{2}}(h_{1}h_{3}u_{2})  
        +\frac{\partial}{\partial \gamma_{3}}(h_{1}h_{2}u_{3})\right].
-\end{eqnarray*}
+\end{eqnarray}
 
 Combinando as express\~oes para o gradiente e para o divergente em coordenadas curvil\ih neas ortogonais obtemos a express\ao\ para o 
 Laplaciano $\Delta = \frac{\partial^{2}}{\partial x_{i}^{2}}$
@@ -196,38 +233,41 @@ com a possibilidade de finitas descontinuidades do primeiro tipo
 n\'umero finito de m\'aximos e m\ih nimos. Sob essas codi\coes\ a
 transformada de Fourier \'e definida como
 \begin{eqnarray}
-G(f) = \int_{-\infty}^{\infty}g(t)e^{i2\pi ft}dt,\; g(t) =
-\int_{-\infty}^{\infty}G(f)e^{-i2\pi ft}df
+\hat{g}(\omega) = \int_{-\infty}^{\infty}g(t)e^{i 2 \pi \omega t}dt,\; g(t) =
+\int_{-\infty}^{\infty}\hat{g}(\omega)e^{-i 2 \pi \omega t}d\omega
 \end{eqnarray}
+Para explica\c{c}\~oes futuras, precisaremos saber o teorema da
+convolu\c{c}\~ao e a inversa da transformada de Fourier da fun\c{c}\~ao
+sinal - $sgn(\omega)$. 
 
-Seja a fun\cao
+A convolu\c{c}\~ao $c(t)$ de duas fun\c{c}\~oes, $a(t)$ e $b(t)$ \'e dada por
 \begin{eqnarray}
 c(t) = \int_{-\infty}^{\infty} a(\tau)b(t-\tau)d\tau,
 \end{eqnarray}
-que tamb\'em \'e escrita como $c(t) = a(t)*b(t)$. O teorema da
-convolu\cao\ diz que a transformada de Fourier de uma convolu\cao\
-\'e igual ao produto da transformada das fun\coes\ $a(t)$ e
+simbolicamente escrita como $c(t) = a(t)*b(t)$. O teorema da
+convolu\cao\ diz que a transformada de Fourier da convolu\cao\
+\'e igual ao produto das transformadas das fun\coes\ $a(t)$ e
 $b(t)$,
 \begin{eqnarray}
-c(f) = a(f)b(f).
+c(\omega) = a(\omega)b(\omega).
 \end{eqnarray}
 
 A fun\cao\ sinal \'e definida como
 \begin{eqnarray}
-\sgn(f) = \left\{
+\sgn(\omega) = \left\{
 \begin{array}{ll}
-1 , f > 0 \\
-0 , f = 0 \\
--1 , f < 0
+1 , \omega > 0 \\
+0 , \omega = 0 \\
+-1 , \omega < 0
 \end{array}
 \right.
 \end{eqnarray}
 Como esta fun\cao\ n\ao\ \'e absolutamente integr\'avel, \'e
 preciso achar a inversa da transformada de Fourier como um caso
 limite de uma fun\cao\ auxiliar que no limite se aproxima da
-fun\cao\ $\sgn(f)$. Esta fun\cao\ pode ser
+fun\cao\ $\sgn(\omega)$. Esta fun\cao\ pode ser
 \begin{eqnarray}
-g_{\alpha}(f) = e^{-\alpha \mid f\mid}i \sgn(f)
+g_{\alpha}(\omega) = e^{-\alpha \mid \omega\mid}i \sgn(\omega)
 \end{eqnarray}
 com $\alpha > 0$. Esta \'e uma fun\cao\ integr\'avel e quando
 $\alpha\rightarrow 0$ a fun\cao\ se aproxima de $i$ $\sgn(f)$.

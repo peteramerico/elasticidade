@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.19 (TeX Live 2018) (preloaded format=pdflatex 2018.4.16)  28 APR 2020 20:12
+This is pdfTeX, Version 3.14159265-2.6-1.40.19 (TeX Live 2018) (preloaded format=pdflatex 2018.4.16)  4 MAY 2020 13:04
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -574,11 +574,18 @@ Underfull \hbox (badness 10000) in paragraph at lines 44--47
 
  []
 
-[43] [44] [45] [46] [47] [48]) (./cap4.tex [49]
+[43]
+<./figuras/sist-curv-ort1.png, id=157, 1121.28pt x 1121.28pt>
+File: ./figuras/sist-curv-ort1.png Graphic file (type png)
+<use ./figuras/sist-curv-ort1.png>
+Package pdftex.def Info: ./figuras/sist-curv-ort1.png  used on input line 132.
+(pdftex.def)             Requested size: 455.24408pt x 455.24513pt.
+ [44] [45 <./figuras/sist-curv-ort1.png>] [46] [47] [48] [49]) (./cap4.tex
+[50]
 Cap\'{\i }tulo 5.
-) (./elast.tex [50
+) (./elast.tex [51
 
-] [51] [52] [53]
+] [52] [53] [54]
 Overfull \hbox (1.02383pt too wide) in paragraph at lines 337--337
 []\OT1/cmr/bx/n/14.4 Interpreta^^Xc~ao f^^S^^Psica dos ele-men-tos do ten-sor d
 e de-forma^^Xc~ao 
@@ -591,54 +598,54 @@ File: omscmr.fd 2014/09/29 v2.5h Standard LaTeX font definitions
 )
 LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <12> not available
 (Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 347.
- [54]
+ [55]
 Overfull \hbox (2.58315pt too wide) in alignment at lines 428--433
  [][][] []
  []
 
-[55] [56]) (./tensor_tensao.tex [57] [58] [59] [60] [61]) (./energia_rafael.tex
-[62] [63] [64]) (./parametros.tex [65] [66] [67] [68]) (./aula3_gabi.tex
-[69] [70] [71] [72]) (./aula4a_rafael.tex [73] [74] [75])
-(./dalembert_marina.tex [76] [77]) (./ondplan.tex [78]
+[56] [57]) (./tensor_tensao.tex [58] [59] [60] [61] [62]) (./energia_rafael.tex
+[63] [64] [65]) (./parametros.tex [66] [67] [68] [69]) (./aula3_gabi.tex
+[70] [71] [72] [73]) (./aula4a_rafael.tex [74] [75] [76])
+(./dalembert_marina.tex [77] [78]) (./ondplan.tex [79]
 Cap\'{\i }tulo 6.
-[79
+[80
 
-] [80] [81] [82] [83] [84] [85]) (./energia_fernando.tex [86]
+] [81] [82] [83] [84] [85] [86]) (./energia_fernando.tex [87]
 Overfull \hbox (4.20671pt too wide) in paragraph at lines 43--49
 []\OT1/cmr/m/n/12 Desde que as quan-ti-da-des de ener-gia s~ao n~ao-lineares na
  press~ao, ve-lo-ci-dade da part^^S^^Pcula
  []
 
-[87] [88] [89] [90]
+[88] [89] [90] [91]
 Overfull \hbox (8.64732pt too wide) in alignment at lines 375--392
  [][][] []
  []
 
-[91] [92]) (./aula4a_gabi.tex [93]) (./aula4b_rafael.tex [94] [95])
-(./aula4b_gabi.tex [96] [97] [98] [99]) (./meioisotr.tex [100] [101] [102]
-[103] [104]) (./aula5_rafael.tex [105] [106]
+[92] [93]) (./aula4a_gabi.tex [94]) (./aula4b_rafael.tex [95] [96])
+(./aula4b_gabi.tex [97] [98] [99] [100]) (./meioisotr.tex [101] [102] [103]
+[104] [105]) (./aula5_rafael.tex [106] [107]
 Overfull \hbox (46.4237pt too wide) in paragraph at lines 102--102
 []\OT1/cmr/bx/n/17.28 Propriedades dos co-e-fi-ci-en-tes de re-flex~ao/transmis
 s~ao 
  []
 
-[107] [108] [109]) (./aula5_gabi.tex [110] [111] [112] [113] [114])
-(./aula5_coord_fernando.tex [115] [116] [117] [118]
+[108] [109] [110]) (./aula5_gabi.tex [111] [112] [113] [114] [115])
+(./aula5_coord_fernando.tex [116] [117] [118] [119]
 Overfull \hbox (16.0353pt too wide) in alignment at lines 212--217
  [][][] []
  []
 
-[119] [120] [121] [122]) (./refer.tex [123]) [124
+[120] [121] [122] [123]) (./refer.tex [124]) [125
 
 ] (./aula.aux) ) 
 Here is how much of TeX's memory you used:
- 13483 strings out of 492649
- 260178 string characters out of 6129622
- 315975 words of memory out of 5000000
- 16877 multiletter control sequences out of 15000+600000
+ 13492 strings out of 492649
+ 260375 string characters out of 6129622
+ 315999 words of memory out of 5000000
+ 16883 multiletter control sequences out of 15000+600000
  12559 words of font info for 44 fonts, out of 8000000 for 9000
  1273 hyphenation exceptions out of 8191
- 55i,13n,54p,406b,766s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 55i,13n,54p,642b,766s stack positions out of 5000i,500n,10000p,200000b,80000s
 </usr/local/texlive/2018/texmf-dist/fonts/type1/public/amsfonts
 /cm/cmbx12.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/
 cm/cmex10.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/c
@@ -655,10 +662,10 @@ ocal/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/lo
 cal/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy6.pfb></usr/loca
 l/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/local/
 texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmti12.pfb>
-Output written on aula.pdf (125 pages, 569667 bytes).
+Output written on aula.pdf (126 pages, 866850 bytes).
 PDF statistics:
- 475 PDF objects out of 1000 (max. 8388607)
- 328 compressed objects within 4 object streams
+ 481 PDF objects out of 1000 (max. 8388607)
+ 331 compressed objects within 4 object streams
  0 named destinations out of 1000 (max. 500000)
- 13 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 18 words of extra memory for PDF output out of 10000 (max. 10000000)
 
