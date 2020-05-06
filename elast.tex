@@ -1,10 +1,11 @@
+\chapter{Equa\cao\ da onda el\'astica}
 
 \section{Teoria Elastodin\^amica}
 
 \subsection{Introdu\cao}
 
 Sob uma carga externa, um corpo pode ser transladado,
-rotacionado ou deformado. Na seq\"u\^encia, estudamos
+rotacionado ou deformado. Na sequ\^encia, estudamos
 o efeito chamado de ``deforma\cao'', pois estamos
 trabalhando pontualmente e assim n\ao\ \'e poss\ih vel
 que haja transla\cao\ ou rota\cao.
@@ -41,34 +42,49 @@ fluxo das part\ih culas. As part\ih culas do material
 oscilam ao redor de suas posi\coes\ m\'edias.
 
 Na mec\^anica cl\'assica, o movimento de onda \'e assumido
-ser pequenas pertuba\coes\ no estado inicial do material,
-chamado de ``estado natural''. No estado inicial n\ao\ h\'a
+como uma pequena perturba\cao\ do estado inicial do material,
+chamado de ``estado natural''. No estado natural n\ao\ h\'a
 tens\oes\ e deforma\coes, ent\ao\ consideramos o estado
-inicial sendo o estado de equil\ih brio est\'atico em que a
+natural como sendo o estado de equil\ih brio est\'atico em que a
 deforma\cao\ n\ao\ muda com o tempo.
 
 Estudamos aqui como a deforma\cao\ altera rela\coes\ entre
-duas part\ih culas pr\'oximas da m\'edia. Esta mudan\ca\
+duas part\ih culas pr\'oximas. Esta mudan\ca\
 \'e descrita pelo ``tensor de deforma\cao''. Antes
 introduzimos o {\it vetor deslocamento} descrevendo um
 deslocamento de uma part\ih cula simples sob uma
 deforma\cao. Consideramos para ambos o sistema de
-coordenadas $x_1$, $x_2$, $x_3$ com origem no ponto 0.
+coordenadas cartesianas $x_1$, $x_2$, $x_3$ com origem no ponto 0.
 
 
 \subsection{Vetor deslocamento}
 
 Consideramos uma part\ih cula, que, no estado
-inicial, est\'a situada no ponto $P[x_1,x_2,x_3]$. Na deforma\cao\
-do material no tempo $t$, esta part\ih cula ser\'a movida
-para o ponto $P'[x_1',x_2',x_3']$. O movimento do ponto $P$
-para $P'$ \'e especificado pelo ``vetor deslocamento''
+inicial, est\'a situada no ponto $P[x_1,x_2,x_3]$. Ap\'os a deforma\cao\
+do material, no tempo $t$, esta part\ih cula se encontra
+no ponto $P'[x_1',x_2',x_3']$ (ver figura \ref{fig:vetor-deslocamento}).
+A mudan\c{c}a do ponto $P$
+para $P'$ \'e especificada pelo ``vetor deslocamento''
 $u_i(x_k,t)$ tal que
 \begin{eqnarray}
 x_i' = x_i + u_i(x_k,t) = x_i + u_i(P,t) \; .
 \end{eqnarray}
+\begin{figure}
+\centering
+\begin{tikzpicture}
+\draw[thick,->] (0,0) -- (4.5,0) node[anchor=north west] {$P'$};
+\draw[thick,->] (0,0) -- (2.5,2) node[anchor=north west] {$P$};
+\draw[thick,->] (2.5,2) -- (4.5,0) node[above] {$\vec{u}(P,t)$};
+%%%%%%%%%%%%%%%%%
+% Falta colocar os vetores x e x',
+% e ajeitar a posi\cao das letras na figura
+%%%%%%%%%%%%%%%%%
+\end{tikzpicture}
+\caption{Representa\c{c}\~ao do vetor deslocamento $\vec{u}(P,t)$.}
+\label{fig:vetor-deslocamento}
+\end{figure}
 Aqui, o vetor deslocamento \'e especificado como uma
-fun\cao\ vetorial de coordenadas $x_i$ do ponto $P$ (a
+fun\cao\ vetorial das coordenadas $x_i$ do ponto $P$ (a
 posi\cao\ da part\ih cula no estado inicial) e do tempo
 $t$. Esta descri\cao\ \'e extremamente usada em
 sismologia e prospec\cao\ s\ih smica e \'e conhecida como
@@ -81,13 +97,13 @@ part\ih cula no estado deformado) e do tempo $t$,
 $u_i(x_k',t)$. Em tal caso, $u_i$ depende do tempo
 atrav\'es das coordenadas $x_k'$, que est\ao\ dependendo do tempo. Esta
 descri\cao\ \'e conhecida como
-``descri\cao\ de Euler'' e esta \'e mais usada em
+``descri\cao\ de Euler'' e \'e mais usada em
 hidrodin\^amica. Nela, o sistema de coordenadas usado para
 descrever o movimento acompanha a part\icula\ e esta, portanto tem
 posi\cao\ fixa nele. Aqui, usamos a descri\cao\ Lagrangeana.
 
 Na descri\cao\ Lagrangeana, a velocidade de movimento da
-part\ih cula pode ser simplismente obtida por deriva\cao\
+part\ih cula pode ser simplesmente obtida por deriva\cao\
 parcial de $u_i(x_k,t)$ com respeito ao tempo $t$
 \begin{eqnarray}
 v_i(x_k,t) = \dot{u}_i(x_k,t) = \frac{\partial u_i(x_k,t)}

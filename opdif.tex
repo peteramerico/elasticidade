@@ -267,90 +267,98 @@ preciso achar a inversa da transformada de Fourier como um caso
 limite de uma fun\cao\ auxiliar que no limite se aproxima da
 fun\cao\ $\sgn(\omega)$. Esta fun\cao\ pode ser
 \begin{eqnarray}
-g_{\alpha}(\omega) = e^{-\alpha \mid \omega\mid}i \sgn(\omega)
+\hat{g}_{\alpha}(\omega) = e^{-\alpha \mid \omega\mid}i \sgn(\omega)
 \end{eqnarray}
 com $\alpha > 0$. Esta \'e uma fun\cao\ integr\'avel e quando
-$\alpha\rightarrow 0$ a fun\cao\ se aproxima de $i$ $\sgn(f)$.
+$\alpha\rightarrow 0$ a fun\cao\ se aproxima de $i$ $\sgn(\omega)$.
 Ent\ao\ basta tomar a transformada de Fourier inversa e fazer
-$\alpha\rightarrow 0$ para obter a transformada inversa de $i\sgn(f)$.
-\begin{eqnarray*}
-g_{\alpha}(t) &=& \int_{-\infty}^{\infty}e^{-\alpha \mid
-f\mid}i\sgn(f)e^{-i2\pi ft}df \\
-&=& -\int_{-\infty}^{0}e^{\alpha f}e^{-i2\pi ft}i df +
-\int_{0}^{\infty}e^{-\alpha f}e^{-i2\pi ft}i df \\
-&=& -\int_{0}^{\infty}e^{-\alpha f^{'}}e^{i2\pi f^{'}t}i df^{'} +
-\int_{0}^{\infty}e^{-(\alpha+i2\pi t)f}i df \\
-&=& -\int_{0}^{\infty}e^{(-\alpha+2i\pi t)f}i df +
-\int_{0}^{\infty}e^{-(\alpha + 2i\pi t)f}i df \\
-&=& \frac{i}{i2\pi t - \alpha} + \frac{i}{i2\pi t + \alpha}.
-\end{eqnarray*}
+$\alpha\rightarrow 0$ para obter a transformada inversa de $i\sgn(\omega)$.
+%\begin{equation}
+\begin{multline}
+g_{\alpha}(t) = \int_{-\infty}^{\infty}e^{-\alpha \mid
+\omega \mid}i\sgn(\omega)e^{-i2\pi \omega t}d\omega \\
+= -\int_{-\infty}^{0}e^{\alpha \omega}e^{-i2\pi \omega t}i d\omega +
+\int_{0}^{\infty}e^{-\alpha \omega}e^{-i2\pi \omega t}i d\omega \\
+= -\int_{0}^{\infty}e^{-\alpha \omega^{'}}e^{i2\pi \omega^{'}t}i d\omega^{'} +
+\int_{0}^{\infty}e^{-(\alpha+i2\pi t)\omega}i d\omega \\
+= -\int_{0}^{\infty}e^{(-\alpha+2i\pi t)\omega}i d\omega +
+\int_{0}^{\infty}e^{-(\alpha + 2i\pi t)\omega}i d\omega \\
+= \frac{i}{i2\pi t - \alpha} + \frac{i}{i2\pi t + \alpha}.
+\end{multline}
+%\end{equation}
 Para $\alpha\rightarrow 0$ temos
 \begin{eqnarray}
-g_{\alpha}(t)\rightarrow g_{0}(t) = \int_{-\infty}^{\infty}i\sgn(f)e^{-i2\pi ft}dt =
+g_{\alpha}(t)\rightarrow g_{0}(t) = \int_{-\infty}^{\infty}i\sgn(\omega)e^{-i2\pi \omega t}dt =
 \frac{1}{\pi t}.
 \end{eqnarray}
 Temos ent\ao\ um par de Fourier
 \begin{eqnarray}
-g_{0}(t) = (\pi t)^{-1},\; G_{0}(f) = i\sgn(f).
+g_{0}(t) = (\pi t)^{-1},\; \hat{g}_{0}(\omega) = i\sgn(\omega).
 \end{eqnarray}
 
 Sabemos que, para uma fun\cao\ real $g(t)$
 \begin{eqnarray}
-G^{*}(f) = \int_{-\infty}^{\infty}g(t)e^{-i2\pi ft}dt = G(-f).
+\hat{g}^{*}(\omega) = \int_{-\infty}^{\infty}g(t)e^{-i2\pi \omega t}dt = \hat{g}(-\omega).
 \end{eqnarray}
-
-Usando esta propriedade reescrevemos a expressao para o sinal real
-da seguinte maneira
-\begin{eqnarray}
-g(t) &=& \int_{-\infty}^{\infty}G(f)e^{-i2\pi ft}df \\
-&=& \int_{-\infty}^{0}G(f)e^{-i2\pi ft}df +
-\int_{0}^{\infty}G(f)e^{-i2\pi ft}df \\
-&=& \int_{0}^{\infty}G(-f^{'})e^{-i2\pi f^{'}t}df +
+Usando esta propriedade e sabendo que, sendo o n\'umero complexo
+$z=x+yi$ e $2Re(z)=z+\bar{z}$,
+reescrevemos a express\~ao para o sinal real da seguinte maneira
+\begin{multline}
+g(t) = \int_{-\infty}^{\infty}\hat{g}(\omega)e^{-i2\pi \omega t}d\omega \\
+= \int_{-\infty}^{0}\hat{g}(\omega)e^{-i2\pi \omega t}d\omega +
+\int_{0}^{\infty}\hat{g}(\omega)e^{-i2\pi \omega t}d\omega \\
+= \int_{0}^{\infty}\hat{g}(-\omega)e^{i2\pi \omega t}d\omega +
 \int_{0}^{\infty}
-G(f)e^{-i2\pi ft}df \\
-&=& \int_{0}^{\infty}G^{*}(f)e^{i2\pi ft}df +
-\int_{0}^{\infty}G(f)e^{-i2\pi ft}df \\
-&=& 2Re\int_{0}^{\infty}G(f)e^{-i2\pi ft}df.
-\end{eqnarray}
-
+\hat{g}(\omega)e^{-i2\pi \omega t}d\omega \\
+= \int_{0}^{\infty}\hat{g}^{*}(\omega)e^{i2\pi \omega t}d\omega +
+\int_{0}^{\infty}\hat{g}(\omega)e^{-i2\pi \omega t}d\omega \\
+= 2Re\{ \int_{0}^{\infty}\hat{g}(\omega)e^{-i2\pi \omega t}d\omega \} .
+\end{multline}
 Ent\ao,
+\begin{equation}
+\begin{split}
+g(t) = 2Re\{ \int_{0}^{\infty}\hat{g}(\omega)e^{-i2\pi \omega t}d\omega \} \\
+= Re\{2 \int_{0}^{\infty}\hat{g}(\omega)e^{-i2\pi \omega t}d\omega \}
+\end{split}
+\end{equation}
+Assim, como vemos, $g(t)$ \'e a parte real do sinal complexo
 \begin{eqnarray}
-g(t) = 2Re\int_{0}^{\infty}G(f)e^{-i2\pi ft}df
+F(t) = 2\int_{0}^{\infty}\hat{g}(\omega)e^{-i2\pi \omega t}d\omega,
 \end{eqnarray}
-
-Introduzindo o sinal complexo
-\begin{eqnarray}
-F(t) = 2\int_{0}^{\infty}G(f)e^{-i2\pi ft}df,
-\end{eqnarray}
-que pode ser escrito como
+que tamb\'em pode ser escrito como
 \begin{eqnarray}
 F(t) = g(t) + ih(t),
 \label{sinan}
 \end{eqnarray}
-onde
+Mas quem \'e a parte imagin\'aria $h(t)$ deste sinal complexo?
+Sabendo que, sendo $z$ um n\'umero complexo, $Im(z)=(z+\bar{z})/2i$, ent\~ao %onde
+%\begin{eqnarray}
+%h(t) = 2Im\{ \int_{0}^{\infty}\hat{g}(\omega)e^{-i2\pi \omega t}d\omega \}.
+%\end{eqnarray}
+\begin{equation}
+h(t)=Im\{F(t)\} = \frac{F(t) - F^*(t)}{2i}
+\end{equation}
+Encontrando $h(t)$:
 \begin{eqnarray}
-h(t) = 2Im\int_{0}^{\infty}G(f)e^{-i2\pi ft}df.
-\end{eqnarray}
-Esta express\ao\ pode ser reescrita da seguinte maneira
-\begin{eqnarray}
-h(t) &=& -i\left[\int_{0}^{\infty}G(f)e^{-i2\pi ft}df -
-\int_{0}^{\infty}G^{*}(f)e^{i2\pi ft}df  \right]\nonumber \\
-&=& -i\left[\int_{0}^{\infty}G(f)e^{-i2\pi ft}df -
-\int_{-\infty}^{0}G(f^{'})e^{-i2\pi f^{'}t}df^{'}  \right]\nonumber \\
-&=& -i\left[\int_{-\infty}^{\infty}G(f)\sgn(f)e^{-i2\pi ft}df
-\right]\nonumber \\
-&=& -g(t) * \frac{1}{\pi t}\nonumber \\
-&=&
--\frac{1}{\pi}\int_{-\infty}^{\infty}\frac{g(\sigma)}{t-\sigma}d\sigma
+h(t) &=& \frac{1}{i}\left[\int_{0}^{\infty}\hat{g}(\omega)e^{-i2\pi \omega t}d\omega -
+\int_{0}^{\infty}\hat{g}(-\omega)e^{i2\pi \omega t}d\omega  \right]\nonumber \\
+&=& \frac{1}{i}\left[\int_{0}^{\infty}\hat{g}(\omega)e^{-i2\pi \omega t}d\omega -
+\int_{-\infty}^{0}\hat{g}(\omega)e^{-i2\pi \omega t}d\omega  \right]\nonumber \\
+&=& \int_{-\infty}^{\infty}\hat{g}(\omega) [-i\sgn(\omega)]e^{-i2\pi \omega t}d\omega
 \nonumber \\
-&=& \frac{1}{\pi}\int_{-\infty}^{\infty}\frac{g(\sigma)}{\sigma -
-t}d\sigma.
+&=& g(t) * \frac{1}{\pi t}\nonumber \\
+&=&
+\frac{1}{\pi}\int_{-\infty}^{\infty}\frac{g(\tau)}{t-\tau}d\tau
+\nonumber \\
+&=& \frac{1}{\pi}\int_{-\infty}^{\infty}\frac{g(\tau)}{t -
+\tau}d\tau.
 \label{thil}
 \end{eqnarray}
 
 Ent\ao\ $g(t)$ e $h(t)$ formam um par de Hilbert, isto \'e, $h(t)$ \'e
 a transformada de Hilbert de $g(t)$. O sinal complexo (\ref{sinan})
 \'e o sinal anal\ih tico.
+
 
 Devemos observar que a Transformada de Hilbert da Transformada de
 Hilbert de um sinal $g(t)$ fornece $-g(t)$, ou seja,
