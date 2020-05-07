@@ -1,4 +1,4 @@
-\babel@toc {brazil}{}
+\select@language {brazil}
 \contentsline {chapter}{\numberline {1}Introdu\c {c}\~ao}{4}
 \contentsline {section}{\numberline {1.1}O que \'e uma onda?}{4}
 \contentsline {section}{\numberline {1.2}Formas de propaga\c {c}\~ao}{5}
@@ -30,68 +30,68 @@
 \contentsline {subsection}{\numberline {4.3.1}Transforma\c {c}\~ao de Coordenadas}{33}
 \contentsline {subsection}{\numberline {4.3.2}Defini\c {c}\~ao e Propriedades dos Tensores Cartesianos}{36}
 \contentsline {subsection}{\numberline {4.3.3}Tensores Isotr\'opicos (especiais)}{38}
-\contentsline {subsection}{\numberline {4.3.4}Autovalores e autovetores de um tensor sim\'etrico de ordem dois}{39}
-\contentsline {subsection}{\numberline {4.3.5}Diferencia\c {c}\~ao de um tensor}{42}
-\contentsline {section}{\numberline {4.4}Operadores Diferenciais e Teoremas Integrais }{43}
-\contentsline {subsection}{\numberline {4.4.1}Coordenadas Cartesianas}{43}
-\contentsline {subsection}{\numberline {4.4.2}Coordenadas Ortogonais Curvil\'ineas}{44}
+\contentsline {subsection}{\numberline {4.3.4}Propriedade entre o produto do s\'imbolo de Levi-Civita e um tensor sim\'etrico}{39}
+\contentsline {subsection}{\numberline {4.3.5}Diagonaliza\c {c}\~ao de um tensor sim\'etrico de segunda ordem}{39}
+\contentsline {section}{\numberline {4.4}Operadores Diferenciais e Teoremas Integrais }{41}
+\contentsline {subsection}{\numberline {4.4.1}Coordenadas Cartesianas}{41}
+\contentsline {subsection}{\numberline {4.4.2}Coordenadas Ortogonais Curvil\'ineas}{43}
 \contentsline {section}{\numberline {4.5}Sinal Anal\'{\i }tico}{46}
-\contentsline {chapter}{\numberline {5}Equa\c {c}\~ao\ da onda el\'astica}{51}
-\contentsline {section}{\numberline {5.1}Teoria Elastodin\^amica}{51}
-\contentsline {subsection}{\numberline {5.1.1}Introdu\c {c}\~ao}{51}
-\contentsline {subsection}{\numberline {5.1.2}Vetor deslocamento}{52}
-\contentsline {subsection}{\numberline {5.1.3}Tensor de deforma\c {c}\~ao}{53}
-\contentsline {subsection}{\numberline {5.1.4}Tensor de rota\c {c}\~ao}{54}
-\contentsline {subsection}{\numberline {5.1.5}Interpreta\c {c}\~ao\ f\'{\i }sica dos elementos do tensor de deforma\c {c}\~ao}{55}
-\contentsline {subsection}{\numberline {5.1.6}Deforma\c {c}\~oes\ quadr\'aticas}{57}
-\contentsline {subsection}{\numberline {5.1.7}Dilata\c {c}\~ao\ de volume}{58}
-\contentsline {section}{\numberline {5.2}Tensor de Tens\~ao}{58}
-\contentsline {subsection}{\numberline {5.2.1}Condi\c {c}\~ao de Equil\'{\i }brio}{60}
-\contentsline {subsection}{\numberline {5.2.2}Equa\c {c}\~ao de Movimento}{61}
-\contentsline {subsection}{\numberline {5.2.3}Tens\~oes Quadr\'aticas}{62}
-\contentsline {section}{\numberline {5.3}Rela\c {c}\~oes Tens\~ao-Deslocamento}{62}
-\contentsline {section}{\numberline {5.4}Energia de Deforma\c {c}\~ao}{63}
-\contentsline {subsection}{\numberline {5.4.1}Trabalho}{63}
-\contentsline {subsection}{\numberline {5.4.2}Energia Cin\'etica}{64}
-\contentsline {section}{\numberline {5.5}Fluxo de Energia}{65}
-\contentsline {section}{\numberline {5.6}Par\^ametros El\'asticos}{66}
-\contentsline {section}{\numberline {5.7}V\'arios tipos de simetria anisotr\'opica}{68}
-\contentsline {section}{\numberline {5.8}Par\^ametros El\'asticos para Meios Isotr\'opicos}{71}
-\contentsline {subsection}{\numberline {5.8.1}Unidades, Valores Num\'ericos}{72}
-\contentsline {section}{\numberline {5.9}Equa\c {c}\~oes\ Elastodin\^amicas}{72}
-\contentsline {subsection}{\numberline {5.9.1}Equa\c {c}\~oes\ Elastodin\^amicas para Meios S\'olidos}{72}
-\contentsline {subsection}{\numberline {5.9.2}Equa\c {c}\~oes\ de Movimento para Fluidos - Caso Ac\'ustico}{73}
-\contentsline {section}{\numberline {5.10}Meio homog\^eneo e isotr\'opico}{75}
-\contentsline {subsection}{\numberline {5.10.1}A solu\c {c}\~ao da Equa\c {c}\~ao da Onda Ac\'ustica unidimensional}{78}
-\contentsline {chapter}{\numberline {6}Ondas Planas}{80}
-\contentsline {section}{\numberline {6.1}Propriedades das ondas planas}{80}
-\contentsline {subsection}{\numberline {6.1.1}Onda planas harm\^onicas no tempo}{80}
-\contentsline {subsection}{\numberline {6.1.2}Onda planas no dom\'{\i }nio do tempo (ondas planas transientes)}{81}
-\contentsline {section}{\numberline {6.2}Ondas planas ac\'usticas transientes}{82}
-\contentsline {section}{\numberline {6.3}Ondas planas el\'asticas transientes}{82}
-\contentsline {subsection}{\numberline {6.3.1}Meio anisotr\'opico homog\^eneo}{82}
-\contentsline {subsection}{\numberline {6.3.2}Meio isotr\'opico homog\^eneo}{84}
-\contentsline {section}{\numberline {6.4}Considera\c {c}\~oes\ sobre energia}{87}
-\contentsline {subsection}{\numberline {6.4.1}Meio ac\'ustico}{88}
-\contentsline {subsection}{\numberline {6.4.2}Meio anisotr\'opico homog\^eneo}{90}
-\contentsline {subsection}{\numberline {6.4.3}Meio isotr\'opico homog\^eneo}{92}
-\contentsline {section}{\numberline {6.5}Compara\c {c}\~ao\ dos meios anisotr\'opico, isotr\'opico e ac\'ustico}{93}
-\contentsline {section}{\numberline {6.6}Ondas Planas Inomog\^eneas}{94}
-\contentsline {section}{\numberline {6.7}Condi\c {c}\~oes iniciais e de contorno}{95}
-\contentsline {subsection}{\numberline {6.7.1}Condi\c {c}\~oes iniciais}{96}
-\contentsline {subsection}{\numberline {6.7.2}Condi\c {c}\~oes de contorno}{96}
-\contentsline {section}{\numberline {6.8}Reflex\~ao/transmiss\~ao\ de ondas planas}{98}
-\contentsline {subsection}{\numberline {6.8.1}Meio Ac\'ustico}{98}
-\contentsline {subsubsection}{Transforma\c {c}\~ao\ do vetor de vagarosidade atrav\'es da interface}{98}
-\contentsline {subsection}{\numberline {6.8.2}Meio Isotr\'opico}{101}
-\contentsline {subsubsection}{Transforma\c {c}\~ao do vetor vagarosidade atrav\'es da interface}{103}
-\contentsline {subsubsection}{Coeficientes de reflex\~ao e transmiss\~ao}{103}
-\contentsline {subsubsection}{Coeficientes de reflex\~ao de superf\'{\i }cie livre}{105}
-\contentsline {section}{\numberline {6.9}Coeficientes de reflex\~ao/transmiss\~ao}{106}
-\contentsline {section}{\numberline {6.10}Propriedades dos coeficientes de reflex\~ao/transmiss\~ao}{108}
-\contentsline {section}{\numberline {6.11}Considera\c {c}\~oes\ energ\'eticas}{110}
-\contentsline {section}{\numberline {6.12}Mudan\c cas da forma das ondas geradas}{111}
-\contentsline {section}{\numberline {6.13}Absor\c {c}\~ao\ e dispers\~ao}{111}
-\contentsline {section}{\numberline {6.14}Equa\c {c}\~ao\ Ac\'ustica em coordenadas Cartesianas}{116}
-\contentsline {section}{\numberline {6.15}Extrapola\c {c}\~ao\ do campo de onda}{119}
-\contentsline {section}{\numberline {6.16}Expans\~ao\ de uma onda esf\'erica em ondas planas}{120}
+\contentsline {chapter}{\numberline {5}Equa\c {c}\~ao\ da onda el\'astica}{50}
+\contentsline {section}{\numberline {5.1}Teoria Elastodin\^amica}{50}
+\contentsline {subsection}{\numberline {5.1.1}Introdu\c {c}\~ao}{50}
+\contentsline {subsection}{\numberline {5.1.2}Vetor deslocamento}{51}
+\contentsline {subsection}{\numberline {5.1.3}Tensor de deforma\c {c}\~ao}{52}
+\contentsline {subsection}{\numberline {5.1.4}Tensor de rota\c {c}\~ao}{53}
+\contentsline {subsection}{\numberline {5.1.5}Interpreta\c {c}\~ao\ f\'{\i }sica dos elementos do tensor de deforma\c {c}\~ao}{54}
+\contentsline {subsection}{\numberline {5.1.6}Deforma\c {c}\~oes\ quadr\'aticas}{56}
+\contentsline {subsection}{\numberline {5.1.7}Dilata\c {c}\~ao\ de volume}{57}
+\contentsline {section}{\numberline {5.2}Tensor de Tens\~ao}{57}
+\contentsline {subsection}{\numberline {5.2.1}Condi\c {c}\~ao de Equil\'{\i }brio}{59}
+\contentsline {subsection}{\numberline {5.2.2}Equa\c {c}\~ao de Movimento}{60}
+\contentsline {subsection}{\numberline {5.2.3}Tens\~oes Quadr\'aticas}{61}
+\contentsline {section}{\numberline {5.3}Rela\c {c}\~oes Tens\~ao-Deslocamento}{61}
+\contentsline {section}{\numberline {5.4}Energia de Deforma\c {c}\~ao}{62}
+\contentsline {subsection}{\numberline {5.4.1}Trabalho}{62}
+\contentsline {subsection}{\numberline {5.4.2}Energia Cin\'etica}{63}
+\contentsline {section}{\numberline {5.5}Fluxo de Energia}{64}
+\contentsline {section}{\numberline {5.6}Par\^ametros El\'asticos}{65}
+\contentsline {section}{\numberline {5.7}V\'arios tipos de simetria anisotr\'opica}{67}
+\contentsline {section}{\numberline {5.8}Par\^ametros El\'asticos para Meios Isotr\'opicos}{70}
+\contentsline {subsection}{\numberline {5.8.1}Unidades, Valores Num\'ericos}{71}
+\contentsline {section}{\numberline {5.9}Equa\c {c}\~oes\ Elastodin\^amicas}{71}
+\contentsline {subsection}{\numberline {5.9.1}Equa\c {c}\~oes\ Elastodin\^amicas para Meios S\'olidos}{71}
+\contentsline {subsection}{\numberline {5.9.2}Equa\c {c}\~oes\ de Movimento para Fluidos - Caso Ac\'ustico}{72}
+\contentsline {section}{\numberline {5.10}Meio homog\^eneo e isotr\'opico}{74}
+\contentsline {subsection}{\numberline {5.10.1}A solu\c {c}\~ao da Equa\c {c}\~ao da Onda Ac\'ustica unidimensional}{77}
+\contentsline {chapter}{\numberline {6}Ondas Planas}{79}
+\contentsline {section}{\numberline {6.1}Propriedades das ondas planas}{79}
+\contentsline {subsection}{\numberline {6.1.1}Onda planas harm\^onicas no tempo}{79}
+\contentsline {subsection}{\numberline {6.1.2}Onda planas no dom\'{\i }nio do tempo (ondas planas transientes)}{80}
+\contentsline {section}{\numberline {6.2}Ondas planas ac\'usticas transientes}{81}
+\contentsline {section}{\numberline {6.3}Ondas planas el\'asticas transientes}{81}
+\contentsline {subsection}{\numberline {6.3.1}Meio anisotr\'opico homog\^eneo}{81}
+\contentsline {subsection}{\numberline {6.3.2}Meio isotr\'opico homog\^eneo}{83}
+\contentsline {section}{\numberline {6.4}Considera\c {c}\~oes\ sobre energia}{86}
+\contentsline {subsection}{\numberline {6.4.1}Meio ac\'ustico}{87}
+\contentsline {subsection}{\numberline {6.4.2}Meio anisotr\'opico homog\^eneo}{89}
+\contentsline {subsection}{\numberline {6.4.3}Meio isotr\'opico homog\^eneo}{91}
+\contentsline {section}{\numberline {6.5}Compara\c {c}\~ao\ dos meios anisotr\'opico, isotr\'opico e ac\'ustico}{92}
+\contentsline {section}{\numberline {6.6}Ondas Planas Inomog\^eneas}{93}
+\contentsline {section}{\numberline {6.7}Condi\c {c}\~oes iniciais e de contorno}{94}
+\contentsline {subsection}{\numberline {6.7.1}Condi\c {c}\~oes iniciais}{95}
+\contentsline {subsection}{\numberline {6.7.2}Condi\c {c}\~oes de contorno}{95}
+\contentsline {section}{\numberline {6.8}Reflex\~ao/transmiss\~ao\ de ondas planas}{97}
+\contentsline {subsection}{\numberline {6.8.1}Meio Ac\'ustico}{97}
+\contentsline {subsubsection}{Transforma\c {c}\~ao\ do vetor de vagarosidade atrav\'es da interface}{97}
+\contentsline {subsection}{\numberline {6.8.2}Meio Isotr\'opico}{100}
+\contentsline {subsubsection}{Transforma\c {c}\~ao do vetor vagarosidade atrav\'es da interface}{102}
+\contentsline {subsubsection}{Coeficientes de reflex\~ao e transmiss\~ao}{102}
+\contentsline {subsubsection}{Coeficientes de reflex\~ao de superf\'{\i }cie livre}{104}
+\contentsline {section}{\numberline {6.9}Coeficientes de reflex\~ao/transmiss\~ao}{105}
+\contentsline {section}{\numberline {6.10}Propriedades dos coeficientes de reflex\~ao/transmiss\~ao}{107}
+\contentsline {section}{\numberline {6.11}Considera\c {c}\~oes\ energ\'eticas}{109}
+\contentsline {section}{\numberline {6.12}Mudan\c cas da forma das ondas geradas}{110}
+\contentsline {section}{\numberline {6.13}Absor\c {c}\~ao\ e dispers\~ao}{110}
+\contentsline {section}{\numberline {6.14}Equa\c {c}\~ao\ Ac\'ustica em coordenadas Cartesianas}{115}
+\contentsline {section}{\numberline {6.15}Extrapola\c {c}\~ao\ do campo de onda}{118}
+\contentsline {section}{\numberline {6.16}Expans\~ao\ de uma onda esf\'erica em ondas planas}{119}

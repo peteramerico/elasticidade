@@ -1,4 +1,3 @@
-
 \section{Tensores Cartesianos}
 
 Quantidades f\'\i sicas podem ser matematicamente representadas
@@ -467,24 +466,38 @@ $\epsilon_{ijk}\epsilon_{lmn}$, podemos escrever
                 \vline&a_{11} & a_{12} & a_{13}& \vline\\
                 \vline&a_{21} & a_{22} & a_{23}&\vline \\
                 \vline&a_{31} & a_{32} & a_{33}&\vline \\
-\end{array}=det(a_{ij}).
+\end{array}=\det(a_{ij}).
 \end{equation}
 
 A rela\c{c}\~ao acima pode ser generalizada
 \begin{equation}
-\epsilon_{ijk}a_{mi}a_{nj}a_{lk}=det(a_{pq})\epsilon_{mnl}.
+\epsilon_{ijk}a_{mi}a_{nj}a_{lk}=\det(a_{pq})\epsilon_{mnl}.
 \end{equation}
 
 Com a rela\c{c}\~ao anterior podemos demonstrar que  o s\'\i mbolo
 de Levi-Civita \'e um tensor isotr\'opico de ordem $3$. De fato,
 \begin{equation}
-\epsilon'_{ijk}=\alpha_{im}\alpha_{jn}\alpha_{kl}\epsilon_{mnl}=det(\alpha_{pq})\epsilon_{ijk}=\epsilon_{ijk}.
+\epsilon'_{ijk}=\alpha_{im}\alpha_{jn}\alpha_{kl}\epsilon_{mnl}=\det(\alpha_{pq})\epsilon_{ijk}=\epsilon_{ijk}.
 \end{equation}
 
 E tamb\'em temos a seguinte rela\c{c}\~ao
 \begin{equation}
-det(a_{pq})=\frac{1}{6}\epsilon_{mnl}\epsilon_{ijk}a_{mi}a_{nj}a_{lk}.
+\det(a_{pq})=\frac{1}{6}\epsilon_{mnl}\epsilon_{ijk}a_{mi}a_{nj}a_{lk}.
 \end{equation}
+
+\subsection{Propriedade entre o produto do s\'imbolo de Levi-Civita e um tensor sim\'etrico}
+Seja $T_{jk}$ um tensor sim\'etrico, i.e., $T_{jk}=T_{kj}$, ent\~ao
+\begin{align}
+  \epsilon_{ijk}T_{jk} &= \epsilon_{ijk}T_{kj} \, ,\\
+  \epsilon_{ijk}T_{jk} &= -\epsilon_{ikj}T_{kj} \, , \label{eq:levicivitasimetrico} \\
+  \epsilon_{ijk}T_{jk} &= -\epsilon_{ijk}T_{jk}\, ,
+  \label{eq:levicivitasimetrico1}\\ 
+  \epsilon_{ijk}T_{jk} &= 0 \, ,
+\end{align}
+observe que no lado direito da equa\c{c}\~ao \ref{eq:levicivitasimetrico} os
+\'indices $kj$ s\~ao mudos, portanto podemos troc\'a-los por $jk$. Na
+equa\c{c}\~ao \ref{eq:levicivitasimetrico1} temos uma igualdade do tipo
+$A=-A$, portanto $A$, s\'o pode ser igual a zero.
 
 %\begin{thebibliography}{bib}
 %\bibitem{pse}{I. P\v{s}en\v{c}\'\i k - \emph{Introduction to seismic methods}, Lecture Notes, PPPG/UFBa, 1994.}
