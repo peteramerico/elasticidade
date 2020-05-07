@@ -1,0 +1,8 @@
+# Tex Files
+*.aux
+*.bbl
+*.blg
+*.log
+*.toc
+# Vim Files
+*.swp
