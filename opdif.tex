@@ -1,6 +1,8 @@
-
 \section{Operadores Diferenciais e Teoremas Integrais }
 
+Vamos definir nesta se\c{c}\~ao os operadores diferenciais: gradiente,
+divergente, rotacional e Laplace; e os teoremas integrais de Gauss e Stokes utilizando a
+representa\c{c}\~ao tensorial apresentada nas se\c{c}\~oes anteriores.
 \subsection {Coordenadas Cartesianas}
 
 \begin{enumerate}
@@ -8,50 +10,69 @@
 \item {\bf Operador Gradiente}\\
 O operador gradiente pode ser escrito como
 \begin{eqnarray}
-\frac{\partial A}{\partial x_{i}} = A_{,i},
+\frac{\partial \Phi}{\partial x_{i}} = \Phi_{,i},
 \end{eqnarray}
 onde a v\ih rgula e o \ih ndice $i$ denotam a derivada com
 rela\cao\ \`a coordenada espacial $x_{i}$. A nota\cao\ vetorial
-deste operador pode ser $\nabla A$ ou grad$A$.
+deste operador pode ser $\nabla \Phi$ ou $\grad\Phi$.
 
 \item {\bf Operador Divergente}\\
-Aplicado ao vetor $u$, o operador divergente pode ser escrito
+  Aplicado ao vetor $\vec{u}$, o operador divergente pode ser escrito
 como
 \begin{eqnarray}
-\frac{\partial u_{i}}{\partial x_{i}} = u_{i,i},
+\frac{\partial u_{i}}{\partial x_{i}} = u_{i,i} \, ,
 \end{eqnarray}
-e sua nota\cao\ vetorial \'e $\nabla\!\cdot\!\vec{u}$ ou div$\vec{u}$.
+e sua nota\cao\ vetorial \'e $\nabla\!\cdot\!\vec{u}$ ou $\divergent\vec{u}$.
 
 \item {\bf Operador Rotacional}\\
 Aplicado ao vetor $u$, o operador rotacional pode ser escrito
 como
 \begin{eqnarray}
-\epsilon_{ijk}\frac{\partial u_{k}}{\partial x_{j}} =
-\epsilon_{ijk}u_{k,j},
+\epsilon_{ijk}\frac{\partial }{\partial x_{j}}u_k =
+\epsilon_{ijk}u_{k,\:j} \; ,
 \end{eqnarray}
-e sua nota\cao\ vetorial \'e $\nabla\!\times\!\vec{u}$, rot$\vec{u}$ ou
-curl$\vec{u}$.
+e sua nota\cao\ vetorial \'e $\nabla\!\times\!\vec{u}$, $\rot\vec{u}$ ou
+    $\text{curl\thinspace}\vec{u}$.
 
 \item {\bf Operador de Laplace (Laplaciano)}\\
 \'E uma combina\cao\ do operador divergente com
 o gradiente. Pode ser escrito como
 \begin{eqnarray}
-\frac{\partial^{2}A}{\partial x_{i}^{2}} = A_{,ii},
+ \frac{\partial^{2}\Phi}{\partial x_{i}^2}= \frac{\partial^{2}\Phi}{\partial x_{i}\partial x_{i}} = \Phi_{,ii},
 \end{eqnarray}
-e sua nota\cao\ vetorial \'e $\Delta A$ ou $\nabla^{2}A$.
+    tamb\'em existem outras nota\c{c}\~oes, dadas por $\Delta \Phi$ ou $\nabla^{2}\Phi$.
 \\
 
-\item{\bf div rot e rot grad}\\
-Note que $\mbox{div}\;\mbox{rot}\;\vec{u} = 0$, $\mbox{rot}\;\mbox{grad}\; A = 0$.
+\item{\bf Div rot e rot grad}\\
+  Note que utilizando-se as representa\c{c}\~oes tensoriais e suas propriedades,
+    podemos simplificar muito opera\c{c}\~oes do tipo $\nabla\cdot(\nabla\times\vec{u}) = 0$
+    ou $\nabla\times(\nabla\Phi) = 0$, e.g.,
+    \begin{align}
+      \nabla\cdot(\nabla\times\vec{u}) &= (\epsilon_{ijk}u_{k,\thinspace j})_{,i}
+      \, ,\\
+      \nabla\cdot(\nabla\times\vec{u}) &= \epsilon_{ijk}u_{k,\thinspace ji} \, ,
+      \\
+      \nabla\cdot(\nabla\times\vec{u}) &= 0 \, ,
+    \end{align}
+    onde usamos a propriedade entre tensores sim\'etricos e o s\'imbolo de
+    Levi-Civita, pois assumimos que $\frac{\partial}{\partial x_ix_j} =
+    \frac{\partial}{\partial x_jx_i}$. Note que simplificamos muito a
+    quantidade de opera\c{c}\~oes para chegar ao resultado final.
 \\
 
 \item {\bf Teorema de Gauss}\\
 Mostra como transformar uma integral de volume numa integral de
 superf\ih cie e vice versa,
 \begin{eqnarray}
-\int\!\!\!\int\!\!\!\int_{V} \mbox{div}\; \vec{u}\; dV = \int\!\!\!\int_{\Sigma}\; \vec{u}\;  \vec{n}\; dS
+\int\!\!\!\int\!\!\!\int_{V_0} \mbox{div}\; \vec{u}\; dV = 
+  \int\!\!\!\int_{\Sigma}\; \vec{u}\cdot\vec{n}\; dS \, ,
 \end{eqnarray}
-onde $V$ \'e um volume envolvido pela superf\ih cie fechada
+em sua forma tensorial
+\begin{equation}
+  \int\!\!\!\int\!\!\!\int_{V_0} u_{i,i}\; dV = 
+  \int\!\!\!\int_{\Sigma}\; u_in_i \;dS \, ,
+\end{equation}
+onde $V_0$ \'e um volume envolvido pela superf\ih cie fechada
 $\Sigma$ e $\vec{n}$ \'e um vetor normal externo unit\'ario de
 $\Sigma$.
 
@@ -59,8 +80,14 @@ $\Sigma$.
 Indica como transformar uma integral de superf\'icie em uma
 integral de linha e vice versa,
 \begin{eqnarray}
-\int\!\!\!\int_{\Sigma}\vec{n}\cdot\mbox{rot}\; \vec{u}\; dS = \int_{L}\vec{u}\; \vec{t}\; dl,
+\int\!\!\!\int_{\Sigma}\vec{n}\cdot\mbox{rot}\; \vec{u}\; dS =
+  \int_{L}\vec{u}\cdot\vec{t}\; dl\, ,
 \end{eqnarray}
+em sua forma tensorial
+\begin{equation}
+  \int\!\!\!\int_{\Sigma}n_i\,\epsilon_{ijk}u_{k,j}\; dS = \int_{L}u_it_i\; dl\,
+  ,
+\end{equation}
 onde $\Sigma$ \'e uma superf\ih cie envolta por uma linha fechada
 $L$ com um vetor tangente unit\'ario $\vec{t}$.
 
