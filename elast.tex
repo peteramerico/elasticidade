@@ -60,25 +60,31 @@ coordenadas cartesianas $x_1$, $x_2$, $x_3$ com origem no ponto 0.
 \subsection{Vetor deslocamento}
 
 Consideramos uma part\ih cula, que, no estado
-inicial, est\'a situada no ponto $P[x_1,x_2,x_3]$. Ap\'os a deforma\cao\
+inicial, est\'a situada no ponto $P=(x_1,x_2,x_3)$. Ap\'os a deforma\cao\
 do material, no tempo $t$, esta part\ih cula se encontra
-no ponto $P'[x_1',x_2',x_3']$ (ver figura \ref{fig:vetor-deslocamento}).
+no ponto $P'=(x_1',x_2',x_3')$ (ver figura \ref{fig:vetor-deslocamento}).
 A mudan\c{c}a do ponto $P$
 para $P'$ \'e especificada pelo ``vetor deslocamento''
-$u_i(x_k,t)$ tal que
+%$u_i(x_k,t)$ 
+\begin{equation}
+u_i(x_k , t)=x'_{i} - x_i ,
+\end{equation}
+tal que
 \begin{eqnarray}
 x_i' = x_i + u_i(x_k,t) = x_i + u_i(P,t) \; .
 \end{eqnarray}
-\begin{figure}
+
+\begin{figure}[h!]
 \centering
 \begin{tikzpicture}
-\draw[thick,->] (0,0) -- (4.5,0) node[anchor=north west] {$P'$};
-\draw[thick,->] (0,0) -- (2.5,2) node[anchor=north west] {$P$};
-\draw[thick,->] (2.5,2) -- (4.5,0) node[above] {$\vec{u}(P,t)$};
-%%%%%%%%%%%%%%%%%
-% Falta colocar os vetores x e x',
-% e ajeitar a posi\cao das letras na figura
-%%%%%%%%%%%%%%%%%
+\draw[thick,->] (0,0) -- (4.5,0);% node[anchor=north west] {$P'$};
+\draw[thick,->] (0,0) -- (2.5,2);% node[anchor=north west] {$P$};
+\draw[thick,->] (2.5,2) -- (4.5,0);% node[above] {$\vec{u}(P,t)$};
+\node      (a)         at (1,1.2) {$\vec{x}$};
+\node      (b)         at (2.5,-0.3) {$\vec{x}'$};
+\node      (c)         at (4.7,-0.1) {$P'$};
+\node      (d)         at (2.5,2.3) {$\vec{P}$};
+\node      (e)         at (4,1.3) {$\vec{u}(P,t)$};
 \end{tikzpicture}
 \caption{Representa\c{c}\~ao do vetor deslocamento $\vec{u}(P,t)$.}
 \label{fig:vetor-deslocamento}
@@ -88,8 +94,10 @@ fun\cao\ vetorial das coordenadas $x_i$ do ponto $P$ (a
 posi\cao\ da part\ih cula no estado inicial) e do tempo
 $t$. Esta descri\cao\ \'e extremamente usada em
 sismologia e prospec\cao\ s\ih smica e \'e conhecida como
-``descri\cao\ Lagrangeana''. Nela, o sistema de coordenadas usado para
-descrever o movimento \'e fixo e a part\icula\ se move nele.
+``descri\cao\ Lagrangeana''. Nela, seguimos o movimento de uma
+part\'icula $\vec{x}$ espec\'ifica.
+%e o sistema de coordenadas usado para
+%descrever o movimento \'e fixo e a part\icula\ se move nele.
 
 Consideramos, agora, o vetor deslocamento em fun\cao\
 das coordenadas $x_i'$ do ponto $P'$ (posi\cao\ da
@@ -98,9 +106,12 @@ $u_i(x_k',t)$. Em tal caso, $u_i$ depende do tempo
 atrav\'es das coordenadas $x_k'$, que est\ao\ dependendo do tempo. Esta
 descri\cao\ \'e conhecida como
 ``descri\cao\ de Euler'' e \'e mais usada em
-hidrodin\^amica. Nela, o sistema de coordenadas usado para
-descrever o movimento acompanha a part\icula\ e esta, portanto tem
-posi\cao\ fixa nele. Aqui, usamos a descri\cao\ Lagrangeana.
+hidrodin\^amica. Nela, estamos interessados na part\'icula que
+ocupa um dado ponto $\vec{x}'$ no espa\c{c}o, em um dado tempo t.
+%e o sistema de coordenadas usado para
+%descrever o movimento acompanha a part\icula\ e esta, portanto tem
+%posi\cao\ fixa nele. 
+Aqui, usamos a descri\cao\ Lagrangeana.
 
 Na descri\cao\ Lagrangeana, a velocidade de movimento da
 part\ih cula pode ser simplesmente obtida por deriva\cao\
@@ -124,13 +135,13 @@ part\ih cula''.
 \subsection{Tensor de deforma\cao}
 
 Em adi\cao\ ao ponto $P$, n\'os consideramos agora um ponto
-$Q[x_1+dx_1,x_2+dx_2,x_3+dx_3]$ situado nas proximidades do
+$Q=(x_1+dx_1,x_2+dx_2,x_3+dx_3)$ situado nas proximidades do
 ponto $P$, estando o material ainda n\ao\ deformado. O
 ponto $Q$ ser\'a movido durante a deforma\cao\ para o ponto
-$Q'[x_1'+dx_1',x_2'+dx_2',x_3'+dx_3']$. O vetor
+$Q'=(x_1'+dx_1',x_2'+dx_2',x_3'+dx_3')$. O vetor
 deslocamento do ponto $Q$ pode ser expresso em termos do
 vetor deslocamento $u_i(P)$. Segue, por aproxima\cao\ de Taylor de
-primeira ordem (uma vez que $dx_i$ \'e supostamente infinitesimalmente
+primeira ordem, em torno de $x_k$ (uma vez que $dx_i$ \'e supostamente infinitesimalmente
 pequeno), que
 \begin{eqnarray} \label{vdq}
 u_i(Q) = u_i(x_k+dx_k) \sim u_i(x_k) +
@@ -140,8 +151,32 @@ u_i(Q) = u_i(x_k+dx_k) \sim u_i(x_k) +
 \end{eqnarray}
 para todos os pontos $Q$ na vizinhan\ca\ de $P$.
 
+\begin{figure}[h!]
+\centering
+\begin{tikzpicture}
+\draw[thick,->] (0,0) -- (1.5,0);% node[anchor=north west] {$P'$};
+\draw[thick,->] (0,0) -- (1,2);% node[anchor=north east] {$Q$};
+\draw[thick,->] (1,2) -- (3.5,2);% node[anchor=north west] {$Q'$};
+\draw[thick,->] (1.5,0) -- (3.5,2);% node[above] {$\vec{u}(P,t)$};
+\draw[thick,->] (-0.5,-1) -- (0,0);% node[above] {$P$};
+\draw[thick,->] (0.5,-1) -- (1.5,0);% node[above] {$P'$};
+\node      (a)         at (2,2.4) {$\vec{u}(Q)$};
+\node      (b)         at (0,1) {$d\vec{x}$};
+\node      (c)         at (2.7,0.7) {$d\vec{x}'$};
+\node      (d)         at (-0.6,-0.5) {$\vec{x}$};
+\node      (e)         at (1.3,-0.7) {$\vec{x}'$};
+\node      (f)         at (0.5,-0.3) {$\vec{u}(P)$};
+\node      (g)         at (-0.4,0) {$P$};
+\node      (h)         at (0.8,2.3) {$Q$};
+\node      (i)         at (3.8,2.3) {$Q'$};
+\node      (j)         at (2,0) {$P'$};
+\end{tikzpicture}
+\caption{Representa\c{c}\~ao do vetor deslocamento $\vec{u}(P,t)$.}
+\label{fig:tensor-deformacao}
+\end{figure}
+
 Agora investigamos a mudan\ca\ da dist\^ancia entre os pontos
-$P$ e $Q$ devido \`a deforma\cao. Para isso fazemos a
+$P$ e $Q$ devido a deforma\cao. Para isso fazemos a
 compara\cao\ do quadrado das dist\^ancias $\overline{PQ}$
 e $\overline{P'Q'}$.
 Para $\overline{PQ}^2$, n\'os temos
