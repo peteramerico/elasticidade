@@ -138,7 +138,7 @@ Em adi\cao\ ao ponto $P$, n\'os consideramos agora um ponto
 $Q=(x_1+dx_1,x_2+dx_2,x_3+dx_3)$ situado nas proximidades do
 ponto $P$, estando o material ainda n\ao\ deformado. O
 ponto $Q$ ser\'a movido durante a deforma\cao\ para o ponto
-$Q'=(x_1'+dx_1',x_2'+dx_2',x_3'+dx_3')$. O vetor
+$Q'=(x_1'+dx_1',x_2'+dx_2',x_3'+dx_3')$ (ver figura \ref{fig:tensor-deformacao}). O vetor
 deslocamento do ponto $Q$ pode ser expresso em termos do
 vetor deslocamento $u_i(P)$. Segue, por aproxima\cao\ de Taylor de
 primeira ordem, em torno de $x_k$ (uma vez que $dx_i$ \'e supostamente infinitesimalmente
@@ -146,6 +146,8 @@ pequeno), que
 \begin{eqnarray} \label{vdq}
 u_i(Q) = u_i(x_k+dx_k) \sim u_i(x_k) +
 \frac{\partial u_i(x_k)}
+{\partial x_j} (x_k + dx_j - x_k) \nonumber \\
+ = u_i(x_k) +\frac{\partial u_i(x_k)}
 {\partial x_j} dx_j = u_i(P) + \frac{\partial u_i(P)}
 {\partial x_j} dx_j \; ,
 \end{eqnarray}
@@ -160,6 +162,7 @@ para todos os pontos $Q$ na vizinhan\ca\ de $P$.
 \draw[thick,->] (1.5,0) -- (3.5,2);% node[above] {$\vec{u}(P,t)$};
 \draw[thick,->] (-0.5,-1) -- (0,0);% node[above] {$P$};
 \draw[thick,->] (0.5,-1) -- (1.5,0);% node[above] {$P'$};
+\draw[thick, dashed] (0,0) -- (3.5,2) node [midway, above, sloped] (TextNode) {\scriptsize $d\vec{x} + \vec{u}(Q)$};
 \node      (a)         at (2,2.4) {$\vec{u}(Q)$};
 \node      (b)         at (0,1) {$d\vec{x}$};
 \node      (c)         at (2.7,0.7) {$d\vec{x}'$};
@@ -171,7 +174,7 @@ para todos os pontos $Q$ na vizinhan\ca\ de $P$.
 \node      (i)         at (3.8,2.3) {$Q'$};
 \node      (j)         at (2,0) {$P'$};
 \end{tikzpicture}
-\caption{Representa\c{c}\~ao do vetor deslocamento $\vec{u}(P,t)$.}
+\caption{Descri\cao\ da deforma\cao.}
 \label{fig:tensor-deformacao}
 \end{figure}
 
@@ -204,7 +207,6 @@ dx_i + \frac{\partial u_i}{\partial x_k} dx_k  dx_i
 {\partial x_j} \frac{\partial u_i}{\partial x_k}\right)
 dx_j dx_k \; .
 \end{eqnarray}
-
 Para $\overline{P'Q'}^2 - \overline{PQ}^2$, chegamos em
 \begin{eqnarray}
 \overline{P'Q'}^2 - \overline{PQ}^2 \sim 2 E_{jk}
@@ -217,8 +219,6 @@ E_{jk} = \frac{1}{2} \left( \frac{\partial u_k}
 \frac{\partial u_i}{\partial x_j} \frac{\partial u_i}
 {\partial x_k}\right) \; .
 \end{eqnarray}
-
-
 A quantidade $E_{jk}$ \'e um tensor de segunda ordem.
 Este \'e chamado de ``tensor de deforma\cao\ finita''.
 Desde que todas as derivadas para $E_{jk}$ sejam tomadas
@@ -250,10 +250,10 @@ e_{jk} = \frac{1}{2} \left( \frac{\partial u_j}
 \; ,
 \end{eqnarray}
 que \'e comumente chamado de ``tensor de deforma\cao\
-pequena'' ou abreviadamente ``tensor de deforma\cao''.
+infinitesimal'' ou simplesmente ``tensor de deforma\cao''.
 Este \'e sim\'etrico e linear. Notamos tamb\'em que o
-tensor de deforma\cao\ pequena $e_{ik}$ tem a mesma forma
-Lagrangeana e de formula\cao\ de Euler.
+tensor de deforma\cao\ infinitesimal $e_{ik}$ tem a mesma formula\cao\
+tanto na descri\cao\ Lagrangeana como de Euler.
 
 Em decorr\^encia da f\'ormula (\ref{td}) obtida para o
 tensor de deforma\cao\ podemos escrever a express\ao\
@@ -269,7 +269,7 @@ pode ser identificado como transla\cao, uma vez que \'e
 igual para todos os pontos na vizinhan\ca\ de $P$. O segundo
 termo cont\'em o conhecido tensor de deforma\cao\ e descreve, portanto a
 deforma\cao\ do meio. Mostramos a seguir que
-o terceiro termo  representa uma rota\cao.
+o terceiro termo  representa uma rota\cao\ infinitesimal.
 Os elementos $\xi_{ij} = \frac{1}{2} \left(\frac{\partial u_i}{\partial x_j} -
 \frac{\partial u_j}{\partial x_i}\right)$ deste termo formam a matriz
 anti-sim\'etrica $\Xi$, conhecida como o tensor de rota\cao.
