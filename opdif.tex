@@ -110,22 +110,22 @@ A rela\cao\ de transforma\cao\ entre coordenadas curvil\'ineas
 $\gamma_{k}$ ($k = 1,2,3$) e coordenadas cartesianas pode ser
 escrita como
 \begin{eqnarray}
-x_{i} = x_{i}(\gamma_{k})
+x_{i} = x_{i}(\gamma_{k}) \, ,
 \end{eqnarray}
 ou
 \begin{equation}
-x_{i} = x_{i}(\gamma_{1}, \gamma_{2}, \gamma_{3}).
+x_{i} = x_{i}(\gamma_{1}, \gamma_{2}, \gamma_{3})\, .
 \end{equation}
 Um elemento infinitesimal de comprimento ao longo do eixo $x_{i}$ \'e
 \begin{eqnarray}
-dx_{i} = \frac{\partial x_{i}}{\partial \gamma_{k}}d\gamma_{k}.
+  dx_{i} = \frac{\partial x_{i}}{\partial \gamma_{k}}d\gamma_{k}\, .
 \end{eqnarray}
 O comprimento de arco, $ds$, que \'e, basicamente, a dist\^ancia entre
 dois pontos, \'e
 \begin{eqnarray}
 (ds)^{2} = dx_{i}dx_{i} = \frac{\partial x_{i}}{\partial
 \gamma_{k}}\frac{\partial x_{i}}{\partial
-\gamma_{l}}d\gamma_{k}d\gamma_{l} = g_{kl}d\gamma_{k}d\gamma_{l},
+\gamma_{l}}d\gamma_{k}d\gamma_{l} = g_{kl}d\gamma_{k}d\gamma_{l}\, ,
 \label{eq:arclenght}
 \end{eqnarray}
 onde
@@ -144,88 +144,158 @@ $\gamma_{k}$ e $\gamma_{l}$ s\ao\ ortogonais em qualquer ponto.
 Nessa situa\c{c}\~ao temos
 \begin{eqnarray}
 (ds)^{2} = h_{1}^{2}(d\gamma_{1})^{2} + h_{2}^{2}(d\gamma_{2})^{2}
-+ h_{3}^{2}(d\gamma_{3})^{2},
++ h_{3}^{2}(d\gamma_{3})^{2}\, ,
 \end{eqnarray}
 onde, por exemplo,
 \begin{eqnarray}
-h_{1}^{2} = \frac{\partial x_{1}}{\partial
-\gamma_{1}}\frac{\partial x_{1}}{\partial \gamma_{1}} +
-\frac{\partial x_{2}}{\partial \gamma_{1}}\frac{\partial
-x_{2}}{\partial \gamma_{1}} + \frac{\partial x_{3}}{\partial
-\gamma_{1}}\frac{\partial x_{3}}{\partial \gamma_{1}}.
+  h_{1}^{2} = \frac{\partial x_{1}}{\partial
+ \gamma_{1}}\frac{\partial x_{1}}{\partial \gamma_{1}} +
+ \frac{\partial x_{2}}{\partial \gamma_{1}}\frac{\partial
+ x_{2}}{\partial \gamma_{1}} + \frac{\partial x_{3}}{\partial
+\gamma_{1}}\frac{\partial x_{3}}{\partial \gamma_{1}}\, .
 \end{eqnarray}
-\begin{figure}
-\vspace{-2cm}
-\includegraphics[width=1\columnwidth]{./figuras/sist-curv-ort1}
-\vspace{-5.5cm}
+\begin{figure}[!ptb]
+  \centering
+  \begin{tikzpicture}
+    \node[anchor=south west, inner sep = 0] (fig) at (0,0) 
+    {\includegraphics[width=0.75\linewidth,trim=2cm 12cm 8cm 3cm,clip]
+    {./figuras/sist-curv-ort1}};
+    %%\begin{scope}[x={(fig.south east)},y={(fig.north west)}]
+    %%  \draw[help lines, xstep=.1,ystep=.1] (0,0) grid (1,1);
+    %%  \foreach \x in {0,1,...,9} {\node [anchor=north] at (\x/10,0) {0.\x};}
+    %%  \foreach \y in {0,1,...,9} {\node [anchor=east] at (0,\y/10) {0.\y};}
+    %%\end{scope}
+    \begin{scope}[x={(fig.south east)},y={(fig.north west)}]
+    \node[red,below] at (0.48,0.38) {\Large{\textbf{A}}};
+    \node[red,below] at (0.7,0.3) {\Large{\textbf{B}}};
+    \node[red,above] at (0.50,0.65) {\Large{\textbf{C}}};
+    \node[red,above] at (0.73,0.59) {\Large{\textbf{D}}};
+    \node[blue,below] at (0.29,0.27) {\Large{\textbf{E}}};
+    \node[blue,below] at (0.55,0.22) {\Large{\textbf{F}}};
+    \node[blue,above] at (0.31,0.53) {\Large{\textbf{G}}};
+    \node[blue,below] at (0.57,0.52) {\Large{\textbf{H}}};
+    \end{scope}
+
+  \end{tikzpicture}
 \caption{Ilustra\c{c}\~ao de um sistema de coordenadas curvil\'ineas ortogonais.}
 \label{fig:coord-curv-ort}
 \end{figure}
+
 Um elemento de comprimento ao longo de $\gamma_{1}$ (ver figura \ref{fig:coord-curv-ort}) \'e
 \begin{eqnarray}
-ds_{1} = h_{1}d\gamma_{1}
+ds_{1} = h_{1}d\gamma_{1}\, ,
 \end{eqnarray}
 e similarmente, para comprimentos de onda ao longo dos outros eixos. Ent\~ao, podemos escrever
 \begin{eqnarray}
 \frac{\partial}{\partial s_{1}} \Leftrightarrow
-\frac{1}{h_{1}}\frac{\partial}{\partial\gamma_{1}}.
+\frac{1}{h_{1}}\frac{\partial}{\partial\gamma_{1}}\, .
 \end{eqnarray}
 Assim, o operador gradiente fica
 \begin{eqnarray}
 \nabla = \left(
-\frac{1}{h_{1}}\frac{\partial}{\partial\gamma_{1}},
-\frac{1}{h_{2}}\frac{\partial}{\partial\gamma_{2}},
-\frac{1}{h_{3}}\frac{\partial}{\partial\gamma_{3}}\right).
+\frac{1}{h_{1}}\frac{\partial}{\partial\gamma_{1}}\, ,
+  \frac{1}{h_{2}}\frac{\partial}{\partial\gamma_{2}}\, ,
+\frac{1}{h_{3}}\frac{\partial}{\partial\gamma_{3}}\right)\, .
 \end{eqnarray}
 
 %If for the moment we ascribe some constant value to qk> we have
 Se assumirmos um valor constante para $\gamma_{k}$, temos
 \begin{equation}
-\gamma_{k}(x_1,x_2,x_3)=cte.,    %\hspace{2cm}   (k=1,2,3)
+\gamma_{k}(x_1,x_2,x_3)=cte.\, ,    %\hspace{2cm}   (k=1,2,3)
 \end{equation}
 %which describes a surface in space. By assigning a series of different values to qk, we generate a family of surfaces on which qk is constant.. If the func- tions have been properly chosen there is at least one surface belonging to each of the three families which passes through any arbitrary point P in space. Thus, a point in space is characterized by the intersection of the three surfaces, qj = constant, q2 = constant, q3 = constant (see Fig. A-I.I), termed coordinate surfaces. The coordinate surface is named for that co- ordinate which is constant, the other two coordinates being variable along
 que descreve uma superf\'icie no espa\c{c}o (considerando que as outras coordenadas variam),
 conhecida por superf\'icie coordenada.
-A superf\'icie coordenada \'e nomeada pela coordenada com valor constante (ver figura \ref{fig:coord-curv-ort}).
+A superf\'icie coordenada \'e nomeada pela coordenada com valor constante 
+(ver figura \ref{fig:coord-curv-ort}).
 
 Para encontrarmos o divergente e o laplaciano usamos o Teorema de Gauss
 \begin{eqnarray}
-\int\!\!\!\int\!\!\!\int_{V} u_{i,i}dV = \int\!\!\!\int_{S} u_{i}n_{i}dS
+\int\!\!\!\int\!\!\!\int_{V} u_{i,i}\,dV = \int\!\!\!\int_{S} u_{i}n_{i}\,dS  \, ,
 \end{eqnarray}
 onde $n_{i}$ \'e vetor normal externo unit\'ario da superf\ih cie $S$ que envolve o volume $V$. 
-Considere um sistema de coordenadas ortogonais curvil\ih neas $\gamma_{1}$,$\gamma_{2}$ e $\gamma_{3}$, 
+Considere um sistema de coordenadas ortogonais curvil\ih neas $\gamma_{1}$, $\gamma_{2}$ e 
+$\gamma_{3}$, 
 e um volume elementar $dV = ds_{1}ds_{2}ds_{3}$ (figura \ref{fig:coord-curv-ort}).
-As contribui\coes\ das superf\ih cies mais pr\'oximas aos eixos s\ao:
+
+Vamos separar nossa an\'alise em dois tipos de faces, as pr\'oximas aos eixos
+$\gamma_{i}$ (e.g., a face \textcolor{red}{ABCD}) e as outras f\'aces (e.g., a
+face \textcolor{blue}{EFGH}).
+Como estamos avaliando uma unidade infinitesimal de \'area podemos aproximar o valor de
+$u_i$ na face ABCD como:
+\begin{equation}
+u_1n_1\,dS=-u_{1}ds_{2}ds_{3}\, ,
+\end{equation}
+onde o sinal \'e negativo porque a orienta\c{c}\~ao do vetor normal $n_1$ \'e
+contr\'ario ao eixo $\gamma_1$. De maneira similar, representamos as outras
+f\'aces que est\~ao sob os eixos da seguinte forma
+\begin{align}
+  u_2n_2\,dS&=-u_{2}ds_{1}ds_{3}\, , \\
+  u_3n_3\,dS&=-u_{3}ds_{1}ds_{2}\, .
+\end{align}
+
+J\'a as outras faces, mais distantes dos eixos, representadas pela face EFGH.
+\'E preciso levar em conta que a fun\c{c}\~ao $u_i$ \'e avaliada em
+$\gamma_1+ds_1$  (face EFGH). Assim, usamos uma aproxima\c{c}\~ao
+de Taylor de primeira ordem, i.e.,
+\begin{equation}
+  u_1(-n_1)\,dS = \left(u_1 + \frac{\partial u_1}{\partial s_1}ds_1\right)
+  \left(h_2 + \frac{\partial h_2}{\partial s_1}ds_1\right)
+  \left(h_3 + \frac{\partial h_3}{\partial
+  s_1}ds_1\right)d\gamma_2d\gamma_3\, .
+  \label{eq:taylorface}
+\end{equation}
+Perceba que $h_i$ \'e fun\c{c}\~ao de $x_i(\gamma_k)$ e tamb\'em que usamos a expans\~ao do tipo
+($f(x+dx)$ em torno de $x_0 = x$)
+\begin{equation}
+  f(x+dx) = f(x) + f'(x)dx + \frac{1}{2!}f''(x)dx^2 + \dots
+  +\frac{1}{n!}f^{(n)}(x)dx^n \, .
+\end{equation}
+
+Ignorando os termos de segunda ordem temos na equa\c{c}\~ao \ref{eq:taylorface}
+\begin{align}
+  u_1ds_2ds_3 &= \left(u_1h_2h_3 + h_2h_3\frac{\partial u_1}{\partial
+  s_1}ds_1 +
+  u_1h_3\frac{\partial h_2}{\partial s_1}ds_1 + u_1h_2\frac{\partial
+  h_3}{\partial s_1}ds_1
+  \right)d\gamma_2d\gamma_3\, , \\
+  u_1ds_2ds_3 &= u_1ds_2ds_3+\frac{\partial}{\partial
+  s_1}(u_1h_2h_3)ds_1d\gamma_2d\gamma_3\, , \\
+  u_1ds_2ds_3 &= u_1ds_2ds_3+\frac{\partial}{\partial
+  \gamma_1}(u_1h_2h_3)d\gamma_1d\gamma_2d\gamma_3\,  .
+\end{align}
+Repetindo analogamente para as outras faces,
+\begin{align}
+  u_2ds_1ds_3 &= u_2ds_1ds_3+\frac{\partial}{\partial
+  \gamma_2}(u_2h_1h_3)d\gamma_1d\gamma_2d\gamma_3\,  , \\
+  u_3ds_1ds_2 &= u_3ds_1ds_2+\frac{\partial}{\partial
+  \gamma_3}(u_3h_1h_2)d\gamma_1d\gamma_2d\gamma_3\,  .
+\end{align}
+Somando as contribui\coes\ das seis faces e igualando \`a contribui\cao\ da integral de volume no 
+Teorema de Gauss temos,
+\begin{equation}
+  u_{i,i}ds_1ds_2ds_3 = \left[\frac{\partial}{\partial \gamma_1} (u_1 h_2 h_3 ) +
+  \frac{\partial}{\partial \gamma_{2}}(u_2h_1h_3) +  
+  \frac{\partial}{\partial\gamma_{3}}(u_{3}h_{1}h_{2})\right]d\gamma_{1}d\gamma_{2}d\gamma_3 \, .
+\end{equation}
+Isolando $u_{i,i}$, encontramos a express\~ao do divergente em coordenadas
+ortogonais curvi\-l\'ineas 
 \begin{eqnarray}
--u_{1}ds_{2}ds_{3}, \; -u_{2}ds_{1}ds_{3}, \; -u_{3}ds_{1}ds_{2},
-\end{eqnarray}
-onde os sinais s\~ao negativos porque as orienta\coes\ dos vetores normais s\ao\ contr\'arias \`as dos eixos.
-As contribui\coes\ das outras superf\ih cies s\ao:
-\begin{eqnarray}
-u_{1}ds_{2}ds_{3}+\frac{\partial}{\partial s_{1}}(u_{1}ds_{2}ds_{3})ds_{1},\\
-u_{2}ds_{1}ds_{3}+\frac{\partial}{\partial s_{2}}(u_{2}ds_{1}ds_{3})ds_{2},\\
-u_{3}ds_{1}ds_{2}+\frac{\partial}{\partial s_{3}}(u_{3}ds_{1}ds_{2})ds_{3}.
-\end{eqnarray}
-Somando as contribui\coes\ das seis faces e igualando \`a contribui\cao\ da integral de volume no Teorema de Gauss temos,
-\begin{eqnarray}
-u_{i,i} ds_1 ds_2 ds_3 &=& \frac{1}{h_1}\frac{\partial}{\partial \gamma_1} (h_2 h_3 u_1) d\gamma_2 d\gamma_3 ds_1 
- + \frac{1}{h_{2}}\frac{\partial}{\partial \gamma_{2}}(h_{1}h_{3}u_{2})d\gamma_{1}d\gamma_{3}ds_{2} \\ 
-&+&\frac{1}{h_{3}}\frac{\partial}{\partial \gamma_{3}}(h_{1}h_{2}u_{3})d\gamma_{1}d\gamma_{2}ds_{3}
-\end{eqnarray}
-Usando $ds_{1} = h_{1}d\gamma_{1}$, etc., encontramos a express\~ao do divergente em coordenadas
-ortogonais curvil\'ineas 
-\begin{eqnarray}
-u_{i,i}=\frac{1}{h_{1}h_{2}h_{3}}\left[\frac{\partial}{\partial\gamma_{1}}(h_{2}h_{3}u_{1}) 
-       +\frac{\partial}{\partial \gamma_{2}}(h_{1}h_{3}u_{2})  
-       +\frac{\partial}{\partial \gamma_{3}}(h_{1}h_{2}u_{3})\right].
+  u_{i,i}=\frac{1}{h_{1}h_{2}h_{3}}\left[\frac{\partial}{\partial\gamma_{1}}(u_{1}h_{2}h_{3}) 
+       +\frac{\partial}{\partial \gamma_{2}}(u_{2}h_{1}h_{3})  
+       +\frac{\partial}{\partial \gamma_{3}}(u_{3}h_{1}h_{2})\right].
 \end{eqnarray}
 
-Combinando as express\~oes para o gradiente e para o divergente em coordenadas curvil\ih neas ortogonais obtemos a express\ao\ para o 
+Combinando as express\~oes para o gradiente e para o divergente em coordenadas curvil\ih neas 
+ortogonais obtemos a express\ao\ para o 
 Laplaciano $\Delta = \frac{\partial^{2}}{\partial x_{i}^{2}}$
 \begin{eqnarray}
-\Delta = \frac{1}{h_1 h_2 h_3}\left[\frac{\partial}{\partial\gamma_1}\left(\frac{h_2 h_3}{h_1}\frac{\partial}{\partial\gamma_1}\right)
-+\frac{\partial}{\partial\gamma_{2}}\left(\frac{h_{1}h_{3}}{h_{2}}\frac{\partial}{\partial\gamma_{2}}\right)+
- \frac{\partial}{\partial\gamma_{3}}\left(\frac{h_{1}h_{2}}{h_{3}}\frac{\partial}{\partial\gamma_{3}}\right)\right].
+\Delta = \frac{1}{h_1 h_2 h_3}\left[\frac{\partial}{\partial\gamma_1}\left(\frac{h_2 h_3}{h_1}
+  \frac{\partial}{\partial\gamma_1}\right) +
+\frac{\partial}{\partial\gamma_{2}}\left(\frac{h_{1}h_{3}}{h_{2}}
+  \frac{\partial}{\partial\gamma_{2}}\right)+
+ \frac{\partial}{\partial\gamma_{3}}\left(\frac{h_{1}h_{2}}{h_{3}}
+  \frac{\partial}{\partial\gamma_{3}}\right)\right]\, .
 \end{eqnarray}
 
 \section{Sinal Anal\ih tico}
