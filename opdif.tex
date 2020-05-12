@@ -44,19 +44,23 @@ o gradiente. Pode ser escrito como
 \\
 
 \item{\bf Div rot e rot grad}\\
-  Note que utilizando-se as representa\c{c}\~oes tensoriais e suas propriedades,
+   Utilizando as representa\c{c}\~oes tensoriais e suas propriedades,
     podemos simplificar muito opera\c{c}\~oes do tipo $\nabla\cdot(\nabla\times\vec{u}) = 0$
     ou $\nabla\times(\nabla\Phi) = 0$, e.g.,
-    \begin{align}
-      \nabla\cdot(\nabla\times\vec{u}) &= (\epsilon_{ijk}u_{k,\thinspace j})_{,i}
-      \, ,\\
-      \nabla\cdot(\nabla\times\vec{u}) &= \epsilon_{ijk}u_{k,\thinspace ji} \, ,
-      \\
-      \nabla\cdot(\nabla\times\vec{u}) &= 0 \, ,
-    \end{align}
-    onde usamos a propriedade entre tensores sim\'etricos e o s\'imbolo de
-    Levi-Civita, pois assumimos que $\frac{\partial}{\partial x_ix_j} =
-    \frac{\partial}{\partial x_jx_i}$. Note que simplificamos muito a
+    \begin{eqnarray}
+      \nabla\cdot(\nabla\times\vec{u}) = (\epsilon_{ijk}u_{k,\thinspace j})_{,i} = \epsilon_{ijk}u_{k,\thinspace ji} \nonumber \\
+      = -\epsilon_{jik}u_{k,\thinspace ji} = -\epsilon_{jik}u_{k,\thinspace ij} = -\epsilon_{ijk}u_{k,\thinspace ji} = 0 \, .%\nonumber \\
+      %\nabla\cdot(\nabla\times\vec{u}) &= \epsilon_{ijk}u_{k,\thinspace ji} \, ,
+      %\\
+      %\nabla\cdot(\nabla\times\vec{u}) = 0 \, ,
+    \end{eqnarray}
+    %onde usamos a propriedade entre tensores sim\'etricos e o s\'imbolo de
+    %Levi-Civita, pois assumimos que $\frac{\partial}{\partial x_ix_j} =
+    %\frac{\partial}{\partial x_jx_i}$. 
+    A quarta igualdade vem do fato de que a ordem de diferencia\cao\
+    \'e irrelevante, enquanto que, na quinta igualdade os \'indices
+    mudos $i$ e $j$ s\~ao trocados entre si.
+    Note que simplificamos muito a
     quantidade de opera\c{c}\~oes para chegar ao resultado final.
 \\
 
@@ -98,7 +102,7 @@ $L$ com um vetor tangente unit\'ario $\vec{t}$.
 A localiza\c{c}\~ao de um ponto no espa\c{c}o tridimensional
 (com respeito a alguma origem) \'e normalmente especificada pelas
 suas tr\^es coordenadas cartesianas ($x_1, x_2, x_3$) ou,
-equivalentemente, ao especificar o vetor posi\c{c}ao do ponto.
+equivalentemente, ao especificar o vetor posi\c{c}\~ao do ponto.
 Por\'em, existem situa\c{c}\~oes em que \'e mais conveniente
 descrever a posi\c{c}\~ao do ponto por outro sistema
 de coordenadas, mais apropriado para o problema em quest\~ao,
