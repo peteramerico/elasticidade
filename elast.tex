@@ -56,10 +56,55 @@ deslocamento de uma part\ih cula simples sob uma
 deforma\cao. Consideramos para ambos o sistema de
 coordenadas cartesianas $x_1$, $x_2$, $x_3$ com origem no ponto 0.
 
+\subsection{Vetor posi\c{c}\~ao}
+Seja $P = (x_1,x_2,x_3)$ um vetor que indique a posi\c{c}\~ao de uma part\'icula
+no corpo sem deforma\c{c}\~ao e $P'=(x_1',x_2',x_3')$ a posi\c{c}\~ao da
+part\'icula no corpo ap\'os a deforma\c{c}\~ao, que estava originalmente em $P$. Perceba que $P$
+descreve de maneira \'unica a posi\c{c}\~ao das part\'iculas, e o vetor
+\begin{equation}
+  P' = P'(P,t)\, ,
+\end{equation}
+\begin{equation}
+  P_i' = x_i'(x_k,t) \quad k=1,2,3\, . \label{eq:lagrangeana}
+\end{equation}
+Representa a posi\c{c}\~ao das part\'iculas $P$ ap\'os a deforma\c{c}\~ao. 
+Esta maneira maneira de descrever o movimento
+\'e denominada de descri\c{c}\~ao Lagrangeana ou descri\c{c}\~ao material do
+movimento. $P'$ descreve o movimento da perspectiva da part\'icula $P$.
+Tomando $t = 0 \equiv t_0$ como o tempo de refer\^encia inicial, de tal forma
+que
+\begin{equation}
+  P'(P,t_0) \equiv P \, ,
+\end{equation}
+e $P'(P,t)$ \'e a posi\c{c}\~ao atual da part\'icula que estava em $P$ no tempo
+$t=0$.
+
+Podemos, tamb\'em, descrever $P$ em fun\c{c}\~ao de $P'$, como
+\begin{equation}
+  P_i = x_i(x_k',t) \quad k=1,2,3\, . \label{eq:euleriana}
+\end{equation}
+Essa descri\c{c}\~ao \'e denominada descri\c{c}\~ao Euleriana, ou
+descri\c{c}\~ao espacial. Nesta forma, estamos interessados na part\'icula que
+ocupa um dado ponto $x_ i'$ no espa\c{c}o no tempo $t$.
+
+\subsubsection{Considera\c{c}\~oes adicionais}
+Utilizando a descri\c{c}\~ao euleriana e seja $p(x_i',t)$ uma fun\c{c}\~ao que
+descreve o valor de uma propriedade do meio (e.g., press\~ao, temperatura,
+velocidade) em um dado ponto $x_i'$ e no tempo $t$. Ao variarmos $t$,
+diferentes part\'iculas (identificadas por diferentes valores de $x_i$) ocupam o
+mesmo ponto espacial $x_i'$. Vamos nos concentrar em uma \'unica part\'icula
+$x_i$. Usando a equa\c{c}\~ao \ref{eq:lagrangeana}, temos
+\begin{equation}
+  p'(x_i,t) = p(x_k'(x_i,t),t)\, ,
+\end{equation}
+onde $p'$ e $p$ n\~ao precisam necessariamente ter a mesma forma funcional. Note
+que mantendo $x_i$ fixo e variando $t$, $p'$ \'e uma fun\c{c}\~ao que descreve a
+o valor da propriedade percebida pela part\'icula fixa.
 
 \subsection{Vetor deslocamento}
 
-Consideramos uma part\ih cula, que, no estado
+Utilizando a descri\c{c}\~ao Lagrangeana, da 
+fun\c{c}\~ao deslocamento $u_i(x_k,t)$, e considerando uma part\ih cula, que, no estado
 inicial, est\'a situada no ponto $P=(x_1,x_2,x_3)$. Ap\'os a deforma\cao\
 do material, no tempo $t$, esta part\ih cula se encontra
 no ponto $P'=(x_1',x_2',x_3')$ (ver figura \ref{fig:vetor-deslocamento}).
@@ -74,7 +119,7 @@ tal que
 x_i' = x_i + u_i(x_k,t) = x_i + u_i(P,t) \; .
 \end{eqnarray}
 
-\begin{figure}[h!]
+\begin{figure}[!tb]
 \centering
 \begin{tikzpicture}
 \draw[thick,->] (0,0) -- (4.5,0);% node[anchor=north west] {$P'$};
@@ -89,37 +134,23 @@ x_i' = x_i + u_i(x_k,t) = x_i + u_i(P,t) \; .
 \caption{Representa\c{c}\~ao do vetor deslocamento $\vec{u}(P,t)$.}
 \label{fig:vetor-deslocamento}
 \end{figure}
-Aqui, o vetor deslocamento \'e especificado como uma
-fun\cao\ vetorial das coordenadas $x_i$ do ponto $P$ (a
-posi\cao\ da part\ih cula no estado inicial) e do tempo
-$t$. Esta descri\cao\ \'e extremamente usada em
-sismologia e prospec\cao\ s\ih smica e \'e conhecida como
-``descri\cao\ Lagrangeana''. Nela, seguimos o movimento de uma
-part\'icula $\vec{x}$ espec\'ifica.
-%e o sistema de coordenadas usado para
-%descrever o movimento \'e fixo e a part\icula\ se move nele.
 
-Consideramos, agora, o vetor deslocamento em fun\cao\
-das coordenadas $x_i'$ do ponto $P'$ (posi\cao\ da
-part\ih cula no estado deformado) e do tempo $t$,
-$u_i(x_k',t)$. Em tal caso, $u_i$ depende do tempo
-atrav\'es das coordenadas $x_k'$, que est\ao\ dependendo do tempo. Esta
-descri\cao\ \'e conhecida como
-``descri\cao\ de Euler'' e \'e mais usada em
-hidrodin\^amica. Nela, estamos interessados na part\'icula que
-ocupa um dado ponto $\vec{x}'$ no espa\c{c}o, em um dado tempo t.
-%e o sistema de coordenadas usado para
-%descrever o movimento acompanha a part\icula\ e esta, portanto tem
-%posi\cao\ fixa nele. 
-Aqui, usamos a descri\cao\ Lagrangeana.
-
-Na descri\cao\ Lagrangeana, a velocidade de movimento da
-part\ih cula pode ser simplesmente obtida por deriva\cao\
-parcial de $u_i(x_k,t)$ com respeito ao tempo $t$
-\begin{eqnarray}
-v_i(x_k,t) = \dot{u}_i(x_k,t) = \frac{\partial u_i(x_k,t)}
-{\partial t} \; .
-\end{eqnarray}
+Na descri\cao\ Lagrangeana, a velocidade de movimento de
+uma part\ih cula \'e a varia\c{c}\~ao temporal do vetor posi\c{c}\~ao da
+part\'icula $\bigl(x_i'(x_k,t)\bigr)$ i.e.,
+\begin{equation}
+  v_i=\left. \frac{Dx_i'}{Dt}\right|_{P fixo} = \frac{\partial x_i'}{\partial t} \, ,
+\end{equation}
+onde usamos que $\frac{\partial x_k}{\partial t}=0$.
+Assim
+\begin{align}
+  \left(\frac{D}{Dt}\right)\,x'_i &= u_i(x_k,t) + x_i \, , \\
+  v_i &= \frac{\partial u_i(x_k,t)}{\partial t}\, , \\
+  v_i(x_k,t) &= \dot{u}_i(x_k,t) = \frac{\partial u_i(x_k,t)}
+{\partial t} \; ,
+\end{align}
+onde o operador $\frac{D}{Dt}$ indica a derivada material, ou seja, a
+varia\c{c}\~ao temporal ``percebida" \hspace{1pt} pela part\'icula.
 
 Similarmente, para a acelera\cao\ da part\ih cula chegamos em
 \begin{eqnarray}
@@ -131,7 +162,19 @@ A quantidade $v_i(x_k,t)$ \'e conhecida como ``velocidade
 da part\ih cula'' e $a_i(x_k,t)$ como a ``acelera\cao\ da
 part\ih cula''.
 
-
+Escolhemos a descri\c{c}\~ao Lagrangeana para simplificar as contas. Por
+exemplo, para descrevermos a velocidade da part\'icula na perspectiva Euleriana,
+escrevemos primeiro o vetor deslocamento, como
+\begin{equation}
+   u_i(x_l'(x_k,t),t)=u_i(x_k,t) \, .
+\end{equation}
+Desenvolvendo de maneira similar, temos
+\begin{align}
+  x_i'&=u_i(x_l'(x_k,t),t) +  x_i \, , \\
+  v_i &= \frac{\partial u_i}{\partial x_l'}\frac{\partial x_l'}{\partial t}
+  +\frac{\partial u_i}{\partial t} = \frac{\partial u_i}{\partial t} +
+  (\vec{v}\cdot\nabla)u_i \, .
+\end{align}
 \subsection{Tensor de deforma\cao}
 
 Em adi\cao\ ao ponto $P$, n\'os consideramos agora um ponto

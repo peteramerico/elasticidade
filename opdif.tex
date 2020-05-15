@@ -224,14 +224,14 @@ face \textcolor{blue}{EFGH}).
 Como estamos avaliando uma unidade infinitesimal de \'area podemos aproximar o valor de
 $u_i$ na face ABCD como:
 \begin{equation}
-u_1n_1\,dS=-u_{1}ds_{2}ds_{3}\, ,
+u_in_1\,dS=-u_{1}ds_{2}ds_{3}\, ,
 \end{equation}
 onde o sinal \'e negativo porque a orienta\c{c}\~ao do vetor normal $n_1$ \'e
 contr\'ario ao eixo $\gamma_1$. De maneira similar, representamos as outras
 f\'aces que est\~ao sob os eixos da seguinte forma
 \begin{align}
-  u_2n_2\,dS&=-u_{2}ds_{1}ds_{3}\, , \\
-  u_3n_3\,dS&=-u_{3}ds_{1}ds_{2}\, .
+  u_in_2\,dS&=-u_{2}ds_{1}ds_{3}\, , \\
+  u_in_3\,dS&=-u_{3}ds_{1}ds_{2}\, .
 \end{align}
 
 J\'a as outras faces, mais distantes dos eixos, representadas pela face EFGH.
@@ -239,7 +239,7 @@ J\'a as outras faces, mais distantes dos eixos, representadas pela face EFGH.
 $\gamma_1+ds_1$  (face EFGH). Assim, usamos uma aproxima\c{c}\~ao
 de Taylor de primeira ordem, i.e.,
 \begin{equation}
-  u_1(-n_1)\,dS = \left(u_1 + \frac{\partial u_1}{\partial s_1}ds_1\right)
+  u_i(-n_1)\,dS = \left(u_1 + \frac{\partial u_1}{\partial s_1}ds_1\right)
   \left(h_2 + \frac{\partial h_2}{\partial s_1}ds_1\right)
   \left(h_3 + \frac{\partial h_3}{\partial
   s_1}ds_1\right)d\gamma_2d\gamma_3\, .
@@ -254,21 +254,21 @@ Perceba que $h_i$ \'e fun\c{c}\~ao de $x_i(\gamma_k)$ e tamb\'em que usamos a ex
 
 Ignorando os termos de segunda ordem temos na equa\c{c}\~ao \ref{eq:taylorface}
 \begin{align}
-  u_1ds_2ds_3 &= \left(u_1h_2h_3 + h_2h_3\frac{\partial u_1}{\partial
+  u_i(-n_1)dS &= \left(u_1h_2h_3 + h_2h_3\frac{\partial u_1}{\partial
   s_1}ds_1 +
   u_1h_3\frac{\partial h_2}{\partial s_1}ds_1 + u_1h_2\frac{\partial
   h_3}{\partial s_1}ds_1
   \right)d\gamma_2d\gamma_3\, , \\
-  u_1ds_2ds_3 &= u_1ds_2ds_3+\frac{\partial}{\partial
+  u_i(-n_1)dS &= u_1ds_2ds_3+\frac{\partial}{\partial
   s_1}(u_1h_2h_3)ds_1d\gamma_2d\gamma_3\, , \\
-  u_1ds_2ds_3 &= u_1ds_2ds_3+\frac{\partial}{\partial
+  u_i(-n_1)dS &= u_1ds_2ds_3+\frac{\partial}{\partial
   \gamma_1}(u_1h_2h_3)d\gamma_1d\gamma_2d\gamma_3\,  .
 \end{align}
 Repetindo analogamente para as outras faces,
 \begin{align}
-  u_2ds_1ds_3 &= u_2ds_1ds_3+\frac{\partial}{\partial
+  u_i(-n_2)dS &= u_2ds_1ds_3+\frac{\partial}{\partial
   \gamma_2}(u_2h_1h_3)d\gamma_1d\gamma_2d\gamma_3\,  , \\
-  u_3ds_1ds_2 &= u_3ds_1ds_2+\frac{\partial}{\partial
+  u_i(-n_3)dS &= u_3ds_1ds_2+\frac{\partial}{\partial
   \gamma_3}(u_3h_1h_2)d\gamma_1d\gamma_2d\gamma_3\,  .
 \end{align}
 Somando as contribui\coes\ das seis faces e igualando \`a contribui\cao\ da integral de volume no 
