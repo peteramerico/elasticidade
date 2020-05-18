@@ -209,7 +209,11 @@ Aqui vale relembrar que o produto entre uma matriz qualquer $\pmb{A}$ e sua inve
 $\pmb{A}^{-1}$ \'e igual a matriz identidade $\pmb{\cal{I}}$. E que tamb\'em
 podemos definir o delta de Kronecker na forma matricial. Portanto,
 \begin{equation}
-  \delta_{ij} =
+  \begin{bmatrix}
+    \delta_{11} & \delta_{12} & \delta_{13} \\
+    \delta_{21} & \delta_{22} & \delta_{23} \\
+    \delta_{31} & \delta_{32} & \delta_{33} 
+  \end{bmatrix}=
   \begin{bmatrix}
     1 & 0 & 0 \\
     0 & 1 & 0 \\
@@ -288,7 +292,7 @@ T_{m_{1},m_{2},...,m_{k}}, \quad m_{i}=1,2,3,\dots, k.
     $\pmb{\cal{T}}_{n\times n\times ...\times n}$ de $k$ dimens\~oes. Por exemplo, um tensor de
     ordem 2 no espa\c{c}o tridimensional, $T_{ij}$ tem a representa\c{c}\~ao matricial:
     \begin{equation}
-      T_{ij} =
+      \pmb{T} =
       \begin{bmatrix}
         \tau_{11} & \tau_{12} &\tau_{13} \\
         \tau_{21} & \tau_{22} &\tau_{23} \\
