@@ -1,4 +1,4 @@
-\select@language {brazil}
+\babel@toc {brazil}{}
 \contentsline {chapter}{\numberline {1}Introdu\c {c}\~ao}{4}
 \contentsline {section}{\numberline {1.1}O que \'e uma onda?}{4}
 \contentsline {section}{\numberline {1.2}Formas de propaga\c {c}\~ao}{5}
@@ -41,7 +41,7 @@
 \contentsline {subsection}{\numberline {5.1.1}Introdu\c {c}\~ao}{50}
 \contentsline {subsection}{\numberline {5.1.2}Vetor posi\c {c}\~ao}{51}
 \contentsline {subsubsection}{Considera\c {c}\~oes adicionais}{51}
-\contentsline {subsection}{\numberline {5.1.3}Vetor deslocamento}{51}
+\contentsline {subsection}{\numberline {5.1.3}Vetor deslocamento}{52}
 \contentsline {subsection}{\numberline {5.1.4}Tensor de deforma\c {c}\~ao}{53}
 \contentsline {subsection}{\numberline {5.1.5}Tensor de rota\c {c}\~ao}{55}
 \contentsline {subsection}{\numberline {5.1.6}Interpreta\c {c}\~ao\ f\'{\i }sica dos elementos do tensor de deforma\c {c}\~ao}{56}
@@ -50,18 +50,18 @@
 \contentsline {section}{\numberline {5.2}Tensor de Tens\~ao}{59}
 \contentsline {subsection}{\numberline {5.2.1}Condi\c {c}\~ao de Equil\'{\i }brio}{60}
 \contentsline {subsection}{\numberline {5.2.2}Equa\c {c}\~ao de Movimento}{62}
-\contentsline {subsection}{\numberline {5.2.3}Tens\~oes Quadr\'aticas}{62}
+\contentsline {subsection}{\numberline {5.2.3}Tens\~oes Quadr\'aticas}{63}
 \contentsline {section}{\numberline {5.3}Rela\c {c}\~oes Tens\~ao-Deslocamento}{63}
-\contentsline {section}{\numberline {5.4}Energia de Deforma\c {c}\~ao}{63}
+\contentsline {section}{\numberline {5.4}Energia de Deforma\c {c}\~ao}{64}
 \contentsline {subsection}{\numberline {5.4.1}Trabalho}{64}
 \contentsline {subsection}{\numberline {5.4.2}Energia Cin\'etica}{65}
-\contentsline {section}{\numberline {5.5}Fluxo de Energia}{65}
+\contentsline {section}{\numberline {5.5}Fluxo de Energia}{66}
 \contentsline {section}{\numberline {5.6}Par\^ametros El\'asticos}{67}
 \contentsline {section}{\numberline {5.7}V\'arios tipos de simetria anisotr\'opica}{68}
 \contentsline {section}{\numberline {5.8}Par\^ametros El\'asticos para Meios Isotr\'opicos}{71}
 \contentsline {subsection}{\numberline {5.8.1}Unidades, Valores Num\'ericos}{72}
-\contentsline {section}{\numberline {5.9}Equa\c {c}\~oes\ Elastodin\^amicas}{72}
-\contentsline {subsection}{\numberline {5.9.1}Equa\c {c}\~oes\ Elastodin\^amicas para Meios S\'olidos}{72}
+\contentsline {section}{\numberline {5.9}Equa\c {c}\~oes\ Elastodin\^amicas}{73}
+\contentsline {subsection}{\numberline {5.9.1}Equa\c {c}\~oes\ Elastodin\^amicas para Meios S\'olidos}{73}
 \contentsline {subsection}{\numberline {5.9.2}Equa\c {c}\~oes\ de Movimento para Fluidos - Caso Ac\'ustico}{74}
 \contentsline {section}{\numberline {5.10}Meio homog\^eneo e isotr\'opico}{75}
 \contentsline {subsection}{\numberline {5.10.1}A solu\c {c}\~ao da Equa\c {c}\~ao da Onda Ac\'ustica unidimensional}{78}

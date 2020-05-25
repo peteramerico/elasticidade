@@ -6,9 +6,7 @@
 
 Sob uma carga externa, um corpo pode ser transladado,
 rotacionado ou deformado. Na sequ\^encia, estudamos
-o efeito chamado de ``deforma\cao'', pois estamos
-trabalhando pontualmente e assim n\ao\ \'e poss\ih vel
-que haja transla\cao\ ou rota\cao.
+o efeito chamado de ``deforma\cao''.
 
 A deforma\cao\ de um material \'e um processo no qual
 dist\^ancias entre pontos individuais do material s\ao\
@@ -51,7 +49,7 @@ deforma\cao\ n\ao\ muda com o tempo.
 Estudamos aqui como a deforma\cao\ altera rela\coes\ entre
 duas part\ih culas pr\'oximas. Esta mudan\ca\
 \'e descrita pelo ``tensor de deforma\cao''. Antes
-introduzimos o {\it vetor deslocamento} descrevendo um
+introduzimos o {\it vetor deslocamento}, descrevendo um
 deslocamento de uma part\ih cula simples sob uma
 deforma\cao. Consideramos para ambos o sistema de
 coordenadas cartesianas $x_1$, $x_2$, $x_3$ com origem no ponto 0.
@@ -64,13 +62,15 @@ descreve de maneira \'unica a posi\c{c}\~ao das part\'iculas, e o vetor
 \begin{equation}
   P' = P'(P,t)\, ,
 \end{equation}
+ou
 \begin{equation}
-  P_i' = x_i'(x_k,t) \quad k=1,2,3\, . \label{eq:lagrangeana}
+  P_i' = x_i'(x_k,t) \quad k=1,2,3 \label{eq:lagrangeana}
 \end{equation}
-Representa a posi\c{c}\~ao das part\'iculas $P$ ap\'os a deforma\c{c}\~ao. 
+representa a posi\c{c}\~ao das part\'iculas $P$ ap\'os a deforma\c{c}\~ao. 
 Esta maneira maneira de descrever o movimento
 \'e denominada de descri\c{c}\~ao Lagrangeana ou descri\c{c}\~ao material do
-movimento. $P'$ descreve o movimento da perspectiva da part\'icula $P$.
+movimento. $P'$ descreve o movimento da perspectiva da part\'icula $P$, ou em outras palavras,
+seguimos o movimento da part\'icula $P$.
 Tomando $t = 0 \equiv t_0$ como o tempo de refer\^encia inicial, de tal forma
 que
 \begin{equation}
@@ -88,23 +88,28 @@ descri\c{c}\~ao espacial. Nesta forma, estamos interessados na part\'icula que
 ocupa um dado ponto $x_ i'$ no espa\c{c}o no tempo $t$.
 
 \subsubsection{Considera\c{c}\~oes adicionais}
-Utilizando a descri\c{c}\~ao euleriana e seja $p(x_i',t)$ uma fun\c{c}\~ao que
+Utilizando a descri\c{c}\~ao euleriana e seja $f'(x_i',t)$, uma fun\c{c}\~ao que
 descreve o valor de uma propriedade do meio (e.g., press\~ao, temperatura,
-velocidade) em um dado ponto $x_i'$ e no tempo $t$. Ao variarmos $t$,
+velocidade) em um dado ponto $x_i'$ no tempo $t$. Ao variarmos $t$,
 diferentes part\'iculas (identificadas por diferentes valores de $x_i$) ocupam o
 mesmo ponto espacial $x_i'$. Vamos nos concentrar em uma \'unica part\'icula
 $x_i$. Usando a equa\c{c}\~ao \ref{eq:lagrangeana}, temos
 \begin{equation}
-  p'(x_i,t) = p(x_k'(x_i,t),t)\, ,
+  f(x_i,t) = f'(x_k'(x_i,t),t)\, ,
 \end{equation}
-onde $p'$ e $p$ n\~ao precisam necessariamente ter a mesma forma funcional. Note
-que mantendo $x_i$ fixo e variando $t$, $p'$ \'e uma fun\c{c}\~ao que descreve a
-o valor da propriedade percebida pela part\'icula fixa.
+ou
+\begin{equation}
+  f(P,t) = f'(P'(P,t),t)\, ,
+\end{equation}
+onde $f$ e $f'$ n\~ao precisam necessariamente ter a mesma forma funcional. Note
+que mantendo $x_i$ fixo e variando $t$, $f'$ \'e uma fun\c{c}\~ao que descreve
+o valor da propriedade percebida pela part\'icula que estava inicialmente em $x_i$
+e se movimentou no meio.
 
 \subsection{Vetor deslocamento}
 
-Utilizando a descri\c{c}\~ao Lagrangeana, da 
-fun\c{c}\~ao deslocamento $u_i(x_k,t)$, e considerando uma part\ih cula, que, no estado
+Utilizamos a descri\c{c}\~ao Lagrangeana do 
+vetor deslocamento $u_i(x_k,t)$ e consideramos uma part\ih cula que, no estado
 inicial, est\'a situada no ponto $P=(x_1,x_2,x_3)$. Ap\'os a deforma\cao\
 do material, no tempo $t$, esta part\ih cula se encontra
 no ponto $P'=(x_1',x_2',x_3')$ (ver figura \ref{fig:vetor-deslocamento}).
@@ -117,6 +122,7 @@ u_i(x_k , t)=x'_{i} - x_i ,
 tal que
 \begin{eqnarray}
 x_i' = x_i + u_i(x_k,t) = x_i + u_i(P,t) \; .
+\label{eq:pos-deformacao}
 \end{eqnarray}
 
 \begin{figure}[!tb]
@@ -136,13 +142,14 @@ x_i' = x_i + u_i(x_k,t) = x_i + u_i(P,t) \; .
 \end{figure}
 
 Na descri\cao\ Lagrangeana, a velocidade de movimento de
-uma part\ih cula \'e a varia\c{c}\~ao temporal do vetor posi\c{c}\~ao da
-part\'icula $\bigl(x_i'(x_k,t)\bigr)$ i.e.,
+uma part\ih cula \'e dada pela derivada material do vetor posi\cao\ da part\'icula,
+ou seja, pela varia\c{c}\~ao temporal do vetor posi\c{c}\~ao da
+part\'icula $\bigl(x_i'(x_k,t)\bigr)$, i.e.,
 \begin{equation}
-  v_i=\left. \frac{Dx_i'}{Dt}\right|_{P fixo} = \frac{\partial x_i'}{\partial t} \, ,
+  v_i=\left. \frac{Dx_i'}{Dt}\right|_{P fixo} =\left. \frac{\partial x_i'}{\partial t}\right|_{P fixo} \, .
 \end{equation}
-onde usamos que $\frac{\partial x_k}{\partial t}=0$.
-Assim
+Assim, calculando a derivada material de $x_i'$, i.e., da equa\cao\ \ref{eq:pos-deformacao}
+(lembrando, visto que $P$ independe do tempo, teremos $\frac{\partial x_i}{\partial t}=0$),
 \begin{align}
   \left(\frac{D}{Dt}\right)\,x'_i &= u_i(x_k,t) + x_i \, , \\
   v_i &= \frac{\partial u_i(x_k,t)}{\partial t}\, , \\
@@ -162,11 +169,11 @@ A quantidade $v_i(x_k,t)$ \'e conhecida como ``velocidade
 da part\ih cula'' e $a_i(x_k,t)$ como a ``acelera\cao\ da
 part\ih cula''.
 
-Escolhemos a descri\c{c}\~ao Lagrangeana para simplificar as contas. Por
-exemplo, para descrevermos a velocidade da part\'icula na perspectiva Euleriana,
+Escolhemos a descri\c{c}\~ao Lagrangeana para simplificar as contas.
+para descrevermos a velocidade da part\'icula na perspectiva Euleriana,
 escrevemos primeiro o vetor deslocamento, como
 \begin{equation}
-   u_i(x_l'(x_k,t),t)=u_i(x_k,t) \, .
+   u_i(x_k,t)=u_i(x_l'(x_k,t),t) \, .
 \end{equation}
 Desenvolvendo de maneira similar, temos
 \begin{align}

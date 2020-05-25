@@ -44,19 +44,23 @@ o gradiente. Pode ser escrito como
 \\
 
 \item{\bf Div rot e rot grad}\\
-  Note que utilizando-se as representa\c{c}\~oes tensoriais e suas propriedades,
+   Utilizando as representa\c{c}\~oes tensoriais e suas propriedades,
     podemos simplificar muito opera\c{c}\~oes do tipo $\nabla\cdot(\nabla\times\vec{u}) = 0$
     ou $\nabla\times(\nabla\Phi) = 0$, e.g.,
-    \begin{align}
-      \nabla\cdot(\nabla\times\vec{u}) &= (\epsilon_{ijk}u_{k,\thinspace j})_{,i}
-      \, ,\\
-      \nabla\cdot(\nabla\times\vec{u}) &= \epsilon_{ijk}u_{k,\thinspace ji} \, ,
-      \\
-      \nabla\cdot(\nabla\times\vec{u}) &= 0 \, ,
-    \end{align}
-    onde usamos a propriedade entre tensores sim\'etricos e o s\'imbolo de
-    Levi-Civita, pois assumimos que $\frac{\partial}{\partial x_ix_j} =
-    \frac{\partial}{\partial x_jx_i}$. Note que simplificamos muito a
+    \begin{eqnarray}
+      \nabla\cdot(\nabla\times\vec{u}) = (\epsilon_{ijk}u_{k,\thinspace j})_{,i} = \epsilon_{ijk}u_{k,\thinspace ji} \nonumber \\
+      = -\epsilon_{jik}u_{k,\thinspace ji} = -\epsilon_{jik}u_{k,\thinspace ij} = -\epsilon_{ijk}u_{k,\thinspace ji} = 0 \, .%\nonumber \\
+      %\nabla\cdot(\nabla\times\vec{u}) &= \epsilon_{ijk}u_{k,\thinspace ji} \, ,
+      %\\
+      %\nabla\cdot(\nabla\times\vec{u}) = 0 \, ,
+    \end{eqnarray}
+    %onde usamos a propriedade entre tensores sim\'etricos e o s\'imbolo de
+    %Levi-Civita, pois assumimos que $\frac{\partial}{\partial x_ix_j} =
+    %\frac{\partial}{\partial x_jx_i}$. 
+    A quarta igualdade vem do fato de que a ordem de diferencia\cao\
+    \'e irrelevante, enquanto que, na quinta igualdade os \'indices
+    mudos $i$ e $j$ s\~ao trocados entre si.
+    Note que simplificamos muito a
     quantidade de opera\c{c}\~oes para chegar ao resultado final.
 \\
 
@@ -98,7 +102,7 @@ $L$ com um vetor tangente unit\'ario $\vec{t}$.
 A localiza\c{c}\~ao de um ponto no espa\c{c}o tridimensional
 (com respeito a alguma origem) \'e normalmente especificada pelas
 suas tr\^es coordenadas cartesianas ($x_1, x_2, x_3$) ou,
-equivalentemente, ao especificar o vetor posi\c{c}ao do ponto.
+equivalentemente, ao especificar o vetor posi\c{c}\~ao do ponto.
 Por\'em, existem situa\c{c}\~oes em que \'e mais conveniente
 descrever a posi\c{c}\~ao do ponto por outro sistema
 de coordenadas, mais apropriado para o problema em quest\~ao,
@@ -219,7 +223,7 @@ $\gamma_{3}$,
 e um volume elementar $dV = ds_{1}ds_{2}ds_{3}$ (figura \ref{fig:coord-curv-ort}).
 
 Vamos separar nossa an\'alise em dois tipos de faces, as pr\'oximas aos eixos
-$\gamma_{i}$ (e.g., a face \textcolor{red}{ABCD}) e as outras f\'aces (e.g., a
+$\gamma_{i}$ (e.g., a face \textcolor{red}{ABCD}) e as outras faces (e.g., a
 face \textcolor{blue}{EFGH}).
 Como estamos avaliando uma unidade infinitesimal de \'area podemos aproximar o valor de
 $u_i$ na face ABCD como:
@@ -234,8 +238,8 @@ f\'aces que est\~ao sob os eixos da seguinte forma
   u_in_3\,dS&=-u_{3}ds_{1}ds_{2}\, .
 \end{align}
 
-J\'a as outras faces, mais distantes dos eixos, representadas pela face EFGH.
-\'E preciso levar em conta que a fun\c{c}\~ao $u_i$ \'e avaliada em
+J\'a nas outras faces, mais distantes dos eixos, representadas pela face EFGH,
+\'e preciso levar em conta que a fun\c{c}\~ao $u_i$ \'e avaliada em
 $\gamma_1+ds_1$  (face EFGH). Assim, usamos uma aproxima\c{c}\~ao
 de Taylor de primeira ordem, i.e.,
 \begin{equation}
