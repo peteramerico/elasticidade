@@ -1,9 +1,6 @@
 \relax 
 \catcode `"\active 
-\select@language{brazil}
-\@writefile{toc}{\select@language{brazil}}
-\@writefile{lof}{\select@language{brazil}}
-\@writefile{lot}{\select@language{brazil}}
+\babel@aux{brazil}{}
 \@writefile{toc}{\contentsline {chapter}{\numberline {1}Introdu\c {c}\~ao}{4}}
 \@writefile{lof}{\addvspace {10\p@ }}
 \@writefile{lot}{\addvspace {10\p@ }}
@@ -159,70 +156,90 @@
 \@writefile{toc}{\contentsline {subsection}{\numberline {5.1.3}Vetor deslocamento}{52}}
 \newlabel{eq:pos-deformacao}{{5.8}{52}}
 \@writefile{toc}{\contentsline {subsection}{\numberline {5.1.4}Tensor de deforma\c {c}\~ao}{53}}
+<<<<<<< HEAD
 \newlabel{vdq}{{5.17}{53}}
-\newlabel{dxidxi}{{5.19}{53}}
+\@writefile{lof}{\contentsline {figure}{\numberline {5.2}{\ignorespaces Descri\c {c}\~ao\ da deforma\c {c}\~ao.}}{53}}
+\newlabel{fig:tensor-deformacao}{{5.2}{53}}
+\newlabel{dxidxi}{{5.19}{54}}
+\newlabel{tensorE}{{5.24}{54}}
+\newlabel{def_peq}{{5.25}{54}}
+\newlabel{td}{{5.26}{54}}
+\newlabel{vdq2}{{5.27}{55}}
+||||||| merged common ancestors
+\newlabel{vdq}{{5.16}{53}}
+\@writefile{lof}{\contentsline {figure}{\numberline {5.2}{\ignorespaces Descri\c {c}\~ao\ da deforma\c {c}\~ao.}}{53}}
+\newlabel{fig:tensor-deformacao}{{5.2}{53}}
+\newlabel{dxidxi}{{5.18}{53}}
+\newlabel{tensorE}{{5.23}{54}}
+\newlabel{def_peq}{{5.24}{54}}
+\newlabel{td}{{5.25}{54}}
+\newlabel{vdq2}{{5.26}{54}}
+=======
+\newlabel{vdq}{{5.16}{53}}
+\newlabel{dxidxi}{{5.18}{53}}
 \@writefile{lof}{\contentsline {figure}{\numberline {5.2}{\ignorespaces Descri\c {c}\~ao\ da deforma\c {c}\~ao.}}{54}}
 \newlabel{fig:tensor-deformacao}{{5.2}{54}}
-\newlabel{tensorE}{{5.25}{54}}
-\newlabel{def_peq}{{5.26}{54}}
-\newlabel{td}{{5.27}{55}}
-\newlabel{vdq2}{{5.28}{55}}
+\newlabel{tensorE}{{5.24}{54}}
+\newlabel{def_peq}{{5.25}{54}}
+\newlabel{td}{{5.26}{54}}
+\newlabel{vdq2}{{5.27}{55}}
+>>>>>>> joao
 \@writefile{toc}{\contentsline {subsection}{\numberline {5.1.5}Tensor de rota\c {c}\~ao}{55}}
-\newlabel{eq:chidx}{{5.29}{55}}
-\newlabel{eq:arotdx}{{5.30}{55}}
+\newlabel{eq:chidx}{{5.28}{55}}
+\newlabel{eq:arotdx}{{5.29}{55}}
 \@writefile{toc}{\contentsline {subsection}{\numberline {5.1.6}Interpreta\c {c}\~ao\ f\'{\i }sica dos elementos do tensor de deforma\c {c}\~ao}{56}}
-\newlabel{cosg}{{5.42}{57}}
-\newlabel{dxQR}{{5.43}{58}}
-\newlabel{app}{{5.44}{58}}
+\newlabel{cosg}{{5.41}{57}}
+\newlabel{dxQR}{{5.42}{57}}
+\newlabel{app}{{5.43}{57}}
 \@writefile{toc}{\contentsline {subsection}{\numberline {5.1.7}Deforma\c {c}\~oes\ quadr\'aticas}{58}}
 \@writefile{toc}{\contentsline {subsection}{\numberline {5.1.8}Dilata\c {c}\~ao\ de volume}{58}}
 \@writefile{toc}{\contentsline {section}{\numberline {5.2}Tensor de Tens\~ao}{59}}
 \newlabel{tensor_tens}{{5.2}{59}}
-\newlabel{cond_equil}{{5.59}{60}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {5.2.1}Condi\c {c}\~ao de Equil\'{\i }brio}{61}}
-\newlabel{cond_int}{{5.63}{61}}
-\newlabel{eq_equi_back}{{5.64}{61}}
-\newlabel{eq_equi_back2}{{5.65}{61}}
-\newlabel{eq_equi_est}{{5.66}{61}}
-\newlabel{cond_moment}{{5.67}{61}}
-\newlabel{cond_moment1}{{5.69}{62}}
+\newlabel{cond_equil}{{5.58}{60}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {5.2.1}Condi\c {c}\~ao de Equil\'{\i }brio}{60}}
+\newlabel{cond_int}{{5.62}{61}}
+\newlabel{eq_equi_back}{{5.63}{61}}
+\newlabel{eq_equi_back2}{{5.64}{61}}
+\newlabel{eq_equi_est}{{5.65}{61}}
+\newlabel{cond_moment}{{5.66}{61}}
+\newlabel{cond_moment1}{{5.68}{62}}
 \@writefile{toc}{\contentsline {subsection}{\numberline {5.2.2}Equa\c {c}\~ao de Movimento}{62}}
-\newlabel{eq_dinam_ger}{{5.72}{62}}
-\newlabel{eq_dinam_pur}{{5.73}{62}}
-\newlabel{eq_dinam}{{5.74}{62}}
+\newlabel{eq_dinam_ger}{{5.71}{62}}
+\newlabel{eq_dinam_pur}{{5.72}{62}}
+\newlabel{eq_dinam}{{5.73}{62}}
 \@writefile{toc}{\contentsline {subsection}{\numberline {5.2.3}Tens\~oes Quadr\'aticas}{63}}
 \@writefile{toc}{\contentsline {section}{\numberline {5.3}Rela\c {c}\~oes Tens\~ao-Deslocamento}{63}}
-\newlabel{rel_tens_def}{{5.77}{63}}
-\newlabel{lei_hooke}{{5.78}{63}}
+\newlabel{rel_tens_def}{{5.76}{63}}
+\newlabel{lei_hooke}{{5.77}{63}}
 \@writefile{toc}{\contentsline {section}{\numberline {5.4}Energia de Deforma\c {c}\~ao}{64}}
 \@writefile{toc}{\contentsline {subsection}{\numberline {5.4.1}Trabalho}{64}}
 \@writefile{toc}{\contentsline {subsection}{\numberline {5.4.2}Energia Cin\'etica}{65}}
 \@writefile{toc}{\contentsline {section}{\numberline {5.5}Fluxo de Energia}{66}}
 \@writefile{toc}{\contentsline {section}{\numberline {5.6}Par\^ametros El\'asticos}{67}}
 \@writefile{toc}{\contentsline {section}{\numberline {5.7}V\'arios tipos de simetria anisotr\'opica}{68}}
-\newlabel{tpelas}{{5.91}{70}}
-\newlabel{lhanis}{{5.92}{70}}
-\newlabel{lhiso}{{5.93}{70}}
+\newlabel{tpelas}{{5.90}{70}}
+\newlabel{lhanis}{{5.91}{70}}
+\newlabel{lhiso}{{5.92}{70}}
 \@writefile{toc}{\contentsline {section}{\numberline {5.8}Par\^ametros El\'asticos para Meios Isotr\'opicos}{71}}
 \@writefile{toc}{\contentsline {subsection}{\numberline {5.8.1}Unidades, Valores Num\'ericos}{72}}
 \@writefile{toc}{\contentsline {section}{\numberline {5.9}Equa\c {c}\~oes\ Elastodin\^amicas}{73}}
 \@writefile{toc}{\contentsline {subsection}{\numberline {5.9.1}Equa\c {c}\~oes\ Elastodin\^amicas para Meios S\'olidos}{73}}
-\newlabel{eqelaiso}{{5.110}{74}}
+\newlabel{eqelaiso}{{5.109}{74}}
 \@writefile{toc}{\contentsline {subsection}{\numberline {5.9.2}Equa\c {c}\~oes\ de Movimento para Fluidos - Caso Ac\'ustico}{74}}
-\newlabel{eqondpres}{{5.120}{75}}
-\newlabel{eqondvel}{{5.121}{75}}
-\newlabel{ondaacu}{{5.127}{75}}
+\newlabel{eqondpres}{{5.119}{75}}
+\newlabel{eqondvel}{{5.120}{75}}
+\newlabel{ondaacu}{{5.126}{75}}
 \@writefile{toc}{\contentsline {section}{\numberline {5.10}Meio homog\^eneo e isotr\'opico}{75}}
-\newlabel{eqelahom}{{5.128}{75}}
-\newlabel{div}{{5.129}{76}}
-\newlabel{rot}{{5.130}{76}}
+\newlabel{eqelahom}{{5.127}{75}}
+\newlabel{div}{{5.128}{76}}
+\newlabel{rot}{{5.129}{76}}
 \@writefile{toc}{\contentsline {subsection}{\numberline {5.10.1}A solu\c {c}\~ao da Equa\c {c}\~ao da Onda Ac\'ustica unidimensional}{78}}
-\newlabel{ondaacu1d}{{5.131}{78}}
-\newlabel{opx}{{5.136}{79}}
-\newlabel{opt}{{5.138}{79}}
-\newlabel{integral}{{5.141}{79}}
-\newlabel{peqonda}{{5.143}{79}}
-\newlabel{condini}{{5.144}{80}}
+\newlabel{ondaacu1d}{{5.130}{78}}
+\newlabel{opx}{{5.135}{79}}
+\newlabel{opt}{{5.137}{79}}
+\newlabel{integral}{{5.140}{79}}
+\newlabel{peqonda}{{5.142}{79}}
+\newlabel{condini}{{5.143}{80}}
 \@writefile{toc}{\contentsline {chapter}{\numberline {6}Ondas Planas}{81}}
 \@writefile{lof}{\addvspace {10\p@ }}
 \@writefile{lot}{\addvspace {10\p@ }}
