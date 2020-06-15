@@ -1,0 +1,317 @@
+\relax 
+\catcode `"\active 
+\babel@aux{brazil}{}
+\@writefile{toc}{\contentsline {chapter}{\numberline {1}Introdu\c {c}\~ao}{4}}
+\@writefile{lof}{\addvspace {10\p@ }}
+\@writefile{lot}{\addvspace {10\p@ }}
+\@writefile{toc}{\contentsline {section}{\numberline {1.1}O que \'e uma onda?}{4}}
+\newlabel{onda}{{1.1}{4}}
+\newlabel{onda2}{{1.2}{4}}
+\@writefile{toc}{\contentsline {section}{\numberline {1.2}Formas de propaga\c {c}\~ao}{5}}
+\@writefile{toc}{\contentsline {section}{\numberline {1.3}Equa\c {c}\~ao\ da onda}{5}}
+\newlabel{eoadc}{{1.3}{6}}
+\newlabel{eoadv}{{1.4}{6}}
+\newlabel{eoehi}{{1.5}{6}}
+\newlabel{eoeii}{{1.6}{6}}
+\newlabel{eoeia}{{1.7}{6}}
+\citation{moura}
+\@writefile{toc}{\contentsline {chapter}{\numberline {2}Ondas b\'asicas}{7}}
+\@writefile{lof}{\addvspace {10\p@ }}
+\@writefile{lot}{\addvspace {10\p@ }}
+\@writefile{toc}{\contentsline {section}{\numberline {2.1}Ondas Planas}{7}}
+\newlabel{plan}{{2.1}{7}}
+\newlabel{eq_plano}{{2.1}{7}}
+\newlabel{eq_plano_esc}{{2.2}{7}}
+\newlabel{eq_ondapl_1}{{2.3}{7}}
+\newlabel{eq_ondapl_seno}{{2.4}{8}}
+\newlabel{eq_ondapl_d1}{{2.5}{8}}
+\newlabel{eq_ondapl_d2}{{2.6}{8}}
+\newlabel{rel_d0_lam}{{2.7}{8}}
+\newlabel{eq_ondapl_seno2}{{2.8}{8}}
+\newlabel{eq_ondapl_2}{{2.9}{8}}
+\newlabel{eq_ondapl_3}{{2.10}{8}}
+\newlabel{eq_ondapl_4}{{2.11}{8}}
+\newlabel{omega1}{{2.12}{8}}
+\newlabel{omega2}{{2.13}{8}}
+\newlabel{eta}{{2.14}{9}}
+\newlabel{dPhi/dx}{{2.15}{9}}
+\newlabel{dPhi 2/dx 2}{{2.16}{9}}
+\newlabel{eq_ondapl_eta}{{2.17}{9}}
+\newlabel{eq_ondapl_cond}{{2.18}{9}}
+\newlabel{k_w_c}{{2.19}{9}}
+\newlabel{fase1}{{2.20}{9}}
+\newlabel{fase2}{{2.21}{9}}
+\newlabel{fase3}{{2.22}{9}}
+\@writefile{toc}{\contentsline {section}{\numberline {2.2}Ondas Esf\'ericas}{10}}
+\newlabel{esf}{{2.2}{10}}
+\newlabel{onda_esf}{{2.23}{10}}
+\newlabel{onda_esf_menor}{{2.24}{10}}
+\newlabel{onda_esf_dem11}{{2.25}{10}}
+\newlabel{onda_esf_dem1}{{2.26}{10}}
+\newlabel{onda_esf_dem2}{{2.27}{10}}
+\newlabel{sol_esf}{{2.28}{10}}
+\@writefile{toc}{\contentsline {section}{\numberline {2.3}Ondas Cil\'{\i }ndricas}{11}}
+\newlabel{cil}{{2.3}{11}}
+\newlabel{eq_onda_cil}{{2.29}{11}}
+\newlabel{eq_cil}{{2.30}{11}}
+\newlabel{sol_cil_apr}{{2.31}{11}}
+\newlabel{sol_cil_exata}{{2.32}{11}}
+\newlabel{heaviside}{{2.33}{11}}
+\@writefile{toc}{\contentsline {chapter}{\numberline {3}Equa\c {c}\~ao\ da onda ac\'ustica}{12}}
+\@writefile{lof}{\addvspace {10\p@ }}
+\@writefile{lot}{\addvspace {10\p@ }}
+\@writefile{toc}{\contentsline {section}{\numberline {3.1}Dedu\c {c}\~ao da equa\c {c}\~ao da onda ac\'ustica 1D}{12}}
+\newlabel{dedonda}{{3.1}{12}}
+\newlabel{eqonda}{{3.1}{13}}
+\@writefile{toc}{\contentsline {section}{\numberline {3.2}Solu\c {c}\~oes da equa\c {c}\~ao da onda ac\'ustica 1D}{13}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {3.2.1}Solu\c {c}\~ao geral}{13}}
+\newlabel{d2x}{{3.2}{14}}
+\newlabel{d2t}{{3.3}{14}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {3.2.2}Resolu\c {c}\~ao para uma corda infinita}{14}}
+\newlabel{solonda}{{3.4}{15}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {3.2.3}Deslocamento em uma corda finita}{15}}
+\@writefile{toc}{\contentsline {section}{\numberline {3.3}Resolu\c {c}\~ao\ usando s\'eries de Fourier }{16}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {3.3.1}S\'eries de Fourier}{16}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {3.3.2}Resolu\c {c}\~ao\ da equa\c {c}\~ao\ da onda ac\'ustica}{19}}
+\@writefile{toc}{\contentsline {chapter}{\numberline {4}Conceitos matem\'aticos}{23}}
+\@writefile{lof}{\addvspace {10\p@ }}
+\@writefile{lot}{\addvspace {10\p@ }}
+\@writefile{toc}{\contentsline {section}{\numberline {4.1}Transformadas de Fourier}{23}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {4.1.1}Motiva\c {c}\~ao}{23}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {4.1.2}Defini\c {c}\~ao\ da Transformada de Fourier}{23}}
+\newlabel{sf}{{4.3}{24}}
+\newlabel{csf}{{4.4}{24}}
+\newlabel{tf}{{4.9}{24}}
+\newlabel{tfi}{{4.10}{24}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {4.1.3}A transformada de Fourier e sua inversa}{25}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {4.1.4}Propriedades da transformada de Fourier}{26}}
+\@writefile{toc}{\contentsline {section}{\numberline {4.2}A fun\c {c}\~ao\ delta de Dirac}{28}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {4.2.1}Defini\c {c}\~ao\ da fun\c {c}\~ao\ delta}{29}}
+\newlabel{eq:idt}{{4.19}{29}}
+\newlabel{eq:dt}{{4.20}{29}}
+\newlabel{eq:idtu}{{4.21}{29}}
+\newlabel{eq:idtl}{{4.22}{29}}
+\newlabel{eq:defdel}{{4.23}{29}}
+\newlabel{eq:dta}{{4.24}{30}}
+\newlabel{eq:dtb}{{4.25}{30}}
+\newlabel{eq:dtc}{{4.26}{30}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {4.2.2}Propriedades da fun\c {c}\~ao\ delta}{30}}
+\newlabel{eq:delpar}{{4.27}{30}}
+\newlabel{eq:tvm}{{4.29}{30}}
+\newlabel{eq:res}{{4.30}{31}}
+\newlabel{eq:samp}{{4.31}{31}}
+\newlabel{eq:unconv}{{4.32}{31}}
+\newlabel{eq:ftdel}{{4.33}{31}}
+\newlabel{eq:ftidel}{{4.34}{31}}
+\newlabel{eq:scadelf}{{4.35}{31}}
+\newlabel{eq:scadel}{{4.36}{31}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {4.2.3}Fun\c {c}\~ao\ delta multidimensional}{31}}
+\newlabel{eq:delmul}{{4.37}{31}}
+\newlabel{eq:del3d}{{4.38}{32}}
+\newlabel{eq:dt3d}{{4.39}{32}}
+\newlabel{eq:volum}{{4.40}{32}}
+\newlabel{eq:samp3d}{{4.41}{32}}
+\@writefile{toc}{\contentsline {section}{\numberline {4.3}Tensores Cartesianos}{32}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {4.3.1}Transforma\c {c}\~ao de Coordenadas}{33}}
+\@writefile{lof}{\contentsline {figure}{\numberline {4.1}{\ignorespaces Representa\c {c}\~ao de dois sistemas de coordenadas ortogonais distintos $\mathaccentV {vec}17E{e_j}$ e $\mathaccentV {vec}17E{e_k'}$.}}{34}}
+\newlabel{fig:translacao-paralela}{{4.1}{34}}
+\newlabel{eq:doteiek}{{4.52}{34}}
+\@writefile{lof}{\contentsline {figure}{\numberline {4.2}{\ignorespaces Ilustra\c {c}\~ao de uma rota\c {c}\~ao dos eixos de coordenadas de base $\mathaccentV {vec}17E{e_j}$ em um novo sistema de coordenadas ortogonais $\mathaccentV {vec}17E{e_k}'$. Note que os cossenos dos \^angulos entre os eixos determinam os termos da matriz $\alpha _{kj}$.}}{35}}
+\newlabel{fig:rotacaocoord}{{4.2}{35}}
+\newlabel{eq:rotacao}{{4.56}{35}}
+\newlabel{eq:inversakronecker}{{4.57}{35}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {4.3.2}Defini\c {c}\~ao e Propriedades dos Tensores Cartesianos}{36}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {4.3.3}Tensores Isotr\'opicos (especiais)}{38}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {4.3.4}Propriedade entre o produto do s\'imbolo de Levi-Civita e um tensor sim\'etrico}{39}}
+\newlabel{eq:levicivitasimetrico}{{4.92}{39}}
+\newlabel{eq:levicivitasimetrico1}{{4.93}{39}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {4.3.5}Diagonaliza\c {c}\~ao de um tensor sim\'etrico de segunda ordem}{39}}
+\newlabel{eq:tdiag}{{4.94}{39}}
+\newlabel{eq:eigvect1}{{4.98}{40}}
+\newlabel{eq:eigvect2start}{{4.99}{40}}
+\newlabel{eq:eigvect2end}{{4.101}{40}}
+\newlabel{eq:autovetores}{{4.108}{40}}
+\@writefile{toc}{\contentsline {section}{\numberline {4.4}Operadores Diferenciais e Teoremas Integrais }{41}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {4.4.1}Coordenadas Cartesianas}{41}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {4.4.2}Coordenadas Ortogonais Curvil\'ineas}{43}}
+\newlabel{eq:arclenght}{{4.130}{43}}
+\@writefile{lof}{\contentsline {figure}{\numberline {4.3}{\ignorespaces Ilustra\c {c}\~ao de um sistema de coordenadas curvil\'ineas ortogonais.}}{44}}
+\newlabel{fig:coord-curv-ort}{{4.3}{44}}
+\newlabel{eq:taylorface}{{4.142}{45}}
+\@writefile{toc}{\contentsline {section}{\numberline {4.5}Sinal Anal\'{\i }tico}{46}}
+\newlabel{sinan}{{4.167}{48}}
+\newlabel{thil}{{4.169}{49}}
+\newlabel{thth}{{4.170}{49}}
+\@writefile{toc}{\contentsline {chapter}{\numberline {5}Equa\c {c}\~ao\ da onda el\'astica}{50}}
+\@writefile{lof}{\addvspace {10\p@ }}
+\@writefile{lot}{\addvspace {10\p@ }}
+\@writefile{toc}{\contentsline {section}{\numberline {5.1}Teoria Elastodin\^amica}{50}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {5.1.1}Introdu\c {c}\~ao}{50}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {5.1.2}Vetor posi\c {c}\~ao}{51}}
+\newlabel{eq:lagrangeana}{{5.2}{51}}
+\newlabel{eq:euleriana}{{5.4}{51}}
+\@writefile{toc}{\contentsline {subsubsection}{Considera\c {c}\~oes adicionais}{51}}
+\@writefile{lof}{\contentsline {figure}{\numberline {5.1}{\ignorespaces Representa\c {c}\~ao do vetor deslocamento $\mathaccentV {vec}17E{u}(P,t)$.}}{52}}
+\newlabel{fig:vetor-deslocamento}{{5.1}{52}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {5.1.3}Vetor deslocamento}{52}}
+\newlabel{eq:pos-deformacao}{{5.8}{52}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {5.1.4}Tensor de deforma\c {c}\~ao}{53}}
+<<<<<<< HEAD
+\newlabel{vdq}{{5.17}{53}}
+\@writefile{lof}{\contentsline {figure}{\numberline {5.2}{\ignorespaces Descri\c {c}\~ao\ da deforma\c {c}\~ao.}}{53}}
+\newlabel{fig:tensor-deformacao}{{5.2}{53}}
+\newlabel{dxidxi}{{5.19}{54}}
+\newlabel{tensorE}{{5.24}{54}}
+\newlabel{def_peq}{{5.25}{54}}
+\newlabel{td}{{5.26}{54}}
+\newlabel{vdq2}{{5.27}{55}}
+||||||| merged common ancestors
+\newlabel{vdq}{{5.16}{53}}
+\@writefile{lof}{\contentsline {figure}{\numberline {5.2}{\ignorespaces Descri\c {c}\~ao\ da deforma\c {c}\~ao.}}{53}}
+\newlabel{fig:tensor-deformacao}{{5.2}{53}}
+\newlabel{dxidxi}{{5.18}{53}}
+\newlabel{tensorE}{{5.23}{54}}
+\newlabel{def_peq}{{5.24}{54}}
+\newlabel{td}{{5.25}{54}}
+\newlabel{vdq2}{{5.26}{54}}
+=======
+\newlabel{vdq}{{5.16}{53}}
+\newlabel{dxidxi}{{5.18}{53}}
+\@writefile{lof}{\contentsline {figure}{\numberline {5.2}{\ignorespaces Descri\c {c}\~ao\ da deforma\c {c}\~ao.}}{54}}
+\newlabel{fig:tensor-deformacao}{{5.2}{54}}
+\newlabel{tensorE}{{5.24}{54}}
+\newlabel{def_peq}{{5.25}{54}}
+\newlabel{td}{{5.26}{54}}
+\newlabel{vdq2}{{5.27}{55}}
+>>>>>>> joao
+\@writefile{toc}{\contentsline {subsection}{\numberline {5.1.5}Tensor de rota\c {c}\~ao}{55}}
+\newlabel{eq:chidx}{{5.28}{55}}
+\newlabel{eq:arotdx}{{5.29}{55}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {5.1.6}Interpreta\c {c}\~ao\ f\'{\i }sica dos elementos do tensor de deforma\c {c}\~ao}{56}}
+\newlabel{cosg}{{5.41}{57}}
+\newlabel{dxQR}{{5.42}{57}}
+\newlabel{app}{{5.43}{57}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {5.1.7}Deforma\c {c}\~oes\ quadr\'aticas}{58}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {5.1.8}Dilata\c {c}\~ao\ de volume}{58}}
+\@writefile{toc}{\contentsline {section}{\numberline {5.2}Tensor de Tens\~ao}{59}}
+\newlabel{tensor_tens}{{5.2}{59}}
+\newlabel{cond_equil}{{5.58}{60}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {5.2.1}Condi\c {c}\~ao de Equil\'{\i }brio}{60}}
+\newlabel{cond_int}{{5.62}{61}}
+\newlabel{eq_equi_back}{{5.63}{61}}
+\newlabel{eq_equi_back2}{{5.64}{61}}
+\newlabel{eq_equi_est}{{5.65}{61}}
+\newlabel{cond_moment}{{5.66}{61}}
+\newlabel{cond_moment1}{{5.68}{62}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {5.2.2}Equa\c {c}\~ao de Movimento}{62}}
+\newlabel{eq_dinam_ger}{{5.71}{62}}
+\newlabel{eq_dinam_pur}{{5.72}{62}}
+\newlabel{eq_dinam}{{5.73}{62}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {5.2.3}Tens\~oes Quadr\'aticas}{63}}
+\@writefile{toc}{\contentsline {section}{\numberline {5.3}Rela\c {c}\~oes Tens\~ao-Deslocamento}{63}}
+\newlabel{rel_tens_def}{{5.76}{63}}
+\newlabel{lei_hooke}{{5.77}{63}}
+\@writefile{toc}{\contentsline {section}{\numberline {5.4}Energia de Deforma\c {c}\~ao}{64}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {5.4.1}Trabalho}{64}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {5.4.2}Energia Cin\'etica}{65}}
+\@writefile{toc}{\contentsline {section}{\numberline {5.5}Fluxo de Energia}{66}}
+\@writefile{toc}{\contentsline {section}{\numberline {5.6}Par\^ametros El\'asticos}{67}}
+\@writefile{toc}{\contentsline {section}{\numberline {5.7}V\'arios tipos de simetria anisotr\'opica}{68}}
+\newlabel{tpelas}{{5.90}{70}}
+\newlabel{lhanis}{{5.91}{70}}
+\newlabel{lhiso}{{5.92}{70}}
+\@writefile{toc}{\contentsline {section}{\numberline {5.8}Par\^ametros El\'asticos para Meios Isotr\'opicos}{71}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {5.8.1}Unidades, Valores Num\'ericos}{72}}
+\@writefile{toc}{\contentsline {section}{\numberline {5.9}Equa\c {c}\~oes\ Elastodin\^amicas}{73}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {5.9.1}Equa\c {c}\~oes\ Elastodin\^amicas para Meios S\'olidos}{73}}
+\newlabel{eqelaiso}{{5.109}{74}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {5.9.2}Equa\c {c}\~oes\ de Movimento para Fluidos - Caso Ac\'ustico}{74}}
+\newlabel{eqondpres}{{5.119}{75}}
+\newlabel{eqondvel}{{5.120}{75}}
+\newlabel{ondaacu}{{5.126}{75}}
+\@writefile{toc}{\contentsline {section}{\numberline {5.10}Meio homog\^eneo e isotr\'opico}{75}}
+\newlabel{eqelahom}{{5.127}{75}}
+\newlabel{div}{{5.128}{76}}
+\newlabel{rot}{{5.129}{76}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {5.10.1}A solu\c {c}\~ao da Equa\c {c}\~ao da Onda Ac\'ustica unidimensional}{78}}
+\newlabel{ondaacu1d}{{5.130}{78}}
+\newlabel{opx}{{5.135}{79}}
+\newlabel{opt}{{5.137}{79}}
+\newlabel{integral}{{5.140}{79}}
+\newlabel{peqonda}{{5.142}{79}}
+\newlabel{condini}{{5.143}{80}}
+\@writefile{toc}{\contentsline {chapter}{\numberline {6}Ondas Planas}{81}}
+\@writefile{lof}{\addvspace {10\p@ }}
+\@writefile{lot}{\addvspace {10\p@ }}
+\newlabel{ondplan}{{6}{81}}
+\@writefile{toc}{\contentsline {section}{\numberline {6.1}Propriedades das ondas planas}{81}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {6.1.1}Onda planas harm\^onicas no tempo}{81}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {6.1.2}Onda planas no dom\'{\i }nio do tempo (ondas planas transientes)}{82}}
+\@writefile{toc}{\contentsline {section}{\numberline {6.2}Ondas planas ac\'usticas transientes}{83}}
+\@writefile{toc}{\contentsline {section}{\numberline {6.3}Ondas planas el\'asticas transientes}{83}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {6.3.1}Meio anisotr\'opico homog\^eneo}{83}}
+\newlabel{Christ_DP}{{6.20}{84}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {6.3.2}Meio isotr\'opico homog\^eneo}{85}}
+\newlabel{M}{{6.31}{86}}
+\@writefile{toc}{\contentsline {section}{\numberline {6.4}Considera\c {c}\~oes\ sobre energia}{88}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {6.4.1}Meio ac\'ustico}{89}}
+\newlabel{enacus}{{6.4.1}{89}}
+\newlabel{enerdef}{{6.53}{89}}
+\newlabel{enercin}{{6.54}{89}}
+\newlabel{fluxo}{{6.55}{89}}
+\newlabel{enerelas}{{6.56}{90}}
+\newlabel{integs}{{6.58}{90}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {6.4.2}Meio anisotr\'opico homog\^eneo}{91}}
+\newlabel{vgmah}{{6.75}{92}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {6.4.3}Meio isotr\'opico homog\^eneo}{93}}
+\@writefile{toc}{\contentsline {section}{\numberline {6.5}Compara\c {c}\~ao\ dos meios anisotr\'opico, isotr\'opico e ac\'ustico}{94}}
+\@writefile{toc}{\contentsline {section}{\numberline {6.6}Ondas Planas Inomog\^eneas}{95}}
+\@writefile{toc}{\contentsline {section}{\numberline {6.7}Condi\c {c}\~oes iniciais e de contorno}{96}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {6.7.1}Condi\c {c}\~oes iniciais}{97}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {6.7.2}Condi\c {c}\~oes de contorno}{97}}
+\@writefile{toc}{\contentsline {section}{\numberline {6.8}Reflex\~ao/transmiss\~ao\ de ondas planas}{99}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {6.8.1}Meio Ac\'ustico}{99}}
+\@writefile{toc}{\contentsline {subsubsection}{Transforma\c {c}\~ao\ do vetor de vagarosidade atrav\'es da interface}{99}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {6.8.2}Meio Isotr\'opico}{102}}
+\newlabel{meioisotr}{{6.8.2}{102}}
+\newlabel{sixcont1}{{6.148}{103}}
+\newlabel{sixcont2}{{6.149}{103}}
+\newlabel{XYZ}{{6.150}{103}}
+\@writefile{toc}{\contentsline {subsubsection}{Transforma\c {c}\~ao do vetor vagarosidade atrav\'es da interface}{104}}
+\newlabel{onda_re/tr}{{6.153}{104}}
+\newlabel{onda_re/tr2}{{6.154}{104}}
+\newlabel{Snell}{{6.155}{104}}
+\@writefile{toc}{\contentsline {subsubsection}{Coeficientes de reflex\~ao e transmiss\~ao}{104}}
+\newlabel{sixcont3}{{6.157}{104}}
+\newlabel{sixcont4}{{6.158}{104}}
+\newlabel{D e E tios P}{{6.159}{104}}
+\newlabel{D e E tios S}{{6.160}{105}}
+\newlabel{Nng1g2}{{6.161}{105}}
+\newlabel{sist1}{{6.162}{105}}
+\newlabel{sist2}{{6.163}{105}}
+\newlabel{sist3}{{6.164}{105}}
+\@writefile{toc}{\contentsline {subsubsection}{Coeficientes de reflex\~ao de superf\'{\i }cie livre}{106}}
+\@writefile{toc}{\contentsline {section}{\numberline {6.9}Coeficientes de reflex\~ao/transmiss\~ao}{107}}
+\newlabel{coef}{{6.168}{107}}
+\@writefile{toc}{\contentsline {section}{\numberline {6.10}Propriedades dos coeficientes de reflex\~ao/transmiss\~ao}{109}}
+\@writefile{toc}{\contentsline {section}{\numberline {6.11}Considera\c {c}\~oes\ energ\'eticas}{111}}
+\newlabel{fluxopl}{{6.169}{111}}
+\@writefile{toc}{\contentsline {section}{\numberline {6.12}Mudan\c cas da forma das ondas geradas}{112}}
+\@writefile{toc}{\contentsline {section}{\numberline {6.13}Absor\c {c}\~ao\ e dispers\~ao}{112}}
+\@writefile{toc}{\contentsline {section}{\numberline {6.14}Equa\c {c}\~ao\ Ac\'ustica em coordenadas Cartesianas}{117}}
+\newlabel{helmholtz}{{6.205}{117}}
+\newlabel{candidata}{{6.206}{118}}
+\newlabel{ohxyz}{{6.209}{118}}
+\newlabel{solcconst}{{6.218}{119}}
+\@writefile{toc}{\contentsline {section}{\numberline {6.15}Extrapola\c {c}\~ao\ do campo de onda}{120}}
+\newlabel{extra}{{6.15}{120}}
+\@writefile{toc}{\contentsline {section}{\numberline {6.16}Expans\~ao\ de uma onda esf\'erica em ondas planas}{121}}
+\bibcite{aki}{1}
+\bibcite{Butkov}{2}
+\bibcite{Capelas}{3}
+\bibcite{Djairo}{4}
+\bibcite{valeria}{5}
+\bibcite{marina}{6}
+\bibcite{moura}{7}
+\bibcite{Psencik}{8}
+\bibcite{symon}{9}

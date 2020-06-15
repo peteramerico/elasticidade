@@ -1,4 +1,4 @@
-\babel@toc {brazil}{}
+\select@language {brazil}
 \contentsline {chapter}{\numberline {1}Introdu\c {c}\~ao}{4}
 \contentsline {section}{\numberline {1.1}O que \'e uma onda?}{4}
 \contentsline {section}{\numberline {1.2}Formas de propaga\c {c}\~ao}{5}
@@ -48,7 +48,7 @@
 \contentsline {subsection}{\numberline {5.1.7}Deforma\c {c}\~oes\ quadr\'aticas}{58}
 \contentsline {subsection}{\numberline {5.1.8}Dilata\c {c}\~ao\ de volume}{58}
 \contentsline {section}{\numberline {5.2}Tensor de Tens\~ao}{59}
-\contentsline {subsection}{\numberline {5.2.1}Condi\c {c}\~ao de Equil\'{\i }brio}{60}
+\contentsline {subsection}{\numberline {5.2.1}Condi\c {c}\~ao de Equil\'{\i }brio}{61}
 \contentsline {subsection}{\numberline {5.2.2}Equa\c {c}\~ao de Movimento}{62}
 \contentsline {subsection}{\numberline {5.2.3}Tens\~oes Quadr\'aticas}{63}
 \contentsline {section}{\numberline {5.3}Rela\c {c}\~oes Tens\~ao-Deslocamento}{63}

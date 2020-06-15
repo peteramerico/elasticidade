@@ -195,7 +195,7 @@ vetor deslocamento $u_i(P)$. Segue, por aproxima\cao\ de Taylor de
 primeira ordem, em torno de $x_k$ (uma vez que $dx_i$ \'e supostamente infinitesimalmente
 pequeno), que
 \begin{eqnarray} \label{vdq}
-u_i(Q) = u_i(x_k+dx_k) \sim u_i(x_k) +
+u_i(Q) = u_i(x_k+dx_k) \approx u_i(x_k) +
 \frac{\partial u_i(x_k)}
 {\partial x_j} (x_k + dx_j - x_k) \nonumber \\
  = u_i(x_k) +\frac{\partial u_i(x_k)}
@@ -204,30 +204,6 @@ u_i(Q) = u_i(x_k+dx_k) \sim u_i(x_k) +
 \end{eqnarray}
 para todos os pontos $Q$ na vizinhan\ca\ de $P$.
 
-\begin{figure}[h!]
-\centering
-\begin{tikzpicture}
-\draw[thick,->] (0,0) -- (1.5,0);% node[anchor=north west] {$P'$};
-\draw[thick,->] (0,0) -- (1,2);% node[anchor=north east] {$Q$};
-\draw[thick,->] (1,2) -- (3.5,2);% node[anchor=north west] {$Q'$};
-\draw[thick,->] (1.5,0) -- (3.5,2);% node[above] {$\vec{u}(P,t)$};
-\draw[thick,->] (-0.5,-1) -- (0,0);% node[above] {$P$};
-\draw[thick,->] (0.5,-1) -- (1.5,0);% node[above] {$P'$};
-\draw[thick, dashed] (0,0) -- (3.5,2) node [midway, above, sloped] (TextNode) {\scriptsize $d\vec{x} + \vec{u}(Q)$};
-\node      (a)         at (2,2.4) {$\vec{u}(Q)$};
-\node      (b)         at (0,1) {$d\vec{x}$};
-\node      (c)         at (2.7,0.7) {$d\vec{x}'$};
-\node      (d)         at (-0.6,-0.5) {$\vec{x}$};
-\node      (e)         at (1.3,-0.7) {$\vec{x}'$};
-\node      (f)         at (0.5,-0.3) {$\vec{u}(P)$};
-\node      (g)         at (-0.4,0) {$P$};
-\node      (h)         at (0.8,2.3) {$Q$};
-\node      (i)         at (3.8,2.3) {$Q'$};
-\node      (j)         at (2,0) {$P'$};
-\end{tikzpicture}
-\caption{Descri\cao\ da deforma\cao.}
-\label{fig:tensor-deformacao}
-\end{figure}
 
 Agora investigamos a mudan\ca\ da dist\^ancia entre os pontos
 $P$ e $Q$ devido a deforma\cao. Para isso fazemos a
@@ -239,14 +215,18 @@ Para $\overline{PQ}^2$, n\'os temos
 \end{eqnarray}
 Para determinarmos $dx_i'$, observamos que
 \begin{eqnarray}
-dx_i' = dx_i + u_i(Q) - u_i(P) \sim dx_i +
-\frac{\partial u_i(P)}{\partial x_j} dx_j \; .
+dx_i' = dx_i + u_i(Q) - u_i(P)\; ,
 \label{dxidxi}
 \end{eqnarray}
+expandindo $u_i(Q)$ e usando uma aproxima\c{c}\~ao linear temos
+\begin{equation}
+  dx_i' \approx dx_i + \frac{\partial u_i(P)}{\partial dx_j}dx_j \, .
+\end{equation}
+
 
 Logo, para $\overline{P'Q'}^2$, temos
 \begin{eqnarray}
-\overline{P'Q'}^2 = dx_i' \; dx_i' &\sim& \left(dx_i +
+\overline{P'Q'}^2 = dx_i' \; dx_i' &\approx & \left(dx_i +
 \frac{\partial u_i}{\partial x_j} dx_j\right) \left(dx_i +
 \frac{\partial u_i}{\partial x_k} dx_k\right) \\
 &=& dx_i dx_i +  \frac{\partial u_i}{\partial x_j} dx_j
@@ -258,9 +238,9 @@ dx_i + \frac{\partial u_i}{\partial x_k} dx_k  dx_i
 {\partial x_j} \frac{\partial u_i}{\partial x_k}\right)
 dx_j dx_k \; .
 \end{eqnarray}
-Para $\overline{P'Q'}^2 - \overline{PQ}^2$, chegamos em
+Para $\overline{P'Q'}^2 - \overline{PQ}^2$, chegamos a
 \begin{eqnarray}
-\overline{P'Q'}^2 - \overline{PQ}^2 \sim 2 E_{jk}
+\overline{P'Q'}^2 - \overline{PQ}^2 \approx 2 E_{jk}
 dx_j dx_k \; ,
 \end{eqnarray}
 onde
@@ -280,6 +260,36 @@ especificado por somente 6 componentes independentes. Por
 causa do terceiro termo em (\ref{tensorE}), o tensor de
 deforma\cao\ finita \'e considerado n\ao\ linear.
 
+\begin{figure}[!tb]
+\centering
+  \begin{tikzpicture}[scale=1.5]
+\coordinate      (x)         at (-0.9,-1.2);
+\coordinate      (x')         at (0.4,-1.2);
+\coordinate      (P)         at (-0.4,0);
+\coordinate      (Q)         at (0.8,2.3);
+\coordinate      (Q')         at (3.8,2.3);
+\coordinate      (P')         at (2,0);
+    \coordinate (angle1) at ($(P)!0.3!(Q)$);
+    \coordinate (angle2) at ($(P)!0.23!(Q')$);
+    \draw[dashed,->] (angle1) to[bend left] node[midway,below left]{\small$\alpha$} (angle2) ;
+    \node[left] at (P) {$P$};
+    \node[above left] at (Q) {$Q$};
+    \node[right] at (P') {$P'$};
+    \node[above right] at (Q') {$Q'$};
+    \node[below] at (x) {$x$};
+    \node[below left] at (x') {$x'$};
+    \draw[thick,->] (P) -- (P') node[midway,below,sloped]{$u(P)$};
+    \draw[thick,->] (P) -- (Q) node[midway,above,sloped](dx){$dx$};
+\draw[thick,->] (Q) -- (Q') node[midway,above,sloped]{$u(Q)$};
+\draw[thick,->] (P') -- (Q') node[midway,below,sloped]{$dx'$};
+\draw[thick,->] (x) -- (P);
+\draw[thick,->] (x') -- (P');
+\draw[thick] (P) -- (Q') 
+  node [midway, above, sloped] (TextNode) {\small $d\vec{x} + \vec{u}(Q)$};
+\end{tikzpicture}
+\caption{Descri\cao\ da deforma\cao.}
+\label{fig:tensor-deformacao}
+\end{figure}
 Mas, aqui, consideramos somente processos de ondas
 em que a deforma\cao\ seja pequena, isto \'e,
 \begin{eqnarray}
@@ -352,6 +362,7 @@ dx_3
 \xi_{31} dx_1 + \xi_{32} dx_2
 \end{array}
 \right) \;
+  \label{eq:chidx}
 \end{eqnarray}
 pode ser representado como produto vetorial de um vetor
 $\vec{a}$  com $d\vec{x}$:
@@ -369,18 +380,19 @@ a_2 dx_3 - a_3 dx_2 \\
 a_1 dx_2 - a_2 dx_1
 \end{array}
 \right) \; .
+  \label{eq:arotdx}
 \end{eqnarray}
 
-Basta identificarmos:
+Para que as equa\c{c}\~oes \ref{eq:chidx} e \ref{eq:arotdx} sejam consistentes, temos que
 \begin{eqnarray}
 \left\{
 \begin{array}{ccccc}
-a_1 & = & -\xi_{23} & = & \xi_{32} \\
-a_2 & = & \xi_{13} & = & -\xi_{31} \\
-a_3 & = & -\xi_{12} & = & \xi_{21}
+a_1 & = & -\xi_{23} & = & \xi_{32} \, , \\
+a_2 & = & \xi_{13} & = & -\xi_{31}\, ,  \\
+a_3 & = & -\xi_{12} & = & \xi_{21} \, ,
 \end{array} \right.
 \end{eqnarray}
-que reflete corretamente a anti-simetria de $\Xi$.
+perceba que a anti-simetria de $\Xi$ \'e corretamente descrita.
 Observamos ainda que
 \begin{eqnarray}
 \vec{a} = \left(
@@ -398,40 +410,40 @@ Observamos ainda que
 \frac{\partial u_2}{\partial x_1}-\frac{\partial u_1}
 {\partial x_2}
 \end{array} \right)
-= \frac{1}{2} \; \mbox{rot} \; \vec{u} \; .
+= \frac{1}{2} \; \nabla \times \; \vec{u} \; .
 \end{eqnarray}
-Portanto, $\Xi d\vec{x} = \frac{1}{2} \; \mbox{rot}
+Portanto, $\Xi d\vec{x} = \frac{1}{2} \; \nabla \times
 \;\vec{u} \times d\vec{x}$.
 
 Assim, quando n\ao\ temos nem transla\cao\ ($u_i(P)=0$) nem deforma\cao\
 ($e_{ij}=0$), a equa\cao\ (\ref{vdq2}) pode ser escrita como
 \begin{eqnarray}
 u_i(Q) = \xi_{ij} dx_j \; \; \; \Longrightarrow \; \; \;
-\vec{u}(Q) = \frac{1}{2} \;\mbox{rot}\; \vec{u}\times
+\vec{u}(Q) = \frac{1}{2} \;\nabla \times \; \vec{u}\times
 d\vec{x} \; ,
 \end{eqnarray}
 que \'e perpendicular a $d\vec{x}$.
-Logo, neste caso a equa\cao\ (\ref{dxidxi}
+Logo, neste caso a equa\cao\ \ref{dxidxi}
 tem a forma
 \begin{eqnarray}
-d\vec{x}' = d\vec{x} + \frac{1}{2} \;\mbox{rot}\; \vec{u}\times
+  d\vec{x}' = d\vec{x} + \frac{1}{2} \;\nabla \times \; \vec{u}\times
 d\vec{x} \; .
 \end{eqnarray}
 No tri\^angulo $PQQ'$, observamos, para $|\partial u_i/\partial x_j|\ll 1$,
 que $\overline{QQ'} = \tan \alpha |d\vec{x}| \approx
 \alpha |d\vec{x}|$, onde $\alpha$ denota o \^angulo entre $PQ$ e $PQ'$.
 Mas, por outro lado, $\overline{QQ'} = |\vec{u}(Q)|=
-\mbox{$|\frac{1}{2} \; \mbox{rot} \; \vec{u} \times
-d\vec{x}|$} = |\frac{1}{2} \; \mbox{rot} \; \vec{u}|
+\mbox{$|\frac{1}{2} \; \nabla \times \; \vec{u} \times
+d\vec{x}|$} = |\frac{1}{2} \; \nabla \times \; \vec{u}|
 |d\vec{x}| \sin \frac{\pi}{2}$. Logo, $\alpha \approx
-|\frac{1}{2} \mbox{rot} \; \vec{u}|$. 
+|\frac{1}{2} \nabla \times \; \vec{u}|$. 
 
-Desta forma, vimos que o \^angulo $\alpha$ que a desloca\cao\ de $Q$
-para $Q'$ cobra depende somente do rotacional do vetor deslocamento. Em
+Desta forma, vimos que o \^angulo $\alpha$ --- causado pelo deslocamento de $Q$
+para $Q'$ --- depende somente do rotacional do vetor deslocamento. Em
 particular, n\ao\ depende da posi\cao\ original de $Q$ em rela\cao\ a
 $P$, descrita por $dx_i$. Isso implica que o \^angulo $\alpha$ \'e o
 mesmo para todos os pontos $Q$ na vizinhan\ca\ de $P$.
-Conseq\"uentemente, o terceiro termo da equa\cao\ (\ref{vdq2}) descreve
+Portanto, o terceiro termo da equa\cao\ (\ref{vdq2}) descreve
 uma rota\cao\ de todos os pontos $Q$ em volta de $P$ pelo \^angulo
 $\alpha$.
 
@@ -454,12 +466,12 @@ $x_1$, temos $dx_i = (dx_1,0,0)$ e $\overline{PQ} = dx_1$.
 Da defini\cao\ de deforma\cao\ (pequena), chegamos, no
 nosso caso, em
 \begin{eqnarray}
-\overline{P'Q'}^2 -\overline{PQ}^2 \sim 2e_{ij}dx_idx_j
+\overline{P'Q'}^2 -\overline{PQ}^2 \approx  2e_{ij}dx_idx_j
 = 2e_{11}(dx_1)^2 \; ,
 \end{eqnarray}
 de onde podemos concluir que
 \begin{eqnarray}
-\overline{P'Q'} \sim \sqrt{1 + 2 e_{11}} dx_1 \; .
+\overline{P'Q'} \approx  \sqrt{1 + 2 e_{11}}\,dx_1 \; .
 \end{eqnarray}
 
 Se n\'os definirmos a extens\ao\ relativa como
@@ -467,12 +479,13 @@ $(\overline{P'Q'}-\overline{PQ}) / \overline{PQ}$ e usarmos
 a aproxima\cao\ de Taylor de primeira ordem na raiz quadrada, i.e.,
 $\sqrt{y}\approx 1 + \frac{1}{2}y$, temos a aproxima\cao
 \begin{eqnarray}
-e_r \sim \frac{\sqrt{1+2 e_{11}} dx_1-dx_1}{dx_1}
+e_r \approx  \frac{\sqrt{1+2 e_{11}}\,dx_1-dx_1}{dx_1}
 = \sqrt{1+2 e_{11}} - 1 \approx e_{11} \; .
 \end{eqnarray}
 
 Ent\ao\ o elemento $e_{11}$ do tensor de deforma\cao\
-representa aproximadamente a extens\ao\ (contra\cao)
+    representa aproximadamente a extens\~ao ($e_{11}>0$) ou contra\c{c}\~ao
+    ($e_{11}<0$)
 relativa do material ao longo do eixo $x_1$. As
 componentes $e_{22}$ e $e_{33}$ tem interpreta\coes\
 similares.
@@ -484,18 +497,18 @@ Vamos considerar dois pontos $Q$ e $R$ nas proximidades
 do ponto $P$. Vamos especificar os pontos $Q$ e $R$ no
 estado inicial da seguinte maneira:
 \begin{eqnarray}
-dx_i^{Q}=(dx_1,0,0) \hspace{0.5cm}, \hspace{0.5cm} dx_i^{R}
+dx_i^{Q}=(dx_1,0,0)\, , \quad dx_i^{R}
 =(0,dx_2,0) \; .
 \end{eqnarray}
-Ent\ao, os vetores $dx_i^Q$ e $dx_i^R$ s\ao\ perpendiculares.
+Isso implica que os vetores $dx_i^Q$ e $dx_i^R$ s\ao\ perpendiculares.
 Depois da deforma\cao, os pontos $Q$ e $R$ ser\ao\ movidos
-para novas posi\coes\ expecificadas pelas aproxima\coes\
+para novas posi\coes\ especificadas pelas aproxima\coes\
 seguintes
 \begin{eqnarray}
-dx_i^{'Q} \sim dx_1 \delta_{1i} + \frac{\partial u_i}
+dx_i^{'Q} \approx  dx_1 \delta_{1i} + \frac{\partial u_i}
 {\partial x_1} dx_1
-\hspace{0.5cm}, \hspace{0.5cm}
-dx_i^{'R} \sim dx_2 \delta_{i2} + \frac{\partial u_i}
+\, , \quad
+dx_i^{'R} \approx  dx_2 \delta_{i2} + \frac{\partial u_i}
 {\partial x_2} dx_2 \; .
 \end{eqnarray}
 
@@ -504,7 +517,7 @@ das linhas $\overline{PQ}$ e $\overline{PR}$, que s\ao\
 originalmente perpendiculares. Para isto propomos, considerar o
 produto escalar dos vetores $dx_i^{'Q}$ e $dx_i^{'R}$ dado por
 \begin{eqnarray}
-dx_i^{'Q} dx_i^{'R} \sim \left( \frac{\partial u_2}{\partial x_1}
+dx_i^{'Q} dx_i^{'R} \approx  \left( \frac{\partial u_2}{\partial x_1}
 + \frac{\partial u_1}{\partial x_2}\right) dx_1 dx_2 +
 \frac{\partial u_i}{\partial x_1}  \frac{\partial u_i}
 {\partial x_2} dx_1 dx_2 \; .
@@ -517,12 +530,12 @@ $|\partial u_i/ \partial x_j|$.
 Do produto interno sabemos que
 \begin{eqnarray}
 dx_i^{'Q} dx_i^{'R} = |dx_i^{'Q}| |dx_i^{'R}| \cos(\gamma)
-\sim 2e_{12}dx_1 dx_2 \; ,
+\approx  2e_{12}dx_1 dx_2 \; ,
 \end{eqnarray}
 onde $\gamma$ \'e o \^angulo entre os vetores $dx_i^{'Q}$ e
 $dx_i^{'R}$. Logo,
 \begin{eqnarray} \label{cosg}
-\cos(\gamma) \sim \frac{2e_{12}dx_1 dx_2}{|dx_i^{'Q}|
+\cos(\gamma) \approx  \frac{2e_{12}dx_1 dx_2}{|dx_i^{'Q}|
 |dx_i^{'R}|} \; .
 \end{eqnarray}
 
@@ -544,7 +557,7 @@ raiz quadrada, temos
 Assim, substituindo as express\oes\ de (\ref{dxQR}) em (\ref{cosg})
 obtemos
 \begin{eqnarray} \label{app}
-\cos(\gamma) \sim \frac{2e_{12}dx_1 dx_2}{|dx_i^{'Q}|
+\cos(\gamma) \approx  \frac{2e_{12}dx_1 dx_2}{|dx_i^{'Q}|
 |dx_i^{'R}|} &\approx& \frac{2e_{12}dx_1 dx_2}{\left(1+\frac{\partial u_1}
 {\partial x_1}\right) \left(1+\frac{\partial u_2}{\partial x_2}
 \right) dx_1  dx_2} = \frac{2e_{12}}{1 + \frac{\partial u_1}
@@ -556,11 +569,11 @@ obtemos
 Se chamamos $\alpha_{12} = \frac{\pi}{2} - \gamma$, temos,
 equa\cao\ (\ref{app}),
 \begin{eqnarray}
-\sin \alpha_{12} \sim \alpha_{12} \approx 2e_{12} \;\;\;\Rightarrow
+\sin \alpha_{12} \approx  \alpha_{12} \approx 2e_{12} \;\;\;\Rightarrow
 \;\;\; e_{12} \approx \frac{1}{2} \alpha_{12} \; ,
 \end{eqnarray}
-pois a aproxima\cao\ $\sin \alpha_{12} \sim \alpha_{12}$ \'e
-poss\ih vel j\'a que $\gamma \sim \frac{\pi}{2} \Rightarrow
+pois a aproxima\cao\ $\sin \alpha_{12} \approx  \alpha_{12}$ \'e
+poss\ih vel j\'a que $\gamma \approx  \frac{\pi}{2} \Rightarrow
 \alpha_{12} \ll 1$.
 
 Ent\ao, o elemento $e_{12}$ do tensor de deforma\cao\ representa
@@ -608,26 +621,26 @@ dV' = dx_1' dx_2' dx_3' \; .
 
 Para $dx_i'$ n\'os derivamos sobre
 \begin{eqnarray}
-dx_i' \sim dx_i + \frac{\partial u_i}{\partial x_k} dx_k \; .
+dx_i' \approx  dx_i + \frac{\partial u_i}{\partial x_k} dx_k \; .
 \end{eqnarray}
 
 Em nosso sistema de coordenadas isto dar\'a para $dx_i'$
 (no sistema principal, as deforma\coes\ de cisalhamento
 s\ao\ zero),
 \begin{eqnarray}
-dx_1' \sim dx_1 + \frac{\partial u_1}{\partial x_1} dx_1
+dx_1' \approx  dx_1 + \frac{\partial u_1}{\partial x_1} dx_1
 = dx_1(1+e_{11}) \;,
 \end{eqnarray}
 e similarmente para $dx_2'$ e $dx_3'$. Para $dV'$ temos
 \begin{eqnarray}
-dV' \sim (1+e_{11})(1+e_{22})(1+e_{33})dx_1 dx_2 dx_3
-\sim dV + (e_{11} + e_{22} + e_{33}) dV \; ,
+dV' \approx  (1+e_{11})(1+e_{22})(1+e_{33})dx_1 dx_2 dx_3
+\approx  dV + (e_{11} + e_{22} + e_{33}) dV \; ,
 \end{eqnarray}
 onde foi ignorado os temos de maior ordem (como
 $e_{11}e_{22}, ...$). Logo,
 \begin{eqnarray}
 \theta = \mbox{div}\; \vec{u} = (e_{11} + e_{22} + e_{33})
-\sim \frac{dV'-dV}{dV} \; .
+\approx  \frac{dV'-dV}{dV} \; .
 \end{eqnarray}
 
 A quantidade $\theta$ \'e chamada de {\it dilata\cao\ de
