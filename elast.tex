@@ -67,16 +67,15 @@ ou
   P_i' = x_i'(x_k,t) \quad k=1,2,3 \label{eq:lagrangeana}
 \end{equation}
 representa a posi\c{c}\~ao das part\'iculas $P$ ap\'os a deforma\c{c}\~ao. 
-Esta maneira maneira de descrever o movimento
+Esta maneira de descrever o movimento
 \'e denominada de descri\c{c}\~ao Lagrangeana ou descri\c{c}\~ao material do
-movimento. $P'$ descreve o movimento da perspectiva da part\'icula $P$, ou em outras palavras,
-seguimos o movimento da part\'icula $P$.
-Tomando $t = 0 \equiv t_0$ como o tempo de refer\^encia inicial, de tal forma
+movimento. $P'$ descreve o movimento da perspectiva da part\'icula $P$.
+Tomando $t = 0 \equiv t_0$ como o tempo de refer\^encia inicial, temos
 que
 \begin{equation}
-  P'(P,t_0) \equiv P \, ,
+  P'(P,t_0) \equiv P \, .
 \end{equation}
-e $P'(P,t)$ \'e a posi\c{c}\~ao atual da part\'icula que estava em $P$ no tempo
+Enquanto $P'(P,t)$ \'e a posi\c{c}\~ao atual da part\'icula que estava em $P$ no tempo
 $t=0$.
 
 Podemos, tamb\'em, descrever $P$ em fun\c{c}\~ao de $P'$, como
@@ -88,7 +87,7 @@ descri\c{c}\~ao espacial. Nesta forma, estamos interessados na part\'icula que
 ocupa um dado ponto $x_ i'$ no espa\c{c}o no tempo $t$.
 
 \subsubsection{Considera\c{c}\~oes adicionais}
-Utilizando a descri\c{c}\~ao euleriana e seja $f'(x_i',t)$, uma fun\c{c}\~ao que
+Utilizando a descri\c{c}\~ao euleriana e seja $f'(x_i',t)$ uma fun\c{c}\~ao que
 descreve o valor de uma propriedade do meio (e.g., press\~ao, temperatura,
 velocidade) em um dado ponto $x_i'$ no tempo $t$. Ao variarmos $t$,
 diferentes part\'iculas (identificadas por diferentes valores de $x_i$) ocupam o
@@ -182,14 +181,16 @@ Desenvolvendo de maneira similar, temos
   +\frac{\partial u_i}{\partial t} = \frac{\partial u_i}{\partial t} +
   (\vec{v}\cdot\nabla)u_i \, .
 \end{align}
+
 \subsection{Tensor de deforma\cao}
 
 Em adi\cao\ ao ponto $P$, n\'os consideramos agora um ponto
 $Q=(x_1+dx_1,x_2+dx_2,x_3+dx_3)$ situado nas proximidades do
-ponto $P$, estando o material ainda n\ao\ deformado. O
-ponto $Q$ ser\'a movido durante a deforma\cao\ para o ponto
+ponto $P=(x_1,x_2,x_3)$, estando o material ainda n\ao\ deformado. O
+ponto $P$ ser\'a movido para o ponto $P'=(x_1',x_2',x_3')$ e o ponto
+$Q$ ser\'a movido durante a deforma\cao\ para o ponto
 $Q'=(x_1'+dx_1',x_2'+dx_2',x_3'+dx_3')$ (ver figura \ref{fig:tensor-deformacao}). O vetor
-deslocamento do ponto $Q$ pode ser expresso em termos do
+deslocamento de $Q$ para $Q'$, $u_i(Q)$, pode ser expresso em termos do
 vetor deslocamento $u_i(P)$. Segue, por aproxima\cao\ de Taylor de
 primeira ordem, em torno de $x_k$ (uma vez que $dx_i$ \'e supostamente infinitesimalmente
 pequeno), que
@@ -286,7 +287,7 @@ em que a deforma\cao\ seja pequena, isto \'e,
 \label{def_peq}
 \end{eqnarray}
 Logo, \'e poss\ih vel desconsiderar o termo n\ao\ linear
-na express\ao\ (\ref{tensorE}) desde que \'e da segunda
+na express\ao\ (\ref{tensorE}), uma vez que \'e de segunda
 ondem com respeito a  $|\partial u_i / \partial x_j|$.
 Apesar desta lineariza\cao\ simplificar as opera\coes\
 matem\'aticas devemos manter a aproxima\cao\ acima sempre
