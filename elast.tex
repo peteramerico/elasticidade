@@ -606,39 +606,38 @@ que depois da deforma\cao, $dV$ mudar\'a para $dV'$
 dV' = dx_1' dx_2' dx_3' \; .
 \end{eqnarray}
 
-Para $dx_i'$ n\'os derivamos sobre
+Relembrando $dx_i'$, que encontramos na
+equa\cao\ \ref{dxidxi}:
 \begin{eqnarray}
-dx_i' \sim dx_i + \frac{\partial u_i}{\partial x_k} dx_k \; .
+dx_i' \approx dx_i + \frac{\partial u_i}{\partial x_k} dx_k \; .
 \end{eqnarray}
-
-Em nosso sistema de coordenadas isto dar\'a para $dx_i'$
-(no sistema principal, as deforma\coes\ de cisalhamento
-s\ao\ zero),
+Em nosso sistema de coordenadas temos para $dx_1'$
+(as deforma\coes\ de cisalhamento s\ao\ zero),
 \begin{eqnarray}
-dx_1' \sim dx_1 + \frac{\partial u_1}{\partial x_1} dx_1
+dx_1' \approx dx_1 + \frac{\partial u_1}{\partial x_1} dx_1
 = dx_1(1+e_{11}) \;,
 \end{eqnarray}
-e similarmente para $dx_2'$ e $dx_3'$. Para $dV'$ temos
+e similarmente para $dx_2'$ e $dx_3'$. Podemos ent\~ao escrever $dV'$ como
 \begin{eqnarray}
-dV' \sim (1+e_{11})(1+e_{22})(1+e_{33})dx_1 dx_2 dx_3
-\sim dV + (e_{11} + e_{22} + e_{33}) dV \; ,
+dV' \approx (1+e_{11})(1+e_{22})(1+e_{33})dx_1 dx_2 dx_3
+\approx dV + (e_{11} + e_{22} + e_{33}) dV \; ,
 \end{eqnarray}
-onde foi ignorado os temos de maior ordem (como
+onde foram ignorados os termos de maior ordem (como
 $e_{11}e_{22}, ...$). Logo,
 \begin{eqnarray}
 \theta = \mbox{div}\; \vec{u} = (e_{11} + e_{22} + e_{33})
-\sim \frac{dV'-dV}{dV} \; .
+\approx \frac{dV'-dV}{dV} \; .
 \end{eqnarray}
 
 A quantidade $\theta$ \'e chamada de {\it dilata\cao\ de
-volume} ou abreviadamente {\it dilata\cao}. Ela representa
+volume} ou, abreviadamente, {\it dilata\cao}. Ela representa
 aproximadamente a mudan\ca\ relativa do volume durante a
-deforma\cao. Ela n\ao\ depende das deforma\coes\ de cisalhamento
-$e_{12}$, $e_{13}$ e $e_{23}$ porque um cisalhamento n\ao\ altera o
+deforma\cao\ e n\ao\ depende das deforma\coes\ de cisalhamento
+$e_{12}$, $e_{13}$ e $e_{23}$, pois o cisalhamento n\ao\ altera o
 volume de um corpo. Como $\theta$ \'e o tra\c co do tensor de
-deforma\cao\ que \'e invariante sob transforma\cao\ de
+deforma\cao, que \'e invariante sob transforma\cao\ de
 coordenadas, temos que $\theta$ descreve a dilata\cao\ 
-de volume em qualquer sistema de coordenadas cartesianas.
+de volume em qualquer sistema de coordenadas. %cartesianas.
 
 
 %\begin{thebibliography}{99}

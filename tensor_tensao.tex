@@ -1,22 +1,31 @@
 \section{Tensor de Tens\~ao}
 \label{tensor_tens}
 
-A resist\^encia que um material tem em sofrer deforma\c{c}\~oes
-\'e causada por for\c{c}as, as quais s\~ao chamadas de {\it
-tens\~oes internas}. Assim, quando n\~ao h\'a deforma\c{c}\~ao,
-elas s\~ao nulas. O raio de a\c{c}\~ao dessas for\c{c}as \'e
-pequeno. Podemos pensar que essa regi\~ao de a\c{c}\~ao gera uma
-superf\'{\i}cie imagin\'aria, dividindo um elemento de volume
-deformado do corpo do restante deste. Por causa disto, elas
-tamb\'em s\~ao conhecidas como {\it for\c{c}as de
-superf\'{\i}cie}.
+A resist\^encia que um material tem a sofrer deforma\c{c}\~oes
+\'e causada por for\c{c}as chamadas de {\it
+tens\~oes internas}. Assim, no estado sem deforma\c{c}\~ao,
+essas for\c{c}as s\~ao nulas. Elas aparecem ap\'os a aplica\cao\
+da for\c{c}a causadora da deforma\cao\ e tendem a preveni-la.
+As tens\~oes internas existem somente entre part\'iculas vizinhas
+do material, que est\~ao em contato direto. Por esse motivo,
+s\~ao tamb\'em chamadas de for\c{c}as de contato.
+O raio de a\c{c}\~ao dessas for\c{c}as \'e muito
+pequeno. Podemos pensar que essas for\c{c}as agem atrav\'es de uma
+superf\'{\i}cie ``imagin\'aria'', dividindo um elemento de volume
+do corpo deformado do restante deste. Por causa disto, as tens\~oes
+internas tamb\'em s\~ao conhecidas como {\it for\c{c}as de
+superf\'{\i}cie}. Um exemplo desse tipo de for\c{c}a \'e a press\~ao
+hidrost\'atica.
 
-O elemento de volume considerado  tamb\'em pode ser afetado por
-for\c{c}as de alto raio de a\c{c}\~ao, como \'e o caso das
-for\c{c}as gravitacional e eletromagn\'etica.
+O elemento de volume considerado tamb\'em pode ser afetado por
+for\c{c}as com raio de a\c{c}\~ao maior, como \'e o caso das
+for\c{c}as gravitacional e eletromagn\'etica. Uma vez que essas
+for\c{c}as, geralmente, s\~ao proporcionais ao volume do material,
+elas s\~ao chamadas de for\c{c}as de volume ou de corpo. Uma fonte
+s\'ismica tamb\'em \'e um exemplo de uma for\c{c}a de volume.
 
 Vamos considerar um elemento de volume $\Delta V$, de um material
-deformado cortado por uma superf\'{\i}cie $\Delta S$ t\~ao
+deformado interceptado por uma superf\'{\i}cie $\Delta S$ t\~ao
 pequena, que as for\c{c}as de superf\'{\i}cie agindo sobre $\Delta
 S$ podem ser substitu\'{\i}das por uma for\c{c}a equivalente
 $\Delta \vec{T}$ agindo sobre $\Delta S$. Definimos ent\~ao,
@@ -24,25 +33,28 @@ $\Delta \vec{T}$ agindo sobre $\Delta S$. Definimos ent\~ao,
 \vec{T} = \lim_{\Delta S \rightarrow 0} {\Delta \vec{T} / \Delta
 S}\;, \end{equation} onde $\vec{T}$ \'e o {\it vetor de tens\~ao}
 ou {\it tra\c{c}\~ao}. Daqui por diante, quando tratarmos sobre
-tens\~ao, estaremos tratando da densidade destas for\c{c}as, ou
-seja, densidade das for\c{c}as superficiais.
+tens\~ao, estaremos tratando da densidade das for\c{c}as superficiais.
 
 A tra\c{c}\~ao $\vec{T}$ depende da orienta\c{c}\~ao da
-superf\'{\i}cie $\Delta S$ num ponto dado. Vamos ent\~ao denotar a
+superf\'{\i}cie $\Delta S$ num dado ponto. Vamos ent\~ao denotar a
 tra\c{c}\~ao que age sobre uma superf\'{\i}cie $\Delta S$ com
 normal unit\'aria $\vec{n}$ por $\vec{T}(\vec{n})$. Pelo
 princ\'{\i}pio da a\c{c}\~ao e rea\c{c}\~ao, a tra\c{c}\~ao
 $\vec{T}(-\vec{n})$ agindo no outro lado da superf\'{\i}cie
-$\Delta S$ deve ser da forma
+$\Delta S$ deve ser de mesma intensidade, mas orienta\cao\ oposta
 \begin{equation}
 \vec{T}(-\vec{n})=-\vec{T}(\vec{n})\;.
 \end{equation}
 
 A tra\c{c}\~ao geralmente n\~ao coincide com a dire\c{c}\~ao da
-normal $\vec{n}$. A componente de $\vec{T}(\vec{n})$ na normal
-$\vec{n}$ \'e chamada {\it tens\~ao}, quando $\vec{T}(\vec{n})$
+normal $\vec{n}$. Por\'em, ela pode ser projetada na normal e
+na superf\'icie. A componente de $\vec{T}(\vec{n})$ na normal
+$\vec{n}$ \'e chamada {\it tens\~ao} normal, quando $\vec{T}(\vec{n})$
 tende a separar as duas partes do elemento de volume, ou {\it
-press\~ao} no caso contr\'ario.
+press\~ao} no caso contr\'ario. Os componentes tangentes
+a superf\'icie $\Delta S$ s\~ao chamados de tens\~ao de cisalhamento.
+
+
 
 Vamos introduzir as componentes de tens\~ao $\tau_{ij}$ como as
 componentes da tra\c{c}\~ao agindo sobre um elemento de
@@ -54,27 +66,48 @@ de tens\~ao $\tau_{ij}$. Consideremos nosso elemento de volume
 $\Delta V$ como sendo um tetraedro limitado pela superf\'{\i}cie
 $\Delta S$, caracterizado pelas normais $\vec{n}_i$ e respectivas
 superf\'{\i}cies $\Delta S_i$, nos planos perpendiculares aos
-eixos de coordenadas. Para um tetraedro pequeno o suficiente, as
-for\c{c}as no objeto (proporcionais ao tamanho do volume) s\~ao
-desprez\'{\i}veis comparadas \`as for\c{c}as na superf\'{\i}cie
+eixos de coordenadas, e $\vec{n}$ e $\Delta S_n$. 
+\begin{figure}[!h]
+\centering
+\begin{tikzpicture}
+\fill[gray!20] (-1.5,-1.5) -- (0,2.5) -- (2.5,0); 
+\draw[thick,->] (0,0) -- (4.5,0) node[anchor=north west] {$x_2$};
+\draw[thick,->] (0,0) -- (0,4.5) node[anchor=south east] {$x_3$};
+\draw[thick,->] (0,0) -- (-2.5,-2.5) node[anchor=north west] {$x_1$};
+\draw[thick] (-1.5,-1.5) -- (0,2.5) node[anchor=south east] {$C$};
+\draw[thick] (2.5,0) -- (-1.5,-1.5) node[anchor=east] {$A$};
+\draw[thick] (0,2.5) -- (2.5,0) node[anchor=south west] {$B$};
+%\fill[gray!50] (-1.5,-1.5) -- (0,2.5) -- (2.5,0); 
+\draw[thick,->] (0.5,0.8) -- (2,2.3) node[anchor=south] {$\vec{n}$};
+\draw[thick,->] (0.5,0.8) -- (3.5,1.8) node[anchor=west] {$\vec{T}(\vec{n})$};
+\draw[thick,->] (-1.1,0) -- (-0.8,0); %node[anchor=east] {$\Delta S_n$};
+\node[] at (-1.5,0) {$\Delta S_n$};
+\node[] at (0,-0.3) {$O$};
+\end{tikzpicture}
+%Tetrahedron used to introduce the stress tensor. The surface dSn corresponds to the face ACB. The vector n is the normal to dSn and h is the distance from P to dSn. The faces BPC, APC, and APB are labeled dS1, dS2, dS3, respectively. The outer normal to dSi is the vector −ei 
+\caption{Tetraedro usado para introduzir o tensor de tens\~ao. A superf\'icie $\Delta S_n$ corresponde a face ACB. O vetor $\vec{n}$ \'e a normal a $\Delta S_n$. As faces BOC, AOC e AOB s\~ao, respectivamente,  $\Delta S_1$, $\Delta S_2$ e $\Delta S_3$. A normal a $\Delta S_i$ \'e o vetor $\vec{n_i}$.}
+\label{fig:tensor-tensao}
+\end{figure}
+Para um tetraedro suficientemente pequeno, as
+for\c{c}as de corpo (proporcionais ao tamanho do volume) podem ser
+desprezadas em compara\cao\ com as for\c{c}as de superf\'{\i}cie
 (proporcionais ao tamanho da superf\'{\i}cie). Ent\~ao, a
-condi\c{c}\~ao de equil\'{\i}brio para o tetraedro pode ser
-escrita como
+condi\c{c}\~ao de equil\'{\i}brio para o tetraedro cont\'em somente
+for\c{c}as de superf\'icie agindo no mesmo:
 \begin{equation}
-T_i(\vec{n}) \Delta S + T_i(-\vec{n}_1) \Delta S_1 +
+T_i(\vec{n}) \Delta S_n + T_i(-\vec{n}_1) \Delta S_1 +
 T_i(-\vec{n}_2) \Delta S_2 + T_i(-\vec{n}_3) \Delta S_3 = 0 \;.
 \end{equation}
-Como $T_i(\vec{n}_j)=T_i(-\vec{n}_j)$ e
+Como $T_i(-\vec{n}_j)=-T_i(\vec{n}_j)$ e
 $T_i(\vec{n}_j)=\tau_{ji}$, podemos reescrever a equa\c{c}\~ao
 como
 \begin{equation}
-T_i(\vec{n}) \Delta S - \tau_{1i} \Delta S_1 - \tau_{2i} \Delta
+T_i(\vec{n}) \Delta S_n - \tau_{1i} \Delta S_1 - \tau_{2i} \Delta
 S_2 - \tau_{3i} \Delta S_3 = 0 \;.
 \end{equation}
-Usando a seguinte rela\c{c}\~ao entre $\Delta S$ e $\Delta S_j$
+Usando a seguinte rela\c{c}\~ao entre $\Delta S_n$ e $\Delta S_j$
 \begin{equation}
-\Delta S_j=\Delta \vec{S} \cdot \vec{n}_j = \Delta S \vec{n} \cdot \vec{n}_j =
-\Delta S n_j \;,
+\Delta S_j= (\vec{n} \cdot \vec{n}_j) \Delta S_n = \vec {n}_j \Delta S_n \;,
 \end{equation}
 na condi\c{c}\~ao de equil\'{\i}brio, obtemos
 \begin{equation}
@@ -104,9 +137,8 @@ uma componente de tens\~ao $\tau^{'}_{km}$ e temos
 \end{equation}
 Mas isto \'e a equa\c{c}\~ao de transforma\c{c}\~ao de um tensor
 de grau dois. Logo, as componentes de tens\~ao s\~ao elementos de
-um tensor. Chamamos isto de {\it tensor de tens\~ao} $\tau_{ij}$.
-Ele descreve o campo de tens\~ao em uma vizinhan\c{c}a do ponto
-que \'e especificado.
+um tensor conhecido como {\it tensor de tens\~ao} $\tau_{ij}$.
+Ele descreve o campo de tens\~ao em uma vizinhan\c{c}a de um certo ponto.
 
 
 
@@ -114,23 +146,32 @@ que \'e especificado.
 
 \subsection{Condi\c{c}\~ao de Equil\'{\i}brio}
 
-Vamos considerar um pequeno volume $V$ de um material deformado em
-equil\'{\i}brio est\'atico. O volume $V$ \'e limitado por uma
-superf\'{\i}cie $S$, caracterizada por uma normal unit\'aria
+Vamos considerar um pequeno volume $V$, em
+equil\'{\i}brio est\'atico, de um material deformado.
+O volume $V$ \'e limitado por uma
+superf\'{\i}cie fechada $S$, caracterizada por uma normal unit\'aria
 externa $\vec{n}$. Como o volume pode ser considerado r\'{\i}gido,
 as condi\c{c}\~oes de equil\'{\i}brio de um corpo r\'{\i}gido
 podem ser aplicadas a $V$. Para isso, \'e necess\'ario que a soma
-de todas as for\c{c}as agindo sobre $V$ e de todos seus momentos
-desapare\c{c}am. Denotando a for\c{c}a resultante do volume por
+de todas as for\c{c}as agindo sobre $V$ e de todos os seus momentos
+desapare\c{c}am. Denotando a for\c{c}a de volume resultante por
 $f_i$, escrevemos estas condi\c{c}\~oes como
-$$ \int \!\! \int \!\!  \int_V f_j dV + \int \!\! \int_S T_j
-(\vec{n}) dS = 0 \;,$$
-$$ \int \!\! \int \!\!  \int_V \varepsilon_{ijk} X_j f_k dV + \int \!\! \int_S
-\varepsilon_{ijk} X_j T_k (\vec{n}) dS = 0 \;,$$ onde o
-s\'{\i}mbolo $X_i$ denota o vetor radial de um ponto deslocado do
-volume $V$ nas coordenadas de $Euler$, $X_i = x_i+u_i$. Os
+\begin{equation}
+\label{eq:equilib-for}
+ \int \!\! \int \!\!  \int_V f_j dV + \int \!\! \int_S T_j
+(\vec{n}) dS = 0 \;,
+\end{equation}
+\begin{equation}
+\label{eq:equilib-momen}
+ \int \!\! \int \!\!  \int_V \varepsilon_{ijk} x'_j f_k dV + \int \!\! \int_S
+\varepsilon_{ijk} x'_j T_k (\vec{n}) dS = 0 \;,
+\end{equation}
+Essas s\~ao as condi\c{c}\~oes de equil\'ibrio na forma integral.
+Em ambas as equa\c{c}\~oes acima, o
+s\'{\i}mbolo $x'_i$ denota o vetor radial de um ponto deslocado do
+volume $V$ nas coordenadas de $Lagrange$, $x'_i = x_i+u_i$. Os
 argumentos das for\c{c}as $f_i$ e $T_i (\vec{n})$ tamb\'em s\~ao
-consideradas nas coordenadas de Euler.
+considerados nas coordenadas de Lagrange.
 
 Usando o resultado (\ref{cond_equil}), podemos reescrever a
 primeira condi\c{c}\~ao na forma
@@ -140,7 +181,7 @@ primeira condi\c{c}\~ao na forma
 Aplicando agora o Teorema de Gauss na integral de superf\'{\i}cie,
 obtemos
 \begin{equation}
-\int \!\! \int \!\!  \int_V (f_j + \partial \tau_{ij}/\partial X_i
+\int \!\! \int \!\!  \int_V (f_j + \partial \tau_{ij}/\partial x'_i
 )dV= 0 \;. \label{cond_int}
 \end{equation}
 Como o integrando em (\ref{cond_int}) \'e uma fun\c{c}\~ao
@@ -148,47 +189,49 @@ cont\'{\i}nua nas vari\'aveis espaciais e o volume pode ser
 escolhido arbitrariamente, podemos escrever para qualquer ponto do
 volume deformado
 \begin{equation}
-f_j + \partial \tau_{ij}/\partial X_i = 0 \;.
+f_j + \partial \tau_{ij}/\partial x'_i = 0 \;.
 \label{eq_equi_back}
 \end{equation}
 
-Assumindo que $\partial \tau_{ij}/\partial X_k$ s\~ao pequenas e
-que seus produtos com $\partial u_i/\partial x_j$ s\~ao
-desprez\'{\i}veis, podemos escrever
+%
+Assumindo que o termo $\partial \tau_{ij}/\partial x'_k$ \'e pequeno e
+que seu produto com $\partial u_i/\partial x_j$ \'e
+desprez\'{\i}vel, temos
 \begin{equation}
 \frac {\partial \tau_{ij}}{\partial x_i} = \frac {\partial
-\tau_{ij}}{\partial X_k} \frac {\partial X_k}{\partial x_i}=\frac
-{\partial \tau_{ij}}{\partial X_k} \left(
-\delta_{ik}+\frac{\partial u_k}{\partial x_i} \right) \sim \frac
-{\partial \tau_{ij}}{\partial X_i} \;. \label{eq_equi_back2}
+\tau_{ij}}{\partial x'_k} \frac {\partial x'_k}{\partial x_i}=\frac
+{\partial \tau_{ij}}{\partial x'_k} \left(
+\delta_{ik}+\frac{\partial u_k}{\partial x_i} \right) \approx \frac
+{\partial \tau_{ij}}{\partial x'_i} \;. \label{eq_equi_back2}
 \end{equation}
-Substituindo (\ref{eq_equi_back2}) em
-(\ref{eq_equi_back}), obtemos
+
+Podemos escrever
 \begin{equation}
 f_j + \tau_{ij,i} = 0 \;, \label{eq_equi_est}
 \end{equation}
+%
 que \'e a {\it equa\c{c}\~ao de equil\'{\i}brio est\'atico} (na
 forma diferencial) de um material deformado.
 
 Agora, analogamente ao que foi feito para a condi\c{c}\~ao sobre
 as for\c{c}as, fa\c{c}amos para a condi\c{c}\~ao sobre os
 momentos, isto \'e, usando o resultado (\ref{cond_equil})
-escrevemos
+escrevemos a equa\cao\ \ref{eq:equilib-momen} como
 \begin{equation}
-\int \!\! \int \!\! \int_V \varepsilon_{ijk} X_j f_k dV + \int
-\!\! \int_S \varepsilon_{ijk} X_j \tau_{lk}n_l dS = 0 \;.
+\int \!\! \int \!\! \int_V \varepsilon_{ijk} x'_j f_k dV + \int
+\!\! \int_S \varepsilon_{ijk} x'_j \tau_{lk}n_l dS = 0 \;.
 \label{cond_moment}
 \end{equation}
 Aplicando o Teorema de Gauss na integral de superf\'{\i}cie,
 obtemos
 \begin{equation}
 \begin{array}{rcl}
-\int \!\! \int_S \varepsilon_{ijk} X_j \tau_{lk}n_l dS &=& \int
-\!\! \int \!\! \int_V  \varepsilon_{ijk} \partial (X_j
-\tau_{lk})/\partial X_l dV  \\
-&& \int \!\! \int \!\! \int_V  \varepsilon_{ijk} (\delta_{lj} \tau_{lk} + X_j \tau_{lk,l}) dV \\
+\int \!\! \int_S \varepsilon_{ijk} x'_j \tau_{lk}n_l dS &=& \int
+\!\! \int \!\! \int_V  \varepsilon_{ijk} \partial (x'_j
+\tau_{lk})/\partial x'_l dV  \\
+&& \int \!\! \int \!\! \int_V  \varepsilon_{ijk} (\delta_{lj} \tau_{lk} + x'_j \tau_{lk,l}) dV \\
 && \int \!\! \int \!\! \int_V  \varepsilon_{ijk} \tau_{jk} dV -
-\int \!\! \int \!\! \int_V  \varepsilon_{ijk} X_j f_k dV \;.
+\int \!\! \int \!\! \int_V  \varepsilon_{ijk} x'_j f_k dV \;.
 \end{array}
 \end{equation}
 Na \'ultima passagem, usamos a equa\c{c}\~ao (\ref{eq_equi_est}).
