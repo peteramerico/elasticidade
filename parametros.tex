@@ -1,15 +1,13 @@
-
 \section{Par\^ametros El\'asticos}
 
-N\'os observamos que $c_{ijkl}$ s\ao\ elementos de um
-tensor de quarta ordem com 81 elementos. Mostramos aqui
-que nem todos eles s\ao\ independentes por causa da
-simetria da matriz de par\^ametros $c_{ijkl}$ em alguns
-\indices.
+Derivamos que $c_{ijkl}$ s\ao\ elementos de um
+tensor de quarta ordem com 81 elementos. Mostraremos a seguir 
+que nem todos eles s\ao\ independentes. Devido \`a
+simetria que a matriz dos par\^ametros el\'asticos $c_{ijkl}$ 
+apresenta em alguns de seus \'indices.
 
 Devido a simetria do tensor de tens\ao\ e do tensor de
-deforma\cao, n\'os chegamos imediatamente da lei de Hooke
-que 
+deforma\cao, conclu\'imos imediatamente da lei de Hooke, que
 \begin{eqnarray}
 c_{ijkl} = c_{jikl} = c_{ijlk} \; .
 \end{eqnarray}
@@ -25,7 +23,7 @@ c_{ijkl} = \frac{\partial \tau_{ij}}{\partial e_{kl}}
 Todas as tr\^es condi\coes\ de simetria reduzem os
 par\^ametros el\'aticos independentes de 81 para 21.
 
-Por causa da simetria nos \indices\ $i,j$ e $k,l$, existe
+Devido a simetria nos \indices\ $i,j$ e $k,l$, existem
 6 componentes de $i,j$ e $k,l$ (ao inv\'es  de 9 no caso
 n\ao\ sim\'etrico) especificando par\^ametros el\'asticos
 independentes. Estas 6 combina\coes\ de $i,j$ e $k,l$
@@ -36,8 +34,10 @@ elementos desta matriz por $C_{\alpha \beta}$ ($\alpha,
 \beta = 1,2,...,6;$ os \indices\ Gregos diferindo assim
 dos \indices\ em Latim que assumem valores 1,2,3). O
 \indice\ $\alpha$ corresponde aos \indices\ $i,j$ e 
-$\beta$ aos \indices\ $k,l$ para o tensor $c_{ijkl}$.
-Os \indices\ s\ao\ relacionados como segue
+$\beta$ aos \indices\ $k,l$ para o tensor $c_{ijkl}$. Essa
+representa\c{c}\~ao \'e denominada nota\c{c}\~ao de Voigt, e possui
+uma forma de f\'acil memoriza\c{c}\~ao.
+os \indices\ s\ao\ relacionados como segue
 \begin{eqnarray*}
 1 \leftrightarrow 1,1 \;\;\;\;\;\;
 2 \leftrightarrow 2,2 \;\;\;\;\;\;
@@ -49,11 +49,10 @@ Os \indices\ s\ao\ relacionados como segue
 
 Devido a simetria $c_{ijkl} = c_{klij}$ da matriz
 $c_{ijkl}$ a matriz $C_{\alpha \beta}$ \'e tamb\'em
-sim\'etrica $C_{\alpha \beta} = C_{\beta \alpha}$ mas
-n\ao\ \'e um tensor. Esta substitui\cao\ de \indices\ \'e
-chamada {\it nota\cao\ comprimida}.
+sim\'etrica $C_{\alpha \beta} = C_{\beta \alpha}$, mas $C$
+n\ao\ \'e um tensor.
 
-Podemos introduzir uma nota\cao\ comprimida similar para
+Podemos introduzir uma nota\cao\ comprimida similar \`a de Voigt para
 os elementos do tensor de deforma\cao\ e de tens\ao, 
 $e_{kl}$ e $\tau_{ij}$. Introduzimos $e_{\beta}$ e
 $\tau_{\alpha}$ de tal maneira que a Lei de Hooke
@@ -82,11 +81,11 @@ e_{33} \leftrightarrow e_{3} \;\;\;\;\;\;
 \end{eqnarray*}
 
 A energia de deforma\cao\ \'e m\ih nima se n\ao\ existe
-deforma\cao. Para este caso definimos $W=0$. Isto
-significa que para alguma deforma\cao\ a energia de
-deforma\cao\ deve ser positiva, $W>0$. Esta desigualdade
-implica defini\coes\ positivas de
-forma quadr\'atica
+deforma\cao. Portanto definimos $W=0$. Tamb\'em fizemos algumas
+considera\c{c}\~oes sobre o comportamento termodin\^amico  da deforma\c{c}\~ao,
+ e para que as solu\c{c}\~oes do problema de elasticidade
+linear sejam \'unicas, \'e necess\'ario que $W>0$. Esta desigualdade
+implica que $W$ \'e uma matriz positiva definida, i.e.,
 \begin{eqnarray}
 W = \frac{1}{2}C_{\alpha \beta}e_{\alpha}e_{\beta}>0 \; .
 \end{eqnarray}
@@ -109,7 +108,7 @@ como
 \begin{eqnarray}
 e_{ij} = s_{ijkl} \tau_{ij} \; .
 \end{eqnarray}
-Vamos notar que $s_{ijkl}$ \'e conhecido como {\it tensor compliance}
+Vamos notar que $s_{ijkl}$ \'e conhecido como tensor compliance
 (for\ca\ de resist\^encia de um material contra a deforma\cao).
 
 \section{V\'arios tipos de simetria anisotr\'opica}
@@ -126,13 +125,13 @@ simetria com respeito a uma rota\cao\ em torno de um eixo.
 H\'a um sistema inteiro de materiais anisotropicos com
 graus diferentes de simetria. O material mais geral que
 \'e especificado por 21 par\^ametros el\'asticos
-independentes \'e chamado {\it triclinic}. O material que
+independentes \'e chamado {\bf tricl\'inico}. O material que
 \'e especificado por 13 par\^ametros independentes \'e
-chamado {\it monoclinic}. Os sistemas n\ao\ s\ao\
+chamado {\bf monocl\'inico}. Os sistemas n\ao\ s\ao\
 considerados em aplica\coes\ s\ismicas.
 
 A mais complexa anisotropia considerada algumas vezes em 
-sismologia \'e a simetria {\it orthorhombic} com 9
+sismologia \'e a simetria {\bf ortorr\^ombica} com 9
 par\^ametros el\'asticos independentes. Esta \'e
 caracterizada por tr\^es eixos de simetria mutuamente
 perpendiculares. Uma rota\cao\ de $180^{o}$ em
@@ -159,14 +158,14 @@ haveria elementos menores que zero mas o n\'umero de
 par\^ametros independentes permaneceria 9.
 
 A simetria anisotr\'opica freq\"uentemente usada \'e a
-{\it simetria hexagonal}. Este sistema tem uma simetria
+simetria {\bf hexagonal}. Este sistema tem uma simetria
 mais elevada que um ortorhombic. Este sistema tem um eixo
 de simetria tal que a rota\cao\ por um \^angulo
 arbitr\'ario ao redor deste eixo n\ao\ altera o tensor
 $c_{ijkl}$. Isto significa que, em um plano perpendicular
 a este eixo, o tensor comporta-se isotropicamente. Por
 causa disto, a simetria \'e tamb\'em algumas vezes
-chamada de {\it isotropia transversal}, especialmente em
+chamada de isotropia transversal, especialmente em
 casos em que o eixo de simetria rotacional coincide com o
 eixo $x_3$ do sistema de coordenadas. A matriz
 $C_{\alpha \beta}$ de um material sim\'etrico
@@ -194,13 +193,13 @@ isometria.
 
 Algumas vezes, a ent\ao\ chamada nota\cao\ de Love para
 cinco par\^ametros el\'asticos independentes de um meio
-isotr\'opico transversal \'e usada. Nele
+ isotr\'opico transversal \'e usada. Nele
 \begin{eqnarray}
 A=C_{11}, \;\;\;\; C=C_{33} \;\;\;\; L=C_{44} \;\;\;\;
 N=C_{66}, \;\;\;\; F=C_{13} \; .
 \end{eqnarray}
 
-O meio isotr\'opico possui a mais elevada simetria entre
+O meio {\bf isotr\'opico} possui a mais elevada simetria entre
 os materiais anisotr\'opicos. Material isotr\'opico \'e
 invariante para alguma rota\cao. Este \'e descrito por
 dois par\^ametros el\'asticos independentes. A matriz
