@@ -324,40 +324,49 @@ de coordenadas.
 
 \section{Rela\c{c}\~oes Tens\~ao-Deforma\cao}
 
-Sabemos que a tens\~ao e deforma\cao\ s\~ao mutuamente
+Sabemos que tens\~ao e deforma\cao\ s\~ao mutuamente
 dependentes. Esta rela\c{c}\~ao depende do tipo de material e \'e,
 portanto, uma importante caracter\'{\i}stica do material. De
 acordo com os tipos de rela\c{c}\~oes, os materiais podem ser
 chamados de el\'asticos, viscosos, viscoel\'asticos e pl\'asticos.
 O foco dos estudos que seguem est\'a nos materiais el\'asticos, ou
 seja, materiais que ap\'os terem uma carga removida, voltam ao seu
-estado original como antes de terem a carga aplicada.
+estado original como antes de terem a carga aplicada. Podemos
+fazer isto, pois as tens\~oes e deforma\c{c}\~oes adicionais
+(adicionais as tens\~oes e deforma\c{c}\~oes existentes no
+estado inicial do material), relacionadas com a propaga\c{c}\~ao
+de onda, s\~ao pequenas e deforma\c{c}\~oes permanentes
+devido a processos de ondas s\~ao negligenci\'aveis.
 
 Vamos assumir que em cada ponto do meio, o tensor de tens\~ao \'e
-unicamente determinado pelo deslocamento, isto \'e,
+unicamente determinado pela deforma\c{c}\~ao, isto \'e,
 \begin{equation}
 \tau_{ij}=\tau_{ij}(e_{kl}) \;.
 \label{rel_tens_def}
 \end{equation}
-Assim, cada componente do tensor de tens\~ao depende geralmente de
-cada componente do tensor de deslocamento, e essa depend\^encia
-\'e geralmente n\~ao linear.
-
+Esta \'e uma generaliza\cao\ da lei formulada por Hooke a 300 anos atr\'as
+(baseada em experimentos com molas). Ela diz: ``Extens\~ao \'e proporcional
+\`a for\c{c}a''. No nosso caso,
+cada componente do tensor de tens\~ao depende, geralmente, de
+cada componente do tensor de deforma\cao\ e essa depend\^encia
+\'e usualmente n\~ao linear.
 Por\'em, at\'e agora supomos que as deforma\coes\ s\ao\ pequenas
 ($e_{ij}\ll 1$) e negligenciamos termos de ordem maior do que um. Assim,
-para manter a consist\^encia com o desenvolvimento at\'e agora, devemos
-linearizar a rela\cao\ acima. Mais ainda, desde que consideramos
+para manter a consist\^encia com o nosso desenvolvimento,
+usaremos apenas termos lineares. Al\'em disso, desde que consideramos
 $\tau_{ij}$ como uma perturba\c{c}\~ao do estado inicial, n\'os podemos
-colocar $\tau_{ij}(0)=0$. Desde modo, obtemos a chamada {\it Lei de Hooke
+colocar $\tau_{ij}(0)=0$. Deste modo, obtemos a chamada {\it Lei de Hooke
 generalizada}
 \begin{equation}
-\tau_{ij}(x_m)=c_{ijkl}(x_m)e_{kl} (x_m) \;,
+\tau_{ij}=c_{ijkl}e_{kl} \;,
 \label{lei_hooke}
 \end{equation}
 onde $c_{ijkl}$ s\~ao constantes de proporcionalidade, chamadas {\it
-par\^ametros el\'asticos} ou {\it Tensor de Elasticidade}.
+par\^ametros el\'asticos} ou {\it Tensor de Rigidez (Elasticidade)}.
+\'E poss\'ivel provar que $c_{ijkl}$ representa um tensor de quarta
+ordem, com $3^4$, i.e., 81 elementos.
 
-Deve se observar que a lineariza\cao\ que deu origem \`a Lei de Hooke
+Deve-se observar que a lineariza\cao\ que deu origem \`a Lei de Hooke
 generalizada n\ao\ se justifica somente pela matem\'atica. Muitos
 experimentos de elasticidade, como por exemplo o esticamento de um
 haste, mostram na pr\'atica a exist\^encia de uma rela\cao\ linear entre

@@ -1,88 +1,119 @@
-%\documentclass{article}
-%\usepackage{amsmath}
-%\usepackage{amssymb}
-%\usepackage[brazil]{babel}
-%\begin{document}
-
 \section{Energia de Deforma\c{c}\~ao}
 
 
-For\c{c}as externas atuando sobre um corpo deformam o mesmo. Levando em conta este fen\^oneno a energia interna
-e a temperatura do corpo podem mudar. No que se segue consideramos processos adiab\'aticos, isto \'e, n\~ao h\'a troca
- de calor com o meio. O fen\^omeno de onda pode ser considerado como um processo adiab\'atico desde que as oscila\c{c}\~oes
-sejam t\~ao r\'apidas que n\~ao h\'a troca de calor. A primeira lei da termodin\^amica diz
-\[  dU+dK=dA. \]
+For\c{c}as externas atuando sobre um corpo deformam o mesmo.
+Levando em conta este fen\^oneno a energia interna
+e a temperatura do corpo podem mudar. No que se segue,
+consideramos processos adiab\'aticos, isto \'e, onde n\~ao h\'a troca
+de calor com o meio. Processos de onda podem ser considerados
+como adiab\'aticos pois as oscila\c{c}\~oes
+ocorrem t\~ao r\'apido que n\~ao h\'a tempo para troca de calor.
+Nessa situa\cao, a primeira lei da termodin\^amica pode ser escrita como
+\begin{equation}
+dU+dK=dA \;.
+\end{equation}
 
-Essa equa\c{c}\~ao no diz que as energias interna $U$ e cin\'etica $K$ s\~ao balanceadas pelo trabalho $A$ das for\c{c}as no volume e na superf\'\i cie
-agindo no volume. Pela equa\c{c}\~ao acima deduzimos que a energia interna prov\'em da energia potencial, ent\~ao introduzimos
-\[ U=\int \! \!\int\limits_{V} \! \!\int W dV,\]
+Essa equa\c{c}\~ao diz que as mudan\cas\ da energia interna $U$ e da energia cin\'etica $K$ 
+num volume $V$ do corpo deformado em quest\~ao
+devem ser balanceadas pelo trabalho $A$ das for\c{c}as de volume e de superf\'\i cie
+agindo no volume. Pela forma da equa\c{c}\~ao acima
+deduzimos que a energia interna $U$ \'e
+relacionada a energia potencial. Introduzimos uma quantidade $W$ tal que
+\begin{equation}
+dU=\int \! \!\int\limits_{V} \! \!\int W dV \;,
+\end{equation}
 onde $W$ \'e chamada densidade de energia de deforma\c{c}\~ao.
+
 
 \subsection{Trabalho}
 
-Associando as equa\c{c}\~oes j\'a existentes obtemos,
-\[ \frac{dA}{dt}=\frac{d}{dt}\int \! \!\int\limits_{V} \! \!\int W dV+\frac{dK}{dt}=\int \! \!\int\limits_{V} \! \!\int \frac{\partial W}{\partial t} dV+\frac{dK}{dt}.\]
+Associando as quantidades da primeira lei da termodin\^amica a uma unidade de tempo, temos
+\begin{equation}
+\frac{dA}{dt}=\frac{d}{dt}\int \! \!\int\limits_{V} \! \!\int W dV+\frac{dK}{dt}=
+\int \! \!\int\limits_{V} \! \!\int \frac{\partial W}{\partial t} dV+\frac{dK}{dt} \;.
+\end{equation}
 
 Calculemos agora  o trabalho feito pelas for\c{c}as de superf\'\i
 cie e volume. O deslocamento de um ponto do volume $V$ no
 intervalo de tempo $(t,t+dt)$ \'e $\frac{\partial u_{i}}{\partial
-t}dt$. Portanto o trabalho das  for\c{c}as de volume $f_{i}$ em um
-dado intervalo de tempo e um volume, ent\~ao $f_{i}\frac{\partial
-u_{i}}{\partial t}dt$. Da mesma forma teremos para o trabalho das
-for\c{c}as de  superf\'\i cie $T_{i}(\vec{n})\frac{\partial
-u_{i}}{\partial t}dt$. Portanto para $\frac{dA}{dt}$ teremos,
-\[\frac{dA}{dt}=\int \! \!\int\limits_{V} \! \!\int f_{i}\frac{\partial u_{i}}{\partial t}dV+\int\limits_{S} \! \!\int
-\tau_{ji}\mbox{n}_{j}\frac{\partial u_{i}}{\partial t}dS,\] onde
+t}dt$. Portanto, o trabalho das  for\c{c}as de volume $f_{i}$ nesse
+intervalo de tempo \'e $f_{i}\frac{\partial
+u_{i}}{\partial t}dt$. Da mesma forma, para o trabalho das
+for\c{c}as de  superf\'\i cie: $T_{i}(\vec{n})\frac{\partial
+u_{i}}{\partial t}dt$. Ent\~a, para $\frac{dA}{dt}$ no volume $V$ temos
+\begin{equation}
+\frac{dA}{dt}=\int \! \!\int\limits_{V} \! \!\int f_{i}\frac{\partial u_{i}}{\partial t}dV+\int\limits_{S} \! \!\int
+\tau_{ji}\mbox{n}_{j}\frac{\partial u_{i}}{\partial t}dS \;,
+\end{equation}
+onde
 $\mbox{n}_{j}$ \'e o vetor unit\'ario externo. Aplicando a lei de
-Gauss, e utilizando a equa\c{c}\~ao do movimento $f_{i}+\tau_{ji,i}=\rho\frac{\partial^{2}u_{i}}{\partial t^{2}}$ temos,
-\[\int\limits_{S} \! \!\int \tau_{ji}\mbox{n}_{j}\frac{\partial u_{i}}{\partial t}dS=
-\int \! \!\int\limits_{V} \! \!\int \left(\tau_{ji}\frac{\partial
+Gauss na integral de superf\'icie, e utilizando a equa\c{c}\~ao do movimento \ref{eq_dinam} temos,
+\begin{equation}
+\begin{array}{rcl}
+\int\limits_{S} \! \!\int \tau_{ji}\mbox{n}_{j}\frac{\partial u_{i}}{\partial t}dS= 
+&& \int \! \!\int\limits_{V} \! \!\int \left(\tau_{ji}\frac{\partial
 u_{i}}{\partial t}\right)_{,j}dV= \int \! \!\int\limits_{V} \!
 \!\int \left(\tau_{ji,j}\frac{\partial u_{i}}{\partial t}+
-\frac{\partial u_{i,j}}{\partial t}\tau_{ji}\right)dV=\]
-\[=-\int \! \!\int\limits_{V} \! \!\int f_{j}\frac{\partial u_{j}}{\partial t}dV+
+\frac{\partial u_{i,j}}{\partial t}\tau_{ji}\right)dV \\
+&& =-\int \! \!\int\limits_{V} \! \!\int f_{j}\frac{\partial u_{j}}{\partial t}dV+
 \int \! \!\int\limits_{V} \! \!\int \rho\frac{\partial^{2}
 u_{j}}{\partial t^{2}}\frac{\partial u_{j}}{\partial t}dV+ \int \!
 \!\int\limits_{V} \! \!\int \tau_{ij}\frac{\partial}{\partial
-t}e_{ij}dV.\] Para encontrarmos o \'ultimo termo na terceira igualdade utilizamos o fato de que rot$\vec{u}=0$, ou 
-seja n\~ao h\'a rota\c{c}\~ao.
+t}e_{ij}dV \;.
+\end{array}
+\end{equation}
+%Para encontrarmos o \'ultimo termo na terceira igualdade utilizamos o fato de que rot$\vec{u}=0$, ou 
+%seja n\~ao h\'a rota\c{c}\~ao.
 
 Logo,
-\[\frac{dA}{dt}=\int \! \!\int\limits_{V} \! \!\int \rho\frac{\partial^{2} u_{j}}{\partial t^{2}}\frac{\partial u_{j}}{\partial t}dV+
+\begin{equation}
+\frac{dA}{dt}=\int \! \!\int\limits_{V} \! \!\int \rho\frac{\partial^{2} u_{j}}{\partial t^{2}}\frac{\partial u_{j}}{\partial t}dV+
 \int \! \!\int\limits_{V} \! \!\int
-\tau_{ij}\frac{\partial}{\partial t}e_{ij}dV.\]
+\tau_{ij}\frac{\partial}{\partial t}e_{ij}dV \;.
+\end{equation}
 
 \subsection{Energia Cin\'etica}
 
 A energia cin\'etica do volume \'e dada por
-\[K=\frac{1}{2}\int \! \!\int\limits_{V} \! \!\int \rho\frac{\partial u_{i}}{\partial t}
-\frac{\partial u_{i}}{\partial t}dV,\]
-de onde conclu\'\i mos que
-\[\frac{dK}{dt}=\int \! \!\int\limits_{V} \! \!\int \rho\frac{\partial^{2} u_{i}}{\partial t^{2}}
-\frac{\partial u_{i}}{\partial t}dV.\]
-
+\begin{equation}
+K=\frac{1}{2}\int \! \!\int\limits_{V} \! \!\int \rho\frac{\partial u_{i}}{\partial t}
+\frac{\partial u_{i}}{\partial t}dV \;,
+\end{equation}
+e sua varia\c{c}\~ao temporal (assumindo que $\rho$ n\~ao varia com o tempo)
+\begin{equation}
+\frac{dK}{dt}=\int \! \!\int\limits_{V} \! \!\int \rho\frac{\partial^{2} u_{i}}{\partial t^{2}}
+\frac{\partial u_{i}}{\partial t}dV \;.
+\end{equation}
 Agora a primeira lei da termodin\^amica pode ser escrita da seguinte forma
-\[\int \! \!\int\limits_{V} \! \!\int \frac{\partial W}{\partial t} dV-
+\begin{equation}
+\int \! \!\int\limits_{V} \! \!\int \frac{\partial W}{\partial t} dV-
 \int \! \!\int\limits_{V} \! \!\int
-\tau_{ji}\frac{\partial}{\partial t}e_{ji}dV=0.\]
-
-Como o volume \'e arbitr\'ario ent\~ao para equa\c{c}\~ao acima ter solu\c{c}\~ao, devemos ter
-\[\frac{\partial W}{\partial t} =\tau_{ij}\frac{\partial}{\partial t}e_{ij}.\]
-
+\tau_{ji}\frac{\partial}{\partial t}e_{ji}dV=0 \;.
+\end{equation}
+Como o volume \'e arbitr\'ario, ent\~ao para equa\c{c}\~ao acima ter solu\c{c}\~ao, devemos ter
+\begin{equation}
+\frac{\partial W}{\partial t} =\tau_{ij}\frac{\partial}{\partial t}e_{ij} \;.
+\end{equation}
 Da equa\c{c}\~ao acima e do fato que $W$ \'e uma fun\c{c}\~ao de $e_{ij}$ conclu\'\i mos que
-\[ \tau_{ij}=\frac{\partial W}{\partial e_{ij}}.\]
-
-Como $\tau_{ij}$ \'e uma fun\c{c}\~ao linear de $e_{kl}$, teremos que a derivada da enrgia de deforma\c{c}\~ao
-deve ser linear com $e_{kl}$, logo $W$ \'e uma fun\c{c}\~ao quadr\'atica de $e_{kl}$. Definiremos
-o estado sem deforma\c{c}\~ao, isto \'e, $e_{kl}=0$, a energia de deforma\c{c}\~ao zero, $W=0$. Ent\~ao
-$W$ \'e uma fun\c{c}\~ao quadr\'atica homog\^enea de $e_{kl}$. De acordo coma teorema de Euler
+\begin{equation}
+\tau_{ij}=\frac{\partial W}{\partial e_{ij}} \;.
+\end{equation}
+Como $\tau_{ij}$ \'e uma fun\c{c}\~ao linear de $e_{kl}$,
+teremos que a derivada da enrgia de deforma\c{c}\~ao
+deve ser linear com $e_{kl}$, logo $W$ \'e uma fun\c{c}\~ao
+quadr\'atica de $e_{kl}$. Definiremos
+que no estado sem deforma\c{c}\~ao, isto \'e, quando
+$e_{kl}=0$, a energia de deforma\c{c}\~ao \'e zero, $W=0$. Ent\~ao
+$W$ \'e uma fun\c{c}\~ao quadr\'atica homog\^enea de $e_{kl}$. De acordo com o teorema de Euler
 para fun\c{c}\~oes homog\^eneas
-\[\frac{\partial W}{\partial e_{kl}}e_{kl}=2W.\]
-
+\begin{equation}
+\frac{\partial W}{\partial e_{kl}}e_{kl}=2W \;.
+\end{equation}
 A partir disto temos,
-\[W=\frac{1}{2}\frac{\partial W}{\partial e_{ij}}e_{ij}=\frac{1}{2}\tau_{ij}e_{ij}=
-\frac{1}{2}c_{ijkl}e_{kl}e_{ij}.\]
-
+\begin{equation}
+W=\frac{1}{2}\frac{\partial W}{\partial e_{ij}}e_{ij}=\frac{1}{2}\tau_{ij}e_{ij}=
+\frac{1}{2}c_{ijkl}e_{kl}e_{ij} \;.
+\end{equation}
 Esta \'e a equa\c{c}\~ao da densidade de energia de deforma\c{c}\~ao.
 
 \section{Fluxo de Energia}
@@ -91,45 +122,60 @@ Agora consideramos novamente um volume $V$ arbitr\'ario. Nesta
 se\c{c}\~ao estamos interessados em investigar como \'e mantido o
 fluxo de energia  em um volume $V$ deformado. A energia el\'astica $\epsilon$ (a soma das energias
 cin\'etica e de deforma\c{c}\~ao) no volume $V$,e sendo $E=(
-\rho\frac{\partial u_{i}}{\partial t}\frac{\partial u_{i}}{\partial t}+\tau_{ij}e_{ij})$, \'e
-\[\epsilon=\int \! \!\int\limits_{V} \! \!\int \mbox{E}dV=\frac{1}{2}\int \! \!\int\limits_{V} \! \!\int\left(
-\rho\frac{\partial u_{i}}{\partial t}\frac{\partial u_{i}}{\partial t}+\tau_{ij}e_{ij}\right)dV.\]
+\rho\frac{\partial u_{i}}{\partial t}\frac{\partial u_{i}}{\partial t}+\tau_{ij}e_{ij})$,
+\'e
+\begin{equation}
+\epsilon=\int \! \!\int\limits_{V} \! \!\int \mbox{E}dV=\frac{1}{2}\int \! \!\int\limits_{V} \! \!\int\left(
+\rho\frac{\partial u_{i}}{\partial t}\frac{\partial u_{i}}{\partial t}+\tau_{ij}e_{ij}\right)dV \;.
+\end{equation}
 
 A derivada de $\epsilon$ \'e
-\[\frac{d\epsilon}{dt}=\int \! \!\int\limits_{V} \! \!\int \frac{\partial \mbox{E}}{\partial t}dV=
+\begin{equation}
+\frac{d\epsilon}{dt}=\int \! \!\int\limits_{V} \! \!\int \frac{\partial \mbox{E}}{\partial t}dV=
 \int \! \!\int\limits_{V} \! \!\int \left[\rho\frac{\partial^{2}
 u_{i}}{\partial t^{2}} \frac{\partial u_{i}}{\partial t}+\tau_{ij}
 \frac{\partial}{\partial t}\left(\frac{\partial u_{i}}{\partial
-x_{j}}\right)\right]dV.\]
+x_{j}}\right)\right]dV \;.
+\end{equation}
 Note o segundo termo sai da defini\c{c}\~ao de $\tau_{ij}$, quando aplicamos a regra do produto para derivadas.
 
 A segunda fun\c{c}\~ao do integrando da equa\c{c}\~ao acima pode ser reformulada da seguinte
 maneira:
-\[\int \! \!\int\limits_{V} \! \!\int\tau_{ij}
+\begin{equation}
+\begin{array}{rcl}
+\int \! \!\int\limits_{V} \! \!\int\tau_{ij}
 \frac{\partial}{\partial t}\left(\frac{\partial u_{i}}{\partial
-x_{j}}\right)dV= \int \! \!\int\limits_{V} \! \!\int
+x_{j}}\right)dV=
+&& \int \! \!\int\limits_{V} \! \!\int
 \frac{\partial}{\partial x_{j}}\left(\tau_{ij}\frac{\partial
 u_{i}}{\partial t}\right)dV- \int \! \!\int\limits_{V} \! \!\int
-\frac{\partial u_{i}}{\partial t} \tau_{ij,j}dV=\]
-\[=-\int \! \!\int\limits_{V} \! \!\int \frac{\partial S_{j}}{\partial x_{j}}-
+\frac{\partial u_{i}}{\partial t} \tau_{ij,j}dV \\
+&& =-\int \! \!\int\limits_{V} \! \!\int \frac{\partial S_{j}}{\partial x_{j}}-
 \int \! \!\int\limits_{V} \! \!\int\frac{\partial u_{i}}{\partial
 t}\left(\rho\frac{\partial^{2} u_{i}}{\partial
-t^{2}}-f_{i}\right)dV,\]
+t^{2}}-f_{i}\right)dV \;,
+\end{array}
+\end{equation}
 onde $S_{j}=-\tau_{ij}\frac{\partial
 u_{i}}{\partial t}$ e $\tau_{ij,j}$ \'e dada pela equa\c{c}\~ao din\^amica $\tau_{ij,j}=\rho
 \frac{\partial^{2} u_{i}}{\partial t^{2}}-f_{i}$.
 
 Substituindo esta express\~ao para $d\epsilon/dt$, teremos
-\[\frac{d\epsilon}{dt}+\int \! \!\int\limits_{V} \! \!\int \mbox{div} \vec{S}dV=\int \! \!\int\limits_{V} \! \!\int
-\frac{\partial u_{i}}{\partial t}f_{i}dV. \]
+\begin{equation}
+\frac{d\epsilon}{dt}+\int \! \!\int\limits_{V} \! \!\int \mbox{div} \vec{S}dV=\int \! \!\int\limits_{V} \! \!\int
+\frac{\partial u_{i}}{\partial t}f_{i}dV \;.
+\end{equation}
 
 Para dar uma interpreta\c{c}\~ao f\'\i sica de
 $S_{j}=-\tau_{ij}\frac{\partial u_{i}}{\partial t}$ tomaremos
 $f_{i}=0$. Ent\~ao a equa\c{c}\~ao acima pode ser reescrita da
 seguinte forma
-\[\frac{d\epsilon}{dt}+\int \! \!\int\limits_{V} \! \!\int \mbox{div} \vec{S}dV=0\Leftrightarrow
+\begin{equation}
+\frac{d\epsilon}{dt}+\int \! \!\int\limits_{V} \! \!\int \mbox{div} \vec{S}dV=0\Leftrightarrow
 \frac{d\epsilon}{dt}+\int\limits_{\Sigma} \! \!\int
-S_{j}\mbox{n}_{j}d\Sigma=0,\] onde $\Sigma$ denota a superf\'\i
+S_{j}\mbox{n}_{j}d\Sigma=0 \;,
+\end{equation}
+onde $\Sigma$ denota a superf\'\i
 cie limitando o volume. As equa\c{c}\~oes acima dizem que a
 derivada da energia $\epsilon$ no volume $V$ \'e balanceada pelo
 fluxo do vetor $\vec{S}$ na superf\'\i cie $\Sigma$. Portanto
@@ -141,10 +187,14 @@ da superf\'\i cie perpendicular a $\vec{S}$.
 
 Podemos escrever as equa\c{c}\~oes acima em forma de uma
 equa\c{c}\~ao de conserva\c{c}\~ao. No caso $f_{i}=0$ temos,
-\[\frac{\partial \mbox{E}}{\partial t}+\frac{\partial S_{j}}{\partial x_{j}}=0,\]
+\begin{equation}
+\frac{\partial \mbox{E}}{\partial t}+\frac{\partial S_{j}}{\partial x_{j}}=0 \;,
+\end{equation}
 e no caso de $f_{i} \neq 0$ temos,
-\[\frac{\partial \mbox{E}}{\partial t}+\frac{\partial S_{j}}{\partial x_{j}}=
-\frac{\partial u_{i}}{\partial t}f_{i}.\]
+\begin{equation}
+\frac{\partial \mbox{E}}{\partial t}+\frac{\partial S_{j}}{\partial x_{j}}=
+\frac{\partial u_{i}}{\partial t}f_{i} \;.
+\end{equation}
 
 
 
