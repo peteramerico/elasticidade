@@ -1,35 +1,9 @@
-%\documentclass[12pt]{article}
-%\usepackage[latin1]{inputenc}
-%\usepackage[brazil]{babel}
-%\usepackage{epsfig}
-%\usepackage{showlabels}
-
-%\newcommand{\cv}{\c{c}\~}
-%\newcommand{\h}{\mathbb{H}}
-%\newcommand{\co}{\mathbb{C}}
-%\newcommand{\re}{\mathbb{R}}
-%\newcommand{\cao}{\c{c}\~ao}
-%\newcommand{\ao}{\~ao}
-%\newcommand{\ih}{\'{\i}}
-%\newcommand{\coes}{\c{c}\~oes}
-
-%\renewcommand{\textfraction}{0}
-%\renewcommand{\floatpagefraction}{0.8}
-%\renewcommand{\topfraction}{0.8}
-
-%\renewcommand{\contentsname}{\'Indice}
-%\renewcommand{\refname}{Bibliografia}
-%\renewcommand{\figurename}{Figura}
-
-%\input{form}
-%\topmargin0.0cm \textheight23.5cm
-
-%\begin{document}
 
 \section{Par\^ametros El\'asticos para Meios Isotr\'opicos}
 
-Como foi visto anteriormente, o meio isotropico pode ser descrito por
-dois par\^ametros, $\mu$ e $\lambda$. Pode-se introduzir outros
+Como foi visto anteriormente, o meio isotr\'opico pode ser descrito por
+dois par\^ametros, $\mu$ e $\lambda$, conhecidos como par\^ametros
+de Lam\'e. Pode-se introduzir outros
 par\^ametros al\'em destes, mas comecemos estudando a rigidez $\mu$.
 Pela lei de Hooke
 \begin{eqnarray}
@@ -43,7 +17,7 @@ para $i \neq j$ temos
 \end{eqnarray}
 
 Vemos que a rigidez $\mu$ relaciona a tens\ao\ de cisalhamento com a
-deforma\cao\ de cisalhamento, e \`as vezes $\mu$ \'e chamado de m\'odulo
+deforma\cao\ de cisalhamento, e as vezes $\mu$ \'e chamado de m\'odulo
 de cisalhamento. Juntamente com o fato da energia de deforma\cao\ $W$
 ser definida positiva, a rigidez de um s\'olido isotr\'opico \'e sempre
 positiva, $\mu > 0$. Agora, vejamos o m\'odulo bulk $k$ e a
@@ -92,7 +66,7 @@ grande e/ou $\mu$ pequeno temos $0<\sigma<1/2$, e portanto, $\lambda>0$.
 
 Da lei de Hooke vemos que os par\^ametros $c_{ijkl}$, ${\mu}$ e
 ${\lambda}$ possuem as mesmas unidades da tens\ao, ou seja, s\ao\
-medidos em Pascal $(1Pa = Kgm^{-1}s^{-2})$. Por suas defini\coes\ $k$ e
+medidos em Pascal $(1Pa = kg\ m^{-1} s^{-2})$. Por suas defini\coes\ $k$ e
 $E$ tamb\'em o s\~ao. O raio de Poisson e $\sigma$ s\ao\ adimensionais e
 $\kappa$ \'e medido em $(Pa)^{-1}$.
 
@@ -102,7 +76,7 @@ A teoria estudada at\'e agora envolve propaga\cao\ de ondas em s\'olidos
 el\'asticos. No entanto, \`as vezes precisamos considerar propaga\cao\
 de ondas atrav\'es de fluidos el\'asticos, como por exemplo os oceanos e
 o n\'ucleo externo da Terra. \`As vezes a propaga\cao\ em materiais
-s\'olidos \'e tamb\'em considerada como propaga\cao\ em fluidos ( o
+s\'olidos \'e tamb\'em considerada como propaga\cao\ em fluidos (o
 ent\ao\ chamado caso ac\'ustico em sismologia de reflex\~ao). Podemos
 derivar as equa\coes\ de movimento para fluidos de equa\coes\
 hidromec\^anicas. Outra maneira \'e fazer $\mu \longrightarrow 0$ nas
@@ -129,20 +103,22 @@ Como $c_{ijkl} = c_{ijkl}(x_m)$ e $\rho = \rho(x_m)$ esta equa\cao\
 descreve um meio anisotr\'opico n\~ao-homog\~eneo geral. Esta \'e uma
 equa\cao\ diferencial parcial vetorial linear de segunda ordem com
 coeficientes vari\'aveis, e n\ao\ possui uma solu\cao\ de forma fechada.
-Pode-se usar m\'etodos num\'ericos como FD (Diferen\c cas Finitas) e FE
-(Elementos Finitos) para obter solu\coes\ num\'ericas. Outra maneira \'e
+Pode-se usar m\'etodos num\'ericos como Diferen\c{c}as Finitas ou
+Elementos Finitos para obter solu\coes\ num\'ericas. Outra maneira \'e
 aplicar m\'etodos assint\'oticos de alta frequ\^encias como m\'etodo de
 raios.
 
-Para um meio anisotr\'opico homogeneo onde os par\^ametros el\'asticos e
+Para um meio anisotr\'opico homog\^eneo onde os par\^ametros el\'asticos e
 a densidade s\ao\ constantes, a equa\cao\ acima fica
 \begin{eqnarray}
 c_{ijkl}\frac{\partial^2 u_k}{\partial x_j\partial x_l} + f_i = \rho\frac{\partial^2 u_i}{\partial t^2},
 \end{eqnarray}
 e agora os coeficientes s\ao\ constantes. Para esta equa\cao\ podemos
-encontrar uma solu\cao\ na forma de ondas planas. A equa\cao\
+encontrar uma solu\cao\ na forma de ondas planas.
+
+A equa\cao\
 elastodin\^amica para um meio isotr\'opico n\~ao homog\^eneo pode ser
-obtido inserindo
+obtida inserindo
 \begin{eqnarray}
 c_{ijkl} = \lambda\delta_{kl}\delta_{ij} + \mu(\delta_{ik}\delta_{kl} + \delta_{jk}\delta_{kl})
 \end{eqnarray}
@@ -162,7 +138,6 @@ Isto pode ser reescrito em nota\cao\ vetorial se observarmos que
 \begin{eqnarray}
 (\nabla\mu\times\mbox{rot}\vec{u})_i = \mu_{,k}u_{k,i} - \mu_{,k}u_{i,k}.
 \end{eqnarray}
-
 Temos ent\ao\
 \begin{eqnarray}
 (\lambda + \mu)\nabla(\mbox{div}\vec{u}) + \mu\Delta\vec{u} + \nabla\lambda\mbox{div}\vec{u} 
@@ -179,12 +154,11 @@ ou em nota\cao\ vetorial
 \begin{eqnarray}
 (\lambda + \mu)\nabla(\mbox{div}\vec{u}) + \mu\Delta\vec{u} + \vec{f} = \rho\frac{\partial^2\vec{u}}{\partial t^2}
 \end{eqnarray}
-
 Ainda podemos usar a identidade
 \begin{eqnarray}
 \Delta\vec{u} = \nabla(\mbox{div}\vec{u}) - \mbox{rot}(\mbox{rot}\vec{u})
 \end{eqnarray}
-para reescrever como abaixo
+para reescrever como
 \begin{eqnarray}
 (\lambda + 2\mu)\nabla(\mbox{div}\vec{u}) - \mu\mbox{rot}(\mbox{rot}\vec{u}) + \vec{f} 
 = \rho\frac{\partial^2\vec{u}}{\partial t^2}
@@ -192,14 +166,14 @@ para reescrever como abaixo
 
 \subsection{Equa\coes\ de Movimento para Fluidos - Caso Ac\'ustico}
 
-Como foi dito, podemos obter a equa\cao\ de movimento de s\'olidos
-el\'asticos para fluidos fazendo $\mu \longrightarrow 0$. Isto nos
+Como foi dito, podemos obter a equa\cao\ de movimento
+para fluidos fazendo $\mu \longrightarrow 0$. Isto nos
 fornece $E = 0$, $\sigma = 1/2$ e $k = \lambda$. Nos fluidos, a tens\ao\
 hidrost\'atica e a tens\ao\ m\'edia $\tau_{ii}/3$ normalmente s\ao\
 negativos, e esta \'ultima \'e denotada por $-p$, onde $p$ \'e chamado
 de press\ao. A lei de Hooke
 \begin{eqnarray}
-\tau_{ij} = \lambda\theta\delta_{ij} = k\theta\delta_{ij}  (\mu = 0, \; \lambda = k)
+\tau_{ij} = \lambda\theta\delta_{ij} = k\theta\delta_{ij} \ ; \   (\mu = 0, \; \lambda = k)
 \end{eqnarray}
 pode ent\ao\ ser escrita como
 \begin{eqnarray}
@@ -213,9 +187,10 @@ como
 \begin{eqnarray}
 -p_{,i} + f_i = \rho\frac{\partial v_i}{\partial t}
 \end{eqnarray}
-
-Temos ent\ao\ 3 componentes desconhecidas de $v_i$ e $p$ \'e a quarta
-quantidade desconhecida. Precisamos ent\ao\ de mais uma equa\cao\ que
+Ent\~ao, em vez de tr\^es componentes desconhecidos de $u_i$,
+temos tr\^es componentes desconhecidos de $v_i$ e a press\~ao
+$p$ \'e a quarta
+quantidade desconhecida. Assim, precisamos de mais uma equa\cao\ que
 \'e obtida derivando a lei de Hooke $\theta = -\kappa p$ com rela\cao\
 ao tempo. O sistema completo com 4 equa\coes\ \'e ent\ao
 \begin{eqnarray}
@@ -224,7 +199,6 @@ p_{,i} + \rho\frac{\partial v_i}{\partial t} = f_i,
 v_{k,k} + \kappa\frac{\partial p}{\partial t} = 0 .
 \label{eqondvel}
 \end{eqnarray}
-
 Derivando as equa\coes\ acima para $x_i$ e $t$ respectivamente obtemos:
 \begin{eqnarray}
 (p_{,i} + \rho\frac{\partial v_i}{\partial t} = f_i)_{,i} &\Rightarrow& 
@@ -245,7 +219,6 @@ ou na forma vetorial
 \nabla(\nabla p/\rho) - \kappa\frac{\partial^2 p}{\partial t^2} = \nabla(\vec{f}/\rho),
 \end{eqnarray}
 que \'e a equa\cao\ da onda ac\'ustica.
-
 Caso a densidade for constante, podemos multiplicar a equa\c{c}\~ao por
 $\rho$ e simplificar esta express\~ao, 
 obtendo
