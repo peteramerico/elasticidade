@@ -70,8 +70,8 @@
 \contentsline {subsection}{\numberline {6.1.1}Onda planas harm\^onicas no tempo}{83}
 \contentsline {subsection}{\numberline {6.1.2}Onda planas no dom\'{\i }nio do tempo (ondas planas transientes)}{84}
 \contentsline {section}{\numberline {6.2}Ondas planas ac\'usticas transientes}{85}
-\contentsline {section}{\numberline {6.3}Ondas planas el\'asticas transientes}{85}
-\contentsline {subsection}{\numberline {6.3.1}Meio anisotr\'opico homog\^eneo}{85}
+\contentsline {section}{\numberline {6.3}Ondas planas el\'asticas transientes}{86}
+\contentsline {subsection}{\numberline {6.3.1}Meio anisotr\'opico homog\^eneo}{86}
 \contentsline {subsection}{\numberline {6.3.2}Meio isotr\'opico homog\^eneo}{87}
 \contentsline {section}{\numberline {6.4}Considera\c {c}\~oes\ sobre energia}{90}
 \contentsline {subsection}{\numberline {6.4.1}Meio ac\'ustico}{91}

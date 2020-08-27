@@ -1,14 +1,14 @@
 \chapter{Ondas Planas} \label{ondplan}
 
-Vamos estudar, em mais detalhes do que na se\c{c}\~ao \ref{plan},
-as propriedades da propaga\c{c}\~ao de ondas planas em meios
+Vamos estudar as propriedades da
+propaga\c{c}\~ao de ondas planas em meio
 ac\'ustico homog\^eneo ou perfeitmente el\'astico, anisotr\'opico
 ou isotr\'opico. Ondas planas representam uma das poss\'{\i}veis
 solu\c{c}\~oes das equa\c{c}\~oes da onda e elastodin\^amica para
 meio homog\^eneo. Essas ondas n\~ao existem em meios reais, mas
 elas s\~ao boas aproxima\c{c}\~oes de ondas para fontes distantes.
 Uma das vantagens de trabalhar com ondas planas \'e que podemos
-estud\'a-las sem considerar sua fonte.
+estuda-las sem considerar sua fonte.
 
 \section{Propriedades das ondas planas}
 
@@ -38,22 +38,55 @@ ou seja,
 \begin{equation}
 T(x_m)=p_i x_i \;,
 \end{equation}
-onde $p_i$ s\~ao coeficientes reais constantes. Comparando este
-reasultado com o argumento da equa\c{c}\~ao ???label???,
-observamos que $\vec{p}=\vec{k}/\omega=\vec{N}/c$, onde o vetor
-$\vec{N}$ \'e o vetor unit\'ario na dire\c{c}\~ao da
-propaga\c{c}\~ao (perpendicularo ao plano de fase constante).
+onde $p_i$ s\~ao coeficientes reais constantes. A equa\cao\
+\begin{equation}
+t-T(x_m)=t-p_i x_i=cte.
+\end{equation}
+para $t$ fixo, \'e uma equa\cao\ de um plano e, simultaneamente,
+uma equa\cao\ de fase constante da fun\cao\ exponencial,
+na express\~ao para $w$. Note que, nesse plano, $w$ \'e constante.
+Ent\~ao, o plano $p_i x_i=t+cte.$ \'e chamado de frente de onda, e
+a onda associada a ela, \'e chamada de onda plana.
+Ao variar o tempo $t$, a frente de onda se move de forma que
+a normal $N_i$ ao plano, chamada de fase normal, n\~ao muda
+sua dire\cao. A diferencia\cao\ da equa\cao\ de fase constante
+com respeito ao par\^ametro $\xi$ de comprimento, ao longo de
+uma linha perpendicular a fase nos permite
+\begin{equation}
+\frac{dt}{d\xi}=p_i \frac{dx_i}{d\xi}=p_i N_i .
+\end{equation}
+Aqui, $\frac{dt}{d\xi}=c^{-1}$, onde $c$ \'e a velocidade com que a frente
+de onda se move e \'e, portanto, chamado de velocidade
+de fase. Ent\~ao, o vetor $p_i$ pode ser expresso como
+\begin{equation}
+p_i =N_i / c , \ \ \ \  i.e. \ \ \ \  p_k p_k = c^{-2}.
+\end{equation}
+Uma vez que o tamanho do vetor $p_i$ \'e inversamente
+proporcional a velocidade de fase $c$, o vetor $p_i$
+\'e chamado de vetor vagarosidade. Podemos agora
+introduzir o termo comprimento de onda $\lambda$
+como o comprimento percorrido por uma onda plana
+com velocidade $c$ e per\'iodo $T$,
+\begin{equation}
+\lambda=cT=\frac{c}{f}=\frac{2\pi c}{w} = \frac{2\pi}{k} .
+\end{equation}
+Aqui, $k=\frac{w}{c}$ \'e chamado de comprimento de onda.
+No caso de ondas harm\^onicas, o vetor vagarosidade \'e,
+as vezes, substituido pelo vetor de onda $k_i$,
+\begin{equation}
+k_i=wp_i .
+\end{equation}
 
 \subsection{Onda planas no dom\'{\i}nio do tempo (ondas planas
 transientes)}
 
 Podemos obter solu\c{c}\~oes para ondas planas no dom\'{\i}nio do
 tempo aplicando a trasformada de Fourier nas solu\c{c}\~oes
-obtidas no dom\'{\i}nio da freq\"u\^encia. Mas aqui, vamos obter
-solu\c{c}\~oes usando diretamente os sinais transientes na
-solu\c{c}\~ao experimental da equa\c{c}\~ao elastodin\^amica.
-
-Esta aproxima\c{c}\~ao est\'a conectada com o termo {\it sinal
+obtidas no dom\'{\i}nio da frequ\^encia ou usando diretamente
+os sinais transientes na
+solu\c{c}\~ao experimental da equa\c{c}\~ao elastodin\^amica,
+que \'e a forma como faremos aqui.
+Esta aproxima\c{c}\~ao est\'a conectada com o {\it sinal
 anal\'{\i}tico}. Vamos procurar solu\c{c}\~oes na forma
 \begin{equation}
 w(x_m,t)=W F(t-T(x_m)) \;.
@@ -72,14 +105,14 @@ sinal anal\'{\i}tico
 \begin{equation}
 F(t)=2 \int_0^{\infty} g(f) \mathrm{e}^{-i2\pi f t} df \;,
 \end{equation}
-que trabalhar com o sinal real $g(t)$. Usando o sinal
+do que trabalhar com o sinal real $g(t)$. Usando o sinal
 anal\'{\i}tico $F(t)$, \'e poss\'{\i}vel construir um envelope do
 sinal real $g(t)$. O envelope \'e dado como
 \begin{equation}
 |F(t)|=\sqrt{g^2(t)+h^2(t)} \;.
 \end{equation}
 O envelope da onda plana transiente $w = WF$, pode ent\~ao ser
-escrita como
+escrito como
 \begin{equation}
 |w(t)|=|W|\sqrt{g^2(t)+h^2(t)} \;.
 \end{equation}
